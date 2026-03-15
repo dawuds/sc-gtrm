@@ -1,0 +1,11 @@
+{
+  "sourceType": "constructed-indicative",
+  "domain": "governance-oversight",
+  "domainName": "Governance & Oversight",
+  "requirements": [
+    { "id": "GO-R1", "requirement": "Establish a board-approved technology risk governance framework with defined roles, responsibilities, and reporting lines", "rationale": "Ensures board-level accountability for technology risk as expected by SC-GL/6-2023", "owner": "Board / CEO", "frequency": "Annual", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["technology-risk-governance-framework"] },
+    { "id": "GO-R2", "requirement": "Designate a CISO or equivalent with adequate authority, independence, and resources for technology risk management", "rationale": "SC guidelines expect dedicated cybersecurity leadership for capital market entities", "owner": "Board", "frequency": "Continuous", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["ciso-designation"] },
+    { "id": "GO-R3", "requirement": "Develop and maintain a comprehensive technology risk policy suite, reviewed and approved by the board annually", "rationale": "Provides policy foundation for technology risk management across all domains", "owner": "CISO / CTO", "frequency": "Annual", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["technology-risk-policy-suite"] },
+    { "id": "GO-R4", "requirement": "Produce quarterly technology risk reports for board and senior management", "rationale": "Ensures ongoing visibility of technology risk posture at governance level", "owner": "CISO / CRO", "frequency": "Quarterly", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["technology-risk-reporting"] }
+  ]
+}

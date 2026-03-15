@@ -1,0 +1,199 @@
+{
+  "sourceType": "constructed-indicative",
+  "disclaimer": "Evidence items are constructed for educational purposes. They illustrate typical audit evidence expectations for technology risk management under SC-GL/6-2023.",
+  "lastUpdated": "2026-03-16",
+  "domains": {
+    "governance-oversight": {
+      "domainName": "Governance & Oversight",
+      "auditorFocus": "Assessors will verify board-level technology risk governance, CISO designation with adequate authority, approved policy suite, and regular risk reporting to senior management.",
+      "evidenceItems": [
+        {
+          "id": "GO-E1",
+          "name": "Technology Risk Governance Framework Document",
+          "description": "Board-approved technology risk governance framework defining roles, responsibilities, committee structure, and reporting lines",
+          "whatGoodLooksLike": ["Board-approved with annual review", "Covers three lines of defence", "Defines technology risk committee charter", "Aligned with SC-GL/6-2023"],
+          "commonGaps": ["No formal governance framework", "Framework not board-approved", "CISO reporting line not independent from IT operations", "No technology risk committee"],
+          "suggestedSources": ["Board Secretary", "CISO Office", "Compliance"],
+          "format": "PDF/DOCX, version-controlled",
+          "retentionPeriod": "Current + 3 prior versions",
+          "controlSlugs": ["technology-risk-governance-framework", "ciso-designation"]
+        },
+        {
+          "id": "GO-E2",
+          "name": "Technology Risk Reports to Board",
+          "description": "Quarterly technology risk reports presented to the board or board committee, including KRIs, incident trends, and compliance status",
+          "whatGoodLooksLike": ["Quarterly reports with consistent structure", "Includes KRIs, incident metrics, and compliance status", "Board discussion and actions documented in minutes", "Emerging technology risks addressed"],
+          "commonGaps": ["Reports not produced regularly", "Limited to incident summaries without risk context", "No board discussion documented", "KRIs not defined or tracked"],
+          "suggestedSources": ["CISO Office", "Board Secretary", "Risk Management"],
+          "format": "PDF presentations / Reports",
+          "retentionPeriod": "5 years",
+          "controlSlugs": ["technology-risk-reporting"]
+        }
+      ]
+    },
+    "cybersecurity": {
+      "domainName": "Cybersecurity",
+      "auditorFocus": "Assessors will examine threat management capabilities, SOC effectiveness, vulnerability management programme maturity, and network security architecture for capital market systems.",
+      "evidenceItems": [
+        {
+          "id": "CS-E1",
+          "name": "SOC Operations Evidence",
+          "description": "Evidence of security operations centre capabilities including monitoring coverage, detection rules, and incident response metrics",
+          "whatGoodLooksLike": ["24/7 monitoring coverage for critical systems", "Detection rules tuned for capital market threats", "Mean time to detect and respond metrics tracked", "Regular SOC effectiveness assessments"],
+          "commonGaps": ["Business hours monitoring only", "Generic detection rules not market-specific", "No performance metrics tracked", "No effectiveness assessment conducted"],
+          "suggestedSources": ["SOC Manager", "SIEM reports", "Incident logs"],
+          "format": "Dashboard exports / Reports",
+          "retentionPeriod": "3 years",
+          "controlSlugs": ["security-operations-centre", "cyber-threat-management"]
+        },
+        {
+          "id": "CS-E2",
+          "name": "Vulnerability and Penetration Testing Reports",
+          "description": "Vulnerability scan results and penetration testing reports for capital market systems with remediation tracking",
+          "whatGoodLooksLike": ["Regular scanning with full asset coverage", "Annual penetration testing by qualified testers", "Critical findings remediated within defined SLAs", "Remediation tracked to closure"],
+          "commonGaps": ["Infrequent or incomplete scanning", "No penetration testing", "Findings not remediated in timely manner", "Trading systems excluded from scope"],
+          "suggestedSources": ["IT Security Team", "Third-party assessment reports"],
+          "format": "PDF reports",
+          "retentionPeriod": "3 years",
+          "controlSlugs": ["vulnerability-management-programme", "penetration-testing-programme"]
+        }
+      ]
+    },
+    "technology-risk-assessment": {
+      "domainName": "Technology Risk Assessment",
+      "auditorFocus": "Assessors will verify that systematic technology risk assessments are conducted, algorithmic trading controls are implemented, and change risk assessments are performed for material changes.",
+      "evidenceItems": [
+        {
+          "id": "TRA-E1",
+          "name": "Technology Risk Assessment Reports",
+          "description": "Annual comprehensive technology risk assessment reports covering all capital market technology systems and functions",
+          "whatGoodLooksLike": ["Annual assessment with defined methodology", "Covers trading, settlement, market data, and support systems", "Risk ratings aligned with enterprise risk framework", "Treatment plans for high and critical risks"],
+          "commonGaps": ["No formal risk assessment", "Assessment does not cover all technology domains", "Algorithmic trading risks not assessed", "No follow-up on treatment plans"],
+          "suggestedSources": ["Risk Management", "CISO Office"],
+          "format": "PDF / GRC tool export",
+          "retentionPeriod": "5 years",
+          "controlSlugs": ["technology-risk-assessment-framework"]
+        }
+      ]
+    },
+    "business-continuity": {
+      "domainName": "Business Continuity",
+      "auditorFocus": "Assessors will examine BCP coverage for capital market operations, trading system resilience, DR testing evidence, and settlement continuity arrangements.",
+      "evidenceItems": [
+        {
+          "id": "BC-E1",
+          "name": "BCP and DR Test Reports",
+          "description": "Business continuity and disaster recovery test reports for capital market systems, including trading, settlement, and market operations",
+          "whatGoodLooksLike": ["Annual testing covering all critical market systems", "Participation in industry-wide DR exercises", "RTO/RPO validated during testing", "Gaps remediated with documented actions"],
+          "commonGaps": ["No DR testing for trading systems", "Industry exercises not participated in", "RTO/RPO not validated", "Test findings not remediated"],
+          "suggestedSources": ["BCM Manager", "IT Operations", "DR test documentation"],
+          "format": "PDF reports",
+          "retentionPeriod": "5 years",
+          "controlSlugs": ["bcm-programme", "dr-testing-programme", "trading-system-resilience"]
+        }
+      ]
+    },
+    "incident-management": {
+      "domainName": "Incident Management",
+      "auditorFocus": "Assessors will verify incident response plan effectiveness, SC notification compliance, coordination mechanisms, and post-incident review processes.",
+      "evidenceItems": [
+        {
+          "id": "IM-E1",
+          "name": "Incident Response Plan and Exercise Records",
+          "description": "Current incident response plan and records of tabletop exercises or simulations conducted",
+          "whatGoodLooksLike": ["Plan reviewed at least annually", "Tabletop exercises conducted at least annually", "SC notification procedures tested", "Exercise findings incorporated into plan updates"],
+          "commonGaps": ["No documented incident response plan", "Plan not tested or exercised", "SC notification not practiced", "No post-exercise improvement actions"],
+          "suggestedSources": ["CISO Office", "Incident Manager"],
+          "format": "PDF / Exercise reports",
+          "retentionPeriod": "5 years",
+          "controlSlugs": ["incident-response-plan", "sc-incident-notification"]
+        }
+      ]
+    },
+    "data-management": {
+      "domainName": "Data Management",
+      "auditorFocus": "Assessors will examine data governance framework, market data integrity controls, and client data protection measures including encryption and access controls.",
+      "evidenceItems": [
+        {
+          "id": "DM-E1",
+          "name": "Data Governance Framework and Classification",
+          "description": "Data governance framework document with data classification scheme and evidence of implementation for market and client data",
+          "whatGoodLooksLike": ["Board-approved data governance framework", "Classification scheme applied to all data assets", "Data quality monitoring in place", "PDPA compliance assessed and documented"],
+          "commonGaps": ["No formal data governance", "Data not classified", "No data quality monitoring", "PDPA compliance not assessed"],
+          "suggestedSources": ["CDO / DPO", "Compliance", "IT"],
+          "format": "PDF/DOCX",
+          "retentionPeriod": "Current + 2 prior versions",
+          "controlSlugs": ["data-governance-framework", "market-data-integrity", "client-data-protection"]
+        }
+      ]
+    },
+    "third-party-risk": {
+      "domainName": "Third-Party Risk",
+      "auditorFocus": "Assessors will verify vendor risk assessment programme, outsourcing governance, performance monitoring, and fourth-party oversight for technology service providers.",
+      "evidenceItems": [
+        {
+          "id": "TPR-E1",
+          "name": "Vendor Risk Assessment Records",
+          "description": "Vendor risk assessments for technology service providers including tiering, due diligence reports, and ongoing monitoring evidence",
+          "whatGoodLooksLike": ["All vendors tiered by risk level", "Due diligence depth proportionate to tier", "Annual reassessment for critical vendors", "Monitoring evidence maintained"],
+          "commonGaps": ["No vendor risk tiering", "Due diligence limited to onboarding", "No ongoing monitoring", "Cloud providers not assessed"],
+          "suggestedSources": ["Vendor Risk Management", "Procurement", "CISO Office"],
+          "format": "GRC tool / Spreadsheet",
+          "retentionPeriod": "Duration of engagement + 5 years",
+          "controlSlugs": ["third-party-risk-assessment", "outsourcing-governance", "vendor-performance-monitoring"]
+        }
+      ]
+    },
+    "emerging-technology": {
+      "domainName": "Emerging Technology",
+      "auditorFocus": "Assessors will examine controls for algorithmic trading governance, AI/ML risk management, and DLT/digital asset activities if applicable.",
+      "evidenceItems": [
+        {
+          "id": "ET-E1",
+          "name": "Algorithm Governance Records",
+          "description": "Records of algorithm approval, testing, monitoring, and periodic review for algorithmic trading systems",
+          "whatGoodLooksLike": ["Formal approval process documented for each algorithm", "Testing records including backtesting and simulation", "Production monitoring with anomaly detection", "Periodic re-approval with performance review"],
+          "commonGaps": ["No formal approval process", "Insufficient testing before deployment", "No production monitoring", "No periodic review"],
+          "suggestedSources": ["Head of Trading", "Compliance", "Risk Management"],
+          "format": "Approval records / Test reports",
+          "retentionPeriod": "Duration of algorithm use + 5 years",
+          "controlSlugs": ["algorithmic-trading-governance", "algorithmic-trading-risk-controls"]
+        }
+      ]
+    },
+    "technology-audit": {
+      "domainName": "Technology Audit",
+      "auditorFocus": "Assessors will verify technology audit programme coverage, qualified auditor engagement, and remediation tracking for audit findings.",
+      "evidenceItems": [
+        {
+          "id": "TA-E1",
+          "name": "Technology Audit Reports and Findings Tracker",
+          "description": "Technology audit reports, findings, and remediation tracking evidence demonstrating independent assessment of technology risk management",
+          "whatGoodLooksLike": ["Risk-based audit plan covering all technology domains", "Qualified technology auditors engaged", "Findings reported to audit committee", "Remediation tracked to closure with SLAs"],
+          "commonGaps": ["Technology not in audit plan", "Auditors lack technology expertise", "Findings not reported to audit committee", "Remediation not tracked"],
+          "suggestedSources": ["Internal Audit", "External auditors"],
+          "format": "PDF audit reports / Tracker",
+          "retentionPeriod": "7 years",
+          "controlSlugs": ["technology-audit-programme", "regulatory-examination-readiness"]
+        }
+      ]
+    },
+    "cloud-services": {
+      "domainName": "Cloud Services",
+      "auditorFocus": "Assessors will examine cloud risk assessments, data governance in cloud environments, and exit strategies for cloud-hosted capital market systems.",
+      "evidenceItems": [
+        {
+          "id": "CL-E1",
+          "name": "Cloud Risk Assessment and Governance Records",
+          "description": "Cloud-specific risk assessments, data governance documentation, and exit plans for cloud-hosted market systems and client data",
+          "whatGoodLooksLike": ["Cloud risk assessment per engagement", "Shared responsibility matrix documented", "Data residency verified and monitored", "Exit plans documented for material cloud services"],
+          "commonGaps": ["No cloud-specific risk assessment", "Shared responsibility not documented", "Data residency not verified", "No cloud exit strategy"],
+          "suggestedSources": ["Cloud Architecture", "CISO Office", "DPO"],
+          "format": "PDF / GRC tool",
+          "retentionPeriod": "Duration of engagement + 3 years",
+          "controlSlugs": ["cloud-risk-assessment", "cloud-data-governance", "cloud-exit-strategy"]
+        }
+      ]
+    }
+  }
+}

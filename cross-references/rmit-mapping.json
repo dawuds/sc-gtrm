@@ -1,0 +1,19 @@
+{
+  "sourceType": "constructed-indicative",
+  "frameworkName": "BNM Risk Management in Technology (RMiT)",
+  "frameworkReference": "BNM/RH/PD 028-10, November 2025",
+  "description": "Comparison mapping between SC-GL/6-2023 controls and BNM RMiT requirements. Both frameworks address similar technology risk domains but for different regulated sectors (capital markets vs banking/insurance).",
+  "lastUpdated": "2026-03-16",
+  "mappings": [
+    { "controlSlug": "technology-risk-governance-framework", "controlName": "Technology Risk Governance Framework", "rmitClause": "8.1-8.4", "rmitTitle": "Technology Risk Governance", "similarity": "high", "notes": "Both frameworks require board-level technology risk governance with similar structures" },
+    { "controlSlug": "cyber-threat-management", "controlName": "Cyber Threat Management", "rmitClause": "11.1-11.8", "rmitTitle": "Cybersecurity Operations", "similarity": "high", "notes": "Comparable requirements for threat intelligence and SOC operations" },
+    { "controlSlug": "vulnerability-management-programme", "controlName": "Vulnerability Management Programme", "rmitClause": "11.9-11.14", "rmitTitle": "Vulnerability Assessment", "similarity": "high", "notes": "Both require systematic vulnerability management with penetration testing" },
+    { "controlSlug": "cloud-risk-assessment", "controlName": "Cloud Risk Assessment", "rmitClause": "10.60-10.62", "rmitTitle": "Cloud Services", "similarity": "high", "notes": "Similar cloud risk assessment requirements though RMiT is more prescriptive on data residency" },
+    { "controlSlug": "third-party-risk-assessment", "controlName": "Third-Party Risk Assessment", "rmitClause": "10.55-10.59", "rmitTitle": "Outsourcing Risk Management", "similarity": "high", "notes": "Both require risk-based vendor assessment with similar governance expectations" },
+    { "controlSlug": "bcm-programme", "controlName": "BCM Programme", "rmitClause": "12.1-12.8", "rmitTitle": "Business Continuity Management", "similarity": "high", "notes": "Comparable BCP requirements though SC has market operation-specific elements" },
+    { "controlSlug": "incident-response-plan", "controlName": "Incident Response Plan", "rmitClause": "11.15-11.20", "rmitTitle": "Incident Management", "similarity": "high", "notes": "Both require incident response plans with regulatory notification requirements" },
+    { "controlSlug": "data-governance-framework", "controlName": "Data Governance Framework", "rmitClause": "9.1-9.6", "rmitTitle": "Data Management", "similarity": "medium", "notes": "SC focuses more on market data integrity; RMiT on customer data protection" },
+    { "controlSlug": "algorithmic-trading-governance", "controlName": "Algorithmic Trading Governance", "rmitClause": null, "rmitTitle": "N/A — SC-specific", "similarity": "low", "notes": "Algorithmic trading governance is unique to SC guidelines — no direct RMiT equivalent" },
+    { "controlSlug": "technology-audit-programme", "controlName": "Technology Audit Programme", "rmitClause": "8.5-8.8", "rmitTitle": "Technology Audit", "similarity": "high", "notes": "Both require risk-based technology audit programmes" }
+  ]
+}

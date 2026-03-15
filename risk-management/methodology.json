@@ -1,0 +1,55 @@
+{
+  "sourceType": "constructed-indicative",
+  "disclaimer": "This methodology is constructed for educational purposes. It illustrates a typical technology risk assessment approach for SC-regulated capital market entities. Entities should develop their own methodology based on their specific risk profile.",
+  "title": "Capital Market Technology Risk Assessment Methodology",
+  "description": "Risk assessment methodology for evaluating technology risks in capital market operations under SC-GL/6-2023 Guidelines on Technology Risk Management.",
+  "applicableTo": "SC-regulated capital market intermediaries, market operators, clearing houses, and central depositories",
+  "approvalAuthority": "CRO / Technology Risk Committee",
+  "reviewCycle": {
+    "frequency": "Annual review of methodology; per-engagement for new systems",
+    "triggers": [
+      "Major technology incident affecting market operations",
+      "New trading system or market infrastructure deployment",
+      "SC guideline update or new regulatory direction",
+      "Significant change in threat landscape for capital markets",
+      "Entry into new market segment or product"
+    ]
+  },
+  "likelihoodScale": {
+    "description": "Five-level scale for assessing the probability of a technology risk materialising in capital market operations",
+    "levels": [
+      { "level": 1, "label": "Rare", "description": "Highly unlikely; no precedent in capital markets sector", "frequency": "Less than once in 10 years" },
+      { "level": 2, "label": "Unlikely", "description": "Could occur but not expected; isolated incidents globally", "frequency": "Once in 5-10 years" },
+      { "level": 3, "label": "Possible", "description": "May occur; comparable incidents in Asian capital markets", "frequency": "Once in 2-5 years" },
+      { "level": 4, "label": "Likely", "description": "Expected to occur; active threats targeting capital markets", "frequency": "Once or twice per year" },
+      { "level": 5, "label": "Almost Certain", "description": "Expected frequently; ongoing threat campaigns targeting market infrastructure", "frequency": "Multiple times per year" }
+    ]
+  },
+  "impactScale": {
+    "description": "Five-level scale for assessing the impact on capital market operations, clients, and regulatory standing",
+    "levels": [
+      { "level": 1, "label": "Insignificant", "description": "No market impact; no client impact; no regulatory concern", "financialImpact": "< RM100K" },
+      { "level": 2, "label": "Minor", "description": "Brief trading delay; minor client inconvenience; no SC inquiry", "financialImpact": "RM100K - RM1M" },
+      { "level": 3, "label": "Moderate", "description": "Trading disruption; client complaints; SC informal inquiry", "financialImpact": "RM1M - RM10M" },
+      { "level": 4, "label": "Major", "description": "Extended market disruption; material client harm; SC formal investigation", "financialImpact": "RM10M - RM50M" },
+      { "level": 5, "label": "Catastrophic", "description": "Market integrity compromise; systemic impact; licence consideration", "financialImpact": "> RM50M" }
+    ]
+  },
+  "riskMatrix": {
+    "description": "5x5 risk matrix mapping likelihood and impact to risk ratings",
+    "ratings": [
+      { "range": "1-4", "label": "Low", "color": "#16A34A", "action": "Accept with monitoring" },
+      { "range": "5-9", "label": "Medium", "color": "#D97706", "action": "Mitigate with enhanced controls" },
+      { "range": "10-16", "label": "High", "color": "#EA580C", "action": "Mitigate urgently; escalate to senior management" },
+      { "range": "17-25", "label": "Critical", "color": "#DC2626", "action": "Immediate action; escalate to board" }
+    ]
+  },
+  "assessmentDimensions": [
+    { "dimension": "Market Operations Impact", "description": "Impact on trading, clearing, and settlement operations", "weight": 0.25 },
+    { "dimension": "Client Impact", "description": "Impact on client orders, portfolios, and data", "weight": 0.20 },
+    { "dimension": "Cybersecurity", "description": "Exposure to cyber threats and data breaches", "weight": 0.20 },
+    { "dimension": "Regulatory Compliance", "description": "Impact on SC compliance obligations", "weight": 0.15 },
+    { "dimension": "Data Integrity", "description": "Risk to market data and client information integrity", "weight": 0.10 },
+    { "dimension": "Reputational", "description": "Impact on market reputation and investor confidence", "weight": 0.10 }
+  ]
+}

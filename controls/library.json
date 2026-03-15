@@ -1,0 +1,571 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-16",
+    "sourceType": "constructed-indicative",
+    "disclaimer": "These controls are constructed for educational purposes to illustrate typical technology risk management patterns under SC-GL/6-2023. They are not verbatim extracts from the Securities Commission Malaysia guidelines. Always consult the official SC guidelines and qualified regulatory counsel.",
+    "alignment": "SC-GL/6-2023 — Guidelines on Technology Risk Management"
+  },
+  "controls": [
+    {
+      "slug": "technology-risk-governance-framework",
+      "name": "Technology Risk Governance Framework",
+      "domain": "governance-oversight",
+      "description": "Establish a comprehensive technology risk governance framework with clear roles, responsibilities, and reporting lines from board level through operational management for capital market entities.",
+      "controlType": "preventive",
+      "owner": "Board of Directors / CEO",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Define board-level technology risk oversight responsibilities",
+        "Establish technology risk committee with cross-functional representation",
+        "Define technology risk appetite aligned with business strategy and SC expectations",
+        "Implement three lines of defence model for technology risk management"
+      ],
+      "maturity": { "basic": "Ad-hoc governance with no formal framework", "mature": "Documented framework with committee structure", "advanced": "Integrated governance with real-time risk dashboards" }
+    },
+    {
+      "slug": "ciso-designation",
+      "name": "CISO Designation & Authority",
+      "domain": "governance-oversight",
+      "description": "Designate a Chief Information Security Officer or equivalent with sufficient authority, independence, and resources to manage technology and cyber security risks across the capital market entity.",
+      "controlType": "preventive",
+      "owner": "Board of Directors",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Appoint a qualified CISO with direct reporting line to senior management or board",
+        "Define CISO authority, scope, and resource allocation",
+        "Ensure CISO independence from technology operations functions",
+        "Establish regular CISO reporting to board or board committee"
+      ],
+      "maturity": { "basic": "Security responsibilities assigned to IT manager", "mature": "Dedicated CISO with board reporting", "advanced": "CISO with enterprise-wide authority and strategic influence" }
+    },
+    {
+      "slug": "technology-risk-policy-suite",
+      "name": "Technology Risk Policy Suite",
+      "domain": "governance-oversight",
+      "description": "Develop and maintain a comprehensive suite of technology risk management policies covering all key domains, reviewed and approved by the board at least annually.",
+      "controlType": "preventive",
+      "owner": "CISO / CTO",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Develop policies covering cybersecurity, data management, BCP, cloud, outsourcing, and incident management",
+        "Ensure policies reference SC-GL/6-2023 requirements",
+        "Obtain board approval for all technology risk policies",
+        "Communicate policies to all relevant personnel and stakeholders"
+      ],
+      "maturity": { "basic": "Partial policy coverage with inconsistent review", "mature": "Complete policy suite with annual board review", "advanced": "Dynamic policies with automated compliance monitoring" }
+    },
+    {
+      "slug": "technology-risk-reporting",
+      "name": "Technology Risk Reporting",
+      "domain": "governance-oversight",
+      "description": "Establish regular technology risk reporting to the board and senior management, including risk posture, incident trends, compliance status, and emerging technology risks.",
+      "controlType": "detective",
+      "owner": "CISO / CRO",
+      "frequency": "Quarterly",
+      "keyActivities": [
+        "Produce quarterly technology risk reports for board and senior management",
+        "Include key risk indicators, incident trends, and compliance metrics",
+        "Report on emerging technology risks and their potential impact",
+        "Track and report on remediation of technology audit findings"
+      ],
+      "maturity": { "basic": "Ad-hoc reporting on incidents only", "mature": "Structured quarterly reporting with KRIs", "advanced": "Real-time risk dashboard with predictive analytics" }
+    },
+    {
+      "slug": "cyber-threat-management",
+      "name": "Cyber Threat Management",
+      "domain": "cybersecurity",
+      "description": "Implement a structured approach to identifying, assessing, and responding to cyber threats targeting capital market systems, including threat intelligence consumption and threat hunting capabilities.",
+      "controlType": "detective",
+      "owner": "CISO / Security Operations",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Establish threat intelligence programme with industry and government feeds",
+        "Conduct periodic threat assessments for capital market-specific threats",
+        "Implement threat hunting capabilities for advanced persistent threats",
+        "Participate in SC and industry threat information sharing"
+      ],
+      "maturity": { "basic": "Reactive threat response only", "mature": "Proactive threat intelligence with SOC", "advanced": "Advanced threat hunting with ML-based detection" }
+    },
+    {
+      "slug": "security-operations-centre",
+      "name": "Security Operations Centre",
+      "domain": "cybersecurity",
+      "description": "Establish and maintain security monitoring capabilities for continuous surveillance of capital market systems, with 24/7 coverage for critical market infrastructure.",
+      "controlType": "detective",
+      "owner": "CISO / SOC Manager",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Deploy SIEM for centralised log collection and correlation",
+        "Establish 24/7 monitoring for critical trading and settlement systems",
+        "Define and tune detection rules for capital market-specific attack patterns",
+        "Conduct regular SOC effectiveness assessments"
+      ],
+      "maturity": { "basic": "Basic log monitoring during business hours", "mature": "24/7 SOC with SIEM and SOAR", "advanced": "AI-augmented SOC with automated response orchestration" }
+    },
+    {
+      "slug": "vulnerability-management-programme",
+      "name": "Vulnerability Management Programme",
+      "domain": "cybersecurity",
+      "description": "Implement a systematic vulnerability identification, assessment, and remediation programme for all capital market technology systems with defined SLAs for patch deployment.",
+      "controlType": "preventive",
+      "owner": "IT Security Team",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Conduct regular vulnerability scans of all technology assets",
+        "Perform annual penetration testing of critical market systems",
+        "Define risk-based patch management SLAs",
+        "Track vulnerability remediation to closure with exception management"
+      ],
+      "maturity": { "basic": "Ad-hoc patching with no scanning", "mature": "Regular scanning with risk-based patching SLAs", "advanced": "Continuous scanning with automated patch deployment" }
+    },
+    {
+      "slug": "network-security-architecture",
+      "name": "Network Security Architecture",
+      "domain": "cybersecurity",
+      "description": "Design and maintain a secure network architecture for capital market systems with appropriate segmentation, access controls, and protection of trading and market data networks.",
+      "controlType": "preventive",
+      "owner": "Network Security Team / CTO",
+      "frequency": "Annual review",
+      "keyActivities": [
+        "Implement network segmentation between trading, settlement, and corporate networks",
+        "Deploy intrusion detection and prevention systems for market infrastructure",
+        "Secure market data feeds and connectivity with participants",
+        "Review network architecture annually against evolving threat landscape"
+      ],
+      "maturity": { "basic": "Flat network with basic firewall", "mature": "Segmented network with IDS/IPS and monitoring", "advanced": "Zero-trust architecture with microsegmentation" }
+    },
+    {
+      "slug": "technology-risk-assessment-framework",
+      "name": "Technology Risk Assessment Framework",
+      "domain": "technology-risk-assessment",
+      "description": "Establish a systematic framework for identifying, assessing, and treating technology risks specific to capital market operations, aligned with the entity's risk appetite and SC expectations.",
+      "controlType": "preventive",
+      "owner": "CRO / CISO",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Define technology risk assessment methodology aligned with SC-GL/6-2023",
+        "Conduct annual comprehensive technology risk assessment",
+        "Assess risks from algorithmic trading systems and market infrastructure dependencies",
+        "Integrate technology risk assessment with enterprise risk management"
+      ],
+      "maturity": { "basic": "Ad-hoc risk identification", "mature": "Structured annual assessment with defined methodology", "advanced": "Continuous risk assessment with automated risk signals" }
+    },
+    {
+      "slug": "algorithmic-trading-risk-controls",
+      "name": "Algorithmic Trading Risk Controls",
+      "domain": "technology-risk-assessment",
+      "description": "Implement pre-trade and post-trade risk controls for algorithmic and automated trading systems, including kill switches, position limits, and market manipulation prevention measures.",
+      "controlType": "preventive",
+      "owner": "Head of Trading / CRO",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Implement pre-trade risk checks (price limits, order size limits, position limits)",
+        "Deploy kill switch capability for immediate halt of algorithmic trading",
+        "Conduct algorithm testing and approval process before production deployment",
+        "Monitor for market manipulation patterns in algorithmic trading activity"
+      ],
+      "maturity": { "basic": "Basic order size limits only", "mature": "Comprehensive pre-trade and post-trade controls with kill switch", "advanced": "Real-time ML-based anomaly detection with automated circuit breakers" }
+    },
+    {
+      "slug": "technology-change-risk-assessment",
+      "name": "Technology Change Risk Assessment",
+      "domain": "technology-risk-assessment",
+      "description": "Assess technology risks associated with system changes, upgrades, and new technology deployments before implementation, with approval gates proportionate to change risk level.",
+      "controlType": "preventive",
+      "owner": "IT Change Management / CTO",
+      "frequency": "Per-change",
+      "keyActivities": [
+        "Classify changes by risk level (critical, significant, standard)",
+        "Conduct risk assessment for all critical and significant changes",
+        "Implement testing and approval gates before production deployment",
+        "Define rollback procedures for failed changes"
+      ],
+      "maturity": { "basic": "Changes deployed without risk assessment", "mature": "Risk-based change classification with approval gates", "advanced": "Automated risk scoring with continuous deployment pipelines" }
+    },
+    {
+      "slug": "cloud-risk-assessment",
+      "name": "Cloud Risk Assessment",
+      "domain": "cloud-services",
+      "description": "Conduct cloud-specific risk assessments for all proposed cloud adoptions, covering shared responsibility, data sovereignty, and capital market-specific considerations for client information and market data.",
+      "controlType": "preventive",
+      "owner": "CISO / Cloud Architecture",
+      "frequency": "Per-engagement",
+      "keyActivities": [
+        "Assess cloud-specific risks including shared responsibility and multi-tenancy",
+        "Evaluate data residency implications for client information and market data",
+        "Review CSP certifications and independent assurance reports",
+        "Document shared responsibility matrix for each cloud engagement"
+      ],
+      "maturity": { "basic": "No cloud-specific risk assessment", "mature": "Structured cloud risk framework applied per engagement", "advanced": "Continuous cloud security posture monitoring" }
+    },
+    {
+      "slug": "cloud-data-governance",
+      "name": "Cloud Data Governance",
+      "domain": "cloud-services",
+      "description": "Implement data governance controls for cloud-hosted capital market data, including classification, encryption, access controls, and data residency compliance for client and market information.",
+      "controlType": "preventive",
+      "owner": "Data Protection Officer / CISO",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Classify all data types and apply appropriate protection in cloud environments",
+        "Implement encryption with customer-managed keys for sensitive data",
+        "Enforce data residency requirements for client information",
+        "Monitor and audit data access in cloud environments"
+      ],
+      "maturity": { "basic": "Basic encryption with CSP-managed keys", "mature": "BYOK with data classification and access monitoring", "advanced": "Automated data governance with DLP and rights management" }
+    },
+    {
+      "slug": "cloud-exit-strategy",
+      "name": "Cloud Exit Strategy",
+      "domain": "cloud-services",
+      "description": "Develop and maintain exit strategies for cloud services to ensure data portability and continuity of capital market operations in the event of CSP failure or contract termination.",
+      "controlType": "corrective",
+      "owner": "CTO / Operations",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Document exit plans for all material cloud deployments",
+        "Design cloud workloads for portability using open standards",
+        "Test data extraction and migration procedures periodically",
+        "Identify alternative cloud providers or on-premises fallback options"
+      ],
+      "maturity": { "basic": "No cloud exit planning", "mature": "Documented exit plans with portability requirements", "advanced": "Tested multi-cloud failover with automated migration" }
+    },
+    {
+      "slug": "third-party-risk-assessment",
+      "name": "Third-Party Risk Assessment",
+      "domain": "third-party-risk",
+      "description": "Conduct risk assessments for all third-party technology service providers, with depth proportionate to the criticality of services and access to client data or market systems.",
+      "controlType": "preventive",
+      "owner": "Vendor Risk Management / CISO",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Classify third parties by risk tier based on service criticality",
+        "Conduct comprehensive due diligence for critical service providers",
+        "Assess vendor security posture through questionnaires and independent reviews",
+        "Monitor vendor financial health and operational stability"
+      ],
+      "maturity": { "basic": "Basic vendor checks at onboarding", "mature": "Tiered assessment programme with annual reviews", "advanced": "Continuous vendor risk monitoring with automated scoring" }
+    },
+    {
+      "slug": "outsourcing-governance",
+      "name": "Outsourcing Governance",
+      "domain": "third-party-risk",
+      "description": "Establish governance structures for technology outsourcing arrangements aligned with SC-GL/6-2023 requirements, including board oversight, contractual standards, and monitoring mechanisms.",
+      "controlType": "preventive",
+      "owner": "Board / COO",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Obtain board approval for material outsourcing arrangements",
+        "Maintain outsourcing policy aligned with SC-GL/6-2023",
+        "Include mandatory contractual provisions (SLA, right-to-audit, data protection)",
+        "Report outsourcing risk status to board quarterly"
+      ],
+      "maturity": { "basic": "Informal outsourcing management", "mature": "Formal governance with policy and board oversight", "advanced": "Integrated outsourcing governance with enterprise risk" }
+    },
+    {
+      "slug": "vendor-performance-monitoring",
+      "name": "Vendor Performance Monitoring",
+      "domain": "third-party-risk",
+      "description": "Monitor service provider performance against agreed service levels and contractual obligations, with escalation procedures for persistent underperformance.",
+      "controlType": "detective",
+      "owner": "Service Management Team",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Monitor SLA compliance for all outsourced technology services",
+        "Generate monthly performance reports for critical vendors",
+        "Implement escalation procedures for SLA breaches",
+        "Conduct periodic vendor satisfaction and relationship reviews"
+      ],
+      "maturity": { "basic": "Reliance on vendor self-reporting", "mature": "Automated SLA monitoring with exception reporting", "advanced": "Predictive performance analytics with proactive management" }
+    },
+    {
+      "slug": "fourth-party-oversight",
+      "name": "Fourth-Party Oversight",
+      "domain": "third-party-risk",
+      "description": "Identify and manage risks from service providers' sub-contractors that may impact capital market operations or access client data and market information.",
+      "controlType": "detective",
+      "owner": "Vendor Risk Management",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Require disclosure of sub-contracting for critical services",
+        "Assess fourth-party risks for critical supply chains",
+        "Include sub-contractor oversight provisions in contracts",
+        "Monitor supply chain changes and concentration risks"
+      ],
+      "maturity": { "basic": "No fourth-party visibility", "mature": "Fourth-party register with assessment", "advanced": "Continuous supply chain risk monitoring" }
+    },
+    {
+      "slug": "data-governance-framework",
+      "name": "Data Governance Framework",
+      "domain": "data-management",
+      "description": "Establish a comprehensive data governance framework for capital market data, including market data integrity, client information protection, and data quality management.",
+      "controlType": "preventive",
+      "owner": "Chief Data Officer / Compliance",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Define data governance roles, responsibilities, and accountability",
+        "Implement data classification scheme for market and client data",
+        "Establish data quality standards and monitoring",
+        "Ensure compliance with PDPA and SC data protection requirements"
+      ],
+      "maturity": { "basic": "No formal data governance", "mature": "Documented framework with classification and quality controls", "advanced": "Automated data governance with lineage tracking" }
+    },
+    {
+      "slug": "market-data-integrity",
+      "name": "Market Data Integrity",
+      "domain": "data-management",
+      "description": "Implement controls to ensure the integrity, accuracy, and timeliness of market data used in trading, settlement, and reporting operations.",
+      "controlType": "detective",
+      "owner": "Head of Market Operations / CTO",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Implement data validation checks for market data feeds",
+        "Monitor market data latency and accuracy metrics",
+        "Establish reconciliation processes for critical market data",
+        "Define data correction and restatement procedures"
+      ],
+      "maturity": { "basic": "Manual data quality checks", "mature": "Automated validation with reconciliation", "advanced": "Real-time data quality monitoring with anomaly detection" }
+    },
+    {
+      "slug": "client-data-protection",
+      "name": "Client Data Protection",
+      "domain": "data-management",
+      "description": "Implement data protection controls for client information held by capital market intermediaries, including encryption, access controls, and data loss prevention.",
+      "controlType": "preventive",
+      "owner": "DPO / CISO",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Encrypt client data at rest and in transit",
+        "Implement role-based access controls for client information systems",
+        "Deploy data loss prevention tools for client data",
+        "Conduct regular data protection impact assessments"
+      ],
+      "maturity": { "basic": "Basic encryption with minimal access controls", "mature": "Comprehensive DLP with RBAC and monitoring", "advanced": "Zero-trust data protection with automated classification" }
+    },
+    {
+      "slug": "bcm-programme",
+      "name": "BCM Programme for Market Operations",
+      "domain": "business-continuity",
+      "description": "Establish a business continuity management programme specific to capital market operations, ensuring trading, clearing, and settlement services can continue during disruptions.",
+      "controlType": "corrective",
+      "owner": "BCM Manager / COO",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Conduct business impact analysis for all capital market functions",
+        "Develop BCP covering trading, clearing, settlement, and custody operations",
+        "Define RTO and RPO for market infrastructure components",
+        "Coordinate BCP with market operators and clearing houses"
+      ],
+      "maturity": { "basic": "Basic BCP without market-specific considerations", "mature": "Comprehensive BCP with market operation focus", "advanced": "Dynamic BCP with real-time impact assessment" }
+    },
+    {
+      "slug": "trading-system-resilience",
+      "name": "Trading System Resilience",
+      "domain": "business-continuity",
+      "description": "Ensure trading systems have sufficient resilience, redundancy, and failover capabilities to maintain market access and order execution during technology disruptions.",
+      "controlType": "corrective",
+      "owner": "Head of Trading Technology / CTO",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Implement redundant trading infrastructure with automatic failover",
+        "Define capacity requirements with headroom for market volatility",
+        "Test trading system failover procedures regularly",
+        "Establish alternative trading channels for primary system failures"
+      ],
+      "maturity": { "basic": "Single trading system with manual recovery", "mature": "Redundant systems with tested failover", "advanced": "Active-active trading with zero-downtime failover" }
+    },
+    {
+      "slug": "dr-testing-programme",
+      "name": "DR Testing Programme",
+      "domain": "business-continuity",
+      "description": "Conduct regular disaster recovery testing for capital market systems, including participation in industry-wide DR exercises coordinated by Bursa Malaysia or SC.",
+      "controlType": "corrective",
+      "owner": "IT Operations / BCM Manager",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Conduct annual DR testing for all critical market systems",
+        "Participate in industry-wide DR exercises as required by SC or Bursa",
+        "Test data recovery and system restoration procedures",
+        "Document test results and remediate gaps"
+      ],
+      "maturity": { "basic": "No regular DR testing", "mature": "Annual DR testing with industry participation", "advanced": "Continuous DR readiness with automated failover testing" }
+    },
+    {
+      "slug": "settlement-continuity",
+      "name": "Settlement Continuity",
+      "domain": "business-continuity",
+      "description": "Ensure settlement processes can continue during technology disruptions, with alternative settlement procedures and coordination with central depositories and clearing houses.",
+      "controlType": "corrective",
+      "owner": "Head of Operations / Settlement Manager",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Define alternative settlement procedures for system failures",
+        "Coordinate settlement continuity with Bursa Malaysia Depository",
+        "Test manual settlement fallback procedures",
+        "Maintain communication protocols with clearing and depository participants"
+      ],
+      "maturity": { "basic": "No alternative settlement procedures", "mature": "Documented manual fallback with testing", "advanced": "Automated settlement failover with real-time coordination" }
+    },
+    {
+      "slug": "incident-response-plan",
+      "name": "Incident Response Plan",
+      "domain": "incident-management",
+      "description": "Develop and maintain a technology incident response plan specific to capital market operations, including classification, escalation, containment, and recovery procedures.",
+      "controlType": "corrective",
+      "owner": "CISO / Incident Manager",
+      "frequency": "Annual review",
+      "keyActivities": [
+        "Define incident classification and severity levels for market operations",
+        "Establish incident response team with clear roles and responsibilities",
+        "Define escalation procedures including SC notification requirements",
+        "Conduct tabletop exercises and incident simulations"
+      ],
+      "maturity": { "basic": "Ad-hoc incident response", "mature": "Documented plan with regular exercises", "advanced": "Automated incident orchestration with playbooks" }
+    },
+    {
+      "slug": "sc-incident-notification",
+      "name": "SC Incident Notification",
+      "domain": "incident-management",
+      "description": "Ensure timely notification to the Securities Commission Malaysia of significant technology incidents affecting capital market operations, as required by SC-GL/6-2023.",
+      "controlType": "detective",
+      "owner": "Compliance / CISO",
+      "frequency": "Per-incident",
+      "keyActivities": [
+        "Define notification criteria and thresholds for SC reporting",
+        "Establish notification workflow with defined timelines",
+        "Prepare incident notification templates with required information",
+        "Track SC responses and address any conditions"
+      ],
+      "maturity": { "basic": "Manual notification with inconsistent timing", "mature": "Standardised notification process with tracking", "advanced": "Automated notification workflow with regulatory alerts" }
+    },
+    {
+      "slug": "cyber-incident-coordination",
+      "name": "Cyber Incident Coordination",
+      "domain": "incident-management",
+      "description": "Coordinate cyber incident response with market participants, SC, and other relevant authorities to contain and mitigate the impact of incidents on capital market operations.",
+      "controlType": "corrective",
+      "owner": "CISO / Head of Operations",
+      "frequency": "Per-incident",
+      "keyActivities": [
+        "Establish communication protocols with market participants and regulators",
+        "Participate in industry incident response coordination mechanisms",
+        "Share threat intelligence with SC and peer institutions",
+        "Conduct post-incident reviews with coordination partners"
+      ],
+      "maturity": { "basic": "No coordination mechanisms", "mature": "Established protocols with key stakeholders", "advanced": "Real-time coordination platform with automated sharing" }
+    },
+    {
+      "slug": "incident-post-mortem",
+      "name": "Incident Post-Mortem & Lessons Learned",
+      "domain": "incident-management",
+      "description": "Conduct structured post-incident reviews to identify root causes, lessons learned, and improvement actions to prevent recurrence of technology incidents.",
+      "controlType": "corrective",
+      "owner": "Incident Manager / CISO",
+      "frequency": "Per-incident",
+      "keyActivities": [
+        "Conduct post-mortem review within defined timeframe after incident closure",
+        "Identify root causes and contributing factors",
+        "Document lessons learned and improvement actions",
+        "Track implementation of improvement actions to closure"
+      ],
+      "maturity": { "basic": "Informal verbal debrief", "mature": "Structured post-mortem with tracked actions", "advanced": "Automated trend analysis with preventive recommendations" }
+    },
+    {
+      "slug": "technology-audit-programme",
+      "name": "Technology Audit Programme",
+      "domain": "technology-audit",
+      "description": "Establish a risk-based technology audit programme that covers all key technology risk domains and aligns with SC regulatory expectations for independent assurance.",
+      "controlType": "detective",
+      "owner": "Chief Audit Executive",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Develop risk-based technology audit plan covering all domains",
+        "Engage qualified technology auditors with capital market experience",
+        "Report technology audit findings to board audit committee",
+        "Track remediation of audit findings to closure"
+      ],
+      "maturity": { "basic": "Ad-hoc technology audits", "mature": "Risk-based annual programme with qualified auditors", "advanced": "Continuous assurance with automated testing" }
+    },
+    {
+      "slug": "regulatory-examination-readiness",
+      "name": "Regulatory Examination Readiness",
+      "domain": "technology-audit",
+      "description": "Maintain readiness for SC regulatory examinations of technology risk management, including evidence management, documentation, and rapid response capabilities.",
+      "controlType": "detective",
+      "owner": "Compliance / CISO",
+      "frequency": "Continuous",
+      "keyActivities": [
+        "Maintain current evidence for all SC-GL/6-2023 requirements",
+        "Conduct periodic self-assessments against SC guidelines",
+        "Prepare examination response team and protocols",
+        "Track and address prior examination findings"
+      ],
+      "maturity": { "basic": "Scramble to prepare for examinations", "mature": "Standing evidence library with regular updates", "advanced": "Continuous compliance monitoring with regulatory dashboard" }
+    },
+    {
+      "slug": "penetration-testing-programme",
+      "name": "Penetration Testing Programme",
+      "domain": "technology-audit",
+      "description": "Conduct regular penetration testing of capital market systems by qualified independent testers, with scope covering trading systems, client portals, and market connectivity.",
+      "controlType": "detective",
+      "owner": "CISO",
+      "frequency": "Annual",
+      "keyActivities": [
+        "Engage qualified independent penetration testers annually",
+        "Define scope covering critical market systems and client-facing applications",
+        "Remediate critical and high findings within defined SLAs",
+        "Report penetration testing results to board audit committee"
+      ],
+      "maturity": { "basic": "No regular penetration testing", "mature": "Annual testing with qualified testers", "advanced": "Continuous red team exercises with purple team collaboration" }
+    },
+    {
+      "slug": "algorithmic-trading-governance",
+      "name": "Algorithmic Trading Governance",
+      "domain": "emerging-technology",
+      "description": "Establish governance framework for algorithmic and automated trading systems, including approval processes, testing requirements, and ongoing monitoring.",
+      "controlType": "preventive",
+      "owner": "Head of Trading / Compliance",
+      "frequency": "Per-algorithm and annual review",
+      "keyActivities": [
+        "Establish approval process for new algorithms before production deployment",
+        "Define testing requirements including backtesting and simulation",
+        "Monitor algorithm performance and risk metrics in production",
+        "Review and re-approve algorithms periodically"
+      ],
+      "maturity": { "basic": "No formal algorithm governance", "mature": "Documented approval and testing process", "advanced": "Automated algorithm monitoring with anomaly detection" }
+    },
+    {
+      "slug": "ai-ml-risk-management",
+      "name": "AI/ML Risk Management",
+      "domain": "emerging-technology",
+      "description": "Assess and manage risks associated with the use of artificial intelligence and machine learning in capital market operations, including model risk, bias, and explainability.",
+      "controlType": "preventive",
+      "owner": "CRO / Head of Technology",
+      "frequency": "Per-deployment and annual",
+      "keyActivities": [
+        "Conduct model risk assessment for AI/ML applications in trading and compliance",
+        "Implement model validation and testing procedures",
+        "Assess and mitigate algorithmic bias in client-facing applications",
+        "Establish explainability requirements for AI/ML-driven decisions"
+      ],
+      "maturity": { "basic": "No AI/ML risk framework", "mature": "Model risk management for AI applications", "advanced": "Comprehensive AI governance with continuous monitoring" }
+    },
+    {
+      "slug": "dlt-digital-asset-controls",
+      "name": "DLT & Digital Asset Controls",
+      "domain": "emerging-technology",
+      "description": "Implement risk management controls for distributed ledger technology and digital asset activities, including smart contract security, wallet management, and regulatory compliance.",
+      "controlType": "preventive",
+      "owner": "CTO / Compliance",
+      "frequency": "Per-deployment and annual",
+      "keyActivities": [
+        "Conduct security assessments for smart contracts before deployment",
+        "Implement secure key management and wallet controls for digital assets",
+        "Ensure regulatory compliance for digital asset activities under SC guidelines",
+        "Monitor DLT infrastructure for security and performance"
+      ],
+      "maturity": { "basic": "No DLT-specific controls", "mature": "Security assessments and key management procedures", "advanced": "Formal verification of smart contracts with continuous monitoring" }
+    }
+  ]
+}

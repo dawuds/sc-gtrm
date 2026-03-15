@@ -1,0 +1,10 @@
+{
+  "sourceType": "constructed-indicative",
+  "domain": "data-management",
+  "domainName": "Data Management",
+  "requirements": [
+    { "id": "DM-R1", "requirement": "Establish a data governance framework with classification, quality standards, and accountability for market and client data", "rationale": "Provides foundation for data integrity and protection in capital market operations", "owner": "CDO / Compliance", "frequency": "Annual", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["data-governance-framework"] },
+    { "id": "DM-R2", "requirement": "Implement controls to ensure integrity and timeliness of market data used in trading and reporting", "rationale": "Market data integrity is fundamental to fair and orderly market operations", "owner": "Head of Market Operations", "frequency": "Continuous", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["market-data-integrity"] },
+    { "id": "DM-R3", "requirement": "Implement comprehensive data protection controls for client information including encryption and DLP", "rationale": "Protects client data in compliance with PDPA and SC requirements", "owner": "DPO / CISO", "frequency": "Continuous", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["client-data-protection"] }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "governance-oversight": {
+    "name": "Governance & Oversight",
+    "description": "Controls for establishing technology risk governance structures, board and senior management accountability, technology risk appetite, and roles and responsibilities for capital market entities regulated by the Securities Commission Malaysia.",
+    "controlCount": 4
+  },
+  "cybersecurity": {
+    "name": "Cybersecurity",
+    "description": "Controls for protecting capital market systems and data from cyber threats, including threat management, security operations, vulnerability management, and security architecture for market operators and intermediaries.",
+    "controlCount": 4
+  },
+  "technology-risk-assessment": {
+    "name": "Technology Risk Assessment",
+    "description": "Controls for systematic identification, analysis, evaluation, and treatment of technology risks specific to capital market operations, including algorithmic trading risks and market infrastructure dependencies.",
+    "controlCount": 3
+  },
+  "cloud-services": {
+    "name": "Cloud Services",
+    "description": "Controls for cloud service adoption, risk assessment, data residency, and governance specific to capital market intermediaries, covering market data and client information protection in cloud environments.",
+    "controlCount": 3
+  },
+  "third-party-risk": {
+    "name": "Third-Party Risk",
+    "description": "Controls for managing technology outsourcing and third-party service provider risks for capital market entities, including vendor assessment, monitoring, and contractual requirements aligned with SC guidelines.",
+    "controlCount": 4
+  },
+  "data-management": {
+    "name": "Data Management",
+    "description": "Controls for ensuring integrity, confidentiality, and availability of market data and client information, including data governance frameworks, classification, and protection measures for capital market operations.",
+    "controlCount": 3
+  },
+  "business-continuity": {
+    "name": "Business Continuity",
+    "description": "Controls for maintaining continuity of capital market operations, trading systems, and settlement processes during technology disruptions, including BCM and DR requirements specific to market infrastructure.",
+    "controlCount": 4
+  },
+  "incident-management": {
+    "name": "Incident Management",
+    "description": "Controls for detecting, responding to, and recovering from technology incidents affecting capital market operations, including mandatory notification to SC and coordination with market participants.",
+    "controlCount": 4
+  },
+  "technology-audit": {
+    "name": "Technology Audit",
+    "description": "Controls for independent assessment and assurance of technology risk management effectiveness, including internal audit capabilities, external assessments, and regulatory examination readiness for SC-regulated entities.",
+    "controlCount": 3
+  },
+  "emerging-technology": {
+    "name": "Emerging Technology",
+    "description": "Controls for assessing and managing risks associated with emerging technologies in capital markets, including algorithmic trading, artificial intelligence, distributed ledger technology, and digital assets.",
+    "controlCount": 3
+  }
+}

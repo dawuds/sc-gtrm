@@ -1,0 +1,21 @@
+{
+  "sourceType": "constructed-indicative",
+  "frameworkName": "NIST Cybersecurity Framework 2.0",
+  "frameworkReference": "NIST CSF 2.0 (February 2024)",
+  "description": "Mapping of SC-GL/6-2023 controls to NIST CSF 2.0 functions and categories, showing alignment between Malaysian capital market technology risk guidelines and the international cybersecurity baseline.",
+  "lastUpdated": "2026-03-16",
+  "mappings": [
+    { "controlSlug": "technology-risk-governance-framework", "controlName": "Technology Risk Governance Framework", "nistFunction": "GOVERN", "nistCategory": "GV.OC, GV.RM", "nistName": "Organizational Context & Risk Management Strategy", "similarity": "high", "notes": "SC governance requirements align with NIST GOVERN function for organizational risk management" },
+    { "controlSlug": "ciso-designation", "controlName": "CISO Designation & Authority", "nistFunction": "GOVERN", "nistCategory": "GV.RR", "nistName": "Roles, Responsibilities, and Authorities", "similarity": "high", "notes": "CISO designation maps to NIST roles and responsibilities category" },
+    { "controlSlug": "technology-risk-assessment-framework", "controlName": "Technology Risk Assessment Framework", "nistFunction": "IDENTIFY", "nistCategory": "ID.RA", "nistName": "Risk Assessment", "similarity": "high", "notes": "Directly maps to NIST risk assessment requirements" },
+    { "controlSlug": "cyber-threat-management", "controlName": "Cyber Threat Management", "nistFunction": "IDENTIFY", "nistCategory": "ID.RA-02", "nistName": "Threat Intelligence", "similarity": "high", "notes": "Threat intelligence and hunting map to NIST threat identification" },
+    { "controlSlug": "network-security-architecture", "controlName": "Network Security Architecture", "nistFunction": "PROTECT", "nistCategory": "PR.IR", "nistName": "Infrastructure Resilience", "similarity": "high", "notes": "Network security controls map to NIST infrastructure protection" },
+    { "controlSlug": "client-data-protection", "controlName": "Client Data Protection", "nistFunction": "PROTECT", "nistCategory": "PR.DS", "nistName": "Data Security", "similarity": "high", "notes": "Data protection maps to NIST data security category" },
+    { "controlSlug": "security-operations-centre", "controlName": "Security Operations Centre", "nistFunction": "DETECT", "nistCategory": "DE.CM, DE.AE", "nistName": "Continuous Monitoring & Adverse Event Analysis", "similarity": "high", "notes": "SOC capabilities map to NIST detection function" },
+    { "controlSlug": "incident-response-plan", "controlName": "Incident Response Plan", "nistFunction": "RESPOND", "nistCategory": "RS.MA, RS.AN", "nistName": "Incident Management & Analysis", "similarity": "high", "notes": "Incident response maps to NIST respond function" },
+    { "controlSlug": "bcm-programme", "controlName": "BCM Programme", "nistFunction": "RECOVER", "nistCategory": "RC.RP", "nistName": "Recovery Planning", "similarity": "high", "notes": "BCP/DR maps to NIST recover function" },
+    { "controlSlug": "third-party-risk-assessment", "controlName": "Third-Party Risk Assessment", "nistFunction": "GOVERN", "nistCategory": "GV.SC", "nistName": "Supply Chain Risk Management", "similarity": "high", "notes": "Third-party risk maps to NIST supply chain risk management" },
+    { "controlSlug": "vulnerability-management-programme", "controlName": "Vulnerability Management Programme", "nistFunction": "PROTECT", "nistCategory": "PR.PS", "nistName": "Platform Security", "similarity": "high", "notes": "Vulnerability management maps to NIST platform security" },
+    { "controlSlug": "data-governance-framework", "controlName": "Data Governance Framework", "nistFunction": "PROTECT", "nistCategory": "PR.DS", "nistName": "Data Security", "similarity": "medium", "notes": "Data governance provides broader framework supporting NIST data security" }
+  ]
+}

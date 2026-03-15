@@ -1,0 +1,11 @@
+{
+  "sourceType": "constructed-indicative",
+  "domain": "incident-management",
+  "domainName": "Incident Management",
+  "requirements": [
+    { "id": "IM-R1", "requirement": "Develop and maintain a technology incident response plan with market operation-specific procedures", "rationale": "Ensures structured response to incidents affecting capital market operations", "owner": "CISO / Incident Manager", "frequency": "Annual review", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["incident-response-plan"] },
+    { "id": "IM-R2", "requirement": "Ensure timely notification to SC of significant technology incidents affecting market operations", "rationale": "Meets regulatory notification obligations under SC-GL/6-2023", "owner": "Compliance / CISO", "frequency": "Per-incident", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["sc-incident-notification"] },
+    { "id": "IM-R3", "requirement": "Coordinate incident response with market participants and regulators for incidents affecting market operations", "rationale": "Limits systemic impact through coordinated response", "owner": "CISO / Head of Operations", "frequency": "Per-incident", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["cyber-incident-coordination"] },
+    { "id": "IM-R4", "requirement": "Conduct post-incident reviews with root cause analysis and tracked improvement actions", "rationale": "Drives continuous improvement in incident response capabilities", "owner": "Incident Manager", "frequency": "Per-incident", "priority": "Medium", "sourceType": "constructed-indicative", "controlSlugs": ["incident-post-mortem"] }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "sourceType": "constructed-indicative",
+  "domain": "business-continuity",
+  "domainName": "Business Continuity",
+  "requirements": [
+    { "id": "BC-R1", "requirement": "Establish BCM programme covering trading, clearing, settlement, and custody operations", "rationale": "Ensures capital market operations can continue during disruptions", "owner": "BCM Manager / COO", "frequency": "Annual", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["bcm-programme"] },
+    { "id": "BC-R2", "requirement": "Ensure trading systems have redundancy and automatic failover capabilities", "rationale": "Maintains market access during system failures", "owner": "Head of Trading Technology", "frequency": "Continuous", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["trading-system-resilience"] },
+    { "id": "BC-R3", "requirement": "Conduct annual DR testing including participation in industry-wide exercises", "rationale": "Validates recovery capabilities and industry coordination", "owner": "IT Operations / BCM Manager", "frequency": "Annual", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["dr-testing-programme"] },
+    { "id": "BC-R4", "requirement": "Define alternative settlement procedures and coordination protocols with clearing and depository", "rationale": "Ensures settlement can continue through manual procedures if systems fail", "owner": "Head of Operations", "frequency": "Annual", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["settlement-continuity"] }
+  ]
+}

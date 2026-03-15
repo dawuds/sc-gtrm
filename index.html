@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC-GTRM Explorer</title>
+  <meta name="description" content="Interactive browser for Securities Commission Malaysia Guidelines on Technology Risk Management (SC-GL/6-2023) — explore controls, risk management, evidence guidance, and cross-references.">
+  <meta property="og:title" content="SC Malaysia Technology Risk Management Guidelines">
+  <meta property="og:description" content="SC-GL/6-2023 compliance reference with 35 controls across 10 domains, risk management, and cross-references to BNM RMiT and NIST CSF">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="header-brand" title="Home">
+        <h1>SC-GTRM Explorer</h1>
+        <span class="header-subtitle">Guidelines on Technology Risk Management (SC-GL/6-2023)</span>
+      </a>
+      <div class="header-search">
+        <input type="text" id="search-input" aria-label="Search compliance data" placeholder="Search controls, risks, evidence..." autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <nav class="nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-link active" data-view="overview">Overview</a>
+      <a href="#controls" class="nav-link" data-view="controls">Controls</a>
+      <a href="#risk" class="nav-link" data-view="risk">Risk Management</a>
+      <a href="#evidence" class="nav-link" data-view="evidence">Evidence</a>
+      <a href="#cross-references" class="nav-link" data-view="cross-references">Cross-References</a>
+      <a href="#requirements" class="nav-link" data-view="requirements">Requirements</a>
+
+      <div class="nav-actions">
+        <button onclick="exportToPDF()" class="btn-export">PDF</button>
+        <button onclick="exportToCSV()" class="btn-export">CSV</button>
+      </div>
+    </div>
+  </nav>
+  <div id="app">
+    <noscript>This application requires JavaScript to run. Please enable JavaScript in your browser settings.</noscript>
+    <div class="loading">
+      <div class="spinner"></div>
+      <span>Loading SC-GTRM data...</span>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

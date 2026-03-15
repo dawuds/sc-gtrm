@@ -1,0 +1,11 @@
+{
+  "sourceType": "constructed-indicative",
+  "domain": "cybersecurity",
+  "domainName": "Cybersecurity",
+  "requirements": [
+    { "id": "CS-R1", "requirement": "Implement threat intelligence and threat hunting capabilities for capital market-specific threats", "rationale": "Proactive threat management reduces risk of successful cyber attacks on market infrastructure", "owner": "CISO", "frequency": "Continuous", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["cyber-threat-management"] },
+    { "id": "CS-R2", "requirement": "Establish security monitoring with 24/7 coverage for critical market infrastructure", "rationale": "Ensures continuous surveillance of critical trading and settlement systems", "owner": "CISO / SOC Manager", "frequency": "Continuous", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["security-operations-centre"] },
+    { "id": "CS-R3", "requirement": "Implement systematic vulnerability management with risk-based patching SLAs", "rationale": "Reduces attack surface for capital market systems", "owner": "IT Security", "frequency": "Continuous", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["vulnerability-management-programme"] },
+    { "id": "CS-R4", "requirement": "Design and maintain secure network architecture with segmentation for trading and market data networks", "rationale": "Protects market infrastructure from lateral movement and unauthorised access", "owner": "Network Security / CTO", "frequency": "Annual review", "priority": "High", "sourceType": "constructed-indicative", "controlSlugs": ["network-security-architecture"] }
+  ]
+}
