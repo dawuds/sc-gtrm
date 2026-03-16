@@ -170,7 +170,7 @@ function renderOverview(el) {
     <div class="control-grid">
       ${Object.entries(state.domains).map(([slug, dom]) => {
         const count = (grouped[slug] || []).length;
-        return `<div class="control-card domain-${slug}" onclick="location.hash='#controls?domain=${slug}'" style="cursor:pointer;">
+        return `<div class="control-card domain-${esc(slug)}" onclick="location.hash='#controls?domain=${esc(slug)}'" style="cursor:pointer;">
           <div class="control-id">${esc(slug)}</div>
           <h3 class="control-card-title">${esc(dom.name)}</h3>
           <p class="control-card-desc">${esc(dom.description).slice(0, 120)}${dom.description.length > 120 ? '...' : ''}</p>
@@ -203,14 +203,14 @@ function renderControls(el) {
     </p>
     <div class="domain-filter">
       <button class="domain-pill active" data-domain="all">All</button>
-      ${domainEntries.map(([slug, dom]) => `<button class="domain-pill" data-domain="${slug}">${esc(dom.name)}</button>`).join('')}
+      ${domainEntries.map(([slug, dom]) => `<button class="domain-pill" data-domain="${esc(slug)}">${esc(dom.name)}</button>`).join('')}
     </div>
     <div id="controls-list">
       ${domainEntries.map(([slug, dom]) => {
         const ctrls = grouped[slug] || [];
         if (!ctrls.length) return '';
         return `
-          <div class="accordion-item open domain-section" data-domain="${slug}">
+          <div class="accordion-item open domain-section" data-domain="${esc(slug)}">
             <button class="accordion-trigger" data-accordion>
               <span>${esc(dom.name)} (${ctrls.length})</span>
               <span class="chevron">&#9654;</span>
@@ -630,7 +630,7 @@ function renderSearch(el, query) {
             <span class="provision-title">${esc(c.name)}</span>
           </a>`;
         }
-        return `<div class="control-card" style="margin-bottom:0.5rem;cursor:pointer;" onclick="location.hash='#controls?domain=${r.slug}'">
+        return `<div class="control-card" style="margin-bottom:0.5rem;cursor:pointer;" onclick="location.hash='#controls?domain=${esc(r.slug)}'">
           <h3 class="control-card-title">${esc(r.item.name)}</h3>
           <p class="control-card-desc">${esc(r.item.description).slice(0, 120)}...</p>
         </div>`;
