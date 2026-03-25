@@ -1,5 +1,7 @@
 # sc-gtrm — SC Malaysia Technology Risk Management Guidelines
 
+**Last updated:** 2026-03-25
+
 ## What This Is
 Structured knowledge base for Securities Commission Malaysia's Guidelines on Technology Risk Management (GTRM) for capital market intermediaries. SPA explorer with JSON data layers.
 
@@ -25,7 +27,8 @@ Structured knowledge base for Securities Commission Malaysia's Guidelines on Tec
 - Technology audit requirements include independent assessment obligations
 
 ## Related Repos
-- `RMIT/` — BNM equivalent for banking (comparison mappings available)
-- `nacsa/` — NACSA NCII requirements (capital markets may be designated)
-- `nist/` — NIST CSF 2.0 baseline
-- `bcm-dr/` — BCM requirements referenced by SC-GTRM
+
+- [RMIT](https://github.com/dawuds/RMIT) — BNM equivalent for banking (comparison mappings available)
+- [nacsa](https://github.com/dawuds/nacsa) — NACSA NCII requirements (capital markets may be designated)
+- [nist](https://github.com/dawuds/nist) — NIST CSF 2.0 baseline
+- [bcm-dr](https://github.com/dawuds/bcm-dr) — BCM requirements referenced by SC-GTRM
