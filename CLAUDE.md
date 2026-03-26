@@ -1,12 +1,15 @@
 # sc-gtrm — SC Malaysia Technology Risk Management Guidelines
 
-**Last updated:** 2026-03-25
+**Last updated:** 2026-03-26
 
 ## What This Is
 Structured knowledge base for Securities Commission Malaysia's Guidelines on Technology Risk Management (GTRM) for capital market intermediaries. SPA explorer with JSON data layers. **Tier 1 Focus Area** in the GRC portfolio.
 
 ## Portfolio Role
 One of 5 Tier 1 focus areas. Complete SPA with 35 controls across 10 domains. Needs templates, validate.js, and deeper integration with other Tier 1 repos (NACSA, PDPA cross-references).
+
+## Quick Start
+Open `index.html` in a browser. Run `node validate.js` to check data integrity.
 
 ## Architecture
 - **SPA**: `index.html` + `app.js` + `style.css` (vanilla JS, no build step)

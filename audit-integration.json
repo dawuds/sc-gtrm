@@ -1,0 +1,282 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-26",
+    "source": "SC-GL/6-2023 — Guidelines on Technology Risk Management",
+    "techAuditDomain": "SC-GTRM",
+    "techAuditPath": "Tech-Audit/SC-GTRM/",
+    "description": "Maps all 35 SC-GTRM controls to Tech-Audit/SC-GTRM audit procedures with 1:1 correspondence. Each procedure tests the effectiveness of its corresponding control."
+  },
+  "domainMappings": [
+    {
+      "domainSlug": "governance-oversight",
+      "domainName": "Governance & Oversight",
+      "controlMappings": [
+        {
+          "controlSlug": "technology-risk-governance-framework",
+          "controlName": "Technology Risk Governance Framework",
+          "procedureRefs": ["GOV-01"],
+          "scGl6Ref": "Section 2.1 — Board Responsibility"
+        },
+        {
+          "controlSlug": "ciso-designation",
+          "controlName": "CISO Designation & Authority",
+          "procedureRefs": ["GOV-02"],
+          "scGl6Ref": "Section 2.2 — CISO/CTO Appointment"
+        },
+        {
+          "controlSlug": "technology-risk-policy-suite",
+          "controlName": "Technology Risk Policy Suite",
+          "procedureRefs": ["GOV-03"],
+          "scGl6Ref": "Section 2.3 — Risk Governance Structure"
+        },
+        {
+          "controlSlug": "technology-risk-reporting",
+          "controlName": "Technology Risk Reporting",
+          "procedureRefs": ["GOV-04"],
+          "scGl6Ref": "Section 2.4 — Regulatory Reporting"
+        }
+      ]
+    },
+    {
+      "domainSlug": "cybersecurity",
+      "domainName": "Cybersecurity",
+      "controlMappings": [
+        {
+          "controlSlug": "cyber-threat-management",
+          "controlName": "Cyber Threat Management",
+          "procedureRefs": ["CYB-01"],
+          "scGl6Ref": "Section 3.1 — Cybersecurity Framework"
+        },
+        {
+          "controlSlug": "security-operations-centre",
+          "controlName": "Security Operations Centre",
+          "procedureRefs": ["CYB-02"],
+          "scGl6Ref": "Section 3.2 — Security Operations Centre"
+        },
+        {
+          "controlSlug": "vulnerability-management-programme",
+          "controlName": "Vulnerability Management Programme",
+          "procedureRefs": ["CYB-03"],
+          "scGl6Ref": "Section 3.3 — Vulnerability Management"
+        },
+        {
+          "controlSlug": "network-security-architecture",
+          "controlName": "Network Security Architecture",
+          "procedureRefs": ["CYB-04"],
+          "scGl6Ref": "Section 3.4 — Network Security"
+        }
+      ]
+    },
+    {
+      "domainSlug": "technology-risk-assessment",
+      "domainName": "Technology Risk Assessment",
+      "controlMappings": [
+        {
+          "controlSlug": "technology-risk-assessment-framework",
+          "controlName": "Technology Risk Assessment Framework",
+          "procedureRefs": ["TRA-01"],
+          "scGl6Ref": "Section 4.1 — Technology Risk Assessment"
+        },
+        {
+          "controlSlug": "algorithmic-trading-risk-controls",
+          "controlName": "Algorithmic Trading Risk Controls",
+          "procedureRefs": ["TRA-02"],
+          "scGl6Ref": "Section 4.2 — Algorithmic Trading Controls"
+        },
+        {
+          "controlSlug": "technology-change-risk-assessment",
+          "controlName": "Technology Change Risk Assessment",
+          "procedureRefs": ["TRA-03"],
+          "scGl6Ref": "Section 4.3 — Change Risk Assessment"
+        }
+      ]
+    },
+    {
+      "domainSlug": "cloud-services",
+      "domainName": "Cloud Services",
+      "controlMappings": [
+        {
+          "controlSlug": "cloud-risk-assessment",
+          "controlName": "Cloud Risk Assessment",
+          "procedureRefs": ["CLD-01"],
+          "scGl6Ref": "Section 5.1 — Cloud Risk Assessment"
+        },
+        {
+          "controlSlug": "cloud-data-governance",
+          "controlName": "Cloud Data Governance",
+          "procedureRefs": ["CLD-02"],
+          "scGl6Ref": "Section 5.2 — Cloud Data Governance"
+        },
+        {
+          "controlSlug": "cloud-exit-strategy",
+          "controlName": "Cloud Exit Strategy",
+          "procedureRefs": ["CLD-03"],
+          "scGl6Ref": "Section 5.3 — Cloud Exit Strategy"
+        }
+      ]
+    },
+    {
+      "domainSlug": "third-party-risk",
+      "domainName": "Third-Party Risk",
+      "controlMappings": [
+        {
+          "controlSlug": "third-party-risk-assessment",
+          "controlName": "Third-Party Risk Assessment",
+          "procedureRefs": ["TPR-01"],
+          "scGl6Ref": "Section 6.1 — Vendor Risk Assessment"
+        },
+        {
+          "controlSlug": "outsourcing-governance",
+          "controlName": "Outsourcing Governance",
+          "procedureRefs": ["TPR-02"],
+          "scGl6Ref": "Section 6.2 — Outsourcing Governance"
+        },
+        {
+          "controlSlug": "vendor-performance-monitoring",
+          "controlName": "Vendor Performance Monitoring",
+          "procedureRefs": ["TPR-03"],
+          "scGl6Ref": "Section 6.3 — Performance Monitoring"
+        },
+        {
+          "controlSlug": "fourth-party-oversight",
+          "controlName": "Fourth-Party Oversight",
+          "procedureRefs": ["TPR-04"],
+          "scGl6Ref": "Section 6.4 — Fourth-Party Risk"
+        }
+      ]
+    },
+    {
+      "domainSlug": "data-management",
+      "domainName": "Data Management",
+      "controlMappings": [
+        {
+          "controlSlug": "data-governance-framework",
+          "controlName": "Data Governance Framework",
+          "procedureRefs": ["DAT-01"],
+          "scGl6Ref": "Section 7.1 — Data Governance Framework"
+        },
+        {
+          "controlSlug": "market-data-integrity",
+          "controlName": "Market Data Integrity",
+          "procedureRefs": ["DAT-02"],
+          "scGl6Ref": "Section 7.2 — Market Data Integrity"
+        },
+        {
+          "controlSlug": "client-data-protection",
+          "controlName": "Client Data Protection",
+          "procedureRefs": ["DAT-03"],
+          "scGl6Ref": "Section 7.3 — Client Data Protection"
+        }
+      ]
+    },
+    {
+      "domainSlug": "business-continuity",
+      "domainName": "Business Continuity",
+      "controlMappings": [
+        {
+          "controlSlug": "bcm-programme",
+          "controlName": "BCM Programme for Market Operations",
+          "procedureRefs": ["BCM-01"],
+          "scGl6Ref": "Section 8.1 — BCM Programme"
+        },
+        {
+          "controlSlug": "trading-system-resilience",
+          "controlName": "Trading System Resilience",
+          "procedureRefs": ["BCM-02"],
+          "scGl6Ref": "Section 8.2 — Trading System Resilience"
+        },
+        {
+          "controlSlug": "dr-testing-programme",
+          "controlName": "DR Testing Programme",
+          "procedureRefs": ["BCM-03"],
+          "scGl6Ref": "Section 8.3 — DR Testing"
+        },
+        {
+          "controlSlug": "settlement-continuity",
+          "controlName": "Settlement Continuity",
+          "procedureRefs": ["BCM-04"],
+          "scGl6Ref": "Section 8.4 — Settlement Continuity"
+        }
+      ]
+    },
+    {
+      "domainSlug": "incident-management",
+      "domainName": "Incident Management",
+      "controlMappings": [
+        {
+          "controlSlug": "incident-response-plan",
+          "controlName": "Incident Response Plan",
+          "procedureRefs": ["INC-01"],
+          "scGl6Ref": "Section 9.1 — Incident Response Plan"
+        },
+        {
+          "controlSlug": "sc-incident-notification",
+          "controlName": "SC Incident Notification",
+          "procedureRefs": ["INC-02"],
+          "scGl6Ref": "Section 9.2 — SC Notification"
+        },
+        {
+          "controlSlug": "cyber-incident-coordination",
+          "controlName": "Cyber Incident Coordination",
+          "procedureRefs": ["INC-03"],
+          "scGl6Ref": "Section 9.3 — Coordination"
+        },
+        {
+          "controlSlug": "incident-post-mortem",
+          "controlName": "Incident Post-Mortem & Lessons Learned",
+          "procedureRefs": ["INC-04"],
+          "scGl6Ref": "Section 9.4 — Post-Incident Review"
+        }
+      ]
+    },
+    {
+      "domainSlug": "technology-audit",
+      "domainName": "Technology Audit",
+      "controlMappings": [
+        {
+          "controlSlug": "technology-audit-programme",
+          "controlName": "Technology Audit Programme",
+          "procedureRefs": ["AUD-01"],
+          "scGl6Ref": "Section 10.1 — Technology Audit Programme"
+        },
+        {
+          "controlSlug": "regulatory-examination-readiness",
+          "controlName": "Regulatory Examination Readiness",
+          "procedureRefs": ["AUD-02"],
+          "scGl6Ref": "Section 10.2 — Regulatory Readiness"
+        },
+        {
+          "controlSlug": "penetration-testing-programme",
+          "controlName": "Penetration Testing Programme",
+          "procedureRefs": ["AUD-03"],
+          "scGl6Ref": "Section 10.3 — Penetration Testing"
+        }
+      ]
+    },
+    {
+      "domainSlug": "emerging-technology",
+      "domainName": "Emerging Technology",
+      "controlMappings": [
+        {
+          "controlSlug": "algorithmic-trading-governance",
+          "controlName": "Algorithmic Trading Governance",
+          "procedureRefs": ["EMT-01"],
+          "scGl6Ref": "Section 11.1 — Algorithmic Trading Governance"
+        },
+        {
+          "controlSlug": "ai-ml-risk-management",
+          "controlName": "AI/ML Risk Management",
+          "procedureRefs": ["EMT-02"],
+          "scGl6Ref": "Section 11.2 — AI/ML Risk Management"
+        },
+        {
+          "controlSlug": "dlt-digital-asset-controls",
+          "controlName": "DLT & Digital Asset Controls",
+          "procedureRefs": ["EMT-03"],
+          "scGl6Ref": "Section 11.3 — DLT and Digital Asset Controls"
+        }
+      ]
+    }
+  ]
+}
