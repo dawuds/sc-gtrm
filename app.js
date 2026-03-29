@@ -8,6 +8,8 @@ const state = {
   methodology: null,
   requirements: {},
   crossRefs: {},
+  testingProcedures: null,
+  evidenceMap: null,
   route: { view: 'overview' },
 };
 
@@ -39,6 +41,7 @@ function parseRoute() {
   if (hash === 'evidence') return { view: 'evidence' };
   if (hash === 'cross-references') return { view: 'cross-references' };
   if (hash === 'requirements') return { view: 'requirements' };
+  if (hash === 'workprogram') return { view: 'workprogram' };
   return { view: 'overview' };
 }
 
@@ -79,6 +82,7 @@ function render() {
     case 'evidence': renderEvidence(app); break;
     case 'cross-references': renderCrossReferences(app); break;
     case 'requirements': renderRequirements(app); break;
+    case 'workprogram': renderWorkProgram(app); break;
     case 'search': renderSearch(app, state.route.query); break;
     default: renderOverview(app);
   }
@@ -90,7 +94,8 @@ function updateNav() {
     const view = el.dataset.view;
     el.classList.toggle('active', view === state.route.view ||
       (view === 'overview' && state.route.view === 'overview') ||
-      (view === 'controls' && state.route.view === 'control-detail')
+      (view === 'controls' && state.route.view === 'control-detail') ||
+      (view === 'workprogram' && state.route.view === 'workprogram')
     );
   });
 }
@@ -635,6 +640,398 @@ function renderSearch(el, query) {
           <p class="control-card-desc">${esc(r.item.description).slice(0, 120)}...</p>
         </div>`;
       }).join('')}`;
+}
+
+/* ===== WORK PROGRAM ===== */
+async function renderWorkProgram(el) {
+  if (!state.testingProcedures) {
+    const tp = await fetchJSON('workprogram/testing-procedures.json');
+    state.testingProcedures = tp ? (tp.testingProcedures || []) : [];
+  }
+  if (!state.evidenceMap) {
+    const em = await fetchJSON('workprogram/evidence-map.json');
+    state.evidenceMap = em ? (em.evidenceItems || []) : [];
+  }
+
+  const procCount = state.testingProcedures.length;
+  const evCount = state.evidenceMap.length;
+  const domainCount = Object.keys(state.domains).length;
+
+  el.innerHTML = `
+    <nav class="breadcrumbs">
+      <a href="#">Home</a><span class="sep">/</span>
+      <span class="current">Work Program</span>
+    </nav>
+    <h2 style="font-size:1.25rem;margin-bottom:0.5rem">Assessor Work Program</h2>
+    <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:1.5rem">
+      SC-GL/6-2023 control review work program for capital market intermediary assessments.
+    </p>
+    <div class="stats-banner">
+      <div class="stat-card"><div class="stat-number">${procCount}</div><div class="stat-label">Test Procedures</div></div>
+      <div class="stat-card"><div class="stat-number">${evCount}</div><div class="stat-label">Evidence Items</div></div>
+      <div class="stat-card"><div class="stat-number">${domainCount}</div><div class="stat-label">Domains</div></div>
+      <div class="stat-card"><div class="stat-number">4</div><div class="stat-label">Maturity Levels</div></div>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="wp-testing">Testing Procedures</button>
+      <button class="tab-btn" data-tab="wp-evidence">Evidence Map</button>
+      <button class="tab-btn" data-tab="wp-request">Document Request</button>
+      <button class="tab-btn" data-tab="wp-scoring">Maturity Scoring</button>
+      <button class="tab-btn" data-tab="wp-findings">Findings Template</button>
+    </div>
+    <div class="tab-panel active" data-panel="wp-testing">${renderWPTesting()}</div>
+    <div class="tab-panel" data-panel="wp-evidence">${renderWPEvidence()}</div>
+    <div class="tab-panel" data-panel="wp-request">${renderWPDocumentRequest()}</div>
+    <div class="tab-panel" data-panel="wp-scoring">${renderWPScoring()}</div>
+    <div class="tab-panel" data-panel="wp-findings">${renderWPFindings()}</div>`;
+}
+
+function wpGroupByDomain(items, domainKey) {
+  const grouped = {};
+  for (const item of items) {
+    const d = item[domainKey] || 'uncategorized';
+    if (!grouped[d]) grouped[d] = [];
+    grouped[d].push(item);
+  }
+  return grouped;
+}
+
+/* --- Tab 1: Testing Procedures --- */
+function renderWPTesting() {
+  const grouped = wpGroupByDomain(state.testingProcedures, 'domain');
+  const domainEntries = Object.entries(state.domains);
+  let html = '';
+
+  domainEntries.forEach(([slug, dom]) => {
+    const procs = grouped[slug];
+    if (!procs || !procs.length) return;
+    html += `
+      <div class="accordion-item open domain-${esc(slug)}" style="margin-bottom:0.75rem;">
+        <button class="accordion-trigger" data-accordion>
+          <span>${esc(dom.name)} (${procs.length} procedures)</span>
+          <span class="chevron">&#9654;</span>
+        </button>
+        <div class="accordion-content">
+          ${procs.map(proc => renderWPProcedure(proc, dom)).join('')}
+        </div>
+      </div>`;
+  });
+
+  return html;
+}
+
+function renderWPProcedure(proc, dom) {
+  const methodBadge = (m) => `<span class="wp-method-badge wp-method-${esc(m)}">${esc(m)}</span>`;
+
+  return `
+    <div style="padding:1rem 0;border-bottom:1px solid var(--border);">
+      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap;">
+        <strong style="font-size:var(--font-size-base);">${esc(proc.controlName)}</strong>
+        <span class="badge badge-domain">${esc(dom.name)}</span>
+      </div>
+      <p style="font-size:var(--font-size-sm);color:var(--text-secondary);margin-bottom:1rem;">${esc(proc.objective)}</p>
+
+      <table class="wp-test-table">
+        <thead>
+          <tr><th>#</th><th>Action</th><th>Method</th><th>Evidence Ref</th></tr>
+        </thead>
+        <tbody>
+          ${proc.testSteps.map(ts => `
+            <tr>
+              <td>${ts.step}</td>
+              <td>${esc(ts.action)}</td>
+              <td>${methodBadge(ts.method)}</td>
+              <td><span class="wp-evidence-ref">${esc(ts.evidenceRef)}</span></td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+
+      <div style="font-size:var(--font-size-sm);color:var(--text-muted);margin:0.75rem 0 0.5rem;">
+        <strong>Sample Size:</strong> ${esc(proc.sampleSize)}
+      </div>
+
+      <div style="margin-bottom:0.75rem;">
+        <strong style="font-size:var(--font-size-xs);text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:0.25rem;">Key Questions</strong>
+        <ul class="wp-key-question">
+          ${proc.keyQuestions.map(q => `<li>${esc(q)}</li>`).join('')}
+        </ul>
+      </div>
+
+      <div style="margin-bottom:0.75rem;">
+        <strong style="font-size:var(--font-size-xs);text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:0.25rem;">Red Flags</strong>
+        <ul style="list-style:none;padding:0;margin:0;">
+          ${proc.redFlags.map(rf => `<li class="wp-red-flag">${esc(rf)}</li>`).join('')}
+        </ul>
+      </div>
+
+      <div class="maturity-grid">
+        <div class="maturity-card maturity-basic"><div class="maturity-label">Basic</div><p>${esc(proc.maturityIndicators.basic)}</p></div>
+        <div class="maturity-card maturity-mature"><div class="maturity-label">Mature</div><p>${esc(proc.maturityIndicators.mature)}</p></div>
+        <div class="maturity-card maturity-advanced"><div class="maturity-label">Advanced</div><p>${esc(proc.maturityIndicators.advanced)}</p></div>
+      </div>
+    </div>`;
+}
+
+/* --- Tab 2: Evidence Map --- */
+function renderWPEvidence() {
+  const grouped = wpGroupByDomain(state.evidenceMap, 'domain');
+  const domainEntries = Object.entries(state.domains);
+  let html = '';
+
+  domainEntries.forEach(([slug, dom]) => {
+    const items = grouped[slug];
+    if (!items || !items.length) return;
+    html += `
+      <div class="accordion-item open domain-${esc(slug)}" style="margin-bottom:0.75rem;">
+        <button class="accordion-trigger" data-accordion>
+          <span>${esc(dom.name)} (${items.length} items)</span>
+          <span class="chevron">&#9654;</span>
+        </button>
+        <div class="accordion-content">
+          ${items.map(item => renderWPEvidenceItem(item)).join('')}
+        </div>
+      </div>`;
+  });
+
+  return html;
+}
+
+function renderWPEvidenceItem(item) {
+  const priorityClass = item.requestPriority === 'essential' ? 'wp-priority-essential'
+    : item.requestPriority === 'important' ? 'wp-priority-important'
+    : 'wp-priority-supporting';
+
+  return `
+    <div class="evidence-item">
+      <div class="evidence-item-header">
+        <span class="evidence-id">${esc(item.id)}</span>
+        <span class="evidence-item-name">${esc(item.name)}</span>
+        <span class="badge ${priorityClass}">${esc(item.requestPriority)}</span>
+      </div>
+      <p class="evidence-item-desc">${esc(item.description)}</p>
+      <div class="evidence-detail-grid">
+        <div class="evidence-block evidence-good">
+          <div class="evidence-block-label">What Good Looks Like</div>
+          <ul>${(item.whatGoodLooksLike || []).map(w => `<li>${esc(w)}</li>`).join('')}</ul>
+        </div>
+        <div class="evidence-block evidence-gap">
+          <div class="evidence-block-label">Common Gaps</div>
+          <ul>${(item.commonGaps || []).map(g => `<li>${esc(g)}</li>`).join('')}</ul>
+        </div>
+      </div>
+      <div style="margin-bottom:0.5rem;">
+        <strong style="font-size:var(--font-size-xs);text-transform:uppercase;color:var(--text-muted);">Linked Controls</strong>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.25rem;">
+          ${(item.controlSlugs || []).map(cs => `<a href="#control/${esc(cs)}" class="provision-link" style="display:inline;padding:0.125rem 0.5rem;font-size:var(--font-size-xs);">${esc(cs)}</a>`).join('')}
+        </div>
+      </div>
+      <div class="evidence-item-meta">
+        <span>Format: <strong>${esc(item.format)}</strong></span>
+        <span>Retention: <strong>${esc(item.retentionPeriod)}</strong></span>
+        <span>Sources: <strong>${esc((item.suggestedSources || []).join(', '))}</strong></span>
+      </div>
+    </div>`;
+}
+
+/* --- Tab 3: Document Request --- */
+function renderWPDocumentRequest() {
+  const grouped = wpGroupByDomain(state.evidenceMap, 'domain');
+  const domainEntries = Object.entries(state.domains);
+  let html = `
+    <div class="disclaimer" style="margin-bottom:1.5rem;">
+      Send this list to the client team before the assessment. Remove N/A items based on scoping.
+    </div>`;
+
+  let itemNum = 0;
+  domainEntries.forEach(([slug, dom]) => {
+    const items = grouped[slug];
+    if (!items || !items.length) return;
+    html += `
+      <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">${esc(dom.name)}</h3>
+      <table class="wp-request-table">
+        <thead>
+          <tr><th>#</th><th>Document</th><th>Description</th><th>Priority</th><th>Suggested Source</th></tr>
+        </thead>
+        <tbody>
+          ${items.map(item => {
+            itemNum++;
+            const priorityClass = item.requestPriority === 'essential' ? 'wp-priority-essential'
+              : item.requestPriority === 'important' ? 'wp-priority-important'
+              : 'wp-priority-supporting';
+            return `<tr>
+              <td>${itemNum}</td>
+              <td><strong>${esc(item.name)}</strong></td>
+              <td>${esc(item.description).slice(0, 150)}${item.description.length > 150 ? '...' : ''}</td>
+              <td><span class="badge ${priorityClass}">${esc(item.requestPriority)}</span></td>
+              <td>${esc((item.suggestedSources || []).join(', '))}</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>`;
+  });
+
+  return html;
+}
+
+/* --- Tab 4: Maturity Scoring --- */
+function renderWPScoring() {
+  const grouped = controlsByDomain();
+  const domainEntries = Object.entries(state.domains);
+  let html = '';
+
+  domainEntries.forEach(([slug, dom]) => {
+    const ctrls = grouped[slug];
+    if (!ctrls || !ctrls.length) return;
+    html += `
+      <div style="margin-bottom:2rem;">
+        <h3 style="font-size:1rem;font-weight:600;margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:2px solid var(--border);">${esc(dom.name)}</h3>
+        ${ctrls.map(c => {
+          const mat = c.maturity || {};
+          return `
+            <div style="padding:0.75rem 0;border-bottom:1px solid var(--border);">
+              <strong style="font-size:var(--font-size-base);display:block;margin-bottom:0.5rem;">${esc(c.name)}</strong>
+              <div class="maturity-grid" style="margin-bottom:0.5rem;">
+                <div class="maturity-card maturity-basic"><div class="maturity-label">Basic (1)</div><p>${esc(mat.basic || 'Not defined')}</p></div>
+                <div class="maturity-card maturity-mature"><div class="maturity-label">Mature (2)</div><p>${esc(mat.mature || 'Not defined')}</p></div>
+                <div class="maturity-card maturity-advanced"><div class="maturity-label">Advanced (3)</div><p>${esc(mat.advanced || 'Not defined')}</p></div>
+              </div>
+              <div class="wp-score-scale">
+                <span class="wp-score-level wp-score-0">0 = Not Implemented</span>
+                <span class="wp-score-level wp-score-1">1 = Basic</span>
+                <span class="wp-score-level wp-score-2">2 = Mature</span>
+                <span class="wp-score-level wp-score-3">3 = Advanced</span>
+                <span class="wp-score-level wp-score-na">N/A</span>
+              </div>
+            </div>`;
+        }).join('')}
+      </div>`;
+  });
+
+  html += `
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-top:1.5rem;">
+      <h3 style="font-size:1rem;font-weight:600;margin-bottom:0.75rem;">Interpretation Guide</h3>
+      <table class="wp-request-table">
+        <thead><tr><th>Score Range</th><th>Rating</th><th>Interpretation</th></tr></thead>
+        <tbody>
+          <tr><td><strong>0 &ndash; 1.0</strong></td><td><span class="badge" style="background:#FEE2E2;color:#DC2626;">Significant Gaps</span></td><td>Significant gaps requiring urgent attention</td></tr>
+          <tr><td><strong>1.0 &ndash; 2.0</strong></td><td><span class="badge" style="background:#FEF3C7;color:#D97706;">Developing</span></td><td>Developing &mdash; key controls need strengthening</td></tr>
+          <tr><td><strong>2.0 &ndash; 2.5</strong></td><td><span class="badge" style="background:#DCFCE7;color:#16A34A;">Mature</span></td><td>Mature &mdash; meets expectations</td></tr>
+          <tr><td><strong>2.5 &ndash; 3.0</strong></td><td><span class="badge" style="background:#DBEAFE;color:#2563EB;">Advanced</span></td><td>Advanced &mdash; exceeds expectations</td></tr>
+        </tbody>
+      </table>
+    </div>`;
+
+  return html;
+}
+
+/* --- Tab 5: Findings Template --- */
+function renderWPFindings() {
+  let html = '';
+
+  /* Finding template structure */
+  html += `
+    <h3 style="font-size:1rem;font-weight:600;margin-bottom:0.75rem;">Finding Template Structure</h3>
+    <div class="wp-finding-card wp-severity-info" style="margin-bottom:2rem;">
+      <div class="wp-template-field"><span class="wp-template-label">Finding ID</span><span class="wp-template-value">[Sequential ID, e.g., F-001]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Title</span><span class="wp-template-value">[Concise finding title]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Domain</span><span class="wp-template-value">[SC-GTRM domain]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Control Reference</span><span class="wp-template-value">[Control slug]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Severity</span><span class="wp-template-value">[Critical / High / Medium / Low / Informational]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Description</span><span class="wp-template-value">[Detailed description of the finding]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Criteria</span><span class="wp-template-value">[SC-GL/6-2023 requirement or expected practice]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Risk / Impact</span><span class="wp-template-value">[Business and regulatory impact]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Recommendation</span><span class="wp-template-value">[Specific remediation steps]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Management Response</span><span class="wp-template-value">[To be completed by client]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Target Date</span><span class="wp-template-value">[To be completed by client]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Status</span><span class="wp-template-value">[Open / In Progress / Closed]</span></div>
+    </div>`;
+
+  /* Severity guide */
+  html += `
+    <h3 style="font-size:1rem;font-weight:600;margin-bottom:0.75rem;">Severity Guide</h3>
+    <table class="wp-request-table" style="margin-bottom:2rem;">
+      <thead><tr><th>Severity</th><th>Description</th><th>Expected Response</th></tr></thead>
+      <tbody>
+        <tr><td><span class="badge wp-severity-critical">Critical</span></td>
+          <td>Fundamental control failure with immediate regulatory or business impact. Systemic weakness affecting core capital market operations.</td>
+          <td>Immediate remediation required; escalate to board</td></tr>
+        <tr><td><span class="badge wp-severity-high">High</span></td>
+          <td>Significant control gap creating material risk to operations, data, or regulatory compliance.</td>
+          <td>Remediation within 30 days; senior management oversight</td></tr>
+        <tr><td><span class="badge wp-severity-medium">Medium</span></td>
+          <td>Control weakness that could lead to issues if not addressed. Does not meet SC-GL/6-2023 expectations fully.</td>
+          <td>Remediation within 90 days; management action plan</td></tr>
+        <tr><td><span class="badge wp-severity-low">Low</span></td>
+          <td>Minor control gap or enhancement opportunity. Limited direct risk impact.</td>
+          <td>Remediation within 180 days; tracked in action log</td></tr>
+        <tr><td><span class="badge wp-severity-info">Informational</span></td>
+          <td>Observation or good practice recommendation. No compliance gap identified.</td>
+          <td>For management consideration; no mandatory action</td></tr>
+      </tbody>
+    </table>`;
+
+  /* Example findings */
+  html += `
+    <h3 style="font-size:1rem;font-weight:600;margin-bottom:0.75rem;">Example Findings</h3>`;
+
+  const examples = [
+    {
+      id: 'F-001',
+      title: 'No Documented Incident Response Plan',
+      domain: 'Incident Management',
+      control: 'incident-response-plan',
+      severity: 'critical',
+      description: 'The entity does not have a documented incident response plan for technology incidents affecting capital market operations. When queried, staff indicated they follow ad-hoc procedures that are not formalised or tested.',
+      criteria: 'SC-GL/6-2023 requires capital market intermediaries to maintain documented and tested incident response procedures covering detection, containment, eradication, recovery, and post-incident review.',
+      riskImpact: 'Without a documented plan, response to cyber incidents or system failures will be uncoordinated, increasing downtime, data loss, and potential market disruption. Regulatory sanctions for non-compliance with SC expectations.',
+      recommendation: 'Develop and implement a comprehensive incident response plan covering all phases. Assign response team roles, define escalation procedures, establish communication protocols, and schedule quarterly tabletop exercises.'
+    },
+    {
+      id: 'F-002',
+      title: 'DR Testing Does Not Cover All Critical Systems',
+      domain: 'Business Continuity',
+      control: 'dr-testing-programme',
+      severity: 'medium',
+      description: 'Disaster recovery testing is performed annually but only covers the core trading platform. Market data feeds, client portal, and settlement reconciliation systems are excluded from DR test scope.',
+      criteria: 'SC-GL/6-2023 expects DR testing to cover all critical systems supporting capital market operations, with recovery validated against defined RTOs and RPOs.',
+      riskImpact: 'Untested recovery procedures for market data and settlement systems may fail during an actual disaster, causing prolonged outage of critical market services and potential settlement failures.',
+      recommendation: 'Expand DR test scope to include all systems classified as critical in the BIA. Validate recovery of market data feeds, client portal, and settlement systems against defined RTOs. Document results and remediate gaps.'
+    },
+    {
+      id: 'F-003',
+      title: 'Technology Risk Policies Overdue for Review',
+      domain: 'Governance & Oversight',
+      control: 'technology-risk-policy-suite',
+      severity: 'low',
+      description: 'Three of the seven technology risk policies (Cloud Security Policy, Data Classification Policy, and Third-Party Risk Policy) have not been reviewed within the 12-month cycle. Last review dates are between 14-18 months ago.',
+      criteria: 'SC-GL/6-2023 requires technology risk policies to be reviewed at least annually and approved by the board to ensure alignment with the evolving threat landscape and regulatory expectations.',
+      riskImpact: 'Stale policies may not reflect current risks, SC guidance updates, or changes in the entity\'s technology environment. Limited impact as core policies (cybersecurity, BCP, incident management) are current.',
+      recommendation: 'Prioritise review and board approval of the three overdue policies. Implement a policy review calendar with automated reminders to prevent future lapses. Consider aligning all policy review dates to a single annual cycle.'
+    }
+  ];
+
+  examples.forEach(ex => {
+    html += `
+      <div class="wp-finding-card wp-severity-${ex.severity}" style="margin-bottom:1rem;">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;flex-wrap:wrap;">
+          <span style="font-family:var(--mono);font-weight:600;font-size:var(--font-size-sm);">${esc(ex.id)}</span>
+          <span class="badge wp-severity-${ex.severity}">${esc(ex.severity)}</span>
+          <span class="badge badge-domain">${esc(ex.domain)}</span>
+        </div>
+        <h4 style="font-size:var(--font-size-base);font-weight:600;margin-bottom:0.75rem;">${esc(ex.title)}</h4>
+        <div class="wp-template-field"><span class="wp-template-label">Control</span><a href="#control/${esc(ex.control)}">${esc(ex.control)}</a></div>
+        <div class="wp-template-field"><span class="wp-template-label">Description</span><span>${esc(ex.description)}</span></div>
+        <div class="wp-template-field"><span class="wp-template-label">Criteria</span><span>${esc(ex.criteria)}</span></div>
+        <div class="wp-template-field"><span class="wp-template-label">Risk / Impact</span><span>${esc(ex.riskImpact)}</span></div>
+        <div class="wp-template-field"><span class="wp-template-label">Recommendation</span><span>${esc(ex.recommendation)}</span></div>
+        <div class="wp-template-field"><span class="wp-template-label">Management Response</span><span style="color:var(--text-muted);font-style:italic;">[To be completed]</span></div>
+        <div class="wp-template-field"><span class="wp-template-label">Target Date</span><span style="color:var(--text-muted);font-style:italic;">[To be completed]</span></div>
+        <div class="wp-template-field"><span class="wp-template-label">Status</span><span class="badge badge-category">Open</span></div>
+      </div>`;
+  });
+
+  return html;
 }
 
 /* ===== EXPORT ===== */
