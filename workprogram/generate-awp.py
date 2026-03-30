@@ -20,6 +20,7 @@ try:
         Font, PatternFill, Alignment, Border, Side, NamedStyle
     )
     from openpyxl.utils import get_column_letter
+    from openpyxl.worksheet.datavalidation import DataValidation
 except ImportError:
     print("openpyxl required: pip install openpyxl")
     sys.exit(1)
@@ -58,6 +59,13 @@ GREY_BG = "ECEFF1"
 GREY_TEXT = "546E7A"
 CONTEXT_BG = "EBF0F7"
 CONTEXT_BORDER = "8EAADB"
+GOLD = "DAA520"
+SCORE_GREEN_BG = "C6EFCE"
+SCORE_GREEN_TEXT = "006100"
+SCORE_AMBER_BG = "FFEB9C"
+SCORE_AMBER_TEXT = "9C5700"
+SCORE_RED_BG = "FFC7CE"
+SCORE_RED_TEXT = "9C0006"
 CRITICAL_BG = "F8D7DA"
 CRITICAL_TEXT = "842029"
 CONDITIONAL_BG = "FFF3CD"
@@ -430,15 +438,43 @@ def build_methodology_sheet(wb):
 # Assessment sheets (sheets 2-6)
 # ---------------------------------------------------------------------------
 def build_assessment_sheet(wb, sheet_data):
-    ws = wb.create_sheet(title=sheet_data["sheetName"][:31])  # Excel 31-char limit
+    """Build an assessment sheet and return control scoring metadata.
+
+    Returns a list of dicts, one per control (section):
+        {
+            "ref": "GRA-1",
+            "controlName": "Technology Risk Governance Framework",
+            "domain": "Governance & Oversight",
+            "riskTier": "critical",
+            "sheetName": "Governance, Risk & Audit",
+            "scoreCells": ["M3", "M4", "M5", ...]
+        }
+    """
+    sheet_title = sheet_data["sheetName"][:31]  # Excel 31-char limit
+    ws = wb.create_sheet(title=sheet_title)
 
     # Tab color by sheet number
     tab_colors = {2: "4472C4", 3: "C0392B", 4: "E67E22", 5: "27AE60", 6: "8E44AD"}
     ws.sheet_properties.tabColor = tab_colors.get(sheet_data["sheetNumber"], MID_BLUE)
 
-    # Column widths
+    # Column widths (A-L assessment columns)
     for idx, (_, width) in enumerate(ASSESSMENT_COLUMNS, 1):
         ws.column_dimensions[get_column_letter(idx)].width = width
+
+    # Hidden scoring helper column M
+    ws.column_dimensions["M"].hidden = True
+
+    # Data validation for Conclusion column (K)
+    conclusion_dv = DataValidation(
+        type="list",
+        formula1='"Compliant,Partially Compliant,Non-Compliant,N/A"',
+        allow_blank=True,
+    )
+    conclusion_dv.error = "Please select a valid conclusion"
+    conclusion_dv.errorTitle = "Invalid Conclusion"
+    conclusion_dv.prompt = "Select the assessment conclusion"
+    conclusion_dv.promptTitle = "Conclusion"
+    ws.add_data_validation(conclusion_dv)
 
     row = 1
 
@@ -449,10 +485,16 @@ def build_assessment_sheet(wb, sheet_data):
         cell.fill = HEADER_FILL
         cell.alignment = WRAP_CENTER
         cell.border = THIN_BORDER
+    # Header for hidden score column
+    score_hdr = ws.cell(row=row, column=13, value="Score")
+    score_hdr.font = HEADER_FONT
+    score_hdr.fill = HEADER_FILL
+    score_hdr.alignment = WRAP_CENTER
     ws.row_dimensions[row].height = 28
     row += 1
 
     # --- Data rows ---
+    control_scores = []  # return value
     proc_idx = 0
     for section in sheet_data["sections"]:
         # Risk tier badge for section header
@@ -497,6 +539,9 @@ def build_assessment_sheet(wb, sheet_data):
             )
             ws.row_dimensions[row].height = 72
             row += 1
+
+        # Track score cells for this control
+        section_score_cells = []
 
         # Sub-procedures
         for sp in section["subProcedures"]:
@@ -545,9 +590,32 @@ def build_assessment_sheet(wb, sheet_data):
                         start_color="FFFFF5", end_color="FFFFF5", fill_type="solid"
                     )
 
+            # Add data validation to Conclusion cell (column K = 11)
+            conclusion_dv.add(ws.cell(row=row, column=11))
+
+            # Hidden scoring formula in column M (13)
+            score_formula = (
+                f'=IF(K{row}="Compliant",3,'
+                f'IF(K{row}="Partially Compliant",2,'
+                f'IF(K{row}="Non-Compliant",1,"")))'
+            )
+            ws.cell(row=row, column=13, value=score_formula)
+
+            section_score_cells.append(f"M{row}")
+
             ws.row_dimensions[row].height = row_height
             row += 1
             proc_idx += 1
+
+        # Record control scoring metadata
+        control_scores.append({
+            "ref": section["ref"],
+            "controlName": section["controlName"],
+            "domain": section["domain"],
+            "riskTier": section.get("riskTier", "standard"),
+            "sheetName": sheet_title,
+            "scoreCells": section_score_cells,
+        })
 
     # --- Disclaimer row ---
     row += 1
@@ -566,6 +634,392 @@ def build_assessment_sheet(wb, sheet_data):
     # Freeze header + panes
     ws.freeze_panes = "A2"
     ws.auto_filter.ref = f"A1:{get_column_letter(12)}1"
+
+    return control_scores
+
+
+# ---------------------------------------------------------------------------
+# Scoring Summary sheet
+# ---------------------------------------------------------------------------
+def _quote_sheet(name):
+    """Return a single-quoted sheet name safe for use in Excel formulas."""
+    return f"'{name}'"
+
+
+def _score_cell_range(score_cells):
+    """Extract start and end row numbers from a list like ['M3','M4','M5']."""
+    rows = [int(c[1:]) for c in score_cells]
+    return min(rows), max(rows)
+
+
+def build_scoring_sheet(wb, all_control_scores):
+    """Build the Scoring Summary sheet with control, domain, and overall scores."""
+    ws = wb.create_sheet(title="Scoring Summary")
+    ws.sheet_properties.tabColor = GOLD
+
+    # Column widths for Section A
+    col_widths = {
+        "A": 10, "B": 36, "C": 24, "D": 12, "E": 15,
+        "F": 12, "G": 12, "H": 15, "I": 8, "J": 10, "K": 18,
+    }
+    for col_letter, w in col_widths.items():
+        ws.column_dimensions[col_letter].width = w
+
+    row = 1
+
+    # ======================================================================
+    # Section A: Control-Level Scoring Table
+    # ======================================================================
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=11)
+    cell = ws.cell(row=row, column=1,
+                   value="SECTION A \u2014 CONTROL-LEVEL SCORING")
+    cell.font = Font(name=FONT_SANS, bold=True, size=12, color=WHITE)
+    cell.fill = HEADER_FILL
+    cell.alignment = Alignment(horizontal="center", vertical="center")
+    ws.row_dimensions[row].height = 28
+    row += 1
+
+    # Headers
+    section_a_headers = [
+        "Ref", "Control", "Domain", "Risk Tier", "Sub-Procedures",
+        "Compliant", "Partial", "Non-Compliant", "N/A", "Score", "Conclusion",
+    ]
+    for ci, hdr in enumerate(section_a_headers, 1):
+        c = ws.cell(row=row, column=ci, value=hdr)
+        c.font = HEADER_FONT
+        c.fill = HEADER_FILL
+        c.alignment = WRAP_CENTER
+        c.border = THIN_BORDER
+    ws.row_dimensions[row].height = 28
+    header_row_a = row
+    row += 1
+
+    # Track rows per domain for Section B aggregation
+    # domain -> list of row numbers in Section A
+    domain_rows = {}
+    control_data_start_row = row
+
+    for ctrl in all_control_scores:
+        qs = _quote_sheet(ctrl["sheetName"])
+        start_r, end_r = _score_cell_range(ctrl["scoreCells"])
+        k_range = f"{qs}!K{start_r}:K{end_r}"
+        m_range = f"{qs}!M{start_r}:M{end_r}"
+
+        # A: Ref
+        c = ws.cell(row=row, column=1, value=ctrl["ref"])
+        c.font = BODY_BOLD
+        c.alignment = WRAP_CENTER
+        c.border = THIN_BORDER
+
+        # B: Control name
+        c = ws.cell(row=row, column=2, value=ctrl["controlName"])
+        c.font = BODY_FONT
+        c.alignment = WRAP
+        c.border = THIN_BORDER
+
+        # C: Domain
+        c = ws.cell(row=row, column=3, value=ctrl["domain"])
+        c.font = BODY_FONT
+        c.alignment = WRAP
+        c.border = THIN_BORDER
+
+        # D: Risk Tier
+        tier = ctrl["riskTier"]
+        c = ws.cell(row=row, column=4, value=tier.capitalize())
+        c.font = Font(name=FONT_SANS, bold=True, size=9)
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+        if tier == "critical":
+            c.fill = PatternFill(start_color=CRITICAL_BG, end_color=CRITICAL_BG, fill_type="solid")
+            c.font = Font(name=FONT_SANS, bold=True, size=9, color=CRITICAL_TEXT)
+        elif tier == "conditional":
+            c.fill = PatternFill(start_color=CONDITIONAL_BG, end_color=CONDITIONAL_BG, fill_type="solid")
+            c.font = Font(name=FONT_SANS, bold=True, size=9, color=CONDITIONAL_TEXT)
+        else:
+            c.fill = PatternFill(start_color=STANDARD_BG, end_color=STANDARD_BG, fill_type="solid")
+            c.font = Font(name=FONT_SANS, bold=True, size=9, color=STANDARD_TEXT)
+
+        # E: Sub-Procedures (static count)
+        c = ws.cell(row=row, column=5, value=len(ctrl["scoreCells"]))
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # F: Compliant count
+        c = ws.cell(row=row, column=6,
+                     value=f'=COUNTIF({k_range},"Compliant")')
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # G: Partial count
+        c = ws.cell(row=row, column=7,
+                     value=f'=COUNTIF({k_range},"Partially Compliant")')
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # H: Non-Compliant count
+        c = ws.cell(row=row, column=8,
+                     value=f'=COUNTIF({k_range},"Non-Compliant")')
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # I: N/A count
+        c = ws.cell(row=row, column=9,
+                     value=f'=COUNTIF({k_range},"N/A")')
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # J: Score (average of numeric helper column, excludes blanks)
+        c = ws.cell(row=row, column=10,
+                     value=f'=IFERROR(AVERAGE({m_range}),"")')
+        c.font = Font(name=FONT_SANS, bold=True, size=10, color=DARK_GREY)
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+        c.number_format = "0.00"
+
+        # K: Conclusion (text based on score)
+        c = ws.cell(row=row, column=11,
+                     value=f'=IF(J{row}="","",IF(J{row}>=2.5,"Compliant",'
+                           f'IF(J{row}>=1.5,"Partially Compliant","Non-Compliant")))')
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # Track domain membership
+        domain = ctrl["domain"]
+        domain_rows.setdefault(domain, []).append(row)
+
+        ws.row_dimensions[row].height = 22
+        row += 1
+
+    control_data_end_row = row - 1
+
+    # Add blank separator
+    row += 2
+
+    # ======================================================================
+    # Section B: Domain Summary Table
+    # ======================================================================
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=7)
+    cell = ws.cell(row=row, column=1,
+                   value="SECTION B \u2014 DOMAIN SUMMARY")
+    cell.font = Font(name=FONT_SANS, bold=True, size=12, color=WHITE)
+    cell.fill = HEADER_FILL
+    cell.alignment = Alignment(horizontal="center", vertical="center")
+    ws.row_dimensions[row].height = 28
+    row += 1
+
+    domain_headers = [
+        "Domain", "Controls", "Avg Score", "Compliant", "Partial",
+        "Non-Compliant", "Overall",
+    ]
+    for ci, hdr in enumerate(domain_headers, 1):
+        c = ws.cell(row=row, column=ci, value=hdr)
+        c.font = HEADER_FONT
+        c.fill = HEADER_FILL
+        c.alignment = WRAP_CENTER
+        c.border = THIN_BORDER
+    ws.row_dimensions[row].height = 28
+    row += 1
+
+    # Canonical domain order
+    domain_order = [
+        "Governance & Oversight",
+        "Technology Risk Assessment",
+        "Cybersecurity",
+        "Business Continuity",
+        "Incident Management",
+        "Third-Party Risk",
+        "Cloud Services",
+        "Data Management",
+        "Technology Audit",
+        "Emerging Technology",
+    ]
+
+    domain_score_rows = {}  # domain -> row in Section B (for Section C)
+
+    for domain in domain_order:
+        d_rows = domain_rows.get(domain, [])
+        if not d_rows:
+            continue
+
+        # A: Domain name
+        c = ws.cell(row=row, column=1, value=domain)
+        c.font = BODY_BOLD
+        c.alignment = WRAP
+        c.border = THIN_BORDER
+
+        # B: Controls count (static)
+        c = ws.cell(row=row, column=2, value=len(d_rows))
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # C: Avg Score — AVERAGE of the Score column (J) for this domain's rows
+        score_refs = ",".join(f"J{r}" for r in d_rows)
+        c = ws.cell(row=row, column=3,
+                     value=f'=IFERROR(AVERAGE({score_refs}),"")')
+        c.font = Font(name=FONT_SANS, bold=True, size=10, color=DARK_GREY)
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+        c.number_format = "0.00"
+
+        # D: Compliant — SUM of Compliant counts for this domain
+        comp_refs = ",".join(f"F{r}" for r in d_rows)
+        c = ws.cell(row=row, column=4, value=f"=SUM({comp_refs})")
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # E: Partial
+        part_refs = ",".join(f"G{r}" for r in d_rows)
+        c = ws.cell(row=row, column=5, value=f"=SUM({part_refs})")
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # F: Non-Compliant
+        nc_refs = ",".join(f"H{r}" for r in d_rows)
+        c = ws.cell(row=row, column=6, value=f"=SUM({nc_refs})")
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        # G: Overall conclusion
+        c = ws.cell(row=row, column=7,
+                     value=f'=IF(C{row}="","",IF(C{row}>=2.5,"Compliant",'
+                           f'IF(C{row}>=1.5,"Partially Compliant","Non-Compliant")))')
+        c.font = BODY_FONT
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+
+        domain_score_rows[domain] = row
+        ws.row_dimensions[row].height = 22
+        row += 1
+
+    domain_section_end = row - 1
+
+    # Add blank separator
+    row += 2
+
+    # ======================================================================
+    # Section C: Overall Assessment
+    # ======================================================================
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=4)
+    cell = ws.cell(row=row, column=1,
+                   value="SECTION C \u2014 OVERALL ASSESSMENT")
+    cell.font = Font(name=FONT_SANS, bold=True, size=12, color=WHITE)
+    cell.fill = HEADER_FILL
+    cell.alignment = Alignment(horizontal="center", vertical="center")
+    ws.row_dimensions[row].height = 28
+    row += 1
+
+    # All control score cells (J column) and conclusion cells (K column)
+    all_j = ",".join(f"J{r}" for rows in domain_rows.values() for r in rows)
+    all_k_range = f"K{control_data_start_row}:K{control_data_end_row}"
+
+    # Row: Total controls assessed
+    c = ws.cell(row=row, column=1, value="Total Controls")
+    c.font = METH_LABEL_FONT
+    c.border = THIN_BORDER
+    ws.merge_cells(start_row=row, start_column=2, end_row=row, end_column=4)
+    c = ws.cell(row=row, column=2, value=len(all_control_scores))
+    c.font = BODY_FONT
+    c.alignment = CENTER
+    c.border = THIN_BORDER
+    row += 1
+
+    # Row: Controls assessed (excluding N/A conclusion)
+    c = ws.cell(row=row, column=1, value="Controls Assessed (excl. N/A)")
+    c.font = METH_LABEL_FONT
+    c.border = THIN_BORDER
+    ws.merge_cells(start_row=row, start_column=2, end_row=row, end_column=4)
+    c = ws.cell(row=row, column=2,
+                 value=f'={len(all_control_scores)}-COUNTIF({all_k_range},"N/A")')
+    c.font = BODY_FONT
+    c.alignment = CENTER
+    c.border = THIN_BORDER
+    assessed_row = row
+    row += 1
+
+    # Row: Overall score (average of domain avg scores)
+    domain_avg_refs = ",".join(f"C{r}" for r in domain_score_rows.values())
+    c = ws.cell(row=row, column=1, value="Overall Score")
+    c.font = METH_LABEL_FONT
+    c.border = THIN_BORDER
+    ws.merge_cells(start_row=row, start_column=2, end_row=row, end_column=4)
+    c = ws.cell(row=row, column=2,
+                 value=f'=IFERROR(AVERAGE({domain_avg_refs}),"")')
+    c.font = Font(name=FONT_SANS, bold=True, size=12, color=DARK_GREY)
+    c.alignment = CENTER
+    c.border = THIN_BORDER
+    c.number_format = "0.00"
+    overall_score_row = row
+    row += 1
+
+    # Row: Overall conclusion
+    c = ws.cell(row=row, column=1, value="Overall Conclusion")
+    c.font = METH_LABEL_FONT
+    c.border = THIN_BORDER
+    ws.merge_cells(start_row=row, start_column=2, end_row=row, end_column=4)
+    c = ws.cell(row=row, column=2,
+                 value=f'=IF(B{overall_score_row}="","",IF(B{overall_score_row}>=2.5,'
+                       f'"Compliant",IF(B{overall_score_row}>=1.5,'
+                       f'"Partially Compliant","Non-Compliant")))')
+    c.font = Font(name=FONT_SANS, bold=True, size=12, color=DARK_GREY)
+    c.alignment = CENTER
+    c.border = THIN_BORDER
+    row += 1
+
+    # Row: Compliance percentage
+    # Compliant count from all controls / (total - N/A)
+    all_f = f"F{control_data_start_row}:F{control_data_end_row}"
+    c = ws.cell(row=row, column=1, value="Compliance %")
+    c.font = METH_LABEL_FONT
+    c.border = THIN_BORDER
+    ws.merge_cells(start_row=row, start_column=2, end_row=row, end_column=4)
+    c = ws.cell(row=row, column=2,
+                 value=f'=IFERROR(SUM({all_f})/B{assessed_row}*100,"")')
+    c.font = Font(name=FONT_SANS, bold=True, size=12, color=DARK_GREY)
+    c.alignment = CENTER
+    c.border = THIN_BORDER
+    c.number_format = "0.0"
+    row += 1
+
+    # ======================================================================
+    # Apply score color formatting to Section A Score column (J)
+    # ======================================================================
+    for r in range(control_data_start_row, control_data_end_row + 1):
+        _apply_score_formatting(ws, r, 10)  # column J
+
+    # Apply score color formatting to Section B Avg Score column (C)
+    for r in domain_score_rows.values():
+        _apply_score_formatting(ws, r, 3)  # column C
+
+    # Apply score formatting to overall score
+    _apply_score_formatting(ws, overall_score_row, 2)  # column B
+
+    # Freeze first row
+    ws.freeze_panes = "A2"
+
+
+def _apply_score_formatting(ws, row, col):
+    """Apply conditional-style formatting to a score cell.
+
+    Since openpyxl conditional formatting with formulas can be complex,
+    we use a neutral format here. The actual color will show once the
+    workbook is opened and values are calculated. For a static approach,
+    we leave formatting neutral and let the conclusion text convey status.
+
+    However, we CAN set number format and a subtle style.
+    """
+    # The cell already has a formula; we just ensure number format is set.
+    c = ws.cell(row=row, column=col)
+    c.number_format = "0.00"
 
 
 # ---------------------------------------------------------------------------
@@ -589,22 +1043,29 @@ def main():
 
     # Sheet 1: Methodology
     build_methodology_sheet(wb)
-    print("  [1/6] Methodology & Approach")
+    print("  [1/7] Methodology & Approach")
 
     # Sheets 2-6: Assessment sheets
+    all_control_scores = []
     for sheet_data in sheets:
-        build_assessment_sheet(wb, sheet_data)
+        control_scores = build_assessment_sheet(wb, sheet_data)
+        all_control_scores.extend(control_scores)
         n = sheet_data["sheetNumber"]
         name = sheet_data["sheetName"]
         subs = sum(len(sec["subProcedures"]) for sec in sheet_data["sections"])
         controls = len(sheet_data["sections"])
-        print(f"  [{n}/6] {name} ({controls} controls, {subs} sub-procedures)")
+        print(f"  [{n}/7] {name} ({controls} controls, {subs} sub-procedures)")
+
+    # Sheet 7: Scoring Summary (at the end)
+    build_scoring_sheet(wb, all_control_scores)
+    print(f"  [7/7] Scoring Summary ({len(all_control_scores)} controls scored)")
 
     # Save
     wb.save(str(OUTPUT_FILE))
     print(f"\nSaved: {OUTPUT_FILE}")
     print(f"  Sheets: {len(wb.sheetnames)}")
     print(f"  Sub-procedures: {total_subs}")
+    print(f"  Controls with scoring: {len(all_control_scores)}")
 
 
 if __name__ == "__main__":
