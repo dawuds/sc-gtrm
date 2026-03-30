@@ -11,6 +11,12 @@
       "controlName": "Technology Risk Governance Framework",
       "controlSlug": "technology-risk-governance-framework",
       "domain": "Governance & Oversight",
+      "riskTier": "critical",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries to establish a board-approved technology risk governance framework as the foundation for all technology risk management activities. This control ensures that governance structures, accountability, and oversight mechanisms are in place to protect market integrity, client assets, and operational resilience.",
+        "expectation": "The assessor should find a formally documented, board-approved governance framework with clearly defined roles and responsibilities, a functioning technology risk committee with cross-functional representation, and evidence of regular board-level engagement with technology risk matters. The framework should be current, reviewed within 12 months, and explicitly aligned with SC-GL/6-2023 requirements.",
+        "keyRisk": "Without an effective governance framework, technology risk management operates without strategic direction or board accountability, increasing the likelihood of undetected control failures affecting trading operations, settlement integrity, and regulatory standing with the Securities Commission."
+      },
       "subProcedures": [
         {
           "subProcedure": "Governance structure & reporting lines",
@@ -26,8 +32,8 @@
         },
         {
           "subProcedure": "Three lines of defence model",
-          "assessmentProcedures": "1. Interview the CISO or committee chair to understand how the three lines of defence model is implemented for technology risk management.\n2. Verify that first line (technology operations and business units), second line (risk management and compliance), and third line (internal audit) roles are clearly delineated and documented.\n3. Confirm independence between the lines — specifically that second-line risk oversight is not conflated with first-line technology delivery.\n4. Review a sample of 2-3 risk decisions to trace how the three lines interacted (e.g., risk acceptance, control exception).",
-          "expectedEvidence": "Three lines of defence model documentation; RACI matrix for technology risk responsibilities; Sample risk decision records (2-3) showing line interactions; Organisational chart demonstrating independence between lines",
+          "assessmentProcedures": "1. Interview the CISO or committee chair to understand how the three lines of defence model is implemented for technology risk management.\n2. Verify that first line (technology operations and business units), second line (risk management and compliance), and third line (internal audit) roles are clearly delineated and documented.\n3. Confirm independence between the lines — specifically that second-line risk oversight is not conflated with first-line technology delivery.\n4. Review a sample of 3 risk decisions (per sampling methodology) to trace how the three lines interacted (e.g., risk acceptance, control exception).",
+          "expectedEvidence": "Three lines of defence model documentation; RACI matrix for technology risk responsibilities; Sample risk decision records (3) showing line interactions; Organisational chart demonstrating independence between lines",
           "method": "Inspection / Inquiry"
         },
         {
@@ -56,6 +62,12 @@
       "controlName": "CISO Designation & Authority",
       "controlSlug": "ciso-designation",
       "domain": "Governance & Oversight",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries to designate a CISO with adequate authority, independence, and resources to oversee cybersecurity and technology risk. This ensures a single accountable executive drives the security programme and has unimpeded access to the board.",
+        "expectation": "The assessor should find a formally appointed CISO with relevant qualifications and certifications, reporting independently from technology delivery, with demonstrated board access and a standing reporting slot. The CISO should have an adequately resourced team and documented authority to influence technology decisions.",
+        "keyRisk": "Without a designated, independent CISO, security priorities are subordinated to delivery timelines, creating blind spots in risk oversight that can lead to undetected vulnerabilities in trading systems and delayed incident response."
+      },
       "subProcedures": [
         {
           "subProcedure": "CISO appointment & qualifications",
@@ -83,8 +95,8 @@
         },
         {
           "subProcedure": "CISO authority in practice",
-          "assessmentProcedures": "1. Review 2-3 instances where the CISO exercised authority to influence technology decisions (e.g., halting a deployment, requiring security controls, rejecting a vendor).\n2. Determine whether the CISO has the authority to halt a technology deployment if security risks are deemed unacceptable.\n3. Verify that the CISO's role and authority are communicated to all relevant stakeholders including technology, trading, and business unit heads.\n4. Assess whether the CISO participates in strategic technology decisions such as new system selection, cloud adoption, and algorithmic trading platform changes.",
-          "expectedEvidence": "Records of CISO-influenced technology decisions (2-3 instances); CISO authority policy or terms of reference; Evidence of CISO participation in strategic technology decision forums; Communication records notifying stakeholders of CISO authority",
+          "assessmentProcedures": "1. Review 3 instances (per sampling methodology) where the CISO exercised authority to influence technology decisions (e.g., halting a deployment, requiring security controls, rejecting a vendor).\n2. Determine whether the CISO has the authority to halt a technology deployment if security risks are deemed unacceptable.\n3. Verify that the CISO's role and authority are communicated to all relevant stakeholders including technology, trading, and business unit heads.\n4. Assess whether the CISO participates in strategic technology decisions such as new system selection, cloud adoption, and algorithmic trading platform changes.",
+          "expectedEvidence": "Records of CISO-influenced technology decisions (3 instances); CISO authority policy or terms of reference; Evidence of CISO participation in strategic technology decision forums; Communication records notifying stakeholders of CISO authority",
           "method": "Inspection / Inquiry"
         }
       ]
@@ -95,6 +107,12 @@
       "controlName": "Technology Risk Policy Suite",
       "controlSlug": "technology-risk-policy-suite",
       "domain": "Governance & Oversight",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries to maintain a comprehensive suite of technology risk policies covering all guideline domains. This ensures that governance expectations are translated into enforceable standards that guide day-to-day operations across cybersecurity, data management, access control, and change management.",
+        "expectation": "The assessor should find a complete, board-approved policy suite that maps to all SC-GL/6-2023 domains, with each policy reviewed within 12 months, communicated to relevant personnel, and containing capital market-specific provisions. Policies should be enforceable with measurable standards rather than aspirational statements.",
+        "keyRisk": "An incomplete or outdated policy suite creates ambiguity in expected controls, leaves staff without clear guidance on capital market-specific requirements, and exposes the intermediary to regulatory findings for non-compliance with SC-GL/6-2023 documentation expectations."
+      },
       "subProcedures": [
         {
           "subProcedure": "Policy inventory & SC-GL/6-2023 coverage",
@@ -134,14 +152,14 @@
         },
         {
           "subProcedure": "Additional policy areas (BCP, cloud, outsourcing, incident management)",
-          "assessmentProcedures": "1. Verify that policies exist for: business continuity and disaster recovery, cloud services governance, technology outsourcing, and incident management and response.\n2. For each, confirm board approval and review within the last 12 months.\n3. Assess whether each policy is aligned with the corresponding SC-GL/6-2023 domain requirements and references the guideline.\n4. Review a sample of 2 additional policies in detail for adequacy of content, clarity of responsibilities, and enforceability.",
+          "assessmentProcedures": "1. Verify that policies exist for: business continuity and disaster recovery, cloud services governance, technology outsourcing, and incident management and response.\n2. For each, confirm board approval and review within the last 12 months.\n3. Assess whether each policy is aligned with the corresponding SC-GL/6-2023 domain requirements and references the guideline.\n4. Review a sample of 3 additional policies (per sampling methodology) in detail for adequacy of content, clarity of responsibilities, and enforceability.",
           "expectedEvidence": "BCP/DR policy (board-approved); Cloud services policy (board-approved); Technology outsourcing policy (board-approved); Incident management policy (board-approved); Board approval and review date evidence for each",
           "method": "Inspection"
         },
         {
           "subProcedure": "Policy communication & awareness",
-          "assessmentProcedures": "1. Inspect evidence of policy communication to all relevant personnel (e.g., intranet publication, email distribution, training records, acknowledgement logs).\n2. Review policy acknowledgement records to verify staff have confirmed receipt and understanding.\n3. Interview 2-3 staff from different functions (e.g., trading, operations, IT) to verify awareness and ability to locate key technology risk policies.\n4. Verify that policy communication extends to relevant third-party service providers where contractually required.",
-          "expectedEvidence": "Policy distribution records or intranet publication evidence; Staff acknowledgement logs; Training completion records for policy awareness; Third-party policy communication records; Interview notes from 2-3 staff across functions",
+          "assessmentProcedures": "1. Inspect evidence of policy communication to all relevant personnel (e.g., intranet publication, email distribution, training records, acknowledgement logs).\n2. Review policy acknowledgement records to verify staff have confirmed receipt and understanding.\n3. Interview 3 staff from different functions (per sampling methodology) (e.g., trading, operations, IT) to verify awareness and ability to locate key technology risk policies.\n4. Verify that policy communication extends to relevant third-party service providers where contractually required.",
+          "expectedEvidence": "Policy distribution records or intranet publication evidence; Staff acknowledgement logs; Training completion records for policy awareness; Third-party policy communication records; Interview notes from 3 staff across functions",
           "method": "Inspection / Inquiry"
         }
       ]
@@ -152,6 +170,12 @@
       "controlName": "Technology Risk Reporting",
       "controlSlug": "technology-risk-reporting",
       "domain": "Governance & Oversight",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries to provide regular, comprehensive technology risk reporting to the board and senior management. This ensures informed decision-making on technology risks that could impact market operations, client protection, and regulatory compliance.",
+        "expectation": "The assessor should find a consistent quarterly reporting cadence with reports covering all SC-GL/6-2023 domains, defined KRIs with escalation thresholds, emerging risk commentary, and audit remediation tracking. Board minutes should evidence substantive engagement with the reports, not just receipt.",
+        "keyRisk": "Inadequate risk reporting leaves the board unable to exercise effective oversight, meaning material technology risks affecting trading systems, client data, or market integrity may persist without senior management awareness or intervention."
+      },
       "subProcedures": [
         {
           "subProcedure": "Reporting cadence & completeness",
@@ -191,6 +215,12 @@
       "controlName": "Technology Risk Assessment Framework",
       "controlSlug": "technology-risk-assessment-framework",
       "domain": "Technology Risk Assessment",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries to maintain a structured technology risk assessment framework that identifies, assesses, and treats technology risks across all capital market operations. This ensures risks are systematically managed rather than addressed ad hoc.",
+        "expectation": "The assessor should find a documented risk assessment methodology with capital market-specific risk categories, a current risk register with assigned owners and treatment plans, annual comprehensive assessments completed within 12 months, and integration with the enterprise risk management framework. Out-of-cycle assessment triggers should be defined for material changes.",
+        "keyRisk": "Without a structured risk assessment framework, technology risks affecting trading systems, settlement infrastructure, and market data integrity may be unidentified or underestimated, leading to inadequate controls and potential market disruption."
+      },
       "subProcedures": [
         {
           "subProcedure": "Risk assessment methodology",
@@ -206,8 +236,8 @@
         },
         {
           "subProcedure": "Risk treatment & tracking",
-          "assessmentProcedures": "1. Select a sample of 5 high-rated technology risks from the risk register.\n2. For each, trace through to the treatment plan and verify it documents: treatment approach (mitigate, accept, transfer, avoid), specific actions, responsible owner, target date, and current status.\n3. Confirm that risk acceptances are approved at the appropriate level of authority and documented with compensating controls where applicable.\n4. Verify that the risk register is maintained as a living document with regular updates — not only updated at annual assessment time.",
-          "expectedEvidence": "Risk register with treatment plans (sample 5 high-rated risks); Risk acceptance approvals with authority evidence; Treatment action tracking log; Risk register update history showing regular maintenance",
+          "assessmentProcedures": "1. Select a sample of 5 high-rated technology risks from the risk register (per sampling methodology).\n2. For each, trace through to the treatment plan and verify it documents: treatment approach (mitigate, accept, transfer, avoid), specific actions, responsible owner, target date, and current status.\n3. Confirm that risk acceptances are approved at the appropriate level of authority and documented with compensating controls where applicable.\n4. Verify that the risk register is maintained as a living document with regular updates — not only updated at annual assessment time.",
+          "expectedEvidence": "Risk register with treatment plans (sample of 5 high-rated risks per sampling methodology); Risk acceptance approvals with authority evidence; Treatment action tracking log; Risk register update history showing regular maintenance",
           "method": "Inspection"
         },
         {
@@ -230,6 +260,12 @@
       "controlName": "Algorithmic Trading Risk Controls",
       "controlSlug": "algorithmic-trading-risk-controls",
       "domain": "Technology Risk Assessment",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries using algorithmic trading to implement robust pre-trade and post-trade risk controls to prevent market disruption and manipulation. This control ensures that algorithmic trading activity is conducted within defined risk parameters with effective kill switch and surveillance capabilities.",
+        "expectation": "The assessor should find documented pre-trade risk controls (price limits, order size limits, position limits) actively configured and calibrated, a tested kill switch capability, a formal algorithm approval process with compliance sign-off, and post-trade surveillance monitoring for market manipulation patterns. Periodic reviews and recalibration should be evidenced.",
+        "keyRisk": "Inadequate algorithmic trading controls can result in errant orders, market manipulation, or runaway algorithms that disrupt Bursa Malaysia market operations, triggering regulatory action from the SC and potential financial losses to clients and the intermediary."
+      },
       "subProcedures": [
         {
           "subProcedure": "Pre-trade risk controls",
@@ -245,14 +281,14 @@
         },
         {
           "subProcedure": "Algorithm testing & approval process",
-          "assessmentProcedures": "1. Obtain the algorithm testing and approval procedure document.\n2. Select the 3 most recently deployed algorithms and review the approval records including: risk assessment, compliance sign-off, and formal authorisation before production deployment.\n3. For the same sample, verify testing evidence including backtesting results, simulation testing in a non-production environment, and stress testing under extreme market conditions.\n4. Confirm that no algorithm was deployed to production without completing all required approval gates.\n5. Interview the Head of Trading to understand how algorithm performance is monitored post-deployment and what triggers a review or suspension.",
-          "expectedEvidence": "Algorithm testing and approval procedure; Approval records for 3 recently deployed algorithms; Backtesting and simulation test results; Stress test results under extreme market conditions; Compliance sign-off records; Head of Trading interview notes",
+          "assessmentProcedures": "1. Obtain the algorithm testing and approval procedure document.\n2. Select a sample of 3 recently deployed algorithms (per sampling methodology) and review the approval records including: risk assessment, compliance sign-off, and formal authorisation before production deployment.\n3. For the same sample, verify testing evidence including backtesting results, simulation testing in a non-production environment, and stress testing under extreme market conditions.\n4. Confirm that no algorithm was deployed to production without completing all required approval gates.\n5. Interview the Head of Trading to understand how algorithm performance is monitored post-deployment and what triggers a review or suspension.",
+          "expectedEvidence": "Algorithm testing and approval procedure; Approval records for 3 recently deployed algorithms (per sampling methodology); Backtesting and simulation test results; Stress test results under extreme market conditions; Compliance sign-off records; Head of Trading interview notes",
           "method": "Inspection / Inquiry"
         },
         {
           "subProcedure": "Post-trade surveillance & market manipulation monitoring",
-          "assessmentProcedures": "1. Inspect post-trade surveillance reports for the last quarter to verify monitoring for market manipulation patterns in algorithmic activity (spoofing, layering, wash trading, momentum ignition).\n2. Verify that surveillance rules are calibrated to detect manipulation patterns specific to the entity's algorithmic trading strategies and the instruments traded on Bursa Malaysia.\n3. Review a sample of 3-5 surveillance alerts and confirm each was investigated, documented, and resolved appropriately.\n4. Assess whether post-trade surveillance findings are reported to Compliance and, where required, escalated to SC or Bursa Malaysia.",
-          "expectedEvidence": "Post-trade surveillance reports (last quarter); Surveillance rule definitions for market manipulation detection; Sample alert investigation records (3-5 alerts); Escalation records to Compliance, SC, or Bursa (if applicable)",
+          "assessmentProcedures": "1. Inspect post-trade surveillance reports for the last 3 months (per sampling methodology) to verify monitoring for market manipulation patterns in algorithmic activity (spoofing, layering, wash trading, momentum ignition).\n2. Verify that surveillance rules are calibrated to detect manipulation patterns specific to the entity's algorithmic trading strategies and the instruments traded on Bursa Malaysia.\n3. Review a sample of 5 surveillance alerts (per sampling methodology) and confirm each was investigated, documented, and resolved appropriately.\n4. Assess whether post-trade surveillance findings are reported to Compliance and, where required, escalated to SC or Bursa Malaysia.",
+          "expectedEvidence": "Post-trade surveillance reports (last 3 months); Surveillance rule definitions for market manipulation detection; Sample alert investigation records (5 alerts per sampling methodology); Escalation records to Compliance, SC, or Bursa (if applicable)",
           "method": "Inspection"
         },
         {
@@ -275,22 +311,28 @@
       "controlName": "Technology Change Risk Assessment",
       "controlSlug": "technology-change-risk-assessment",
       "domain": "Technology Risk Assessment",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries to conduct risk assessments for technology changes before production deployment, with heightened controls for changes to trading and settlement systems. This ensures that changes do not introduce unacceptable risks to market operations or client services.",
+        "expectation": "The assessor should find a change management process with defined risk classification tiers, documented risk assessments for critical changes, appropriate testing and approval gates, rollback procedures accounting for market hours, and controlled emergency change processes. Change freeze policies during trading hours should be evidenced.",
+        "keyRisk": "Inadequate change risk assessment can lead to production failures in trading or settlement systems during market hours, causing trade execution failures, settlement delays, or data integrity issues that harm clients and attract regulatory scrutiny."
+      },
       "subProcedures": [
         {
           "subProcedure": "Change classification & risk assessment",
-          "assessmentProcedures": "1. Obtain the change management policy and verify it defines change risk classification criteria (critical, significant, standard) with corresponding risk assessment and approval requirements for each tier.\n2. Select a sample of 5 recent changes to critical trading or settlement systems.\n3. For each, verify a documented risk assessment was completed before production deployment that considers impact on trading operations, settlement processing, and client services.\n4. Confirm that risk assessment findings informed the testing approach and approval requirements applied to each change.",
-          "expectedEvidence": "Change management policy with classification criteria; Change records for 5 critical/significant changes; Risk assessment documentation for each sampled change; Evidence linking risk assessment outcomes to testing and approval requirements",
+          "assessmentProcedures": "1. Obtain the change management policy and verify it defines change risk classification criteria (critical, significant, standard) with corresponding risk assessment and approval requirements for each tier.\n2. Select a sample of 5 recent changes to critical trading or settlement systems (per sampling methodology).\n3. For each, verify a documented risk assessment was completed before production deployment that considers impact on trading operations, settlement processing, and client services.\n4. Confirm that risk assessment findings informed the testing approach and approval requirements applied to each change.",
+          "expectedEvidence": "Change management policy with classification criteria; Change records for 5 critical/significant changes (per sampling methodology); Risk assessment documentation for each sampled change; Evidence linking risk assessment outcomes to testing and approval requirements",
           "method": "Inspection"
         },
         {
           "subProcedure": "Testing & approval gates",
-          "assessmentProcedures": "1. For the sample of 5 changes, verify that each completed required testing in a non-production environment before deployment.\n2. Confirm that appropriate approval was obtained at each gate, with approvers having sufficient authority and independence from the change requestor.\n3. Verify that user acceptance testing (UAT) was conducted and signed off by the business owner for changes affecting trading or settlement functionality.\n4. Assess whether testing covered regression, performance, and security aspects in addition to functional testing.",
+          "assessmentProcedures": "1. For the same sample of 5 changes (per sampling methodology), verify that each completed required testing in a non-production environment before deployment.\n2. Confirm that appropriate approval was obtained at each gate, with approvers having sufficient authority and independence from the change requestor.\n3. Verify that user acceptance testing (UAT) was conducted and signed off by the business owner for changes affecting trading or settlement functionality.\n4. Assess whether testing covered regression, performance, and security aspects in addition to functional testing.",
           "expectedEvidence": "Test plans and results for sampled changes; Approval records with approver names and authority; UAT sign-off records from business owners; Evidence of regression, performance, and security testing",
           "method": "Inspection"
         },
         {
           "subProcedure": "Rollback procedures & post-implementation review",
-          "assessmentProcedures": "1. For the sample of 5 changes, verify that rollback procedures were defined before deployment and are specific enough to be executed if the change fails.\n2. Confirm that post-implementation reviews were conducted to verify the change met objectives and no adverse impacts occurred.\n3. Assess whether rollback procedures for trading system changes account for market operating hours and the need to restore service before the next trading session.\n4. Review any instances where a rollback was actually executed in the last 12 months and verify the rollback process worked as designed.",
+          "assessmentProcedures": "1. For the same sample of 5 changes (per sampling methodology), verify that rollback procedures were defined before deployment and are specific enough to be executed if the change fails.\n2. Confirm that post-implementation reviews were conducted to verify the change met objectives and no adverse impacts occurred.\n3. Assess whether rollback procedures for trading system changes account for market operating hours and the need to restore service before the next trading session.\n4. Review any instances where a rollback was actually executed in the last 12 months and verify the rollback process worked as designed.",
           "expectedEvidence": "Rollback procedure documentation for sampled changes; Post-implementation review records; Rollback execution records (if any, last 12 months); Market hours considerations in rollback procedures for trading systems",
           "method": "Inspection"
         },
@@ -314,6 +356,12 @@
       "controlName": "Technology Audit Programme",
       "controlSlug": "technology-audit-programme",
       "domain": "Technology Audit",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries to maintain a technology audit programme providing independent assurance over technology risk management. This ensures that controls are independently validated, deficiencies are identified, and remediation is tracked to closure.",
+        "expectation": "The assessor should find a risk-based audit plan covering all SC-GL/6-2023 domains over the audit cycle, qualified and independent auditors, quality audit reports with actionable findings, regular audit committee reporting, and a findings remediation tracker with validated closures. High-risk areas like trading systems and algorithmic trading should be prioritised.",
+        "keyRisk": "Without an effective technology audit programme, control weaknesses in trading systems, cybersecurity, and third-party arrangements may persist undetected, increasing the risk of operational failures and undermining the intermediary's ability to demonstrate compliance to the SC."
+      },
       "subProcedures": [
         {
           "subProcedure": "Risk-based audit plan",
@@ -329,8 +377,8 @@
         },
         {
           "subProcedure": "Audit execution & report quality",
-          "assessmentProcedures": "1. Review 2-3 completed technology audit reports from the last 12 months.\n2. Verify reports contain: clear scope, methodology, detailed findings with risk ratings, root cause analysis, and actionable recommendations.\n3. Assess whether audit findings are specific enough to drive remediation — not generic observations that lack actionable detail.\n4. Confirm that audit reports reflect capital market-specific risks and controls, not generic IT audit checklists.",
-          "expectedEvidence": "Completed technology audit reports (2-3, last 12 months); Audit methodology documentation; Sample findings with risk ratings and recommendations; Evidence of capital market-specific audit scope",
+          "assessmentProcedures": "1. Review 3 completed technology audit reports from the last 12 months (per sampling methodology).\n2. Verify reports contain: clear scope, methodology, detailed findings with risk ratings, root cause analysis, and actionable recommendations.\n3. Assess whether audit findings are specific enough to drive remediation — not generic observations that lack actionable detail.\n4. Confirm that audit reports reflect capital market-specific risks and controls, not generic IT audit checklists.",
+          "expectedEvidence": "Completed technology audit reports (3, last 12 months per sampling methodology); Audit methodology documentation; Sample findings with risk ratings and recommendations; Evidence of capital market-specific audit scope",
           "method": "Inspection"
         },
         {
@@ -341,8 +389,8 @@
         },
         {
           "subProcedure": "Findings remediation tracking",
-          "assessmentProcedures": "1. Obtain the audit findings remediation tracker.\n2. Select a sample of 10 findings and verify each is assigned to an owner, has a target remediation date, and is tracked through to closure.\n3. Calculate the percentage of findings currently overdue and assess the ageing profile.\n4. Verify that overdue findings are escalated to senior management and the audit committee with clear accountability.\n5. Confirm that remediated findings are validated (re-tested or evidence reviewed) before closure — not simply closed on management assertion.",
-          "expectedEvidence": "Audit findings remediation tracker; Sample of 10 findings with owner, target date, and status; Overdue findings escalation records; Remediation validation evidence for closed findings",
+          "assessmentProcedures": "1. Obtain the audit findings remediation tracker.\n2. Select a sample of 10 findings (per sampling methodology) and verify each is assigned to an owner, has a target remediation date, and is tracked through to closure.\n3. Calculate the percentage of findings currently overdue and assess the ageing profile.\n4. Verify that overdue findings are escalated to senior management and the audit committee with clear accountability.\n5. Confirm that remediated findings are validated (re-tested or evidence reviewed) before closure — not simply closed on management assertion.",
+          "expectedEvidence": "Audit findings remediation tracker; Sample of 10 findings (per sampling methodology) with owner, target date, and status; Overdue findings escalation records; Remediation validation evidence for closed findings",
           "method": "Inspection"
         }
       ]
@@ -353,6 +401,12 @@
       "controlName": "Regulatory Examination Readiness",
       "controlSlug": "regulatory-examination-readiness",
       "domain": "Technology Audit",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 expects capital market intermediaries to be prepared for regulatory examination at any time, maintaining current evidence and demonstrating continuous compliance rather than reactive preparation. This control ensures the entity can respond efficiently to SC examination requests and demonstrate an ongoing compliance posture.",
+        "expectation": "The assessor should find a maintained evidence library mapped to SC-GL/6-2023 requirements with current documentation, a self-assessment completed within 12 months, a designated examination response team with tested protocols, tracked remediation of prior examination findings, and evidence of continuous compliance monitoring.",
+        "keyRisk": "Poor examination readiness results in delayed and incomplete responses to SC examinations, increasing the risk of adverse regulatory findings, enforcement action, and reputational damage in the capital market."
+      },
       "subProcedures": [
         {
           "subProcedure": "Evidence library & currency",
@@ -392,6 +446,12 @@
       "controlName": "Penetration Testing Programme",
       "controlSlug": "penetration-testing-programme",
       "domain": "Technology Audit",
+      "riskTier": "standard",
+      "controlObjective": {
+        "purpose": "SC-GL/6-2023 requires capital market intermediaries to conduct regular penetration testing of their technology environment by qualified, independent testers. This provides an adversarial assessment of the security posture beyond what vulnerability scanning and self-assessment can reveal.",
+        "expectation": "The assessor should find annual penetration testing covering critical capital market systems (trading, settlement, client portals, exchange connectivity), conducted by qualified independent testers with capital market experience. Findings should be tracked with defined remediation SLAs, critical and high findings re-tested after remediation, and results reported to the board audit committee with trend analysis.",
+        "keyRisk": "Without regular penetration testing, exploitable vulnerabilities in trading platforms, client-facing systems, and exchange connectivity may remain undetected, creating attack vectors for threat actors targeting capital market infrastructure."
+      },
       "subProcedures": [
         {
           "subProcedure": "Testing scope & frequency",

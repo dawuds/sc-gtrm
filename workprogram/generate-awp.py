@@ -56,6 +56,14 @@ ORANGE_BG = "FFF3E0"
 ORANGE_TEXT = "E65100"
 GREY_BG = "ECEFF1"
 GREY_TEXT = "546E7A"
+CONTEXT_BG = "EBF0F7"
+CONTEXT_BORDER = "8EAADB"
+CRITICAL_BG = "F8D7DA"
+CRITICAL_TEXT = "842029"
+CONDITIONAL_BG = "FFF3CD"
+CONDITIONAL_TEXT = "664D03"
+STANDARD_BG = "D1E7DD"
+STANDARD_TEXT = "0F5132"
 
 # Borders
 THIN_BORDER = Border(
@@ -88,6 +96,9 @@ METH_LABEL_FONT = Font(name=FONT_SANS, bold=True, size=10, color=NAVY)
 METH_VALUE_FONT = Font(name=FONT_SANS, size=10, color=DARK_GREY)
 METH_HEADER_FONT = Font(name=FONT_SANS, bold=True, size=11, color=WHITE)
 DISCLAIMER_FONT = Font(name=FONT_SANS, italic=True, size=9, color="92400E")
+CONTEXT_FONT = Font(name=FONT_SANS, italic=True, size=9, color=DARK_BLUE)
+CONTEXT_BOLD = Font(name=FONT_SANS, bold=True, italic=True, size=9, color=NAVY)
+TIER_FONT = Font(name=FONT_SANS, bold=True, size=9)
 
 # Alignments
 WRAP = Alignment(wrap_text=True, vertical="top")
@@ -228,6 +239,132 @@ def build_methodology_sheet(wb):
         row += 1
     row += 1
 
+    # --- Sampling Methodology ---
+    section_header("SAMPLING METHODOLOGY")
+
+    # Approach paragraph
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=7)
+    cell = ws.cell(row=row, column=1,
+                   value="This assessment uses judgemental (non-statistical) sampling. "
+                         "Sample sizes are determined by population size and control risk tier. "
+                         "The assessor exercises professional judgement in sample selection, "
+                         "prioritising items with higher inherent risk, recent changes, "
+                         "or anomalies identified during the assessment.")
+    cell.font = BODY_FONT
+    cell.alignment = WRAP
+    ws.row_dimensions[row].height = 48
+    row += 2
+
+    # Table 1: Population-based sample sizes
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=4)
+    cell = ws.cell(row=row, column=1, value="Table 1 \u2014 Population-Based Sample Sizes")
+    cell.font = METH_LABEL_FONT
+    row += 1
+
+    sample_headers = ["Population Size", "Standard Risk", "High Risk (Critical Tier)", "Rationale"]
+    for ci, hdr in enumerate(sample_headers, 1):
+        c = ws.cell(row=row, column=ci, value=hdr)
+        c.font = Font(name=FONT_SANS, bold=True, size=9, color=WHITE)
+        c.fill = PatternFill(start_color=DARK_BLUE, end_color=DARK_BLUE, fill_type="solid")
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+    row += 1
+
+    sample_rows = [
+        ("1\u20135", "All", "All", "Full coverage feasible"),
+        ("6\u201315", "3", "5", "~25\u201340% coverage"),
+        ("16\u201350", "5", "8", "Sufficient for pattern detection"),
+        ("51\u2013100", "8", "12", "Diminishing returns beyond this"),
+        ("100+", "10", "15", "Cap with stratification"),
+    ]
+    for vals in sample_rows:
+        for ci, val in enumerate(vals, 1):
+            c = ws.cell(row=row, column=ci, value=val)
+            c.font = BODY_FONT
+            c.alignment = CENTER
+            c.border = THIN_BORDER
+        row += 1
+    row += 1
+
+    # Table 2: Time-based evidence coverage
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=4)
+    cell = ws.cell(row=row, column=1, value="Table 2 \u2014 Time-Based Evidence Coverage")
+    cell.font = METH_LABEL_FONT
+    row += 1
+
+    time_headers = ["Evidence Type", "Coverage Period", "Rationale", ""]
+    for ci, hdr in enumerate(time_headers, 1):
+        c = ws.cell(row=row, column=ci, value=hdr if hdr else None)
+        c.font = Font(name=FONT_SANS, bold=True, size=9, color=WHITE)
+        c.fill = PatternFill(start_color=DARK_BLUE, end_color=DARK_BLUE, fill_type="solid")
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+    row += 1
+
+    time_rows = [
+        ("Board / committee reports", "Last 4 quarters", "Full annual governance cycle"),
+        ("Operational records (incidents, changes, patches)", "Last 3\u20136 months", "Recent operating effectiveness"),
+        ("Annual processes (risk assessment, DR test, pen test)", "Last 12 months", "Full cycle"),
+        ("Continuous monitoring (SOC, logs, alerts)", "Last 30 days", "Current state verification"),
+        ("Policies and frameworks", "Current version + prior", "Change tracking"),
+    ]
+    for vals in time_rows:
+        for ci, val in enumerate(vals, 1):
+            c = ws.cell(row=row, column=ci, value=val)
+            c.font = BODY_FONT
+            c.alignment = Alignment(wrap_text=True, vertical="top")
+            c.border = THIN_BORDER
+        ws.row_dimensions[row].height = 28
+        row += 1
+    row += 1
+
+    # Table 3: Risk tier classification
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=4)
+    cell = ws.cell(row=row, column=1, value="Table 3 \u2014 Control Risk Tier Classification")
+    cell.font = METH_LABEL_FONT
+    row += 1
+
+    tier_headers = ["Risk Tier", "Sampling Level", "Description", "Controls"]
+    for ci, hdr in enumerate(tier_headers, 1):
+        c = ws.cell(row=row, column=ci, value=hdr)
+        c.font = Font(name=FONT_SANS, bold=True, size=9, color=WHITE)
+        c.fill = PatternFill(start_color=DARK_BLUE, end_color=DARK_BLUE, fill_type="solid")
+        c.alignment = CENTER
+        c.border = THIN_BORDER
+    row += 1
+
+    tier_rows = [
+        ("Critical", "High Risk column",
+         "Foundation controls whose failure directly impacts market operations, regulatory standing, or client protection",
+         "GRA-1, CYB-2, RIM-1, RIM-2, RIM-5, RIM-6, DET-3"),
+        ("Standard", "Standard Risk column",
+         "Controls that support effective technology risk management but whose absence has indirect or contained impact",
+         "GRA-2\u201310, CYB-1/3/4, RIM-3/4/7/8, TPC-1\u20137, DET-1/2"),
+        ("Conditional", "Standard Risk (if applicable)",
+         "Controls applicable only if the entity engages in specific activities. Mark N/A with justification if not applicable.",
+         "DET-4, DET-5, DET-6"),
+    ]
+    for vals in tier_rows:
+        for ci, val in enumerate(vals, 1):
+            c = ws.cell(row=row, column=ci, value=val)
+            c.font = BODY_FONT
+            c.alignment = Alignment(wrap_text=True, vertical="top")
+            c.border = THIN_BORDER
+            # Color the tier label
+            if ci == 1:
+                if val == "Critical":
+                    c.fill = PatternFill(start_color=CRITICAL_BG, end_color=CRITICAL_BG, fill_type="solid")
+                    c.font = Font(name=FONT_SANS, bold=True, size=10, color=CRITICAL_TEXT)
+                elif val == "Standard":
+                    c.fill = PatternFill(start_color=STANDARD_BG, end_color=STANDARD_BG, fill_type="solid")
+                    c.font = Font(name=FONT_SANS, bold=True, size=10, color=STANDARD_TEXT)
+                elif val == "Conditional":
+                    c.fill = PatternFill(start_color=CONDITIONAL_BG, end_color=CONDITIONAL_BG, fill_type="solid")
+                    c.font = Font(name=FONT_SANS, bold=True, size=10, color=CONDITIONAL_TEXT)
+        ws.row_dimensions[row].height = 48
+        row += 1
+    row += 1
+
     # --- Conclusion Scale ---
     section_header("CONCLUSION SCALE")
     conclusions = [
@@ -318,15 +455,48 @@ def build_assessment_sheet(wb, sheet_data):
     # --- Data rows ---
     proc_idx = 0
     for section in sheet_data["sections"]:
+        # Risk tier badge for section header
+        risk_tier = section.get("riskTier", "standard")
+        tier_label = {"critical": " [CRITICAL]", "conditional": " [CONDITIONAL]", "standard": ""}
+        header_text = section["sectionHeader"] + tier_label.get(risk_tier, "")
+
         # Section header row (merged across all 12 columns)
         ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=12)
-        cell = ws.cell(row=row, column=1, value=section["sectionHeader"])
+        cell = ws.cell(row=row, column=1, value=header_text)
         cell.font = SECTION_HEADER_FONT
-        cell.fill = SECTION_FILL
         cell.alignment = Alignment(vertical="center")
         cell.border = THIN_BORDER
         ws.row_dimensions[row].height = 24
+        # Color section header by risk tier
+        if risk_tier == "critical":
+            cell.fill = PatternFill(start_color="8B1A1A", end_color="8B1A1A", fill_type="solid")
+        elif risk_tier == "conditional":
+            cell.fill = PatternFill(start_color="7D6608", end_color="7D6608", fill_type="solid")
+        else:
+            cell.fill = SECTION_FILL
         row += 1
+
+        # Control context row (purpose, expectation, key risk)
+        obj = section.get("controlObjective")
+        if obj:
+            context_text = (
+                f"PURPOSE: {obj.get('purpose', '')}\n"
+                f"EXPECTATION: {obj.get('expectation', '')}\n"
+                f"KEY RISK: {obj.get('keyRisk', '')}"
+            )
+            ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=12)
+            cell = ws.cell(row=row, column=1, value=context_text)
+            cell.font = CONTEXT_FONT
+            cell.fill = PatternFill(start_color=CONTEXT_BG, end_color=CONTEXT_BG, fill_type="solid")
+            cell.alignment = WRAP
+            cell.border = Border(
+                left=Side(style="thin", color=CONTEXT_BORDER),
+                right=Side(style="thin", color=CONTEXT_BORDER),
+                top=Side(style="thin", color=CONTEXT_BORDER),
+                bottom=Side(style="thin", color=CONTEXT_BORDER),
+            )
+            ws.row_dimensions[row].height = 72
+            row += 1
 
         # Sub-procedures
         for sp in section["subProcedures"]:
