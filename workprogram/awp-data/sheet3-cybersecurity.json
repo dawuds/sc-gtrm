@@ -1,0 +1,205 @@
+{
+  "sheetName": "Cybersecurity",
+  "sheetNumber": 3,
+  "domains": ["Cybersecurity"],
+  "sections": [
+    {
+      "sectionHeader": "CYB-1 \u2014 Cyber Threat Management",
+      "ref": "CYB-1",
+      "controlName": "Cyber Threat Management",
+      "controlSlug": "cyber-threat-management",
+      "domain": "Cybersecurity",
+      "subProcedures": [
+        {
+          "subProcedure": "Threat intelligence programme",
+          "assessmentProcedures": "1. Obtain documentation of the threat intelligence programme, including subscribed feeds (government, commercial, industry) and verify each feed is active with current subscriptions.\n2. Verify that subscribed feeds include sources relevant to capital market threats (e.g., MyCERT, SC Malaysia advisories, FS-ISAC, commercial CTI providers covering APAC financial sector).\n3. Review the feed ingestion process and confirm threat intelligence is parsed, triaged, and routed to SOC analysts within defined SLAs.\n4. Inspect a sample of 5 threat intelligence items received in the last 6 months and trace each from ingestion through assessment to action taken (e.g., IOC deployment, detection rule creation, patch prioritisation).",
+          "expectedEvidence": "Threat intelligence programme charter or procedure document; list of subscribed CTI feeds with subscription confirmations; sample threat intelligence triage records (last 6 months); IOC deployment logs",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Capital market threat assessment",
+          "assessmentProcedures": "1. Obtain the last 2 periodic threat assessment reports (covering the last 12 months) and verify they address capital market-specific threat scenarios.\n2. Confirm assessments cover relevant threat categories: trading system attacks, market data manipulation, DDoS against exchange connectivity, ransomware targeting settlement infrastructure, insider trading facilitation, and state-sponsored threats to financial markets.\n3. Verify threat assessments reference the entity's specific technology footprint (trading platforms, OMS/EMS, market data feeds, Bursa Malaysia connectivity).\n4. Review how threat assessment findings have been translated into updated risk ratings or control priorities in the technology risk register.",
+          "expectedEvidence": "Periodic threat assessment reports (last 2 cycles); technology risk register with threat-driven updates; threat scenario documentation referencing capital market systems",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Threat hunting capability",
+          "assessmentProcedures": "1. Interview threat hunting personnel (or SOC analysts performing hunting duties) to understand hunting methodology, tools, and frequency.\n2. Obtain threat hunting reports or logs from the last 12 months and verify at least 2 proactive hunts were conducted.\n3. Review hunting hypotheses to confirm they target advanced persistent threats relevant to capital market intermediaries (e.g., credential theft targeting trading systems, lateral movement toward settlement infrastructure, data exfiltration of client positions).\n4. Determine whether hunting findings have resulted in new detection rules, IOC updates, or control improvements.\n5. Verify that threat hunting covers algorithmic trading infrastructure and market data feed systems, not just generic enterprise IT.",
+          "expectedEvidence": "Threat hunting reports (last 12 months); hunting hypothesis documentation; new detection rules created from hunting findings; threat hunting tools inventory",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Threat information sharing",
+          "assessmentProcedures": "1. Obtain evidence of participation in SC Malaysia threat information sharing initiatives, MyCERT coordination, and any capital market industry working groups or ISACs.\n2. Review records of threat intelligence shared with and received from peer institutions, regulators, and industry bodies over the last 12 months.\n3. Verify the entity has designated contacts and defined procedures for receiving and acting on SC advisories and MyCERT alerts.\n4. Confirm participation records show active engagement (not merely membership) through meeting attendance, intelligence contributions, or exercise participation.",
+          "expectedEvidence": "SC advisory distribution and acknowledgement records; MyCERT coordination records; ISAC or working group membership and attendance records (last 12 months); evidence of intelligence contributions shared externally",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Threat landscape reporting",
+          "assessmentProcedures": "1. Obtain threat landscape reports or briefings provided to senior management and the board over the last 4 quarters.\n2. Verify reports cover emerging threats to the capital market sector, threat actor trends (nation-state, organised crime, hacktivists), and specific risks to the entity's market operations.\n3. Confirm reports include actionable recommendations and track implementation status of previously recommended actions.\n4. Review whether threat landscape reporting has triggered any out-of-cycle risk assessments, budget requests, or control enhancements.",
+          "expectedEvidence": "Quarterly threat landscape reports or board briefing slides (last 4 quarters); board/committee meeting minutes noting threat briefing discussions; action item tracking from threat briefings",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Threat-driven control updates",
+          "assessmentProcedures": "1. Select a sample of 3 significant threat intelligence items or threat assessment findings from the last 12 months and trace each to corresponding control updates.\n2. Verify the process from threat identification to control update follows a defined workflow with documented approvals and timelines.\n3. Review examples of control updates driven by threat intelligence (e.g., new firewall rules, updated detection signatures, additional access restrictions on trading systems, patching prioritisation changes).\n4. Confirm that a feedback loop exists where control effectiveness is re-assessed after threat-driven changes are implemented.",
+          "expectedEvidence": "Change records linked to threat intelligence triggers; detection rule update logs; firewall change requests referencing threat intelligence; post-implementation verification records",
+          "method": "Inspection"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "CYB-2 \u2014 Security Operations Centre",
+      "ref": "CYB-2",
+      "controlName": "Security Operations Centre",
+      "controlSlug": "security-operations-centre",
+      "domain": "Cybersecurity",
+      "subProcedures": [
+        {
+          "subProcedure": "SOC deployment and architecture",
+          "assessmentProcedures": "1. Obtain the SOC architecture documentation, including deployment model (in-house, MSSP, hybrid) and technology stack (SIEM, SOAR, EDR, NDR).\n2. Review the SOC charter or terms of reference defining scope of monitoring, escalation authority, and integration with incident response.\n3. Verify the SOC deployment model is appropriate for the entity's scale, with clear contractual obligations if MSSP is used (including SLAs for capital market-specific monitoring).\n4. Confirm the SOC has documented runbooks for capital market-specific scenarios (trading system compromise, market data feed disruption, exchange connectivity anomalies, Bursa Malaysia link failure).",
+          "expectedEvidence": "SOC architecture document; SOC charter or terms of reference; MSSP contract with SLAs (if applicable); SOC runbook inventory covering capital market scenarios",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "SIEM log source coverage",
+          "assessmentProcedures": "1. Obtain the complete log source inventory feeding into the SIEM and compare against the entity's critical asset register.\n2. Verify that all critical capital market systems are included: trading platforms (OMS/EMS), settlement systems, market data feed handlers, Bursa Malaysia connectivity gateways, client portals, algorithmic trading engines, and privileged access management systems.\n3. Confirm log ingestion rates are within SIEM capacity and no critical log sources are being dropped or delayed.\n4. Review the last log source coverage gap analysis and verify identified gaps have been remediated.\n5. Inspect SIEM health dashboards to confirm all critical log sources show active and current data flow.",
+          "expectedEvidence": "SIEM log source inventory; critical asset register cross-reference; SIEM health/ingestion dashboard screenshots; log source coverage gap analysis report",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Detection rules and use cases",
+          "assessmentProcedures": "1. Obtain the SIEM detection rule inventory and verify total rule count, categorisation, and last review date for each rule.\n2. Select a sample of 10 detection rules and assess whether they are tuned for capital market-specific attack patterns: unusual trading volumes or order patterns, market data manipulation attempts, unauthorised access to trading systems, privileged account abuse on settlement infrastructure, exchange connectivity anomalies.\n3. Review the detection engineering process for creating, testing, and deploying new rules, including how false positive rates are managed.\n4. Verify that detection rules are updated in response to new threat intelligence, recent incidents, and changes to the technology environment.\n5. Confirm that detection rules cover MITRE ATT&CK techniques relevant to financial sector threat actors.",
+          "expectedEvidence": "SIEM detection rule inventory with review dates; sample detection rule configurations (10 rules); detection engineering change log; false positive tuning records; MITRE ATT&CK coverage mapping",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Trading hours and after-hours monitoring",
+          "assessmentProcedures": "1. Verify 24/7 monitoring coverage by reviewing SOC shift rosters for the last 3 months, confirming continuous staffing or MSSP coverage across all shifts.\n2. Confirm that monitoring during Bursa Malaysia trading hours (pre-market, continuous trading, closing) has enhanced alerting thresholds and faster escalation SLAs.\n3. Review after-hours monitoring procedures for batch settlement processing, overnight reconciliation runs, and market data feed maintenance windows.\n4. Verify that weekend and public holiday monitoring covers scheduled maintenance, DR testing, and any overnight trading activity (e.g., global market exposure).\n5. Interview SOC shift leads to confirm awareness of trading calendar, settlement deadlines, and market-critical time windows.",
+          "expectedEvidence": "SOC shift rosters (last 3 months); trading hours escalation SLA documentation; after-hours monitoring procedures; Bursa Malaysia trading calendar integration evidence; weekend/holiday coverage records",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Alert handling and triage",
+          "assessmentProcedures": "1. Select a sample of 5 security alerts from the last quarter and trace each from initial detection through triage, investigation, and disposition.\n2. Verify each alert was triaged within the defined SLA and assigned an appropriate severity based on documented criteria.\n3. Confirm that alert disposition is documented (true positive escalated, false positive with tuning action, benign true positive acknowledged).\n4. Review alert escalation procedures and verify at least 2 escalated alerts reached the appropriate response team with documented handoff.\n5. Determine whether trading system-related alerts receive priority handling compared to general IT alerts.",
+          "expectedEvidence": "Sample alert tickets with full lifecycle (5 alerts); alert triage SLA compliance report; escalation records with handoff documentation; alert severity classification criteria",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "SOC performance metrics",
+          "assessmentProcedures": "1. Obtain SOC performance reports for the last 4 quarters and verify they track key metrics: mean time to detect (MTTD), mean time to respond (MTTR), alert volume trends, false positive rates, and escalation counts.\n2. Verify MTTD and MTTR meet defined targets, particularly for critical-severity alerts affecting trading or settlement systems.\n3. Review alert volume trends to identify whether volumes are increasing, stable, or decreasing and whether the SOC has adequate capacity.\n4. Confirm metrics are reported to CISO and senior management with analysis of trends and recommended improvements.\n5. Compare current quarter metrics against previous quarters to assess whether SOC performance is improving or degrading.",
+          "expectedEvidence": "Quarterly SOC performance reports (last 4 quarters); MTTD/MTTR trend data; alert volume analysis; SOC capacity assessment; management reporting on SOC metrics",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "SOC effectiveness assessment",
+          "assessmentProcedures": "1. Obtain the most recent SOC effectiveness assessment or maturity review (internal or external) conducted within the last 24 months.\n2. Review the assessment scope and verify it covered people, process, and technology dimensions of SOC operations.\n3. Inspect findings and recommendations, and verify an action plan was developed with assigned owners and target dates.\n4. Confirm progress against the action plan by reviewing status updates and verify critical recommendations have been addressed.\n5. Determine whether the assessment included testing of detection capability through purple team exercises or simulated attack scenarios targeting capital market systems.",
+          "expectedEvidence": "SOC effectiveness assessment report (most recent); remediation action plan with status tracking; purple team or detection testing results; SOC maturity scorecard",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "SOC staffing and skills",
+          "assessmentProcedures": "1. Review the SOC organisational structure, headcount, and verify staffing levels are adequate for 24/7 coverage without excessive overtime or single points of failure.\n2. Obtain SOC analyst training records for the last 12 months and verify analysts have received training on capital market systems, trading protocols, and relevant regulatory requirements.\n3. Confirm SOC analysts hold relevant certifications (e.g., GCIA, GCIH, OSCP, vendor-specific SIEM certifications) and the team has a skills development plan.\n4. Interview SOC management on staff retention, succession planning, and how knowledge of capital market-specific threats and systems is maintained across the team.\n5. Verify that onboarding procedures for new SOC analysts include orientation on capital market operations, critical system topology, and trading hour requirements.",
+          "expectedEvidence": "SOC organisational chart with headcount; analyst training records (last 12 months); certification inventory; skills development plan; staff retention and succession documentation; analyst onboarding checklist",
+          "method": "Inspection / Inquiry"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "CYB-3 \u2014 Vulnerability Management Programme",
+      "ref": "CYB-3",
+      "controlName": "Vulnerability Management Programme",
+      "controlSlug": "vulnerability-management-programme",
+      "domain": "Cybersecurity",
+      "subProcedures": [
+        {
+          "subProcedure": "Vulnerability scanning programme",
+          "assessmentProcedures": "1. Obtain the vulnerability management policy or procedure and verify it defines scanning frequency, tools, responsibilities, and scope.\n2. Review the scanning schedule and confirm scans are executed at the required frequency (e.g., weekly or monthly for critical systems, quarterly for others).\n3. Verify that scanning tools are current, licensed, and configured with up-to-date vulnerability signatures.\n4. Inspect the last 3 scan execution reports to confirm scans completed successfully without premature termination or configuration errors.\n5. Confirm that authenticated scanning is used for critical capital market systems to ensure accurate detection depth.",
+          "expectedEvidence": "Vulnerability management policy/procedure; scanning schedule; scanning tool licence and configuration records; scan execution reports (last 3 scans); authenticated scan configuration evidence",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Asset coverage and scope",
+          "assessmentProcedures": "1. Obtain the vulnerability scanning asset scope and compare against the entity's complete IT asset register and critical system inventory.\n2. Verify that all capital market systems are included in scanning scope: trading platforms, OMS/EMS, settlement systems, market data feed infrastructure, client portals, algorithmic trading engines, and supporting middleware.\n3. Identify any systems excluded from scanning (e.g., legacy trading systems, vendor-managed platforms) and verify documented risk acceptance with compensating controls.\n4. Confirm that cloud-hosted capital market workloads are included in the scanning programme.\n5. Review asset discovery procedures to ensure new systems are added to scanning scope within a defined timeframe after deployment.",
+          "expectedEvidence": "Vulnerability scanning scope document; IT asset register cross-reference; excluded assets register with risk acceptance approvals; cloud workload scanning evidence; asset discovery procedure",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Risk-based patching SLAs",
+          "assessmentProcedures": "1. Obtain the patch management policy and verify defined SLAs by vulnerability severity: critical (e.g., 72 hours), high (e.g., 14 days), medium (e.g., 30 days), low (e.g., 90 days).\n2. Verify that SLAs account for capital market operational constraints, including trading windows, settlement cycles, and market closure periods for applying patches.\n3. Review the emergency patching procedure for zero-day vulnerabilities affecting production trading systems, including approval workflow, testing requirements, and rollback plans.\n4. Confirm that SLAs differentiate between internet-facing systems, internal capital market systems, and supporting infrastructure.\n5. Interview the patch management team to understand how patching of trading systems is coordinated with market operations to minimise disruption during trading hours.",
+          "expectedEvidence": "Patch management policy with SLAs; emergency patching procedure; trading system patch coordination records; SLA definitions by system classification",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Patch compliance and SLA adherence",
+          "assessmentProcedures": "1. Obtain patch compliance reports for the last 3 months and verify overall compliance rates against defined SLAs.\n2. Select a sample of 10 critical and high vulnerabilities identified in the last 6 months and trace each from identification through patching to closure, verifying SLA compliance.\n3. Review the current count of overdue patches by severity and system classification, with particular attention to overdue patches on trading and settlement systems.\n4. Verify that patch compliance metrics are reported to CISO and senior management with trend analysis.\n5. Confirm that patch deployment to capital market systems follows a defined testing and change management process before production rollout.",
+          "expectedEvidence": "Patch compliance reports (last 3 months); sample vulnerability-to-patch trace records (10 items); overdue patch inventory; management patch compliance dashboards; change records for patches applied to trading systems",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Penetration testing integration",
+          "assessmentProcedures": "1. Obtain the most recent penetration testing report (within last 12 months) and verify it was conducted by qualified independent testers.\n2. Confirm the penetration test scope included critical capital market systems: trading platforms, settlement systems, client-facing portals, market data infrastructure, and external connectivity points.\n3. Verify that penetration testing findings have been fed into the vulnerability management programme with appropriate severity ratings and remediation SLAs.\n4. Review remediation status of penetration testing findings, selecting a sample of 5 critical/high findings to confirm timely closure.\n5. Determine whether penetration testing includes testing of Bursa Malaysia connectivity security, algorithmic trading API endpoints, and FIX protocol implementations.",
+          "expectedEvidence": "Penetration testing report (most recent); tester qualification evidence; scope documentation; finding remediation tracking; sample finding closure evidence (5 findings)",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Exception and risk acceptance management",
+          "assessmentProcedures": "1. Obtain the vulnerability exception or risk acceptance register and review all current open exceptions.\n2. Verify each exception has documented business justification, risk owner approval at appropriate authority level, defined compensating controls, and a review/expiry date.\n3. Select a sample of 5 exceptions and verify compensating controls are in place and effective.\n4. Review expired exceptions to confirm they were re-assessed and either remediated or formally renewed.\n5. Confirm that exceptions for vulnerabilities on trading and settlement systems require CISO or senior management approval.",
+          "expectedEvidence": "Vulnerability exception/risk acceptance register; exception approval records with risk owner sign-off; compensating control documentation; exception review/renewal records; approval authority matrix for exceptions",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Vulnerability trending and reporting",
+          "assessmentProcedures": "1. Obtain vulnerability trend reports for the last 4 quarters and verify they track total vulnerability counts, new vulnerabilities identified, remediated, and remaining open by severity.\n2. Review whether trending data shows improvement or deterioration in the entity's vulnerability posture, particularly for capital market systems.\n3. Verify that recurring vulnerability categories (e.g., same vulnerability class appearing across multiple scan cycles) are identified and root cause analysis is conducted.\n4. Confirm vulnerability trending reports are provided to CISO and board/risk committee with recommendations for systemic improvements.\n5. Determine whether vulnerability data is correlated with threat intelligence to prioritise remediation based on active exploitation in the capital market sector.",
+          "expectedEvidence": "Quarterly vulnerability trend reports (last 4 quarters); root cause analysis for recurring vulnerabilities; management reporting with trend analysis; threat-informed prioritisation evidence",
+          "method": "Inspection"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "CYB-4 \u2014 Network Security Architecture",
+      "ref": "CYB-4",
+      "controlName": "Network Security Architecture",
+      "controlSlug": "network-security-architecture",
+      "domain": "Cybersecurity",
+      "subProcedures": [
+        {
+          "subProcedure": "Network architecture documentation",
+          "assessmentProcedures": "1. Obtain the current network architecture diagram and verify it is dated, version-controlled, and approved by the network security team or CTO.\n2. Verify the diagram accurately reflects the production environment, including all network zones, VLAN assignments, and connectivity paths for capital market systems.\n3. Confirm the diagram identifies all external connectivity points: Bursa Malaysia links, clearing house connections, market data provider feeds, client VPN/API gateways, and internet-facing services.\n4. Review the diagram update process and confirm it is updated within a defined timeframe after network changes.\n5. Interview the network team to confirm the diagram reflects the as-built environment, not just the designed state.",
+          "expectedEvidence": "Network architecture diagram (current version, dated); diagram version history; network change log cross-referenced to diagram updates; external connectivity inventory",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Network segmentation \u2014 trading, settlement, corporate, and market data",
+          "assessmentProcedures": "1. Verify that distinct network segments exist for: (a) trading systems and OMS/EMS, (b) settlement and clearing systems, (c) market data feed infrastructure, (d) corporate/office network, (e) client-facing DMZ, and (f) management/administrative network.\n2. Review VLAN configurations and routing tables to confirm segments are logically or physically separated with controlled inter-segment access.\n3. Inspect firewall or access control policies governing traffic between trading networks and corporate networks, confirming least-privilege rules with no overly permissive paths.\n4. Verify that algorithmic trading infrastructure is segmented with dedicated network paths to exchange connectivity, isolated from general corporate traffic.\n5. Test a sample of 3 inter-segment access rules by reviewing recent traffic logs to confirm only authorised traffic flows between zones.",
+          "expectedEvidence": "VLAN configuration documentation; inter-segment firewall rule sets; routing table extracts; network traffic flow analysis for inter-segment paths; algorithmic trading network isolation evidence",
+          "method": "Inspection / Observation"
+        },
+        {
+          "subProcedure": "IDS/IPS deployment and monitoring",
+          "assessmentProcedures": "1. Obtain the IDS/IPS deployment inventory and verify sensors are deployed on all critical network segments: trading network perimeter, settlement system segments, market data feed paths, internet-facing DMZ, and Bursa Malaysia connectivity.\n2. Review IDS/IPS signature update procedures and confirm signatures are updated at least weekly, with emergency updates for critical threats.\n3. Select a sample of 5 IDS/IPS alerts from the last quarter and verify each was triaged, investigated, and dispositioned according to documented procedures.\n4. Confirm IDS/IPS operates in prevention mode (IPS) for internet-facing segments and verify the policy for detection-only vs. prevention mode on internal trading network segments.\n5. Review IDS/IPS performance metrics including alert volumes, false positive rates, and any detection blind spots identified in the last review.",
+          "expectedEvidence": "IDS/IPS deployment map with sensor locations; signature update logs; sample alert investigation records (5 alerts); IPS mode configuration evidence; IDS/IPS performance metrics report",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Market data feed and exchange connectivity security",
+          "assessmentProcedures": "1. Obtain documentation of all market data feed connections and exchange connectivity (Bursa Malaysia, Bursa Malaysia Derivatives, clearing houses, central depository) and verify security controls for each.\n2. Verify that exchange connectivity uses dedicated leased lines, encrypted VPN tunnels, or SC-approved secure channels with mutual authentication.\n3. Review access controls on market data feed handlers and confirm only authorised trading systems and personnel can access raw market data.\n4. Inspect FIX protocol gateway configurations for authentication, session management, message validation, and heartbeat monitoring.\n5. Confirm that market data feed redundancy and failover paths are secured with equivalent controls to primary paths.",
+          "expectedEvidence": "Exchange connectivity inventory with security controls; leased line or VPN configuration records; market data feed access control lists; FIX gateway configuration extracts; failover path security documentation",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Firewall rule management",
+          "assessmentProcedures": "1. Obtain the firewall rule management policy and verify it defines rule request, approval, implementation, and periodic review processes.\n2. Review the last firewall rule review (conducted within last 12 months) and verify unused, redundant, or overly permissive rules were identified and remediated.\n3. Select a sample of 5 firewall rule change requests from the last 6 months and verify each followed the defined approval workflow with business justification and security review.\n4. Inspect firewall rule sets for any-to-any rules, rules permitting direct internet access from trading networks, or rules with no expiry date on temporary access.\n5. Verify that firewall rules governing Bursa Malaysia connectivity and clearing house connections are reviewed by both network security and market operations teams.",
+          "expectedEvidence": "Firewall rule management policy; last firewall rule review report; sample firewall change requests with approvals (5 changes); firewall rule set extracts for critical segments; Bursa connectivity rule review records",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Network architecture review",
+          "assessmentProcedures": "1. Obtain the most recent network architecture review report (conducted within last 12 months) and verify it assessed the architecture against the current threat landscape and SC-GL/6-2023 requirements.\n2. Verify the review scope covered all capital market network segments including trading, settlement, market data, and external connectivity.\n3. Review findings and recommendations, and confirm an action plan was developed with assigned owners, target dates, and progress tracking.\n4. Determine whether the review assessed the architecture's resilience to common attack scenarios: lateral movement from corporate to trading networks, DDoS against exchange connectivity, man-in-the-middle on market data feeds.\n5. Confirm that the network architecture review considered emerging requirements such as zero-trust principles, microsegmentation, and software-defined networking for capital market infrastructure.",
+          "expectedEvidence": "Network architecture review report (most recent); review scope documentation; findings remediation action plan with status; threat scenario assessment evidence; zero-trust readiness assessment",
+          "method": "Inspection"
+        }
+      ]
+    }
+  ]
+}

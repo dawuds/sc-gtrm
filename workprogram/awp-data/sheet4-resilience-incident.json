@@ -1,0 +1,307 @@
+{
+  "sheetName": "Resilience & Incident Management",
+  "sheetNumber": 4,
+  "domains": ["Business Continuity", "Incident Management"],
+  "sections": [
+    {
+      "sectionHeader": "RIM-1 — BCM Programme for Market Operations",
+      "ref": "RIM-1",
+      "controlName": "BCM Programme for Market Operations",
+      "controlSlug": "bcm-programme",
+      "domain": "Business Continuity",
+      "subProcedures": [
+        {
+          "subProcedure": "BIA for capital market functions",
+          "assessmentProcedures": "1. Obtain the business impact analysis (BIA) for capital market functions.\n2. Verify the BIA covers trading, clearing, settlement, custody, and client services with assigned criticality levels.\n3. Confirm that impact timelines (maximum tolerable downtime) are quantified for each function in terms of financial loss, regulatory breach, and market disruption.\n4. Determine whether the BIA was reviewed and updated within the last 12 months or after a material change in operations.",
+          "expectedEvidence": "BIA document for capital market operations; criticality classification matrix; BIA review/approval records (last 12 months)",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "BCP coverage for trading, clearing, and settlement",
+          "assessmentProcedures": "1. Obtain the BCP document and verify it addresses recovery strategies for trading, clearing, settlement, and custody operations.\n2. Review whether the BCP defines activation triggers, escalation paths, and roles for each capital market function.\n3. Confirm that the BCP addresses scenarios specific to market operations — trading halt, clearing system failure, settlement cycle disruption during T+2 window.\n4. Verify that the BCP has been approved by senior management or the board within the last 12 months.",
+          "expectedEvidence": "BCP document covering trading, clearing, settlement, and custody; BCP approval records; scenario coverage matrix",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "RTO and RPO definitions and validation",
+          "assessmentProcedures": "1. Review defined RTO and RPO targets for each critical capital market system (order management, trade matching, clearing engine, settlement processing).\n2. Verify that RTOs account for market trading hours and settlement cycle deadlines (T+2).\n3. Confirm that RTO/RPO targets have been validated through actual DR testing within the last 12 months.\n4. Determine whether any validation tests failed to meet targets, and review remediation actions taken.",
+          "expectedEvidence": "RTO/RPO register for critical market systems; DR test results validating RTO/RPO achievement; remediation records for any missed targets",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Coordination with market operators and clearing houses",
+          "assessmentProcedures": "1. Obtain records of coordination with Bursa Malaysia, clearing houses, and central depository for business continuity planning.\n2. Verify that agreed communication protocols exist for notifying market operators during a disruption event.\n3. Review whether the entity participates in joint BCP planning or tabletop exercises with market infrastructure providers.\n4. Interview the BCM Manager to assess the maturity of coordination relationships and any gaps identified.",
+          "expectedEvidence": "Coordination records with Bursa Malaysia and clearing houses; agreed communication protocols; joint exercise participation records",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "BCP review cycle and continuous improvement",
+          "assessmentProcedures": "1. Obtain the BCP review schedule and verify the plan has been reviewed at least annually or after significant incidents, organisational changes, or DR test findings.\n2. Review the change log for the BCP document to confirm updates reflect lessons learned from tests, incidents, and regulatory changes.\n3. Interview the BCM Manager or COO to understand how lessons from actual disruptions and DR exercises are incorporated into the BCP.\n4. Verify that BCP review outcomes are reported to senior management or the board.",
+          "expectedEvidence": "BCP review schedule and change log; board or management reporting on BCP reviews; evidence of updates post-incident or post-exercise",
+          "method": "Inspection / Inquiry"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "RIM-2 — Trading System Resilience",
+      "ref": "RIM-2",
+      "controlName": "Trading System Resilience",
+      "controlSlug": "trading-system-resilience",
+      "domain": "Business Continuity",
+      "subProcedures": [
+        {
+          "subProcedure": "Redundant trading infrastructure",
+          "assessmentProcedures": "1. Obtain the trading system architecture documentation, including network diagrams and infrastructure design.\n2. Verify that the architecture employs redundancy at each critical layer — servers, databases, network paths, and trading venue connectivity.\n3. Confirm whether the design is active-active or active-passive, and determine the rationale for the chosen configuration.\n4. Review whether order management systems (OMS) and market data feeds have redundant pathways to Bursa Malaysia.",
+          "expectedEvidence": "Trading system architecture diagrams; infrastructure design documentation; redundancy configuration details for OMS, market data, and venue connectivity",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Failover capability and testing",
+          "assessmentProcedures": "1. Obtain failover test reports from the last 12 months for primary trading systems.\n2. Review test objectives, measured failover times, and whether failover completed within defined RTO targets.\n3. Verify that failover testing included realistic scenarios — mid-session failure during market hours, database replication switchover, and market data feed failover.\n4. Confirm that issues identified during failover tests have been remediated and retested.",
+          "expectedEvidence": "Failover test reports (last 12 months); test results against RTO targets; issue remediation records from failover tests",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Capacity planning for market volatility",
+          "assessmentProcedures": "1. Obtain capacity planning documentation for trading systems.\n2. Verify that capacity thresholds are defined with headroom for high-volatility scenarios (e.g., 2x-3x normal trading volume).\n3. Review monitoring data or capacity reports from the last 12 months to confirm peak utilisation levels and remaining headroom.\n4. Determine whether capacity planning accounts for Bursa Malaysia market structure changes, new product launches, or anticipated volume increases.",
+          "expectedEvidence": "Capacity planning documentation; capacity utilisation reports (last 12 months); headroom calculations for peak trading scenarios",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Alternative trading channels",
+          "assessmentProcedures": "1. Obtain documentation of alternative trading channels or manual order submission procedures available when primary systems are unavailable.\n2. Verify that alternative channels allow the entity to manage open positions, submit essential orders, and communicate with Bursa Malaysia during primary system outages.\n3. Review whether alternative channel procedures have been tested within the last 12 months, including test results.\n4. Interview the Head of Trading Technology to confirm staff are trained on alternative channel procedures.",
+          "expectedEvidence": "Alternative trading channel procedures; test records for alternative channels (last 12 months); staff training records",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Real-time monitoring and automated alerting",
+          "assessmentProcedures": "1. Review real-time health monitoring configuration for trading systems, including monitored parameters (latency, throughput, error rates, connectivity status).\n2. Verify that automated alerts are configured to trigger when trading system health degrades beyond defined thresholds.\n3. Confirm that alerting covers market data feed latency and trading venue connectivity status.\n4. Obtain sample alert records from the last 3 months and verify appropriate response and escalation occurred.",
+          "expectedEvidence": "Monitoring dashboard configuration; alert threshold definitions; sample alert records and response logs (last 3 months)",
+          "method": "Inspection"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "RIM-3 — DR Testing Programme",
+      "ref": "RIM-3",
+      "controlName": "DR Testing Programme",
+      "controlSlug": "dr-testing-programme",
+      "domain": "Business Continuity",
+      "subProcedures": [
+        {
+          "subProcedure": "DR test programme and schedule",
+          "assessmentProcedures": "1. Obtain the current-year DR test plan and verify it covers all critical capital market systems (trading, clearing, settlement, market data).\n2. Review test objectives and scenarios to confirm they include realistic failure conditions — not just basic switchover but also data corruption, simultaneous multi-system failure, and prolonged outage scenarios.\n3. Verify that success criteria are defined for each test, including RTO/RPO achievement and data integrity verification.\n4. Confirm that the DR test schedule accounts for market calendar constraints (avoiding testing during peak trading periods without appropriate controls).",
+          "expectedEvidence": "Current-year DR test plan; test scenario descriptions with success criteria; DR test schedule",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Industry DR exercise participation",
+          "assessmentProcedures": "1. Obtain records of participation in industry-wide DR exercises coordinated by SC Malaysia or Bursa Malaysia within the last 12 months.\n2. Review the entity's role and scope of participation in the exercise.\n3. Verify that findings from the industry exercise were documented and any gaps identified were addressed.\n4. Interview the BCM Manager to understand how the entity prepares for industry exercises and incorporates findings.",
+          "expectedEvidence": "Industry DR exercise participation records (last 12 months); exercise findings and the entity's follow-up actions; correspondence with SC or Bursa regarding exercises",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Data recovery and integrity testing",
+          "assessmentProcedures": "1. Obtain DR test reports from the last 12 months and identify the data recovery component of each test.\n2. Verify that data recovery tests include integrity validation — reconciliation of restored data against source records, verification of transaction completeness, and confirmation of no data loss beyond defined RPO.\n3. Review whether backup restoration was tested for critical databases including trade records, settlement instructions, and client account data.\n4. Confirm that data recovery times achieved are within the defined RPO for each system.",
+          "expectedEvidence": "DR test reports with data recovery results (last 12 months); data integrity reconciliation reports; RPO achievement records",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "DR test gap remediation",
+          "assessmentProcedures": "1. Obtain the DR test gap remediation tracker.\n2. Verify that all issues identified in DR tests from the last 12 months are logged with assigned owners, severity ratings, and target remediation dates.\n3. Review closure evidence for sample 3 remediation items to confirm gaps were actually resolved.\n4. Determine whether any critical or high-severity DR gaps remain open beyond their target dates and review escalation actions.",
+          "expectedEvidence": "DR gap remediation tracker; closure evidence for sample items; escalation records for overdue items",
+          "method": "Inspection"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "RIM-4 — Settlement Continuity",
+      "ref": "RIM-4",
+      "controlName": "Settlement Continuity",
+      "controlSlug": "settlement-continuity",
+      "domain": "Business Continuity",
+      "subProcedures": [
+        {
+          "subProcedure": "Alternative settlement procedures",
+          "assessmentProcedures": "1. Obtain documented alternative settlement procedures for use during technology system failures.\n2. Verify the procedures cover manual processing of settlement instructions, reconciliation steps, and re-entry into automated systems after recovery.\n3. Review whether the procedures define the maximum settlement volume that can be processed manually within a T+2 settlement cycle.\n4. Confirm the alternative procedures were reviewed and updated within the last 12 months.",
+          "expectedEvidence": "Alternative settlement procedures document; manual capacity assessment; procedure review/approval records (last 12 months)",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "BMD and Bursa Malaysia coordination",
+          "assessmentProcedures": "1. Obtain evidence of coordination arrangements with Bursa Malaysia Depository (BMD) for settlement continuity during disruptions.\n2. Verify that agreed communication channels and escalation contacts are documented and current.\n3. Review whether the entity has participated in settlement continuity planning or exercises with BMD within the last 12 months.\n4. Confirm that the entity understands BMD's own contingency procedures and how they interlock with the entity's alternative settlement process.",
+          "expectedEvidence": "BMD coordination arrangements; contact lists and communication channel documentation; BMD joint exercise records (last 12 months)",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Manual fallback testing",
+          "assessmentProcedures": "1. Obtain test records for manual settlement fallback procedures from the last 12 months.\n2. Review the test scope — verify it included actual processing of sample settlement instructions through the manual fallback procedure.\n3. Verify test results document processing times, error rates, and any issues encountered.\n4. Interview the Head of Operations or Settlement Manager to confirm staff competency in executing manual fallback and understand practical constraints.",
+          "expectedEvidence": "Manual fallback test records (last 12 months); test results with processing times and error rates; staff competency assessments",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Communication protocols with clearing and depository participants",
+          "assessmentProcedures": "1. Obtain documented communication protocols for notifying clearing and depository participants during settlement disruptions.\n2. Verify the protocols define who communicates, to whom, through which channels, and within what timeframes.\n3. Review whether communication protocols include templates or pre-drafted messages for common disruption scenarios.\n4. Confirm that contact lists for clearing and depository participants are maintained and reviewed at least quarterly.",
+          "expectedEvidence": "Communication protocol documents; contact lists for clearing and depository participants; pre-drafted communication templates; contact list review records",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Post-recovery reconciliation",
+          "assessmentProcedures": "1. Review documented procedures for reconciling settlement records after reverting from manual fallback to automated processing.\n2. Verify reconciliation procedures address identification of discrepancies, resolution workflow, and sign-off requirements.\n3. Obtain records of any actual or simulated reconciliation exercises performed after manual fallback testing.\n4. Confirm that reconciliation procedures account for the T+2 settlement cycle and any penalties or fails resulting from delayed settlement.",
+          "expectedEvidence": "Post-recovery reconciliation procedures; reconciliation exercise records; settlement fail tracking records",
+          "method": "Inspection"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "RIM-5 — Incident Response Plan",
+      "ref": "RIM-5",
+      "controlName": "Incident Response Plan",
+      "controlSlug": "incident-response-plan",
+      "domain": "Incident Management",
+      "subProcedures": [
+        {
+          "subProcedure": "IRP structure and scope",
+          "assessmentProcedures": "1. Obtain the current incident response plan (IRP) and verify it is specific to technology incidents affecting capital market operations.\n2. Review the plan structure to confirm it addresses all phases: preparation, identification, containment, eradication, recovery, and lessons learned.\n3. Verify the plan defines scope boundaries — which systems, services, and scenarios are covered.\n4. Confirm the IRP has been reviewed and approved by senior management within the last 12 months.",
+          "expectedEvidence": "Incident response plan document; IRP approval records (last 12 months); scope definition covering capital market systems",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Incident classification and severity levels",
+          "assessmentProcedures": "1. Review the incident classification scheme and verify it defines severity levels appropriate for capital market operations (e.g., P1 — trading halt or settlement failure, P2 — degraded market access, P3 — non-market-critical system issue).\n2. Verify that classification criteria include market impact, client impact, regulatory notification triggers, and financial exposure.\n3. Confirm that classification drives response urgency, escalation paths, and resource allocation.\n4. Select 3 incident records from the last 12 months and verify incidents were classified consistently with the defined scheme.",
+          "expectedEvidence": "Incident classification matrix; sample 3 incident records (last 12 months) showing classification applied; severity level definitions",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Escalation procedures",
+          "assessmentProcedures": "1. Review escalation procedures within the IRP, including thresholds that trigger escalation to senior management, the board, and the SC.\n2. Verify that escalation timelines are defined for each severity level and account for market trading hours.\n3. Confirm that client communication protocols are defined for incidents that affect client-facing services or data.\n4. Determine whether escalation procedures include out-of-hours contact arrangements for critical incidents during non-business hours.",
+          "expectedEvidence": "Escalation matrix with timelines per severity level; out-of-hours contact arrangements; client communication protocol",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "IR team composition and readiness",
+          "assessmentProcedures": "1. Obtain the incident response team roster and verify it includes representatives from IT, security, operations, compliance, legal, and communications.\n2. Verify that team member contact details are current and that alternates are designated for key roles.\n3. Review training records to confirm IR team members have received incident response training within the last 12 months.\n4. Interview 2 IR team members to assess awareness of their roles and the activation process.",
+          "expectedEvidence": "IR team roster with roles and contact details; alternate designations; IR training records (last 12 months)",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Tabletop exercises and simulations",
+          "assessmentProcedures": "1. Obtain records of tabletop exercises or incident simulations conducted within the last 12 months.\n2. Review exercise scenarios to verify they include capital market-specific situations — ransomware during market hours, trading system compromise, settlement data corruption, DDoS on client portal.\n3. Verify exercise reports document participation, decisions made, timeline of actions, and findings.\n4. Confirm that improvement actions from the last 2 exercises have been tracked and implemented.",
+          "expectedEvidence": "Tabletop exercise records (last 12 months); exercise scenarios and reports; improvement action tracking from last 2 exercises",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "IRP review and update cycle",
+          "assessmentProcedures": "1. Obtain the IRP review schedule and change log.\n2. Verify the plan has been reviewed at least annually and updated after significant incidents, exercise findings, or organisational changes.\n3. Review the change log to confirm updates reflect specific findings — not just date changes but substantive content revisions.\n4. Confirm that the updated IRP is distributed to all IR team members and that acknowledgement of receipt is recorded.",
+          "expectedEvidence": "IRP review schedule and change log; distribution records with acknowledgement; evidence of substantive updates based on findings",
+          "method": "Inspection"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "RIM-6 — SC Incident Notification",
+      "ref": "RIM-6",
+      "controlName": "SC Incident Notification",
+      "controlSlug": "sc-incident-notification",
+      "domain": "Incident Management",
+      "subProcedures": [
+        {
+          "subProcedure": "Notification criteria and thresholds",
+          "assessmentProcedures": "1. Obtain the documented notification criteria that define which incidents trigger mandatory reporting to the Securities Commission Malaysia.\n2. Verify the criteria are aligned with SC-GL/6-2023 requirements and cover: significant technology disruptions affecting market operations, cyber security breaches involving client data, trading system outages exceeding defined thresholds, and any incident requiring public disclosure.\n3. Confirm that notification thresholds are expressed in measurable terms (e.g., outage duration, number of affected clients, financial impact).\n4. Review whether the criteria have been reviewed against any updated SC guidance or circulars within the last 12 months.",
+          "expectedEvidence": "SC notification criteria document aligned with SC-GL/6-2023; threshold definitions; criteria review records (last 12 months)",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Notification workflow and timelines",
+          "assessmentProcedures": "1. Obtain the SC notification workflow and verify it defines end-to-end steps from incident identification to SC submission.\n2. Verify that the workflow specifies timelines for initial notification, interim updates, and final incident report submission as required by SC-GL/6-2023.\n3. Confirm that the workflow identifies authorised persons responsible for preparing and submitting notifications to the SC.\n4. Review whether the workflow includes escalation if notification deadlines are at risk of being missed.\n5. Determine whether the notification workflow has been tested through tabletop exercises within the last 12 months.",
+          "expectedEvidence": "SC notification workflow document; defined timelines for initial, interim, and final reporting; authorised submitter list; tabletop test records involving SC notification",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Notification templates and content",
+          "assessmentProcedures": "1. Obtain SC incident notification templates and verify they capture all required information: incident description, systems affected, market impact, client impact, containment actions taken, expected resolution timeline, and root cause (if known).\n2. Verify that templates are pre-approved and readily accessible to the notification team during an incident.\n3. Review any SC notifications submitted in the last 12 months (if any) to confirm templates were used and content was complete.\n4. Confirm that templates are version-controlled and updated when SC reporting requirements change.",
+          "expectedEvidence": "SC incident notification templates; sample completed notifications (last 12 months, if applicable); template version control records",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "SC follow-up and condition tracking",
+          "assessmentProcedures": "1. Obtain the register or tracker for SC responses, queries, and conditions arising from incident notifications.\n2. Review any SC follow-up items from the last 12 months and verify they were addressed within the required timeframes.\n3. Verify that a responsible person is assigned to track each SC follow-up item through to closure.\n4. Confirm that closure evidence is maintained for all resolved SC follow-up items.",
+          "expectedEvidence": "SC follow-up tracker; closure evidence for resolved items; records of SC correspondence (last 12 months)",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Notification process assurance",
+          "assessmentProcedures": "1. Review whether the SC notification process has been independently tested or validated — through tabletop exercise, internal audit, or compliance review — within the last 12 months.\n2. Verify that the test included a scenario that triggered SC notification and measured the entity's ability to meet required timelines.\n3. Confirm that findings from the assurance activity were documented and any gaps addressed.\n4. Interview the Compliance Officer or CISO to assess confidence in the entity's ability to meet SC notification obligations during a real incident.",
+          "expectedEvidence": "Assurance review or tabletop exercise records testing SC notification; findings and remediation records; internal audit or compliance review reports",
+          "method": "Inspection / Inquiry"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "RIM-7 — Cyber Incident Coordination",
+      "ref": "RIM-7",
+      "controlName": "Cyber Incident Coordination",
+      "controlSlug": "cyber-incident-coordination",
+      "domain": "Incident Management",
+      "subProcedures": [
+        {
+          "subProcedure": "External communication protocols",
+          "assessmentProcedures": "1. Obtain documented communication protocols for coordinating with external parties during cyber incidents — SC Malaysia, MyCERT, Bursa Malaysia, peer intermediaries, and law enforcement.\n2. Verify the protocols define: which parties to contact, under what circumstances, through which channels, within what timeframes, and who is authorised to communicate.\n3. Confirm that contact details for key external coordination partners are maintained and verified at least quarterly.\n4. Review whether the protocols distinguish between notification obligations (regulatory) and voluntary coordination (industry).",
+          "expectedEvidence": "External communication protocol document; contact directory for SC, MyCERT, Bursa Malaysia, and peers; contact verification records",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Industry coordination and working group participation",
+          "assessmentProcedures": "1. Obtain records of the entity's participation in industry incident coordination mechanisms — SC working groups, capital market CERTs, Bursa coordination forums, or Financial Services ISAC equivalents.\n2. Review participation records from the last 12 months to assess frequency and level of engagement.\n3. Verify that insights from industry coordination are fed back into the entity's incident response plans and threat intelligence.\n4. Interview the CISO to assess the maturity of industry relationships and any barriers to effective coordination.",
+          "expectedEvidence": "Industry working group participation records (last 12 months); meeting minutes or briefing notes; evidence of insights incorporated into IRP or threat intelligence",
+          "method": "Inspection / Inquiry"
+        },
+        {
+          "subProcedure": "Threat intelligence sharing",
+          "assessmentProcedures": "1. Obtain records of threat intelligence shared with or received from SC Malaysia, MyCERT, and peer institutions within the last 12 months.\n2. Review whether shared intelligence includes indicators of compromise (IOCs), threat advisories, and sector-specific alerts relevant to capital markets.\n3. Verify that received threat intelligence is actioned — review sample 3 received advisories and confirm they were assessed and, where relevant, incorporated into detection rules or response plans.\n4. Confirm that information sharing complies with any confidentiality or classification requirements.",
+          "expectedEvidence": "Threat intelligence sharing records (last 12 months); sample received advisories with evidence of action taken; confidentiality handling procedures",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Joint exercises with coordination partners",
+          "assessmentProcedures": "1. Obtain records of joint cyber incident exercises conducted with external coordination partners (SC, Bursa, peer intermediaries) within the last 24 months.\n2. Review the scope and scenario of joint exercises to verify they tested coordination mechanisms — not just internal response.\n3. Verify that findings from joint exercises were documented and improvement actions tracked.\n4. Confirm that the entity's communication protocols were updated based on any coordination gaps identified.",
+          "expectedEvidence": "Joint exercise participation records (last 24 months); exercise reports and findings; improvement action records; protocol updates based on findings",
+          "method": "Inspection"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "RIM-8 — Incident Post-Mortem & Lessons Learned",
+      "ref": "RIM-8",
+      "controlName": "Incident Post-Mortem & Lessons Learned",
+      "controlSlug": "incident-post-mortem",
+      "domain": "Incident Management",
+      "subProcedures": [
+        {
+          "subProcedure": "Post-mortem process and governance",
+          "assessmentProcedures": "1. Obtain the post-mortem policy or procedure and verify it defines: when a post-mortem is required (severity threshold), the timeframe for completion after incident closure, required participants, and the output format.\n2. Verify that the procedure requires involvement of relevant stakeholders beyond IT — including business operations, compliance, and risk management for incidents affecting capital market functions.\n3. Confirm that post-mortem completion is tracked as a mandatory step in the incident lifecycle and that non-completion triggers escalation.\n4. Review whether the post-mortem process has been approved by senior management.",
+          "expectedEvidence": "Post-mortem policy or procedure document; escalation rules for non-completion; management approval records",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Root cause analysis",
+          "assessmentProcedures": "1. Select 3 significant incident post-mortem reports from the last 12 months.\n2. Review whether each report identifies root causes (not just immediate causes or symptoms) using a structured methodology (e.g., 5-Whys, fishbone analysis, fault tree).\n3. Verify that contributing factors are documented separately from root causes — including people, process, and technology factors.\n4. Confirm that root cause findings are specific and actionable, not generic statements.",
+          "expectedEvidence": "Sample 3 post-mortem reports (last 12 months); root cause analysis documentation; evidence of structured methodology applied",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Lessons learned capture and dissemination",
+          "assessmentProcedures": "1. Review the sample 3 post-mortem reports and verify that lessons learned are explicitly documented and distinguished from root causes and improvement actions.\n2. Verify that lessons learned are disseminated to relevant teams — not just the incident response team but also development, operations, and business teams as appropriate.\n3. Confirm that lessons learned from incidents affecting capital market operations are reported to senior management or the board.\n4. Determine whether a lessons-learned repository or knowledge base is maintained and accessible to relevant personnel.",
+          "expectedEvidence": "Lessons learned sections in post-mortem reports; dissemination records (emails, briefings, knowledge base entries); board or management reporting of lessons learned",
+          "method": "Inspection"
+        },
+        {
+          "subProcedure": "Improvement action tracking and trend analysis",
+          "assessmentProcedures": "1. Obtain the improvement action tracker and verify that all actions from post-mortem reviews within the last 12 months are logged with assigned owners, priorities, and target completion dates.\n2. Review completion rates — determine the percentage of improvement actions closed on time versus overdue.\n3. Verify that trend analysis is conducted across incidents to identify recurring root causes or systemic issues.\n4. Confirm that systemic findings have led to broader remediation initiatives, not just point fixes.\n5. Review whether improvement action status is reported to senior management periodically.",
+          "expectedEvidence": "Improvement action tracker with assigned owners and target dates; trend analysis report; management reporting on improvement action status; evidence of systemic remediation initiatives",
+          "method": "Inspection"
+        }
+      ]
+    }
+  ]
+}
