@@ -1,6 +1,6 @@
 {
   "sourceType": "constructed-indicative",
-  "disclaimer": "Evidence items are constructed for educational purposes. They illustrate typical audit evidence expectations for technology risk management under SC-GL/6-2023.",
+  "disclaimer": "Evidence items are constructed for educational purposes. They illustrate typical audit evidence expectations for technology risk management under SC-GL/2-2023 (R1-2024).",
   "lastUpdated": "2026-03-16",
   "domains": {
     "governance-oversight": {
@@ -11,7 +11,7 @@
           "id": "GO-E1",
           "name": "Technology Risk Governance Framework Document",
           "description": "Board-approved technology risk governance framework defining roles, responsibilities, committee structure, and reporting lines",
-          "whatGoodLooksLike": ["Board-approved with annual review", "Covers three lines of defence", "Defines technology risk committee charter", "Aligned with SC-GL/6-2023"],
+          "whatGoodLooksLike": ["Board-approved with annual review", "Covers three lines of defence", "Defines technology risk committee charter", "Aligned with SC-GL/2-2023 (R1-2024)"],
           "commonGaps": ["No formal governance framework", "Framework not board-approved", "CISO reporting line not independent from IT operations", "No technology risk committee"],
           "suggestedSources": ["Board Secretary", "CISO Office", "Compliance"],
           "format": "PDF/DOCX, version-controlled",

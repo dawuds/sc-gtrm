@@ -1,10 +1,10 @@
-# SC-GTRM (SC-GL/6-2023) — Document Templates Index
+# SC-GTRM (SC-GL/2-2023 (R1-2024)) — Document Templates Index
 
 *Generated 2026-03-26*
 
 **Total templates:** 20
 
-Templates aligned to the 10 SC-GTRM control domains for capital market intermediaries. All templates include regulatory references to SC-GL/6-2023 and require customization for your organisation.
+Templates aligned to the 10 SC-GTRM control domains for capital market intermediaries. All templates include regulatory references to SC-GL/2-2023 (R1-2024) and require customization for your organisation.
 
 > **IMPORTANT:** These are indicative templates for educational purposes. They do not constitute legal or regulatory advice. Consult SC Malaysia guidelines and professional counsel before use. AI-generated content — review and customise before deployment.
 

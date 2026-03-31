@@ -1,0 +1,347 @@
+{
+  "sourceType": "verbatim-extracted",
+  "source": "SC-GL/2-2023 (R1-2024)",
+  "domain": "cyber-security-management",
+  "domainName": "Cyber Security Management",
+  "chapter": 9,
+  "requirements": [
+    {
+      "id": "9.01",
+      "section": "Cyber Security Framework",
+      "requirement": "A capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-framework",
+      "subRequirements": [
+        {
+          "id": "9.01(a)",
+          "requirement": "develop a cyber security framework comprising the governance and implementation of adequate cyber security controls which commensurate with the risk appetite and business profile of the capital market entity; and"
+        },
+        {
+          "id": "9.01(b)",
+          "requirement": "ensure that the cyber security framework is supported by policies and procedures to address interoperability, usability, and privacy of the data of the capital market entity and its clients within its custody, and to safeguard the confidentiality, integrity and availability of the data."
+        }
+      ]
+    },
+    {
+      "id": "9.02",
+      "section": "Cyber Security Framework",
+      "requirement": "A capital market entity must ensure that roles and responsibilities are defined to ensure accountability for cyber security activities within the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-framework"
+    },
+    {
+      "id": "9.03",
+      "section": "Cyber Security Framework",
+      "requirement": "As part of a wider risk management programme, a capital market entity must implement cyber risk management strategies and measures in a structured and methodical manner which includes identification, protection and prevention, detection, response and recovery measures. The capital market entity may refer to Appendix 2 for guidance on the methodology in implementing its cyber risk management strategies and measures.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-framework"
+    },
+    {
+      "id": "9.04",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must deploy defence-in-depth and preventive cyber security measures which commensurate with its business model, risk appetite and level of technology dependency. A capital market entity must put in place the appropriate measures which may include the following:",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring",
+      "subRequirements": [
+        {
+          "id": "9.04(a)",
+          "requirement": "Deployment of anti-virus software and malware programme to detect and isolate malicious code;"
+        },
+        {
+          "id": "9.04(b)",
+          "requirement": "Layering systems and systems components;"
+        },
+        {
+          "id": "9.04(c)",
+          "requirement": "Deployment of firewalls to reduce weak points through which attacker can gain access to an entity\u2019s network;"
+        },
+        {
+          "id": "9.04(d)",
+          "requirement": "Web and email filtering systems; and"
+        },
+        {
+          "id": "9.04(e)",
+          "requirement": "Solution to counter advance persistent threats such as zero day and signatureless-malware."
+        }
+      ]
+    },
+    {
+      "id": "9.05",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring",
+      "subRequirements": [
+        {
+          "id": "9.05(a)",
+          "requirement": "establish, implement and continuously review the security hardening standards on its operating systems, databases, applications, network and security devices; and"
+        },
+        {
+          "id": "9.05(b)",
+          "requirement": "ensure that the security hardening standards checklist is kept updated."
+        }
+      ]
+    },
+    {
+      "id": "9.06",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must conduct continuous review and update of rules and configurations for its operating systems, databases, applications, network and security devices.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring"
+    },
+    {
+      "id": "9.07",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must establish\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring",
+      "subRequirements": [
+        {
+          "id": "9.07(a)",
+          "requirement": "on a best effort basis, a security operation centre (SOC) or engage a managed security services (MSS) provider that has sufficient capabilities for pre-emptive surveillance and monitoring of its cyber events. The SOC implemented must be secured with proper access controls, skilled resources, and accommodated with disaster recovery capabilities and dashboard to oversee the overall network perimeter of the capital market entity;"
+        },
+        {
+          "id": "9.07(b)",
+          "requirement": "a process to collect, review and retain system logs to facilitate the cyber events monitoring operations of the capital market entity while ensuring the system log remains protected; and"
+        },
+        {
+          "id": "9.07(c)",
+          "requirement": "a baseline indicator for each of the IT systems being monitored. Any anomalies or suspicious user behaviour detected against the baseline indicator must be analysed and escalated in a timely manner in accordance with the escalation and decision-making processes of the capital market entity."
+        }
+      ]
+    },
+    {
+      "id": "9.08",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must establish a monitoring and detection process to support continuous surveillance of any cyber event, which should include, among others, clearly defined escalation and decision-making processes to ensure any adverse effect of a cyber incident is properly managed;",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring"
+    },
+    {
+      "id": "9.09",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must proactively monitor any cyber event, detect any anomalous activity and conduct analysis on any detected event that may have material impact on the business or systems of the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring"
+    },
+    {
+      "id": "9.10",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "Where feasible, a capital market entity should use its best endeavours to conduct regular monitoring of fake websites to minimise adverse effect on its customers, employees and agents from phishing or other types of social engineering attacks.",
+      "obligation": "should",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring"
+    },
+    {
+      "id": "9.11",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must perform correlation of multiple events registered on system logs to identify anomalous system activity or suspicious user behaviour patterns according to the baseline indicator.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring"
+    },
+    {
+      "id": "9.12",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "If reasonably practicable, a capital market entity must apply advanced user behavioural analysis to detect sophisticated cyber events such as signature-less and file-less malware, as well as to identify anomalies at endpoints and network layers.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring"
+    },
+    {
+      "id": "9.13",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must regularly review its cyber threat analysis report that commensurate with its business model, risk appetite and technology dependency. The cyber threat analysis report must be communicated to its senior management. At the minimum, the report must encompass the cyber threat trends and statistics, incidents grouping by type of attack, target and source of IP addresses.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring"
+    },
+    {
+      "id": "9.14",
+      "section": "Cyber Security Measures and Monitoring",
+      "requirement": "A capital market entity must equip itself with the knowledge and understanding of the current and evolving cyber threats, new cyber attack techniques, analyse and determine the appropriate countermeasures.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-measures-and-monitoring"
+    },
+    {
+      "id": "9.15",
+      "section": "Cyber Security Incident Response and Recovery",
+      "requirement": "A capital market entity must establish a cyber incident response capability to manage and minimise damage from cyber incidents, and to recover and learn from such incidents. The cyber incident response capability must encompass the following phases:",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-incident-response-and-recovery",
+      "subRequirements": [
+        {
+          "id": "9.15(a)",
+          "requirement": "A capital market entity must establish an effective governance process, reporting structure and a team to manage cyber incident and response plan in the event of a cyber incident that cause service disruption. A capital market entity must also clearly define the roles and responsibilities of the team."
+        },
+        {
+          "id": "9.15(b)",
+          "requirement": "A capital market entity must establish a detection process to handle detected cyber events, including disaster declaration and classification of the cyber incident based on the attack vectors. Different types of cyber incidents merit different response strategies."
+        },
+        {
+          "id": "9.15(c)",
+          "requirement": "A capital market entity must establish a recovery process to mitigate any service disruption due to cyber-attack by prioritising the recovery based on the criticality of the systems and services within a capital market entity operating environment and to restore IT systems to its normal operation."
+        },
+        {
+          "id": "9.15(d)",
+          "requirement": "A capital market entity must ensure that the recovery process carried out by the capital market entity event is well documented to support an effective post incident review. A report must be produced from the post incident review and presented to all relevant stakeholders."
+        }
+      ]
+    },
+    {
+      "id": "9.16",
+      "section": "Cyber Security Incident Response and Recovery",
+      "requirement": "A capital market entity must establish clearly defined communication plan including escalation and decision-making processes to ensure that any adverse effect of a cyber incident is properly managed and recovery action may be initiated quickly.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-incident-response-and-recovery"
+    },
+    {
+      "id": "9.17",
+      "section": "Cyber Security Incident Response and Recovery",
+      "requirement": "For the purposes stated in paragraph 9.15(c), a capital market entity must identify the critical systems and services within its operating environment that shall be recovered on a priority basis in order to provide an acceptable level of services during the downtime.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-incident-response-and-recovery"
+    },
+    {
+      "id": "9.18",
+      "section": "Cyber Security Incident Response and Recovery",
+      "requirement": "A capital market entity must determine the recovery time objective to return to its full service and operations.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-incident-response-and-recovery"
+    },
+    {
+      "id": "9.19",
+      "section": "Cyber Security Incident Response and Recovery",
+      "requirement": "A capital market entity must regularly review and update the cyber incident management plan taking into account the information gathered from reputable cyber threat intelligence and lesson learned from cyber incidents.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-incident-response-and-recovery"
+    },
+    {
+      "id": "9.20",
+      "section": "Cyber Security Assessment",
+      "requirement": "A capital market entity must establish a process to conduct regular assessment, and to identify potential vulnerabilities and cyber threats in its operating environment which could undermine the security, confidentiality, availability and integrity of the information assets, systems and networks. The process must, among others, outline the relevant control measures to mitigate any vulnerabilities and cyber threats in its operating environment.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-assessment"
+    },
+    {
+      "id": "9.21",
+      "section": "Cyber Security Assessment",
+      "requirement": "A capital market entity must ensure its assessment is comprehensive, which comprise among others making an assessment of potential vulnerabilities relating to systems and technologies adopted including any third-party systems utilised by the capital market entity and business processes.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-assessment"
+    },
+    {
+      "id": "9.22",
+      "section": "Cyber Security Assessment",
+      "requirement": "Where feasible, a capital market entity should regularly undertake a compromise assessment (CA) on its critical systems to prevent and detect any potential compromise of its security posture.",
+      "obligation": "should",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-assessment"
+    },
+    {
+      "id": "9.23",
+      "section": "Cyber Security Assessment",
+      "requirement": "A capital market entity must conduct regular penetration testing exercise to imitate an experienced hacker attacking the production environment of the capital market entity, with the aim to obtain in-depth evaluation of its cyber defences. The scope and frequency of the exercise must commensurate with the capital market entity\u2019s risk exposure and should at a minimum be conducted annually.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-assessment"
+    },
+    {
+      "id": "9.23A",
+      "section": "Cyber Security Assessment",
+      "requirement": "Penetration testing must also be conducted prior to the deployment of any new critical system or any major changes to the critical systems of a capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-assessment"
+    },
+    {
+      "id": "9.24",
+      "section": "Cyber Security Assessment",
+      "requirement": "A capital market entity must ensure the penetration testing exercise process is documented and performed by experienced and qualified professionals who are aware of the risk of undertaking such exercise and are able to limit the damage resulting from a successful break-in to a production environment. A capital market entity must obtain the approval of its senior management before finalisation of the test scope.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-assessment"
+    },
+    {
+      "id": "9.25",
+      "section": "Cyber Security Assessment",
+      "requirement": "A capital market entity must establish a comprehensive remedial process to track, monitor and resolve vulnerabilities identified from the cyber security assessments. The remedial process must include at a minimum:",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-security-assessment",
+      "subRequirements": [
+        {
+          "id": "9.25(a)",
+          "requirement": "severity level and classification of identified vulnerabilities;"
+        },
+        {
+          "id": "9.25(b)",
+          "requirement": "turnaround time to remediate vulnerabilities according to its severity level; and"
+        },
+        {
+          "id": "9.25(c)",
+          "requirement": "risk assessment and mitigation plans to manage exceptions (i.e. for vulnerabilities which the capital market entity is unable to remediate timely) with approval from senior management."
+        }
+      ]
+    },
+    {
+      "id": "9.26",
+      "section": "Cyber Simulation Exercise",
+      "requirement": "A capital market entity must carry out a cyber simulation exercise which commensurate with the level of risk appetite of the capital market entity and its reliance on technology to test the effectiveness of its cyber incident response and recovery, including its communication plan based on current and emerging cyber threat scenarios. A capital market entity must determine the objectives, scope and conditions of engagement for the cyber simulation exercise before the initiation of the exercise. It must ensure the simulation exercise is conducted with involvement from key stakeholders.",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-simulation-exercise"
+    },
+    {
+      "id": "9.27",
+      "section": "Cyber Simulation Exercise",
+      "requirement": "To ensure the capital market entity is prepared to respond to cyber incidents detected, at a minimum, the capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-simulation-exercise",
+      "subRequirements": [
+        {
+          "id": "9.27(a)",
+          "requirement": "identify scenarios of cyber risk that it is most likely to be exposed to;"
+        },
+        {
+          "id": "9.27(b)",
+          "requirement": "consider incidents in the capital market and the broader financial services industry;"
+        },
+        {
+          "id": "9.27(c)",
+          "requirement": "assess the likely impact of these incidents to the capital market entity; and"
+        },
+        {
+          "id": "9.27(d)",
+          "requirement": "identify appropriate response plan and communication strategies that should be undertaken."
+        }
+      ]
+    },
+    {
+      "id": "9.28",
+      "section": "Cyber Simulation Exercise",
+      "requirement": "Where feasible, a capital market entity should perform an adversarial attack simulation exercise on the infrastructure hosted with third-party service providers to identify potential vulnerabilities of its cyber defence and response plan against rampant cyber threats.",
+      "obligation": "should",
+      "owner": "Capital Market Entity / CISO",
+      "controlSlug": "cyber-simulation-exercise"
+    }
+  ]
+}

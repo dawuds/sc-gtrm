@@ -8,7 +8,7 @@
 | **Version** | 1.0 |
 | **Classification** | Confidential |
 | **Owner** | CISO |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 

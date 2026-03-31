@@ -1,571 +1,1758 @@
 {
   "_meta": {
-    "version": "1.0.0",
-    "lastUpdated": "2026-03-16",
-    "sourceType": "constructed-indicative",
-    "disclaimer": "These controls are constructed for educational purposes to illustrate typical technology risk management patterns under SC-GL/6-2023. They are not verbatim extracts from the Securities Commission Malaysia guidelines. Always consult the official SC guidelines and qualified regulatory counsel.",
-    "alignment": "SC-GL/6-2023 — Guidelines on Technology Risk Management"
+    "version": "2.0.0",
+    "lastUpdated": "2026-04-01",
+    "sourceType": "verbatim-extracted",
+    "source": "SC-GL/2-2023 (R1-2024) Guidelines on Technology Risk Management",
+    "effectiveDate": "19 August 2024",
+    "issuedBy": "Securities Commission Malaysia",
+    "disclaimer": "Verbatim extracts from SC-GL/2-2023 (R1-2024). This structured representation is for assessment reference. Always consult the official SC guidelines."
   },
   "controls": [
     {
-      "slug": "technology-risk-governance-framework",
-      "name": "Technology Risk Governance Framework",
-      "domain": "governance-oversight",
-      "description": "Establish a comprehensive technology risk governance framework with clear roles, responsibilities, and reporting lines from board level through operational management for capital market entities.",
-      "controlType": "preventive",
-      "owner": "Board of Directors / CEO",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Define board-level technology risk oversight responsibilities",
-        "Establish technology risk committee with cross-functional representation",
-        "Define technology risk appetite aligned with business strategy and SC expectations",
-        "Implement three lines of defence model for technology risk management"
-      ],
-      "maturity": { "basic": "Ad-hoc governance with no formal framework", "mature": "Documented framework with committee structure", "advanced": "Integrated governance with real-time risk dashboards" }
+      "slug": "board-of-directors",
+      "name": "Board of Directors",
+      "chapter": 5,
+      "chapterTitle": "Governance",
+      "domain": "governance",
+      "section": "Board of Directors",
+      "paraRange": "5.01-5.03",
+      "requirementCount": 3,
+      "requirements": [
+        {
+          "ref": "5.01",
+          "verbatimText": "The board must provide oversight and accord sufficient priority and resources to manage technology risk, as part of the overall risk management framework of a capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "5.02",
+          "verbatimText": "In discharging its oversight functions, the board must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "5.02(a)",
+              "verbatimText": "approve the TRM Framework of a capital market entity and its policies;"
+            },
+            {
+              "ref": "5.02(b)",
+              "verbatimText": "approve the risk appetite and risk tolerance statement which provides clarity as to the nature and degree of technology risk within the risk acceptance of the capital market entity;"
+            },
+            {
+              "ref": "5.02(c)",
+              "verbatimText": "ensure that the TRM Framework and policies are robust and sound, and commensurate with the risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+            },
+            {
+              "ref": "5.02(d)",
+              "verbatimText": "in discharging its obligation in paragraph (c) above, the board must\u2014",
+              "subRequirements": [
+                {
+                  "ref": "5.02(d)(i)",
+                  "verbatimText": "oversee the effective implementation of the TRM Framework and policies and procedures. This may include setting performance metrics or indicators as appropriate;"
+                },
+                {
+                  "ref": "5.02(d)(ii)",
+                  "verbatimText": "ensure that the TRM Framework is regularly reviewed and updated by the senior management for the approval of the board at least once in every three years;"
+                },
+                {
+                  "ref": "5.02(d)(iii)",
+                  "verbatimText": "ensure that the policies are regularly reviewed and updated by the senior management for the approval of the board at least annually; and"
+                }
+              ]
+            },
+            {
+              "ref": "5.02(e)",
+              "verbatimText": "ensure that the strategies formulated within the TRM Framework are adequately designed to address the technology risk that the capital market entity may be exposed to;"
+            },
+            {
+              "ref": "5.02(f)",
+              "verbatimText": "ensure appropriate internal controls are in place for the effective implementation of the TRM Framework;"
+            },
+            {
+              "ref": "5.02(g)",
+              "verbatimText": "ensure the impact of technology risk is adequately assessed prior to the capital market entity undertaking new activities, which may include any proposed investments, merger and acquisition, adoption of new technology and outsourcing arrangements;"
+            },
+            {
+              "ref": "5.02(h)",
+              "verbatimText": "ensure adequate resources are allocated for technology risk management, including identifying at least one responsible person from among the senior management:",
+              "subRequirements": [
+                {
+                  "ref": "5.02(h)(i)",
+                  "verbatimText": "who would be responsible for the day-to-day oversight and management of technology risk; and"
+                },
+                {
+                  "ref": "5.02(h)(ii)",
+                  "verbatimText": "who would be responsible for the implementation of the technology and cyber security strategy as determined by the board;"
+                }
+              ]
+            },
+            {
+              "ref": "5.02(i)",
+              "verbatimText": "ensure clear segregated line of responsibilities and accountability across all levels and functions in the capital market entity to manage technology risk; and"
+            },
+            {
+              "ref": "5.02(j)",
+              "verbatimText": "ensure that the board keeps itself up to date with new or emerging trends of technology risk including cyber threats and understand the potential impact of such threats to the capital market entity."
+            }
+          ]
+        },
+        {
+          "ref": "5.03",
+          "verbatimText": "The board must perform its oversight role over the IT outsourcing arrangements and is accountable for ensuring the effectiveness of the outsourcing policies and procedures of the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "ciso-designation",
-      "name": "CISO Designation & Authority",
-      "domain": "governance-oversight",
-      "description": "Designate a Chief Information Security Officer or equivalent with sufficient authority, independence, and resources to manage technology and cyber security risks across the capital market entity.",
-      "controlType": "preventive",
-      "owner": "Board of Directors",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Appoint a qualified CISO with direct reporting line to senior management or board",
-        "Define CISO authority, scope, and resource allocation",
-        "Ensure CISO independence from technology operations functions",
-        "Establish regular CISO reporting to board or board committee"
-      ],
-      "maturity": { "basic": "Security responsibilities assigned to IT manager", "mature": "Dedicated CISO with board reporting", "advanced": "CISO with enterprise-wide authority and strategic influence" }
+      "slug": "senior-management",
+      "name": "Senior Management",
+      "chapter": 5,
+      "chapterTitle": "Governance",
+      "domain": "governance",
+      "section": "Senior Management",
+      "paraRange": "5.04",
+      "requirementCount": 1,
+      "requirements": [
+        {
+          "ref": "5.04",
+          "verbatimText": "The senior management is responsible for\u2013",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "5.04(a)",
+              "verbatimText": "developing and implementing the TRM Framework and policies which are robust and sound, and commensurate with the level of risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+            },
+            {
+              "ref": "5.04(b)",
+              "verbatimText": "approving and implementing technology risk management procedures which are robust and sound, and commensurate with the risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+            },
+            {
+              "ref": "5.04(c)",
+              "verbatimText": "ensuring that technology risk management procedures are regularly reviewed and updated for its approval at least annually;"
+            },
+            {
+              "ref": "5.04(d)",
+              "verbatimText": "formulating, for the approval of the board, segregated line of responsibilities and accountability across all levels and functions in the capital market entity and implementing the same as approved by the board;"
+            },
+            {
+              "ref": "5.04(e)",
+              "verbatimText": "ensuring that employees, agents and third-party service providers are aware and understand the TRM Framework and policies and procedures, the possible impact of various cyber threats and their respective roles in managing such threats;"
+            },
+            {
+              "ref": "5.04(f)",
+              "verbatimText": "recommending to the board appropriate strategies and measures to manage technology risk, including making necessary changes to existing policies and procedures, as appropriate;"
+            },
+            {
+              "ref": "5.04(g)",
+              "verbatimText": "reporting to the board on a regular basis on matters relating to key technology risk, cyber breaches, business impact analysis (BIA) and critical technology operations;"
+            },
+            {
+              "ref": "5.04(h)",
+              "verbatimText": "providing the board with regular updates on cyber security issues, cyber security risk and compliance with cyber security framework;"
+            },
+            {
+              "ref": "5.04(i)",
+              "verbatimText": "reviewing, tracking and reporting material deviations from the TRM Framework, and policies and procedures to the board;"
+            },
+            {
+              "ref": "5.04(j)",
+              "verbatimText": "keeping the board informed of new and potentially emerging technology risk that may be critical to the capital market entity risk appetite; and"
+            },
+            {
+              "ref": "5.04(k)",
+              "verbatimText": "implementing the remedial actions approved by the board in an effective and timely manner."
+            }
+          ]
+        }
+      ]
     },
     {
-      "slug": "technology-risk-policy-suite",
-      "name": "Technology Risk Policy Suite",
-      "domain": "governance-oversight",
-      "description": "Develop and maintain a comprehensive suite of technology risk management policies covering all key domains, reviewed and approved by the board at least annually.",
-      "controlType": "preventive",
-      "owner": "CISO / CTO",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Develop policies covering cybersecurity, data management, BCP, cloud, outsourcing, and incident management",
-        "Ensure policies reference SC-GL/6-2023 requirements",
-        "Obtain board approval for all technology risk policies",
-        "Communicate policies to all relevant personnel and stakeholders"
-      ],
-      "maturity": { "basic": "Partial policy coverage with inconsistent review", "mature": "Complete policy suite with annual board review", "advanced": "Dynamic policies with automated compliance monitoring" }
+      "slug": "cybersecurity-awareness-and-training",
+      "name": "Cybersecurity Awareness and Training",
+      "chapter": 5,
+      "chapterTitle": "Governance",
+      "domain": "governance",
+      "section": "Cybersecurity Awareness and Training",
+      "paraRange": "5.05",
+      "requirementCount": 1,
+      "requirements": [
+        {
+          "ref": "5.05",
+          "verbatimText": "A capital market entity must ensure that its board, senior management, employees and agents, if any, attend cybersecurity awareness training programme at least annually to enhance their awareness and preparedness to deal with a wide range of cyber risk and to carry out their respective roles effectively.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "technology-risk-reporting",
-      "name": "Technology Risk Reporting",
-      "domain": "governance-oversight",
-      "description": "Establish regular technology risk reporting to the board and senior management, including risk posture, incident trends, compliance status, and emerging technology risks.",
-      "controlType": "detective",
-      "owner": "CISO / CRO",
-      "frequency": "Quarterly",
-      "keyActivities": [
-        "Produce quarterly technology risk reports for board and senior management",
-        "Include key risk indicators, incident trends, and compliance metrics",
-        "Report on emerging technology risks and their potential impact",
-        "Track and report on remediation of technology audit findings"
-      ],
-      "maturity": { "basic": "Ad-hoc reporting on incidents only", "mature": "Structured quarterly reporting with KRIs", "advanced": "Real-time risk dashboard with predictive analytics" }
+      "slug": "technology-audit",
+      "name": "Technology Audit",
+      "chapter": 5,
+      "chapterTitle": "Governance",
+      "domain": "governance",
+      "section": "Technology Audit",
+      "paraRange": "5.06-5.10",
+      "requirementCount": 5,
+      "requirements": [
+        {
+          "ref": "5.06",
+          "verbatimText": "A capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "5.06(a)",
+              "verbatimText": "establish a technology audit plan that provides appropriate coverage of critical technology; and"
+            },
+            {
+              "ref": "5.06(b)",
+              "verbatimText": "carry out its technology audit regularly. The frequency of the technology audit should commensurate with the business model, risk appetite and level of technology dependency of the capital market entity."
+            }
+          ]
+        },
+        {
+          "ref": "5.07",
+          "verbatimText": "At the minimum, the technology audit carried out by a capital market entity must determine whether its\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "5.07(a)",
+              "verbatimText": "information systems are in compliance with applicable laws, regulatory requirements and industry guidelines;"
+            },
+            {
+              "ref": "5.07(b)",
+              "verbatimText": "data and information have appropriate level of confidentiality, integrity and availability; and"
+            },
+            {
+              "ref": "5.07(c)",
+              "verbatimText": "IT service operations are being managed efficiently, and its effectiveness targets are being met."
+            }
+          ]
+        },
+        {
+          "ref": "5.08",
+          "verbatimText": "A capital market entity must ensure that the auditors performing its audit possess the necessary competency, knowledge and experience to carry out the technology audit.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "5.09",
+          "verbatimText": "A capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "5.09(a)",
+              "verbatimText": "ensure that the technology audit report comprises, at a minimum, independent and objective opinion on the effectiveness of risk management, governance and internal controls of the capital market entity relative to its existing and emerging technology risk; and"
+            },
+            {
+              "ref": "5.09(b)",
+              "verbatimText": "report the outcome of its technology audit to the board."
+            }
+          ]
+        },
+        {
+          "ref": "5.10",
+          "verbatimText": "Where necessary, the SC may appoint any independent party to perform a review on the capital market entity\u2019s compliance with these Guidelines including a technology audit and any costs of carrying out such review shall be borne by the capital market entity.",
+          "obligation": "may",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "cyber-threat-management",
-      "name": "Cyber Threat Management",
-      "domain": "cybersecurity",
-      "description": "Implement a structured approach to identifying, assessing, and responding to cyber threats targeting capital market systems, including threat intelligence consumption and threat hunting capabilities.",
-      "controlType": "detective",
-      "owner": "CISO / Security Operations",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Establish threat intelligence programme with industry and government feeds",
-        "Conduct periodic threat assessments for capital market-specific threats",
-        "Implement threat hunting capabilities for advanced persistent threats",
-        "Participate in SC and industry threat information sharing"
-      ],
-      "maturity": { "basic": "Reactive threat response only", "mature": "Proactive threat intelligence with SOC", "advanced": "Advanced threat hunting with ML-based detection" }
+      "slug": "technology-risk-management-framework",
+      "name": "Technology Risk Management Framework",
+      "chapter": 6,
+      "chapterTitle": "Technology Risk Management",
+      "domain": "technology-risk-management",
+      "section": "Technology Risk Management",
+      "paraRange": "6.01-6.07",
+      "requirementCount": 7,
+      "requirements": [
+        {
+          "ref": "6.01",
+          "verbatimText": "A capital market entity must establish and implement robust and effective TRM Framework to manage its technology risk effectively. The TRM Framework must be reviewed and updated periodically, and in any event, at least once in every three years by the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "6.02",
+          "verbatimText": "A capital market entity must establish and implement comprehensive and effective policies and procedures to support the TRM Framework. The policies and procedures must be reviewed and updated at least annually by the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "6.03",
+          "verbatimText": "A capital market entity must establish an internal compliance process to ensure compliance with its TRM Framework, policies and procedures. The internal compliance process must include an appropriate approval process where\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "6.03(a)",
+              "verbatimText": "the approval of senior management must be obtained prior to any deviation from its TRM Framework, policies and procedures of the capital market entity; and"
+            },
+            {
+              "ref": "6.03(b)",
+              "verbatimText": "the approval for deviation must only be given by the senior management if the deviation is supported by\u2014",
+              "subRequirements": [
+                {
+                  "ref": "6.03(b)(i)",
+                  "verbatimText": "an appropriate justification; and"
+                },
+                {
+                  "ref": "6.03(b)(ii)",
+                  "verbatimText": "alternative solution or a reasonable timeframe to comply with its TRM Framework, policies and procedures."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "6.04",
+          "verbatimText": "A capital market entity must establish and implement its technology risk management framework comprising risk identification, risk assessment, risk mitigation, and risk monitoring, review and reporting on any existing and emerging technology adopted by the capital market entity. A capital market entity may refer to Appendix 1 for guidance with regards to these components of the technology risk management framework.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "6.05",
+          "verbatimText": "A capital market entity must ensure that\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "6.05(a)",
+              "verbatimText": "all risks are assigned to the appropriate risk owners who shall be accountable for ensuring that proper risk treatment plans are implemented and enforced for a specific technology risk;"
+            },
+            {
+              "ref": "6.05(b)",
+              "verbatimText": "the risk owners establish appropriate, effective and efficient technical and organisational measures in all steps of the process; and"
+            },
+            {
+              "ref": "6.05(c)",
+              "verbatimText": "any residual risk arising from threats and vulnerabilities after risk treatment, shall be documented and managed by risk owners according to the defined risk acceptance criteria that commensurate with the capital market entity\u2019s risk tolerance level."
+            }
+          ]
+        },
+        {
+          "ref": "6.06",
+          "verbatimText": "A capital market entity must maintain a board-approved key technology risk register to facilitate the monitoring and reporting of technology risk.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "6.07",
+          "verbatimText": "A capital market entity must continuously review its risk exposures and associated controls to ensure that they remain in line with the risk appetite of the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "security-operations-centre",
-      "name": "Security Operations Centre",
-      "domain": "cybersecurity",
-      "description": "Establish and maintain security monitoring capabilities for continuous surveillance of capital market systems, with 24/7 coverage for critical market infrastructure.",
-      "controlType": "detective",
-      "owner": "CISO / SOC Manager",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Deploy SIEM for centralised log collection and correlation",
-        "Establish 24/7 monitoring for critical trading and settlement systems",
-        "Define and tune detection rules for capital market-specific attack patterns",
-        "Conduct regular SOC effectiveness assessments"
-      ],
-      "maturity": { "basic": "Basic log monitoring during business hours", "mature": "24/7 SOC with SIEM and SOAR", "advanced": "AI-augmented SOC with automated response orchestration" }
+      "slug": "technology-project-management",
+      "name": "Technology Project Management",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Technology Project Management",
+      "paraRange": "7.01-7.04",
+      "requirementCount": 4,
+      "requirements": [
+        {
+          "ref": "7.01",
+          "verbatimText": "A capital market entity must establish and implement clear and comprehensive internal guidelines on technology project management so that any technology and technology-related project can be completed with clarity, alignment, traceability, and effective resource utilisation.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.02",
+          "verbatimText": "A capital market entity must conduct a post implementation review (PIR) on all critical technology and technology-related projects, and the findings of the PIR should be taken into account to improve project management.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.03",
+          "verbatimText": "A capital market entity must conduct risk assessment to identify, manage and monitor risks arising from the implementation of critical technology-related projects and throughout the project life cycle as project risk may adversely impact the project delivery timeline, budget, and quality of the project deliverables.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.04",
+          "verbatimText": "Where a capital market entity carries out a technology-related project, the capital market entity must ensure there are adequate personnel, including key stakeholders to oversee and manage such projects, including serving as project coordinator and advisor and being responsible for all deliverables, project costs and schedules.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "vulnerability-management-programme",
-      "name": "Vulnerability Management Programme",
-      "domain": "cybersecurity",
-      "description": "Implement a systematic vulnerability identification, assessment, and remediation programme for all capital market technology systems with defined SLAs for patch deployment.",
-      "controlType": "preventive",
-      "owner": "IT Security Team",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Conduct regular vulnerability scans of all technology assets",
-        "Perform annual penetration testing of critical market systems",
-        "Define risk-based patch management SLAs",
-        "Track vulnerability remediation to closure with exception management"
-      ],
-      "maturity": { "basic": "Ad-hoc patching with no scanning", "mature": "Regular scanning with risk-based patching SLAs", "advanced": "Continuous scanning with automated patch deployment" }
+      "slug": "system-acquisition-and-development",
+      "name": "System Acquisition and Development",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "System Acquisition and Development",
+      "paraRange": "7.05-7.09",
+      "requirementCount": 5,
+      "requirements": [
+        {
+          "ref": "7.05",
+          "verbatimText": "A capital market entity must establish and implement internal processes encompassing\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.05(a)",
+              "verbatimText": "system acquisition and development;"
+            },
+            {
+              "ref": "7.05(b)",
+              "verbatimText": "system testing and acceptance; and"
+            },
+            {
+              "ref": "7.05(c)",
+              "verbatimText": "access control management."
+            }
+          ]
+        },
+        {
+          "ref": "7.06",
+          "verbatimText": "A capital market entity must establish and implement clear requirements and processes to manage its system development life cycle (SDLC) encompassing planning, requirement analysis, design, implementation, testing and acceptance. It must include, among others, requirements and processes for\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.06(a)",
+              "verbatimText": "vendor selection and evaluation of the systems to be procured from all vendors or solution providers; and"
+            },
+            {
+              "ref": "7.06(b)",
+              "verbatimText": "assessment of software development by vendors and in-house developer, to ensure that security of the capital market entity is not compromised, and its quality assurance is met."
+            }
+          ]
+        },
+        {
+          "ref": "7.07",
+          "verbatimText": "Where feasible, a capital market entity should enter into a source code escrow agreement to ensure the source codes for critical systems are accessible. If an escrow agreement cannot be implemented, a capital market entity must identify an appropriate alternative.",
+          "obligation": "should",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.08",
+          "verbatimText": "A capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.08(a)",
+              "verbatimText": "incorporate security requirements into the system design which would enable it to carry out constant security evaluation; and"
+            },
+            {
+              "ref": "7.08(b)",
+              "verbatimText": "comply with security practices throughout the SDLC in order to minimise system vulnerabilities and reduce risk exposure."
+            }
+          ]
+        },
+        {
+          "ref": "7.09",
+          "verbatimText": "At the minimum, the security requirements must cover main control areas including access control, authorisation, data integrity and confidentiality, logging system activity, tracking security event and exception handling.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "network-security-architecture",
-      "name": "Network Security Architecture",
-      "domain": "cybersecurity",
-      "description": "Design and maintain a secure network architecture for capital market systems with appropriate segmentation, access controls, and protection of trading and market data networks.",
-      "controlType": "preventive",
-      "owner": "Network Security Team / CTO",
-      "frequency": "Annual review",
-      "keyActivities": [
-        "Implement network segmentation between trading, settlement, and corporate networks",
-        "Deploy intrusion detection and prevention systems for market infrastructure",
-        "Secure market data feeds and connectivity with participants",
-        "Review network architecture annually against evolving threat landscape"
-      ],
-      "maturity": { "basic": "Flat network with basic firewall", "mature": "Segmented network with IDS/IPS and monitoring", "advanced": "Zero-trust architecture with microsegmentation" }
+      "slug": "system-testing-and-acceptance",
+      "name": "System Testing and Acceptance",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "System Testing and Acceptance",
+      "paraRange": "7.10-7.16",
+      "requirementCount": 8,
+      "requirements": [
+        {
+          "ref": "7.10",
+          "verbatimText": "A capital market entity must establish a methodology for rigorous system testing and ensure that adequate testing is performed prior to deployment of a system so that the system meets its user requirements and performs as intended. At the minimum, the testing conducted must cover the business logic, function, controls and performance of the system under various load and stress conditions.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.11",
+          "verbatimText": "Where feasible, a capital market entity should use automated testing methodology to ensure comprehensiveness of the testing scopes, as part of the testing strategy.",
+          "obligation": "should",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.12",
+          "verbatimText": "A capital market entity must properly document, track and address the issues identified during testing, including vulnerabilities, deficiencies, system defects or software bugs.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.13",
+          "verbatimText": "A capital market entity must ensure that all issues which could have an adverse impact on the operations of the capital market entity or delivery of its services to its clients are reported to the senior management and rectified prior to deployment of the system to the production environment of the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.13A",
+          "verbatimText": "Prior to deployment of a system, a capital market entity must carry out a cyber security assessment that commensurate with the risk exposure of the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.14",
+          "verbatimText": "To ensure that the system is production ready and satisfies all documented requirements, a capital market entity must perform\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.14(a)",
+              "verbatimText": "final acceptance testing including quality assurance testing focusing on technical aspect of the system; and"
+            },
+            {
+              "ref": "7.14(b)",
+              "verbatimText": "user acceptance testing focusing on functional aspect of the system."
+            }
+          ]
+        },
+        {
+          "ref": "7.15",
+          "verbatimText": "The results of the final acceptance testing and user acceptance testing must be reported to senior management.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.16",
+          "verbatimText": "In the case of an acquired system, after attending to the changes during testing by a vendor, a capital market entity must ensure that the final approved version of the acquired system is used for implementation.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "technology-risk-assessment-framework",
-      "name": "Technology Risk Assessment Framework",
-      "domain": "technology-risk-assessment",
-      "description": "Establish a systematic framework for identifying, assessing, and treating technology risks specific to capital market operations, aligned with the entity's risk appetite and SC expectations.",
-      "controlType": "preventive",
-      "owner": "CRO / CISO",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Define technology risk assessment methodology aligned with SC-GL/6-2023",
-        "Conduct annual comprehensive technology risk assessment",
-        "Assess risks from algorithmic trading systems and market infrastructure dependencies",
-        "Integrate technology risk assessment with enterprise risk management"
-      ],
-      "maturity": { "basic": "Ad-hoc risk identification", "mature": "Structured annual assessment with defined methodology", "advanced": "Continuous risk assessment with automated risk signals" }
+      "slug": "access-control-management",
+      "name": "Access Control Management",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Access Control Management",
+      "paraRange": "7.17-7.18",
+      "requirementCount": 2,
+      "requirements": [
+        {
+          "ref": "7.17",
+          "verbatimText": "To minimise risk of unauthorised access to information assets, a capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.17(a)",
+              "verbatimText": "establish user access management policies and procedures for providing, modifying and revoking access rights to IT systems. Access rights and privileges shall be granted in accordance with the roles and responsibilities of the users, and the access matrix should be periodically reviewed;"
+            },
+            {
+              "ref": "7.17(b)",
+              "verbatimText": "enforce and review its password controls periodically to enhance the resilience of its system against any attack; and"
+            },
+            {
+              "ref": "7.17(c)",
+              "verbatimText": "ensure that the logging facility is enabled to capture system user login, system activities, privilege accounts and service accounts for the purpose of audit and investigation. A capital market entity is also expected to review logs on a regular basis for any irregularity."
+            }
+          ]
+        },
+        {
+          "ref": "7.18",
+          "verbatimText": "A capital market entity must use strong fraud deterrents for sensitive system functions to safeguard the systems and data from unauthorised access on a best effort basis. For example, the use of multi-factor authentication (MFA) and privilege access management to secure employee and customer authentication process.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "algorithmic-trading-risk-controls",
-      "name": "Algorithmic Trading Risk Controls",
-      "domain": "technology-risk-assessment",
-      "description": "Implement pre-trade and post-trade risk controls for algorithmic and automated trading systems, including kill switches, position limits, and market manipulation prevention measures.",
-      "controlType": "preventive",
-      "owner": "Head of Trading / CRO",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Implement pre-trade risk checks (price limits, order size limits, position limits)",
-        "Deploy kill switch capability for immediate halt of algorithmic trading",
-        "Conduct algorithm testing and approval process before production deployment",
-        "Monitor for market manipulation patterns in algorithmic trading activity"
-      ],
-      "maturity": { "basic": "Basic order size limits only", "mature": "Comprehensive pre-trade and post-trade controls with kill switch", "advanced": "Real-time ML-based anomaly detection with automated circuit breakers" }
+      "slug": "cryptography",
+      "name": "Cryptography",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Cryptography",
+      "paraRange": "7.19-7.20",
+      "requirementCount": 2,
+      "requirements": [
+        {
+          "ref": "7.19",
+          "verbatimText": "A capital market entity must implement suitable and effective cryptographic controls to safeguard the confidentiality, authenticity and integrity of its sensitive data from unauthorised access and unintentional disclosure.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.20",
+          "verbatimText": "A capital market entity must establish robust and sound policies and procedures to manage the use of cryptography including:",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.20(a)",
+              "verbatimText": "cryptographic key life cycle management from generation to disposal;"
+            },
+            {
+              "ref": "7.20(b)",
+              "verbatimText": "measures to protect the cryptographic key from use by unauthorised parties;"
+            },
+            {
+              "ref": "7.20(c)",
+              "verbatimText": "measures to protect the cryptographic key from being modified, compromised or destroyed during its lifetime; and"
+            },
+            {
+              "ref": "7.20(d)",
+              "verbatimText": "procedures to ensure the cryptographic key is available to authorised parties only when needed with appropriate authentication and control mechanisms."
+            }
+          ]
+        }
+      ]
     },
     {
-      "slug": "technology-change-risk-assessment",
-      "name": "Technology Change Risk Assessment",
-      "domain": "technology-risk-assessment",
-      "description": "Assess technology risks associated with system changes, upgrades, and new technology deployments before implementation, with approval gates proportionate to change risk level.",
-      "controlType": "preventive",
-      "owner": "IT Change Management / CTO",
-      "frequency": "Per-change",
-      "keyActivities": [
-        "Classify changes by risk level (critical, significant, standard)",
-        "Conduct risk assessment for all critical and significant changes",
-        "Implement testing and approval gates before production deployment",
-        "Define rollback procedures for failed changes"
-      ],
-      "maturity": { "basic": "Changes deployed without risk assessment", "mature": "Risk-based change classification with approval gates", "advanced": "Automated risk scoring with continuous deployment pipelines" }
+      "slug": "data-security-and-privacy",
+      "name": "Data Security and Privacy",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Data Security and Privacy",
+      "paraRange": "7.21-7.24",
+      "requirementCount": 4,
+      "requirements": [
+        {
+          "ref": "7.21",
+          "verbatimText": "As part of its technology risk management, a capital market entity must implement effective measures to prevent losses arising from data breach or other acts of internal or external threats, negligence and cyber attack.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.22",
+          "verbatimText": "The measures must cover the process of identification, handling, transmission, movement, destruction and availability of data based on the following\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.22(a)",
+              "verbatimText": "maintain a comprehensive and updated inventory of all information assets including data classification and risk across the capital market entity;"
+            },
+            {
+              "ref": "7.22(b)",
+              "verbatimText": "deploy adequate security measures to safeguard IT systems residing in the production environment, non-production environment and all other media;"
+            },
+            {
+              "ref": "7.22(c)",
+              "verbatimText": "implement appropriate controls to ensure no unauthorised person is able to access data and IT systems. Access to data and IT systems should be on a need-to-have basis;"
+            },
+            {
+              "ref": "7.22(d)",
+              "verbatimText": "implement clear desk policy to ensure information assets are not left unprotected which could potentially lead to security breaches;"
+            },
+            {
+              "ref": "7.22(e)",
+              "verbatimText": "review audit logs or trails particularly on access to critical data to identify anomalies or abnormal activities;"
+            },
+            {
+              "ref": "7.22(f)",
+              "verbatimText": "enhance monitoring and assurance activity over third parties to ensure data and information assets of the capital market entity are adequately protected;"
+            },
+            {
+              "ref": "7.22(g)",
+              "verbatimText": "conduct a periodic gap analysis at least once a year on data and information assets processes and controls to improve data security;"
+            },
+            {
+              "ref": "7.22(h)",
+              "verbatimText": "establish a remediation plan to prioritise rectification according to the capital market entity\u2019s risk assessment; and"
+            },
+            {
+              "ref": "7.22(i)",
+              "verbatimText": "develop, operate, manage and test the data breach management processes which should include the process for preparation, identification, containment, eradication, recovery and lesson learned from data breaches."
+            }
+          ]
+        },
+        {
+          "ref": "7.23",
+          "verbatimText": "A capital market entity must establish appropriate data security measures to protect the confidentiality, integrity and availability of its critical data and this should include data stored in cloud or where blockchain-based application is used.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.24",
+          "verbatimText": "A capital market entity must establish and implement data loss prevention (DLP) policy and procedures to safeguard:",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.24(a)",
+              "verbatimText": "Data in-use \u2013 data being accessed and processed by a system."
+            },
+            {
+              "ref": "7.24(b)",
+              "verbatimText": "Data in-motion \u2013 data being transferred over the network."
+            },
+            {
+              "ref": "7.24(c)",
+              "verbatimText": "Data at-rest \u2013 data stored in mediums such as servers, backup media, storage platform and databases."
+            }
+          ]
+        }
+      ]
     },
     {
-      "slug": "cloud-risk-assessment",
-      "name": "Cloud Risk Assessment",
-      "domain": "cloud-services",
-      "description": "Conduct cloud-specific risk assessments for all proposed cloud adoptions, covering shared responsibility, data sovereignty, and capital market-specific considerations for client information and market data.",
-      "controlType": "preventive",
-      "owner": "CISO / Cloud Architecture",
-      "frequency": "Per-engagement",
-      "keyActivities": [
-        "Assess cloud-specific risks including shared responsibility and multi-tenancy",
-        "Evaluate data residency implications for client information and market data",
-        "Review CSP certifications and independent assurance reports",
-        "Document shared responsibility matrix for each cloud engagement"
-      ],
-      "maturity": { "basic": "No cloud-specific risk assessment", "mature": "Structured cloud risk framework applied per engagement", "advanced": "Continuous cloud security posture monitoring" }
+      "slug": "data-storage",
+      "name": "Data Storage",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Data Storage",
+      "paraRange": "7.25-7.28",
+      "requirementCount": 4,
+      "requirements": [
+        {
+          "ref": "7.25",
+          "verbatimText": "A capital market entity must ensure its data and IT systems are stored or hosted in an environment that is secure, robust and resilient. It must also observe a similar approach for cloud storage.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.26",
+          "verbatimText": "A capital market entity must undertake a storage capacity assessment periodically to determine its current and future storage capacity and utilisation. If the results of the assessment warrants for a migration, a capital market entity must develop and execute a plan to migrate its data and IT systems into a new environment.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.27",
+          "verbatimText": "A capital market entity must determine the appropriate retention period to archive its data based on the usage requirement or its criticality for its data.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.28",
+          "verbatimText": "A capital market entity must ensure data is protected by an adequate backup schedule and perform regular testing according to the needs of the capital market entity and ensure data can be restored from backups.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "cloud-data-governance",
-      "name": "Cloud Data Governance",
-      "domain": "cloud-services",
-      "description": "Implement data governance controls for cloud-hosted capital market data, including classification, encryption, access controls, and data residency compliance for client and market information.",
-      "controlType": "preventive",
-      "owner": "Data Protection Officer / CISO",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Classify all data types and apply appropriate protection in cloud environments",
-        "Implement encryption with customer-managed keys for sensitive data",
-        "Enforce data residency requirements for client information",
-        "Monitor and audit data access in cloud environments"
-      ],
-      "maturity": { "basic": "Basic encryption with CSP-managed keys", "mature": "BYOK with data classification and access monitoring", "advanced": "Automated data governance with DLP and rights management" }
+      "slug": "data-disposal",
+      "name": "Data Disposal",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Data Disposal",
+      "paraRange": "7.29-7.33",
+      "requirementCount": 5,
+      "requirements": [
+        {
+          "ref": "7.29",
+          "verbatimText": "A capital market entity must establish and implement appropriate policies for the disposal of data on its IT systems, mobile devices and storage media to safeguard the data from unauthorised disclosure.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.30",
+          "verbatimText": "A capital market entity must dispose the data kept in its IT systems when it is no longer required for business usage, legal or contractual purposes for which it was originally created or held.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.31",
+          "verbatimText": "Where a capital market entity has decided that data kept in its IT devices, such as Bring-Your-Own-Device (BYOD) or corporate mobile devices, is to be disposed, the capital market entity must ensure its data will be deleted from those devices after such data is no longer in use.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.32",
+          "verbatimText": "A capital market entity must implement a clear data sanitisation procedure to ensure data is irretrievably destroyed from its IT systems and IT devices. The data sanitisation procedure of a capital market entity must include\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.32(a)",
+              "verbatimText": "record data sanitisation activities performed such as location of the IT systems and IT devices, sanitisation date and name of responsible individual(s); and"
+            },
+            {
+              "ref": "7.32(b)",
+              "verbatimText": "clear identification of data accessible by a third party and access controls to address the risk of third-party having access to data that is not appropriately disposed."
+            }
+          ]
+        },
+        {
+          "ref": "7.33",
+          "verbatimText": "A capital market entity must require all third parties who have the data of the capital market entity in its custody to perform data sanitisation appropriately and securely to avoid the risk that the data that is no longer in use to be accessible by a third party. A capital market entity should include such requirements in any contract entered into with a third-party service provider.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "cloud-exit-strategy",
-      "name": "Cloud Exit Strategy",
-      "domain": "cloud-services",
-      "description": "Develop and maintain exit strategies for cloud services to ensure data portability and continuity of capital market operations in the event of CSP failure or contract termination.",
-      "controlType": "corrective",
-      "owner": "CTO / Operations",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Document exit plans for all material cloud deployments",
-        "Design cloud workloads for portability using open standards",
-        "Test data extraction and migration procedures periodically",
-        "Identify alternative cloud providers or on-premises fallback options"
-      ],
-      "maturity": { "basic": "No cloud exit planning", "mature": "Documented exit plans with portability requirements", "advanced": "Tested multi-cloud failover with automated migration" }
+      "slug": "change-management",
+      "name": "Change Management",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Change Management",
+      "paraRange": "7.34-7.37",
+      "requirementCount": 4,
+      "requirements": [
+        {
+          "ref": "7.34",
+          "verbatimText": "A capital market entity must establish a change management process to oversee any changes made to its IT systems covering among others, impact assessment, approval, scheduling, implementation and communication to key stakeholders.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.35",
+          "verbatimText": "A capital market entity must ensure, prior to deploying any changes to its IT systems in the production environment\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.35(a)",
+              "verbatimText": "a risk and impact analysis is conducted on all proposed changes to the IT systems. This risk and impact analysis should be included in the test plans of the capital market entity;"
+            },
+            {
+              "ref": "7.35(b)",
+              "verbatimText": "the analysis takes into account security factor and implication of the change in relation to the capital market entity\u2019s other IT systems;"
+            },
+            {
+              "ref": "7.35(c)",
+              "verbatimText": "the results of the analysis are accepted and approved by senior management;"
+            },
+            {
+              "ref": "7.35(d)",
+              "verbatimText": "all key stakeholders (comprising the relevant business groups in the capital market entity that will be affected by the proposed change) are informed and provided with recommendations on the proposed change; and"
+            },
+            {
+              "ref": "7.35(e)",
+              "verbatimText": "the IT systems configuration is backed up and a fall-back plan is prepared in case a problem arises during or after the implementation of a change."
+            }
+          ]
+        },
+        {
+          "ref": "7.36",
+          "verbatimText": "A capital market entity must establish and implement clear process and procedures to handle any emergency change to the production environment.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.37",
+          "verbatimText": "A capital market entity must record activities performed during the change process in an activity log to facilitate investigation and troubleshooting.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "third-party-risk-assessment",
-      "name": "Third-Party Risk Assessment",
-      "domain": "third-party-risk",
-      "description": "Conduct risk assessments for all third-party technology service providers, with depth proportionate to the criticality of services and access to client data or market systems.",
-      "controlType": "preventive",
-      "owner": "Vendor Risk Management / CISO",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Classify third parties by risk tier based on service criticality",
-        "Conduct comprehensive due diligence for critical service providers",
-        "Assess vendor security posture through questionnaires and independent reviews",
-        "Monitor vendor financial health and operational stability"
-      ],
-      "maturity": { "basic": "Basic vendor checks at onboarding", "mature": "Tiered assessment programme with annual reviews", "advanced": "Continuous vendor risk monitoring with automated scoring" }
+      "slug": "patch-and-technology-obsolescence",
+      "name": "Patch and Technology Obsolescence",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Patch and Technology Obsolescence",
+      "paraRange": "7.38-7.44",
+      "requirementCount": 7,
+      "requirements": [
+        {
+          "ref": "7.38",
+          "verbatimText": "A capital market entity must establish a patch management process to administer the remediation effort, risk assessment, monitoring and implementation of security patch that is applicable to its IT systems. A capital market entity must perform patch management diligently and continuously monitor and implement the latest patch releases in a timely manner.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.39",
+          "verbatimText": "A capital market entity must closely monitor the EOS dates of its hardware and software including those relating to security vulnerabilities that surface after the EOS date.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.40",
+          "verbatimText": "A capital market entity must develop a technology refresh plan for the replacement of its hardware and software before they reach EOS. A capital market entity must assess the impact and include risk mitigation process should the EOS system be utilised within a certain period.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.41",
+          "verbatimText": "A capital market entity must ensure that its critical IT systems are not running on obsolescence systems or EOL systems. If there is a need for a capital market entity to continue using critical technology which are running on obsolescence systems, it must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.41(a)",
+              "verbatimText": "ensure that approval is obtained from senior management and a validity period is assigned to the continued use of such critical IT systems that commensurate with the identified risks and risk mitigation process of the capital market entity; and"
+            },
+            {
+              "ref": "7.41(b)",
+              "verbatimText": "closely monitor, assess the impact and establish a risk mitigation process that corresponds to its risk acceptance level for such critical IT systems."
+            }
+          ]
+        },
+        {
+          "ref": "7.42",
+          "verbatimText": "The capital market entity must ensure that the latest inventory list of all IT systems is mapped to its criticality and is available for patch administration for the purpose of determining its patches severity and for further remedial action.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.43",
+          "verbatimText": "A capital market entity must conduct patch compatibility testing on its IT systems that use standardised configurations before deploying to its IT systems in production environment to ensure it does not introduce any adverse effect. The patch deployment must be carried out within a specified timeframe depending on the severity level of the patch.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.44",
+          "verbatimText": "The capital market entity must ensure the remediation action is approved, monitored and tracked according to the change management process.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "outsourcing-governance",
-      "name": "Outsourcing Governance",
-      "domain": "third-party-risk",
-      "description": "Establish governance structures for technology outsourcing arrangements aligned with SC-GL/6-2023 requirements, including board oversight, contractual standards, and monitoring mechanisms.",
-      "controlType": "preventive",
-      "owner": "Board / COO",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Obtain board approval for material outsourcing arrangements",
-        "Maintain outsourcing policy aligned with SC-GL/6-2023",
-        "Include mandatory contractual provisions (SLA, right-to-audit, data protection)",
-        "Report outsourcing risk status to board quarterly"
-      ],
-      "maturity": { "basic": "Informal outsourcing management", "mature": "Formal governance with policy and board oversight", "advanced": "Integrated outsourcing governance with enterprise risk" }
+      "slug": "network-resilience",
+      "name": "Network Resilience",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Network Resilience",
+      "paraRange": "7.45-7.48",
+      "requirementCount": 4,
+      "requirements": [
+        {
+          "ref": "7.45",
+          "verbatimText": "A capital market entity must design a sound network architecture to support its business activities and future growth and to enable it to achieve high network availability, redundancy, accessibility and resiliency.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.46",
+          "verbatimText": "A capital market entity must continuously assess its network architecture design to identify any flaws and to sustain an acceptable level of availability which may support the business activities of the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.47",
+          "verbatimText": "A capital market entity must ensure its network infrastructure with systems that demand high availability and reliability to have no single point of failure by implementing redundancy, fault tolerance, congestion control and diversity in network routing, where applicable.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.48",
+          "verbatimText": "A capital market entity must ensure that the change management process provided in paragraph 7.34 is applicable to any changes made to the network infrastructure.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "vendor-performance-monitoring",
-      "name": "Vendor Performance Monitoring",
-      "domain": "third-party-risk",
-      "description": "Monitor service provider performance against agreed service levels and contractual obligations, with escalation procedures for persistent underperformance.",
-      "controlType": "detective",
-      "owner": "Service Management Team",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Monitor SLA compliance for all outsourced technology services",
-        "Generate monthly performance reports for critical vendors",
-        "Implement escalation procedures for SLA breaches",
-        "Conduct periodic vendor satisfaction and relationship reviews"
-      ],
-      "maturity": { "basic": "Reliance on vendor self-reporting", "mature": "Automated SLA monitoring with exception reporting", "advanced": "Predictive performance analytics with proactive management" }
+      "slug": "operational-resilience",
+      "name": "Operational Resilience",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "Operational Resilience",
+      "paraRange": "7.49-7.55",
+      "requirementCount": 7,
+      "requirements": [
+        {
+          "ref": "7.49",
+          "verbatimText": "A capital market entity must ensure that its data centre operation, including the use of cloud services, is supported by a sound IT infrastructure taking into consideration IT operational resiliency and availability target that is aligned to the business needs of the capital market entity. The availability target set by the capital market entity should result in reducing the impact of any failure or disruption to the data centre operations of the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.50",
+          "verbatimText": "Where applicable, to reduce the impact of any failure or disruption to the data centre operations, a capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.50(a)",
+              "verbatimText": "conduct a data centre risk assessment to ensure the resiliency of the data centre, taking into consideration the business model and risk appetite of the capital market entity, and industry best practices;"
+            },
+            {
+              "ref": "7.50(b)",
+              "verbatimText": "ensure no single point of failure (SPOF) to its critical IT infrastructure including power equipment, network connectivity, cooling equipment, electrical utility and diversification of data communication and network paths attending the IT system;"
+            },
+            {
+              "ref": "7.50(c)",
+              "verbatimText": "maintain a secondary data centre for recovery purposes based on the business needs of the capital market entity;"
+            },
+            {
+              "ref": "7.50(d)",
+              "verbatimText": "undertake a data storage capacity assessment to determine its current and future storage capacity and utilisation;"
+            },
+            {
+              "ref": "7.50(e)",
+              "verbatimText": "ensure adequate maintenance of the data centres;"
+            },
+            {
+              "ref": "7.50(f)",
+              "verbatimText": "continuously monitor the data centre resources according to internal thresholds determined by the capital market entity to ensure the performance of the data centre resources are not disrupted;"
+            },
+            {
+              "ref": "7.50(g)",
+              "verbatimText": "implement an escalation process and response plan to analyse and remediate any potential or actual threats related to the data centres; and"
+            },
+            {
+              "ref": "7.50(h)",
+              "verbatimText": "implement adequate physical access controls for its data centres including process on authorised employees, visitor access and access to selected areas."
+            }
+          ]
+        },
+        {
+          "ref": "7.51",
+          "verbatimText": "Where a third-party service provider manages the data centre, the capital market entity must ensure that the third-party service provider furnishes a data centre risk assessment report upon request by the capital market entity or the SC. The report must cover the review of the system of the data centre, suitability of its design of controls and effectiveness of the controls. The capital market entity must perform its own risk assessment of such report to ensure it is consistent with the risk appetite and risk tolerance of the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.52",
+          "verbatimText": "A capital market entity must ensure that its IT system has adequate storage, central processing unit power, memory and network bandwidth to support its business operations and future growth.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.53",
+          "verbatimText": "A capital market entity must monitor its technology operation status including its network performance, application and system utilisation to ensure its IT resources meet its current needs and future growth, and for capacity management planning.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.54",
+          "verbatimText": "A capital market entity must establish a monitoring and reporting mechanism of its network, application and system to flag abnormal behaviour and aid in analysis. Upon the detection of any abnormal behaviour, the capital market entity must undertake a follow-up action in accordance with its internal procedures.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.55",
+          "verbatimText": "A capital market entity must retain adequate network, application and system device logs for investigation and diagnosis for an appropriate period as it determines.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "fourth-party-oversight",
-      "name": "Fourth-Party Oversight",
-      "domain": "third-party-risk",
-      "description": "Identify and manage risks from service providers' sub-contractors that may impact capital market operations or access client data and market information.",
-      "controlType": "detective",
-      "owner": "Vendor Risk Management",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Require disclosure of sub-contracting for critical services",
-        "Assess fourth-party risks for critical supply chains",
-        "Include sub-contractor oversight provisions in contracts",
-        "Monitor supply chain changes and concentration risks"
-      ],
-      "maturity": { "basic": "No fourth-party visibility", "mature": "Fourth-party register with assessment", "advanced": "Continuous supply chain risk monitoring" }
+      "slug": "it-disaster-recovery-plan",
+      "name": "IT Disaster Recovery Plan",
+      "chapter": 7,
+      "chapterTitle": "Technology Operations Management",
+      "domain": "technology-operation-management",
+      "section": "IT Disaster Recovery Plan (IT DRP)",
+      "paraRange": "7.56-7.59",
+      "requirementCount": 4,
+      "requirements": [
+        {
+          "ref": "7.56",
+          "verbatimText": "A capital market entity must establish and test its IT DRP on a regular basis to manage availability and restore IT system within the recovery time objectives being set in the event of disruption according to its defined BIA.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.57",
+          "verbatimText": "A capital market entity must ensure that all relevant key stakeholders from business and IT functions participate in the IT DRP to ensure the IT DRP is implemented effectively.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "7.58",
+          "verbatimText": "A capital market entity must ensure that the IT DRP consists of\u2013",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "7.58(a)",
+              "verbatimText": "procedures for declaring a disaster with escalation procedures;"
+            },
+            {
+              "ref": "7.58(b)",
+              "verbatimText": "criteria for plan activation (including circumstances in which a disaster is declared, type of scenarios of disasters and when the recovery plan should be put into action);"
+            },
+            {
+              "ref": "7.58(c)",
+              "verbatimText": "its linkage with overarching plans such as emergency response plan or crisis management plan for business continuity plan (BCP) for different lines of business;"
+            },
+            {
+              "ref": "7.58(d)",
+              "verbatimText": "the responsible employee for each function in plan execution;"
+            },
+            {
+              "ref": "7.58(e)",
+              "verbatimText": "recovery teams and their responsibilities;"
+            },
+            {
+              "ref": "7.58(f)",
+              "verbatimText": "emergency contact and notification (recovery teams, recovery manager, stakeholders, important third-party service providers);"
+            },
+            {
+              "ref": "7.58(g)",
+              "verbatimText": "a detail procedure of the recovery process (initiation of recovery place, type of recovery to be conducted, the flow of recovery);"
+            },
+            {
+              "ref": "7.58(h)",
+              "verbatimText": "identification of the various resources required for recovery and business operation continuation; and"
+            },
+            {
+              "ref": "7.58(i)",
+              "verbatimText": "post incident review incorporating lessons learned and developing long-term risk mitigations."
+            }
+          ]
+        },
+        {
+          "ref": "7.59",
+          "verbatimText": "Where IT systems are managed by a third-party service provider, the capital market entity must ensure that the third-party service provider is capable in ensuring availability and recovery of the IT systems. The capital market entity must coordinate the DRP with involvement from the third-party service provider for such IT systems to meet the business recovery objectives.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "data-governance-framework",
-      "name": "Data Governance Framework",
-      "domain": "data-management",
-      "description": "Establish a comprehensive data governance framework for capital market data, including market data integrity, client information protection, and data quality management.",
-      "controlType": "preventive",
-      "owner": "Chief Data Officer / Compliance",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Define data governance roles, responsibilities, and accountability",
-        "Implement data classification scheme for market and client data",
-        "Establish data quality standards and monitoring",
-        "Ensure compliance with PDPA and SC data protection requirements"
-      ],
-      "maturity": { "basic": "No formal data governance", "mature": "Documented framework with classification and quality controls", "advanced": "Automated data governance with lineage tracking" }
+      "slug": "due-diligence-and-performance-monitoring",
+      "name": "Due Diligence and Performance Monitoring",
+      "chapter": 8,
+      "chapterTitle": "Technology Service Provider Management",
+      "domain": "technology-service-provider-management",
+      "section": "Due Diligence and Performance Monitoring",
+      "paraRange": "8.01-8.06",
+      "requirementCount": 6,
+      "requirements": [
+        {
+          "ref": "8.01",
+          "verbatimText": "A capital market entity must implement and uphold robust and sound risk management in relation to its outsourced arrangements including any sub-arrangements.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "8.02",
+          "verbatimText": "A capital market entity must ensure that\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "8.02(a)",
+              "verbatimText": "the third-party service providers it engages are reliable by conducting due diligence prior to selecting a third-party service provider; and"
+            },
+            {
+              "ref": "8.02(b)",
+              "verbatimText": "it carries out contract management and performance monitoring so as to minimise any risks related to the technology it expects to adopt from the third-party service provider."
+            }
+          ]
+        },
+        {
+          "ref": "8.03",
+          "verbatimText": "The scope of the due diligence to be conducted by a capital market entity pursuant to paragraph 8.02 above must include the following:",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "8.03(a)",
+              "verbatimText": "financial stability and reputation of the third-party service provider;"
+            },
+            {
+              "ref": "8.03(b)",
+              "verbatimText": "where applicable, the managerial skills, technical competency and operational capability of the third-party service provider; and"
+            },
+            {
+              "ref": "8.03(c)",
+              "verbatimText": "the third-party service provider\u2019s capacity to undertake the provision of the outsourced task effectively at all times."
+            }
+          ]
+        },
+        {
+          "ref": "8.04",
+          "verbatimText": "A capital market entity must conduct periodic assessment on the capabilities of the third-party service providers during the contract period, including the third-party service provider\u2019s capability in managing risk. In assessing the capabilities of the third-party service provider in managing risk, a capital market entity must also consider the following factors:",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "8.04(a)",
+              "verbatimText": "Data loss;"
+            },
+            {
+              "ref": "8.04(b)",
+              "verbatimText": "Technology risk;"
+            },
+            {
+              "ref": "8.04(c)",
+              "verbatimText": "Reputational risk;"
+            },
+            {
+              "ref": "8.04(d)",
+              "verbatimText": "Exit risk;"
+            },
+            {
+              "ref": "8.04(e)",
+              "verbatimText": "Concentration risk;"
+            },
+            {
+              "ref": "8.04(f)",
+              "verbatimText": "Operational risk including resiliency to operational and system disruption, disaster preparedness plan and business continuity plan (BCP);"
+            },
+            {
+              "ref": "8.04(g)",
+              "verbatimText": "Data security of the capital market entity and its clients\u2019 data integrity including unauthorised access and mishandling of data and information during data-at-rest, data-in-motion and data-in-use; and"
+            },
+            {
+              "ref": "8.04(h)",
+              "verbatimText": "Resiliency to cyber risk."
+            }
+          ]
+        },
+        {
+          "ref": "8.05",
+          "verbatimText": "A capital market entity must ensure that the selected third-party service provider practices cyber hygiene and remains cognisant in protecting its data confidentiality, and the integrity and resilience of its systems.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "8.06",
+          "verbatimText": "Notwithstanding that the operation or maintenance of IT systems are outsourced to a third-party service provider, a capital market entity remains responsible for ensuring compliance with the requirements set out in these Guidelines.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "market-data-integrity",
-      "name": "Market Data Integrity",
-      "domain": "data-management",
-      "description": "Implement controls to ensure the integrity, accuracy, and timeliness of market data used in trading, settlement, and reporting operations.",
-      "controlType": "detective",
-      "owner": "Head of Market Operations / CTO",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Implement data validation checks for market data feeds",
-        "Monitor market data latency and accuracy metrics",
-        "Establish reconciliation processes for critical market data",
-        "Define data correction and restatement procedures"
-      ],
-      "maturity": { "basic": "Manual data quality checks", "mature": "Automated validation with reconciliation", "advanced": "Real-time data quality monitoring with anomaly detection" }
+      "slug": "cloud-services",
+      "name": "Cloud Services",
+      "chapter": 8,
+      "chapterTitle": "Technology Service Provider Management",
+      "domain": "technology-service-provider-management",
+      "section": "Cloud Services",
+      "paraRange": "8.07-8.11",
+      "requirementCount": 5,
+      "requirements": [
+        {
+          "ref": "8.07",
+          "verbatimText": "A capital market entity must ensure the level of governance and controls implemented over cloud service providers including cloud strategy and cloud operational management commensurate with the risks posed by the cloud services it adopts. The board of the capital market entity should be responsible and accountable for maintaining effective oversight and governance in this regard.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "8.08",
+          "verbatimText": "A capital market entity must be cognisant of and ensure risks associated with the use of cloud services are adequately addressed. It must perform a comprehensive risk assessment when planning for cloud adoption and manage the risks identified appropriately.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "8.09",
+          "verbatimText": "A capital market entity must, prior to cloud adoption, conduct a comprehensive risk assessment which addresses key risks associated with among others, the following:",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "8.09(a)",
+              "verbatimText": "Cloud risk management strategy, considering different cloud service models tailored to their needs;"
+            },
+            {
+              "ref": "8.09(b)",
+              "verbatimText": "Location of the cloud infrastructure;"
+            },
+            {
+              "ref": "8.09(c)",
+              "verbatimText": "Multi-tenancy or data commingling;"
+            },
+            {
+              "ref": "8.09(d)",
+              "verbatimText": "Identity and access management (IAM) controls, data protection and cryptographic key management;"
+            },
+            {
+              "ref": "8.09(e)",
+              "verbatimText": "Expansion of cyber security operations of the capital market entity including the security of public cloud infrastructure;"
+            },
+            {
+              "ref": "8.09(f)",
+              "verbatimText": "Cloud resilience risk management such as cloud redundancy or fault tolerant capability, high availability, scalability, multiple geographically separated data centres;"
+            },
+            {
+              "ref": "8.09(g)",
+              "verbatimText": "Vendor lock-in and portability or interoperability solutions;"
+            },
+            {
+              "ref": "8.09(h)",
+              "verbatimText": "Exposure to cyber-attacks via cloud service providers;"
+            },
+            {
+              "ref": "8.09(i)",
+              "verbatimText": "Migration of existing systems to cloud infrastructures; and"
+            },
+            {
+              "ref": "8.09(j)",
+              "verbatimText": "Constant ability to meet regulatory requirements and timely measures of security standards on cloud computing."
+            }
+          ]
+        },
+        {
+          "ref": "8.10",
+          "verbatimText": "A capital market entity must assess and manage its exposure to technology risk that may affect the confidentiality, integrity and availability of the IT systems and data at the cloud during the contractual period of the cloud services agreement.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "8.11",
+          "verbatimText": "A capital market entity must ensure adequate measures are undertaken by the cloud service provider to safeguard the data of the capital market entity and the data of its clients against unauthorised disclosure and access. For encrypted data, a capital market entity must ensure that appropriate cryptographic key management is established, including assessing the ability of the cloud service provider to restore the services effectively.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "client-data-protection",
-      "name": "Client Data Protection",
-      "domain": "data-management",
-      "description": "Implement data protection controls for client information held by capital market intermediaries, including encryption, access controls, and data loss prevention.",
-      "controlType": "preventive",
-      "owner": "DPO / CISO",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Encrypt client data at rest and in transit",
-        "Implement role-based access controls for client information systems",
-        "Deploy data loss prevention tools for client data",
-        "Conduct regular data protection impact assessments"
-      ],
-      "maturity": { "basic": "Basic encryption with minimal access controls", "mature": "Comprehensive DLP with RBAC and monitoring", "advanced": "Zero-trust data protection with automated classification" }
+      "slug": "contract-management",
+      "name": "Contract Management",
+      "chapter": 8,
+      "chapterTitle": "Technology Service Provider Management",
+      "domain": "technology-service-provider-management",
+      "section": "Contract Management",
+      "paraRange": "8.12-8.15",
+      "requirementCount": 4,
+      "requirements": [
+        {
+          "ref": "8.12",
+          "verbatimText": "A capital market entity must establish a service level agreement when engaging third-party service providers.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "8.13",
+          "verbatimText": "The service level agreement entered by a capital market entity with its third-party service provider must at a minimum include provisions on\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "8.13(a)",
+              "verbatimText": "scope of arrangement, duration of the service and performance metrics;"
+            },
+            {
+              "ref": "8.13(b)",
+              "verbatimText": "confidentiality and security requirements of the capital market entity and the data of its clients during and after the end of the contract period;"
+            },
+            {
+              "ref": "8.13(c)",
+              "verbatimText": "access rights to information or documents of the third-party service provider related to any outsourced function as may be required by the SC or the capital market entity for the purpose of performing review or audit on the relevant systems;"
+            },
+            {
+              "ref": "8.13(d)",
+              "verbatimText": "the right for the SC to appoint an independent party to perform a review or audit of the relevant information or document of the capital market entities stored with or held by the third-party service provider and the costs for such review or audit shall be borne by the capital market entity;"
+            },
+            {
+              "ref": "8.13(e)",
+              "verbatimText": "contingency plans and exit strategies with minimal impact on the continuity of the operations of the capital market entity;"
+            },
+            {
+              "ref": "8.13(f)",
+              "verbatimText": "system development and maintenance arrangements with the third-party service provider including requirements for such third-party service provider to comply with the data and information security policies of the capital market entity;"
+            },
+            {
+              "ref": "8.13(g)",
+              "verbatimText": "a clearly defined arrangement for immediate notification by the third-party service provider to the capital market entity in the event of a technology incident or cyber incident;"
+            },
+            {
+              "ref": "8.13(h)",
+              "verbatimText": "clearly defined cyber security responsibilities of all parties;"
+            },
+            {
+              "ref": "8.13(i)",
+              "verbatimText": "modification or termination of the arrangement between the capital market entity and the third-party service provider in the event the SC issues a direction to the entity to that effect under securities laws, these Guidelines or any other relevant guidelines, guidance or practice notes; and"
+            },
+            {
+              "ref": "8.13(j)",
+              "verbatimText": "compliance with applicable laws, regulations, guidelines and requirements by the third-party service provider."
+            }
+          ]
+        },
+        {
+          "ref": "8.14",
+          "verbatimText": "A capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "8.14(a)",
+              "verbatimText": "periodically review the performance of its third-party service providers to ensure satisfactory performance is achieved and review the service level agreement it enters into to ensure it remains relevant and effective; and"
+            },
+            {
+              "ref": "8.14(b)",
+              "verbatimText": "ensure its third-party service providers comply with all applicable laws, regulations, guidelines and requirements."
+            }
+          ]
+        },
+        {
+          "ref": "8.15",
+          "verbatimText": "A capital market entity must ensure that all of its data residing with third-party service providers are recoverable in a timely manner.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "bcm-programme",
-      "name": "BCM Programme for Market Operations",
-      "domain": "business-continuity",
-      "description": "Establish a business continuity management programme specific to capital market operations, ensuring trading, clearing, and settlement services can continue during disruptions.",
-      "controlType": "corrective",
-      "owner": "BCM Manager / COO",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Conduct business impact analysis for all capital market functions",
-        "Develop BCP covering trading, clearing, settlement, and custody operations",
-        "Define RTO and RPO for market infrastructure components",
-        "Coordinate BCP with market operators and clearing houses"
-      ],
-      "maturity": { "basic": "Basic BCP without market-specific considerations", "mature": "Comprehensive BCP with market operation focus", "advanced": "Dynamic BCP with real-time impact assessment" }
+      "slug": "cyber-security-framework",
+      "name": "Cyber Security Framework",
+      "chapter": 9,
+      "chapterTitle": "Cyber Security Management",
+      "domain": "cyber-security-management",
+      "section": "Cyber Security Framework",
+      "paraRange": "9.01-9.03",
+      "requirementCount": 3,
+      "requirements": [
+        {
+          "ref": "9.01",
+          "verbatimText": "A capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "9.01(a)",
+              "verbatimText": "develop a cyber security framework comprising the governance and implementation of adequate cyber security controls which commensurate with the risk appetite and business profile of the capital market entity; and"
+            },
+            {
+              "ref": "9.01(b)",
+              "verbatimText": "ensure that the cyber security framework is supported by policies and procedures to address interoperability, usability, and privacy of the data of the capital market entity and its clients within its custody, and to safeguard the confidentiality, integrity and availability of the data."
+            }
+          ]
+        },
+        {
+          "ref": "9.02",
+          "verbatimText": "A capital market entity must ensure that roles and responsibilities are defined to ensure accountability for cyber security activities within the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.03",
+          "verbatimText": "As part of a wider risk management programme, a capital market entity must implement cyber risk management strategies and measures in a structured and methodical manner which includes identification, protection and prevention, detection, response and recovery measures. The capital market entity may refer to Appendix 2 for guidance on the methodology in implementing its cyber risk management strategies and measures.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "trading-system-resilience",
-      "name": "Trading System Resilience",
-      "domain": "business-continuity",
-      "description": "Ensure trading systems have sufficient resilience, redundancy, and failover capabilities to maintain market access and order execution during technology disruptions.",
-      "controlType": "corrective",
-      "owner": "Head of Trading Technology / CTO",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Implement redundant trading infrastructure with automatic failover",
-        "Define capacity requirements with headroom for market volatility",
-        "Test trading system failover procedures regularly",
-        "Establish alternative trading channels for primary system failures"
-      ],
-      "maturity": { "basic": "Single trading system with manual recovery", "mature": "Redundant systems with tested failover", "advanced": "Active-active trading with zero-downtime failover" }
+      "slug": "cyber-security-measures-and-monitoring",
+      "name": "Cyber Security Measures and Monitoring",
+      "chapter": 9,
+      "chapterTitle": "Cyber Security Management",
+      "domain": "cyber-security-management",
+      "section": "Cyber Security Measures and Monitoring",
+      "paraRange": "9.04-9.14",
+      "requirementCount": 11,
+      "requirements": [
+        {
+          "ref": "9.04",
+          "verbatimText": "A capital market entity must deploy defence-in-depth and preventive cyber security measures which commensurate with its business model, risk appetite and level of technology dependency. A capital market entity must put in place the appropriate measures which may include the following:",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "9.04(a)",
+              "verbatimText": "Deployment of anti-virus software and malware programme to detect and isolate malicious code;"
+            },
+            {
+              "ref": "9.04(b)",
+              "verbatimText": "Layering systems and systems components;"
+            },
+            {
+              "ref": "9.04(c)",
+              "verbatimText": "Deployment of firewalls to reduce weak points through which attacker can gain access to an entity\u2019s network;"
+            },
+            {
+              "ref": "9.04(d)",
+              "verbatimText": "Web and email filtering systems; and"
+            },
+            {
+              "ref": "9.04(e)",
+              "verbatimText": "Solution to counter advance persistent threats such as zero day and signatureless-malware."
+            }
+          ]
+        },
+        {
+          "ref": "9.05",
+          "verbatimText": "A capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "9.05(a)",
+              "verbatimText": "establish, implement and continuously review the security hardening standards on its operating systems, databases, applications, network and security devices; and"
+            },
+            {
+              "ref": "9.05(b)",
+              "verbatimText": "ensure that the security hardening standards checklist is kept updated."
+            }
+          ]
+        },
+        {
+          "ref": "9.06",
+          "verbatimText": "A capital market entity must conduct continuous review and update of rules and configurations for its operating systems, databases, applications, network and security devices.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.07",
+          "verbatimText": "A capital market entity must establish\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "9.07(a)",
+              "verbatimText": "on a best effort basis, a security operation centre (SOC) or engage a managed security services (MSS) provider that has sufficient capabilities for pre-emptive surveillance and monitoring of its cyber events. The SOC implemented must be secured with proper access controls, skilled resources, and accommodated with disaster recovery capabilities and dashboard to oversee the overall network perimeter of the capital market entity;"
+            },
+            {
+              "ref": "9.07(b)",
+              "verbatimText": "a process to collect, review and retain system logs to facilitate the cyber events monitoring operations of the capital market entity while ensuring the system log remains protected; and"
+            },
+            {
+              "ref": "9.07(c)",
+              "verbatimText": "a baseline indicator for each of the IT systems being monitored. Any anomalies or suspicious user behaviour detected against the baseline indicator must be analysed and escalated in a timely manner in accordance with the escalation and decision-making processes of the capital market entity."
+            }
+          ]
+        },
+        {
+          "ref": "9.08",
+          "verbatimText": "A capital market entity must establish a monitoring and detection process to support continuous surveillance of any cyber event, which should include, among others, clearly defined escalation and decision-making processes to ensure any adverse effect of a cyber incident is properly managed;",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.09",
+          "verbatimText": "A capital market entity must proactively monitor any cyber event, detect any anomalous activity and conduct analysis on any detected event that may have material impact on the business or systems of the capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.10",
+          "verbatimText": "Where feasible, a capital market entity should use its best endeavours to conduct regular monitoring of fake websites to minimise adverse effect on its customers, employees and agents from phishing or other types of social engineering attacks.",
+          "obligation": "should",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.11",
+          "verbatimText": "A capital market entity must perform correlation of multiple events registered on system logs to identify anomalous system activity or suspicious user behaviour patterns according to the baseline indicator.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.12",
+          "verbatimText": "If reasonably practicable, a capital market entity must apply advanced user behavioural analysis to detect sophisticated cyber events such as signature-less and file-less malware, as well as to identify anomalies at endpoints and network layers.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.13",
+          "verbatimText": "A capital market entity must regularly review its cyber threat analysis report that commensurate with its business model, risk appetite and technology dependency. The cyber threat analysis report must be communicated to its senior management. At the minimum, the report must encompass the cyber threat trends and statistics, incidents grouping by type of attack, target and source of IP addresses.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.14",
+          "verbatimText": "A capital market entity must equip itself with the knowledge and understanding of the current and evolving cyber threats, new cyber attack techniques, analyse and determine the appropriate countermeasures.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "dr-testing-programme",
-      "name": "DR Testing Programme",
-      "domain": "business-continuity",
-      "description": "Conduct regular disaster recovery testing for capital market systems, including participation in industry-wide DR exercises coordinated by Bursa Malaysia or SC.",
-      "controlType": "corrective",
-      "owner": "IT Operations / BCM Manager",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Conduct annual DR testing for all critical market systems",
-        "Participate in industry-wide DR exercises as required by SC or Bursa",
-        "Test data recovery and system restoration procedures",
-        "Document test results and remediate gaps"
-      ],
-      "maturity": { "basic": "No regular DR testing", "mature": "Annual DR testing with industry participation", "advanced": "Continuous DR readiness with automated failover testing" }
+      "slug": "cyber-security-incident-response-and-recovery",
+      "name": "Cyber Security Incident Response and Recovery",
+      "chapter": 9,
+      "chapterTitle": "Cyber Security Management",
+      "domain": "cyber-security-management",
+      "section": "Cyber Security Incident Response and Recovery",
+      "paraRange": "9.15-9.19",
+      "requirementCount": 5,
+      "requirements": [
+        {
+          "ref": "9.15",
+          "verbatimText": "A capital market entity must establish a cyber incident response capability to manage and minimise damage from cyber incidents, and to recover and learn from such incidents. The cyber incident response capability must encompass the following phases:",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "9.15(a)",
+              "verbatimText": "Preparation: A capital market entity must establish an effective governance process, reporting structure and a team to manage cyber incident and response plan in the event of a cyber incident that cause service disruption. A capital market entity must also clearly define the roles and responsibilities of the team."
+            },
+            {
+              "ref": "9.15(b)",
+              "verbatimText": "Detection and Analysis: A capital market entity must establish a detection process to handle detected cyber events, including disaster declaration and classification of the cyber incident based on the attack vectors. Different types of cyber incidents merit different response strategies."
+            },
+            {
+              "ref": "9.15(c)",
+              "verbatimText": "Containment, Eradication and Recovery: A capital market entity must establish a recovery process to mitigate any service disruption due to cyber-attack by prioritising the recovery based on the criticality of the systems and services within a capital market entity operating environment and to restore IT systems to its normal operation."
+            },
+            {
+              "ref": "9.15(d)",
+              "verbatimText": "Post Incident Review: A capital market entity must ensure that the recovery process carried out by the capital market entity event is well documented to support an effective post incident review. A report must be produced from the post incident review and presented to all relevant stakeholders."
+            }
+          ]
+        },
+        {
+          "ref": "9.16",
+          "verbatimText": "A capital market entity must establish clearly defined communication plan including escalation and decision-making processes to ensure that any adverse effect of a cyber incident is properly managed and recovery action may be initiated quickly.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.17",
+          "verbatimText": "For the purposes stated in paragraph 9.15(c), a capital market entity must identify the critical systems and services within its operating environment that shall be recovered on a priority basis in order to provide an acceptable level of services during the downtime.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.18",
+          "verbatimText": "A capital market entity must determine the recovery time objective to return to its full service and operations.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.19",
+          "verbatimText": "A capital market entity must regularly review and update the cyber incident management plan taking into account the information gathered from reputable cyber threat intelligence and lesson learned from cyber incidents.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "settlement-continuity",
-      "name": "Settlement Continuity",
-      "domain": "business-continuity",
-      "description": "Ensure settlement processes can continue during technology disruptions, with alternative settlement procedures and coordination with central depositories and clearing houses.",
-      "controlType": "corrective",
-      "owner": "Head of Operations / Settlement Manager",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Define alternative settlement procedures for system failures",
-        "Coordinate settlement continuity with Bursa Malaysia Depository",
-        "Test manual settlement fallback procedures",
-        "Maintain communication protocols with clearing and depository participants"
-      ],
-      "maturity": { "basic": "No alternative settlement procedures", "mature": "Documented manual fallback with testing", "advanced": "Automated settlement failover with real-time coordination" }
+      "slug": "cyber-security-assessment",
+      "name": "Cyber Security Assessment",
+      "chapter": 9,
+      "chapterTitle": "Cyber Security Management",
+      "domain": "cyber-security-management",
+      "section": "Cyber Security Assessment",
+      "paraRange": "9.20-9.25",
+      "requirementCount": 7,
+      "requirements": [
+        {
+          "ref": "9.20",
+          "verbatimText": "A capital market entity must establish a process to conduct regular assessment, and to identify potential vulnerabilities and cyber threats in its operating environment which could undermine the security, confidentiality, availability and integrity of the information assets, systems and networks. The process must, among others, outline the relevant control measures to mitigate any vulnerabilities and cyber threats in its operating environment.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.21",
+          "verbatimText": "A capital market entity must ensure its assessment is comprehensive, which comprise among others making an assessment of potential vulnerabilities relating to systems and technologies adopted including any third-party systems utilised by the capital market entity and business processes.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.22",
+          "verbatimText": "Where feasible, a capital market entity should regularly undertake a compromise assessment (CA) on its critical systems to prevent and detect any potential compromise of its security posture.",
+          "obligation": "should",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.23",
+          "verbatimText": "A capital market entity must conduct regular penetration testing exercise to imitate an experienced hacker attacking the production environment of the capital market entity, with the aim to obtain in-depth evaluation of its cyber defences. The scope and frequency of the exercise must commensurate with the capital market entity\u2019s risk exposure and should at a minimum be conducted annually.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.23A",
+          "verbatimText": "Penetration testing must also be conducted prior to the deployment of any new critical system or any major changes to the critical systems of a capital market entity.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.24",
+          "verbatimText": "A capital market entity must ensure the penetration testing exercise process is documented and performed by experienced and qualified professionals who are aware of the risk of undertaking such exercise and are able to limit the damage resulting from a successful break-in to a production environment. A capital market entity must obtain the approval of its senior management before finalisation of the test scope.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.25",
+          "verbatimText": "A capital market entity must establish a comprehensive remedial process to track, monitor and resolve vulnerabilities identified from the cyber security assessments. The remedial process must include at a minimum:",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "9.25(a)",
+              "verbatimText": "severity level and classification of identified vulnerabilities;"
+            },
+            {
+              "ref": "9.25(b)",
+              "verbatimText": "turnaround time to remediate vulnerabilities according to its severity level; and"
+            },
+            {
+              "ref": "9.25(c)",
+              "verbatimText": "risk assessment and mitigation plans to manage exceptions (i.e. for vulnerabilities which the capital market entity is unable to remediate timely) with approval from senior management."
+            }
+          ]
+        }
+      ]
     },
     {
-      "slug": "incident-response-plan",
-      "name": "Incident Response Plan",
-      "domain": "incident-management",
-      "description": "Develop and maintain a technology incident response plan specific to capital market operations, including classification, escalation, containment, and recovery procedures.",
-      "controlType": "corrective",
-      "owner": "CISO / Incident Manager",
-      "frequency": "Annual review",
-      "keyActivities": [
-        "Define incident classification and severity levels for market operations",
-        "Establish incident response team with clear roles and responsibilities",
-        "Define escalation procedures including SC notification requirements",
-        "Conduct tabletop exercises and incident simulations"
-      ],
-      "maturity": { "basic": "Ad-hoc incident response", "mature": "Documented plan with regular exercises", "advanced": "Automated incident orchestration with playbooks" }
+      "slug": "cyber-simulation-exercise",
+      "name": "Cyber Simulation Exercise",
+      "chapter": 9,
+      "chapterTitle": "Cyber Security Management",
+      "domain": "cyber-security-management",
+      "section": "Cyber Simulation Exercise",
+      "paraRange": "9.26-9.28",
+      "requirementCount": 3,
+      "requirements": [
+        {
+          "ref": "9.26",
+          "verbatimText": "A capital market entity must carry out a cyber simulation exercise which commensurate with the level of risk appetite of the capital market entity and its reliance on technology to test the effectiveness of its cyber incident response and recovery, including its communication plan based on current and emerging cyber threat scenarios. A capital market entity must determine the objectives, scope and conditions of engagement for the cyber simulation exercise before the initiation of the exercise. It must ensure the simulation exercise is conducted with involvement from key stakeholders.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "9.27",
+          "verbatimText": "To ensure the capital market entity is prepared to respond to cyber incidents detected, at a minimum, the capital market entity must\u2014",
+          "obligation": "must",
+          "subRequirements": [
+            {
+              "ref": "9.27(a)",
+              "verbatimText": "identify scenarios of cyber risk that it is most likely to be exposed to;"
+            },
+            {
+              "ref": "9.27(b)",
+              "verbatimText": "consider incidents in the capital market and the broader financial services industry;"
+            },
+            {
+              "ref": "9.27(c)",
+              "verbatimText": "assess the likely impact of these incidents to the capital market entity; and"
+            },
+            {
+              "ref": "9.27(d)",
+              "verbatimText": "identify appropriate response plan and communication strategies that should be undertaken."
+            }
+          ]
+        },
+        {
+          "ref": "9.28",
+          "verbatimText": "Where feasible, a capital market entity should perform an adversarial attack simulation exercise on the infrastructure hosted with third-party service providers to identify potential vulnerabilities of its cyber defence and response plan against rampant cyber threats.",
+          "obligation": "should",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "sc-incident-notification",
-      "name": "SC Incident Notification",
-      "domain": "incident-management",
-      "description": "Ensure timely notification to the Securities Commission Malaysia of significant technology incidents affecting capital market operations, as required by SC-GL/6-2023.",
-      "controlType": "detective",
-      "owner": "Compliance / CISO",
-      "frequency": "Per-incident",
-      "keyActivities": [
-        "Define notification criteria and thresholds for SC reporting",
-        "Establish notification workflow with defined timelines",
-        "Prepare incident notification templates with required information",
-        "Track SC responses and address any conditions"
-      ],
-      "maturity": { "basic": "Manual notification with inconsistent timing", "mature": "Standardised notification process with tracking", "advanced": "Automated notification workflow with regulatory alerts" }
+      "slug": "notification-for-technology-related-implementation",
+      "name": "Notification for Technology-Related Implementation",
+      "chapter": 10,
+      "chapterTitle": "Notification Process",
+      "domain": "notification-process",
+      "section": "Notification for Technology-Related Implementation",
+      "paraRange": "10.01-10.02",
+      "requirementCount": 2,
+      "requirements": [
+        {
+          "ref": "10.01",
+          "verbatimText": "A capital market entity must notify the SC through the Vault system prior to implementing any major technology-related services or major enhancement on its critical systems, that may potentially affect its business operations or clients. The notification must include the details set out in Appendix 4.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "10.02",
+          "verbatimText": "In the event the Vault system is inaccessible, the capital market entity must notify and submit a detailed report to the SC via email at vault@seccom.com.my in accordance with the notification form provided in Appendix 4.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     },
     {
-      "slug": "cyber-incident-coordination",
-      "name": "Cyber Incident Coordination",
-      "domain": "incident-management",
-      "description": "Coordinate cyber incident response with market participants, SC, and other relevant authorities to contain and mitigate the impact of incidents on capital market operations.",
-      "controlType": "corrective",
-      "owner": "CISO / Head of Operations",
-      "frequency": "Per-incident",
-      "keyActivities": [
-        "Establish communication protocols with market participants and regulators",
-        "Participate in industry incident response coordination mechanisms",
-        "Share threat intelligence with SC and peer institutions",
-        "Conduct post-incident reviews with coordination partners"
-      ],
-      "maturity": { "basic": "No coordination mechanisms", "mature": "Established protocols with key stakeholders", "advanced": "Real-time coordination platform with automated sharing" }
-    },
-    {
-      "slug": "incident-post-mortem",
-      "name": "Incident Post-Mortem & Lessons Learned",
-      "domain": "incident-management",
-      "description": "Conduct structured post-incident reviews to identify root causes, lessons learned, and improvement actions to prevent recurrence of technology incidents.",
-      "controlType": "corrective",
-      "owner": "Incident Manager / CISO",
-      "frequency": "Per-incident",
-      "keyActivities": [
-        "Conduct post-mortem review within defined timeframe after incident closure",
-        "Identify root causes and contributing factors",
-        "Document lessons learned and improvement actions",
-        "Track implementation of improvement actions to closure"
-      ],
-      "maturity": { "basic": "Informal verbal debrief", "mature": "Structured post-mortem with tracked actions", "advanced": "Automated trend analysis with preventive recommendations" }
-    },
-    {
-      "slug": "technology-audit-programme",
-      "name": "Technology Audit Programme",
-      "domain": "technology-audit",
-      "description": "Establish a risk-based technology audit programme that covers all key technology risk domains and aligns with SC regulatory expectations for independent assurance.",
-      "controlType": "detective",
-      "owner": "Chief Audit Executive",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Develop risk-based technology audit plan covering all domains",
-        "Engage qualified technology auditors with capital market experience",
-        "Report technology audit findings to board audit committee",
-        "Track remediation of audit findings to closure"
-      ],
-      "maturity": { "basic": "Ad-hoc technology audits", "mature": "Risk-based annual programme with qualified auditors", "advanced": "Continuous assurance with automated testing" }
-    },
-    {
-      "slug": "regulatory-examination-readiness",
-      "name": "Regulatory Examination Readiness",
-      "domain": "technology-audit",
-      "description": "Maintain readiness for SC regulatory examinations of technology risk management, including evidence management, documentation, and rapid response capabilities.",
-      "controlType": "detective",
-      "owner": "Compliance / CISO",
-      "frequency": "Continuous",
-      "keyActivities": [
-        "Maintain current evidence for all SC-GL/6-2023 requirements",
-        "Conduct periodic self-assessments against SC guidelines",
-        "Prepare examination response team and protocols",
-        "Track and address prior examination findings"
-      ],
-      "maturity": { "basic": "Scramble to prepare for examinations", "mature": "Standing evidence library with regular updates", "advanced": "Continuous compliance monitoring with regulatory dashboard" }
-    },
-    {
-      "slug": "penetration-testing-programme",
-      "name": "Penetration Testing Programme",
-      "domain": "technology-audit",
-      "description": "Conduct regular penetration testing of capital market systems by qualified independent testers, with scope covering trading systems, client portals, and market connectivity.",
-      "controlType": "detective",
-      "owner": "CISO",
-      "frequency": "Annual",
-      "keyActivities": [
-        "Engage qualified independent penetration testers annually",
-        "Define scope covering critical market systems and client-facing applications",
-        "Remediate critical and high findings within defined SLAs",
-        "Report penetration testing results to board audit committee"
-      ],
-      "maturity": { "basic": "No regular penetration testing", "mature": "Annual testing with qualified testers", "advanced": "Continuous red team exercises with purple team collaboration" }
-    },
-    {
-      "slug": "algorithmic-trading-governance",
-      "name": "Algorithmic Trading Governance",
-      "domain": "emerging-technology",
-      "description": "Establish governance framework for algorithmic and automated trading systems, including approval processes, testing requirements, and ongoing monitoring.",
-      "controlType": "preventive",
-      "owner": "Head of Trading / Compliance",
-      "frequency": "Per-algorithm and annual review",
-      "keyActivities": [
-        "Establish approval process for new algorithms before production deployment",
-        "Define testing requirements including backtesting and simulation",
-        "Monitor algorithm performance and risk metrics in production",
-        "Review and re-approve algorithms periodically"
-      ],
-      "maturity": { "basic": "No formal algorithm governance", "mature": "Documented approval and testing process", "advanced": "Automated algorithm monitoring with anomaly detection" }
-    },
-    {
-      "slug": "ai-ml-risk-management",
-      "name": "AI/ML Risk Management",
-      "domain": "emerging-technology",
-      "description": "Assess and manage risks associated with the use of artificial intelligence and machine learning in capital market operations, including model risk, bias, and explainability.",
-      "controlType": "preventive",
-      "owner": "CRO / Head of Technology",
-      "frequency": "Per-deployment and annual",
-      "keyActivities": [
-        "Conduct model risk assessment for AI/ML applications in trading and compliance",
-        "Implement model validation and testing procedures",
-        "Assess and mitigate algorithmic bias in client-facing applications",
-        "Establish explainability requirements for AI/ML-driven decisions"
-      ],
-      "maturity": { "basic": "No AI/ML risk framework", "mature": "Model risk management for AI applications", "advanced": "Comprehensive AI governance with continuous monitoring" }
-    },
-    {
-      "slug": "dlt-digital-asset-controls",
-      "name": "DLT & Digital Asset Controls",
-      "domain": "emerging-technology",
-      "description": "Implement risk management controls for distributed ledger technology and digital asset activities, including smart contract security, wallet management, and regulatory compliance.",
-      "controlType": "preventive",
-      "owner": "CTO / Compliance",
-      "frequency": "Per-deployment and annual",
-      "keyActivities": [
-        "Conduct security assessments for smart contracts before deployment",
-        "Implement secure key management and wallet controls for digital assets",
-        "Ensure regulatory compliance for digital asset activities under SC guidelines",
-        "Monitor DLT infrastructure for security and performance"
-      ],
-      "maturity": { "basic": "No DLT-specific controls", "mature": "Security assessments and key management procedures", "advanced": "Formal verification of smart contracts with continuous monitoring" }
+      "slug": "notification-of-incidents-and-near-miss",
+      "name": "Notification of Technology Incident, Cyber Incident and Near Miss Event",
+      "chapter": 10,
+      "chapterTitle": "Notification Process",
+      "domain": "notification-process",
+      "section": "Notification of Technology Incident, Cyber Incident and Near Miss Event",
+      "paraRange": "10.03-10.06",
+      "requirementCount": 4,
+      "requirements": [
+        {
+          "ref": "10.03",
+          "verbatimText": "A capital market entity must immediately notify and submit a report to the SC through the Vault system upon detection of any technology incident that affects its business operations or clients, or any cyber incident or near miss event, on the day of the occurrence of the incident. The notification must include the details set out in Appendix 5.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "10.04",
+          "verbatimText": "In the event the Vault system is inaccessible, the capital market entity must notify and submit a report to the SC via email at vault@seccom.com.my in accordance with the notification forms provided in Appendix 5.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "10.05",
+          "verbatimText": "The capital market entity must ensure that its board is made aware of the technology incidents and cyber incidents.",
+          "obligation": "must",
+          "subRequirements": []
+        },
+        {
+          "ref": "10.06",
+          "verbatimText": "Where a capital market entity has submitted a report in compliance with the requirements under paragraphs 10.03 and 10.04, such capital market entity shall be deemed to have complied with the reporting requirements relating to technology incident or cyber incident under other relevant guidelines issued by the SC.",
+          "obligation": "must",
+          "subRequirements": []
+        }
+      ]
     }
   ]
 }

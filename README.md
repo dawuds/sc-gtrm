@@ -1,12 +1,12 @@
 # SC-GTRM Explorer
 
-Structured GRC compliance database for the Securities Commission Malaysia's Guidelines on Technology Risk Management (SC-GL/6-2023).
+Structured GRC compliance database for the Securities Commission Malaysia's Guidelines on Technology Risk Management (SC-GL/2-2023 (R1-2024)).
 
 > **Disclaimer:** This repository is an educational and indicative resource. It does not constitute legal, regulatory, or technical advice. Content marked `sourceType: "constructed-indicative"` has not been verified against official sources. Always refer to authoritative standards bodies and seek professional counsel for compliance decisions.
 
 ## Framework / Standard
 
-- **Primary:** SC Guidelines on Technology Risk Management (SC-GL/6-2023)
+- **Primary:** SC Guidelines on Technology Risk Management (SC-GL/2-2023 (R1-2024))
 
 ## Data Summary
 

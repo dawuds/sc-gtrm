@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Board of Directors |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -35,7 +35,7 @@
 
 ## 1. Purpose
 
-This policy establishes the incident management framework for [Organisation Name], ensuring timely detection, response, and recovery from technology and cybersecurity incidents that could impact capital market operations, client data, or regulatory compliance under SC-GL/6-2023.
+This policy establishes the incident management framework for [Organisation Name], ensuring timely detection, response, and recovery from technology and cybersecurity incidents that could impact capital market operations, client data, or regulatory compliance under SC-GL/2-2023 (R1-2024).
 
 ## 2. Scope
 
@@ -92,7 +92,7 @@ The following factors shall elevate incident severity:
 
 ## 5. SC Notification Requirements
 
-Under SC-GL/6-2023, [Organisation Name] shall notify the Securities Commission Malaysia of material technology incidents:
+Under SC-GL/2-2023 (R1-2024), [Organisation Name] shall notify the Securities Commission Malaysia of material technology incidents:
 
 | Notification Type | Timeframe | Channel | Content |
 |---|---|---|---|
@@ -149,7 +149,7 @@ Under SC-GL/6-2023, [Organisation Name] shall notify the Securities Commission M
 
 This policy shall be reviewed [annually] or upon:
 
-- Material changes to SC-GL/6-2023 or related incident reporting requirements
+- Material changes to SC-GL/2-2023 (R1-2024) or related incident reporting requirements
 - Following any P1 incident
 - Material changes to the technology environment or organisational structure
 

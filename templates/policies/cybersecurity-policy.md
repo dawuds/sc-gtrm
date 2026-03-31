@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Board of Directors |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## 1. Purpose
 
-This policy establishes the cybersecurity requirements for protecting [Organisation Name]'s information assets, trading systems, client data, and market data infrastructure against cyber threats, in compliance with SC-GL/6-2023.
+This policy establishes the cybersecurity requirements for protecting [Organisation Name]'s information assets, trading systems, client data, and market data infrastructure against cyber threats, in compliance with SC-GL/2-2023 (R1-2024).
 
 ## 2. Scope
 
@@ -116,7 +116,7 @@ This policy applies to:
 
 - All cybersecurity incidents shall be managed per POL-IRP-001 and PRO-IRP-001
 - The CISO shall maintain a cybersecurity incident response team (CSIRT) comprising [roles]
-- The Securities Commission Malaysia shall be notified of material cyber incidents within [N] hours as required by SC-GL/6-2023
+- The Securities Commission Malaysia shall be notified of material cyber incidents within [N] hours as required by SC-GL/2-2023 (R1-2024)
 - Cyber incident simulations shall be conducted [annually]
 
 ## 9. Security Awareness
@@ -139,7 +139,7 @@ This policy applies to:
 
 This policy shall be reviewed [annually] or upon:
 
-- Material changes to SC-GL/6-2023 or related cybersecurity regulations
+- Material changes to SC-GL/2-2023 (R1-2024) or related cybersecurity regulations
 - Significant cybersecurity incidents affecting [Organisation Name] or the capital markets sector
 - Material changes to the threat landscape or technology environment
 

@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Board of Directors |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -53,7 +53,7 @@ This policy is developed in accordance with:
 
 | Regulation | Relevance |
 |---|---|
-| **SC-GL/6-2023** | Guidelines on Technology Risk Management for Capital Market Intermediaries |
+| **SC-GL/2-2023 (R1-2024)** | Guidelines on Technology Risk Management for Capital Market Intermediaries |
 | **CMSA 2007** | Licensing and conduct obligations for capital market intermediaries |
 | **SC Act 1993** | Securities Commission Malaysia supervisory powers |
 | [Additional regulation] | [Description] |
@@ -130,7 +130,7 @@ Risk appetite shall be reviewed [annually / semi-annually] and recalibrated foll
 |---|---|---|
 | Technology Risk Dashboard | CRO, CISO, CTO | Monthly |
 | Board Risk Report (technology section) | Board / Risk Committee | Quarterly |
-| SC Regulatory Report | Securities Commission Malaysia | As required per SC-GL/6-2023 |
+| SC Regulatory Report | Securities Commission Malaysia | As required per SC-GL/2-2023 (R1-2024) |
 | Incident Notification | SC Malaysia | Within [N] hours of material incident |
 
 ## 9. Exceptions
@@ -143,7 +143,7 @@ Risk appetite shall be reviewed [annually / semi-annually] and recalibrated foll
 
 This policy shall be reviewed [annually] or upon:
 
-- Material changes to SC-GL/6-2023 or related regulations
+- Material changes to SC-GL/2-2023 (R1-2024) or related regulations
 - Significant technology incidents
 - Material changes to business operations or technology environment
 

@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Board of Directors |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## 1. Purpose
 
-This policy establishes the framework for managing third-party and vendor risks arising from outsourced technology services, ensuring that [Organisation Name] maintains accountability for all outsourced functions as required by SC-GL/6-2023.
+This policy establishes the framework for managing third-party and vendor risks arising from outsourced technology services, ensuring that [Organisation Name] maintains accountability for all outsourced functions as required by SC-GL/2-2023 (R1-2024).
 
 ## 2. Scope
 
@@ -61,7 +61,7 @@ All vendors shall be classified based on criticality to capital market operation
 | **Low** | Minimal operational impact | General suppliers, stationery, non-IT services | At onboarding only |
 
 - Classification shall be reviewed [annually] or upon material change in vendor scope
-- The Securities Commission Malaysia shall be notified of outsourcing arrangements as required by SC-GL/6-2023
+- The Securities Commission Malaysia shall be notified of outsourcing arrangements as required by SC-GL/2-2023 (R1-2024)
 
 ## 4. Due Diligence
 
@@ -89,7 +89,7 @@ All vendor contracts for [Critical / High] tier vendors shall include:
 
 - [ ] Service Level Agreements (SLAs) with measurable performance targets
 - [ ] Right-to-audit clause granting [Organisation Name] and its regulators inspection rights
-- [ ] Data protection obligations aligned with PDPA and SC-GL/6-2023
+- [ ] Data protection obligations aligned with PDPA and SC-GL/2-2023 (R1-2024)
 - [ ] Data residency requirements (see POL-CLD-001 for cloud vendors)
 - [ ] Incident notification within [N] hours of discovery
 - [ ] Business continuity and disaster recovery commitments
@@ -141,14 +141,14 @@ All vendor contracts for [Critical / High] tier vendors shall include:
   - Confirmation of data destruction with certification
   - Knowledge transfer and transition support for [N] weeks
   - Access revocation within [N] hours of termination
-  - Regulatory notification if required under SC-GL/6-2023
+  - Regulatory notification if required under SC-GL/2-2023 (R1-2024)
 - Termination plans shall be tested [annually] for Critical vendors
 
 ## 10. Review
 
 This policy shall be reviewed [annually] or upon:
 
-- Material changes to SC-GL/6-2023 or related outsourcing guidelines
+- Material changes to SC-GL/2-2023 (R1-2024) or related outsourcing guidelines
 - Significant vendor-related incidents
 - Material changes to vendor relationships or outsourcing strategy
 

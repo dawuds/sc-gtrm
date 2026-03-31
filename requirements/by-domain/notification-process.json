@@ -1,0 +1,57 @@
+{
+  "sourceType": "verbatim-extracted",
+  "source": "SC-GL/2-2023 (R1-2024)",
+  "domain": "notification-process",
+  "domainName": "Notification Process",
+  "chapter": 10,
+  "requirements": [
+    {
+      "id": "10.01",
+      "section": "Notification for Technology-Related Implementation",
+      "requirement": "A capital market entity must notify the SC through the Vault system prior to implementing any major technology-related services or major enhancement on its critical systems, that may potentially affect its business operations or clients. The notification must include the details set out in Appendix 4.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "notification-for-technology-related-implementation"
+    },
+    {
+      "id": "10.02",
+      "section": "Notification for Technology-Related Implementation",
+      "requirement": "In the event the Vault system is inaccessible, the capital market entity must notify and submit a detailed report to the SC via email at vault@seccom.com.my in accordance with the notification form provided in Appendix 4.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "notification-for-technology-related-implementation"
+    },
+    {
+      "id": "10.03",
+      "section": "Notification of Technology Incident, Cyber Incident and Near Miss Event",
+      "requirement": "A capital market entity must immediately notify and submit a report to the SC through the Vault system upon detection of any technology incident that affects its business operations or clients, or any cyber incident or near miss event, on the day of the occurrence of the incident. The notification must include the details set out in Appendix 5.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "notification-of-incidents-and-near-miss"
+    },
+    {
+      "id": "10.04",
+      "section": "Notification of Technology Incident, Cyber Incident and Near Miss Event",
+      "requirement": "In the event the Vault system is inaccessible, the capital market entity must notify and submit a report to the SC via email at vault@seccom.com.my in accordance with the notification forms provided in Appendix 5.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "notification-of-incidents-and-near-miss"
+    },
+    {
+      "id": "10.05",
+      "section": "Notification of Technology Incident, Cyber Incident and Near Miss Event",
+      "requirement": "The capital market entity must ensure that its board is made aware of the technology incidents and cyber incidents.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "notification-of-incidents-and-near-miss"
+    },
+    {
+      "id": "10.06",
+      "section": "Notification of Technology Incident, Cyber Incident and Near Miss Event",
+      "requirement": "Where a capital market entity has submitted a report in compliance with the requirements under paragraphs 10.03 and 10.04, such capital market entity shall be deemed to have complied with the reporting requirements relating to technology incident or cyber incident under other relevant guidelines issued by the SC.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "notification-of-incidents-and-near-miss"
+    }
+  ]
+}

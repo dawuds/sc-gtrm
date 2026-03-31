@@ -163,7 +163,7 @@ function renderOverview(el) {
 
   el.innerHTML = `
     <div class="disclaimer">
-      This database is for educational and indicative purposes only. It does not constitute legal or regulatory advice. The content represents a structured interpretation of the Securities Commission Malaysia's Guidelines on Technology Risk Management (SC-GL/6-2023). Always consult the official SC guidelines and qualified regulatory counsel for compliance decisions.
+      This database is for educational and indicative purposes only. It does not constitute legal or regulatory advice. The content represents a structured interpretation of the Securities Commission Malaysia's Guidelines on Technology Risk Management (SC-GL/2-2023 (R1-2024)). Always consult the official SC guidelines and qualified regulatory counsel for compliance decisions.
     </div>
     <div class="stats-banner">
       <div class="stat-card"><div class="stat-number">${controlCount}</div><div class="stat-label">Controls</div></div>
@@ -575,7 +575,7 @@ async function renderRequirements(el) {
   el.innerHTML = `
     <nav class="breadcrumbs"><a href="#">Home</a><span class="sep">/</span><span class="current">Requirements</span></nav>
     <h2 style="font-size:1.25rem;margin-bottom:0.5rem">Requirements</h2>
-    <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:1.5rem">SC-GL/6-2023 requirements organised by domain.</p>
+    <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:1.5rem">SC-GL/2-2023 (R1-2024) requirements organised by domain.</p>
     ${results.map(({ slug, data }) => {
       if (!data || !data.requirements) return '';
       const dom = state.domains[slug];
@@ -664,7 +664,7 @@ async function renderWorkProgram(el) {
     </nav>
     <h2 style="font-size:1.25rem;margin-bottom:0.5rem">Assessor Work Program</h2>
     <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:1.5rem">
-      SC-GL/6-2023 control review work program for capital market intermediary assessments.
+      SC-GL/2-2023 (R1-2024) control review work program for capital market intermediary assessments.
     </p>
     <div class="stats-banner">
       <div class="stat-card"><div class="stat-number">${procCount}</div><div class="stat-label">Test Procedures</div></div>
@@ -939,7 +939,7 @@ function renderWPFindings() {
       <div class="wp-template-field"><span class="wp-template-label">Control Reference</span><span class="wp-template-value">[Control slug]</span></div>
       <div class="wp-template-field"><span class="wp-template-label">Severity</span><span class="wp-template-value">[Critical / High / Medium / Low / Informational]</span></div>
       <div class="wp-template-field"><span class="wp-template-label">Description</span><span class="wp-template-value">[Detailed description of the finding]</span></div>
-      <div class="wp-template-field"><span class="wp-template-label">Criteria</span><span class="wp-template-value">[SC-GL/6-2023 requirement or expected practice]</span></div>
+      <div class="wp-template-field"><span class="wp-template-label">Criteria</span><span class="wp-template-value">[SC-GL/2-2023 (R1-2024) requirement or expected practice]</span></div>
       <div class="wp-template-field"><span class="wp-template-label">Risk / Impact</span><span class="wp-template-value">[Business and regulatory impact]</span></div>
       <div class="wp-template-field"><span class="wp-template-label">Recommendation</span><span class="wp-template-value">[Specific remediation steps]</span></div>
       <div class="wp-template-field"><span class="wp-template-label">Management Response</span><span class="wp-template-value">[To be completed by client]</span></div>
@@ -960,7 +960,7 @@ function renderWPFindings() {
           <td>Significant control gap creating material risk to operations, data, or regulatory compliance.</td>
           <td>Remediation within 30 days; senior management oversight</td></tr>
         <tr><td><span class="badge wp-severity-medium">Medium</span></td>
-          <td>Control weakness that could lead to issues if not addressed. Does not meet SC-GL/6-2023 expectations fully.</td>
+          <td>Control weakness that could lead to issues if not addressed. Does not meet SC-GL/2-2023 (R1-2024) expectations fully.</td>
           <td>Remediation within 90 days; management action plan</td></tr>
         <tr><td><span class="badge wp-severity-low">Low</span></td>
           <td>Minor control gap or enhancement opportunity. Limited direct risk impact.</td>
@@ -983,7 +983,7 @@ function renderWPFindings() {
       control: 'incident-response-plan',
       severity: 'critical',
       description: 'The entity does not have a documented incident response plan for technology incidents affecting capital market operations. When queried, staff indicated they follow ad-hoc procedures that are not formalised or tested.',
-      criteria: 'SC-GL/6-2023 requires capital market intermediaries to maintain documented and tested incident response procedures covering detection, containment, eradication, recovery, and post-incident review.',
+      criteria: 'SC-GL/2-2023 (R1-2024) requires capital market intermediaries to maintain documented and tested incident response procedures covering detection, containment, eradication, recovery, and post-incident review.',
       riskImpact: 'Without a documented plan, response to cyber incidents or system failures will be uncoordinated, increasing downtime, data loss, and potential market disruption. Regulatory sanctions for non-compliance with SC expectations.',
       recommendation: 'Develop and implement a comprehensive incident response plan covering all phases. Assign response team roles, define escalation procedures, establish communication protocols, and schedule quarterly tabletop exercises.'
     },
@@ -994,7 +994,7 @@ function renderWPFindings() {
       control: 'dr-testing-programme',
       severity: 'medium',
       description: 'Disaster recovery testing is performed annually but only covers the core trading platform. Market data feeds, client portal, and settlement reconciliation systems are excluded from DR test scope.',
-      criteria: 'SC-GL/6-2023 expects DR testing to cover all critical systems supporting capital market operations, with recovery validated against defined RTOs and RPOs.',
+      criteria: 'SC-GL/2-2023 (R1-2024) expects DR testing to cover all critical systems supporting capital market operations, with recovery validated against defined RTOs and RPOs.',
       riskImpact: 'Untested recovery procedures for market data and settlement systems may fail during an actual disaster, causing prolonged outage of critical market services and potential settlement failures.',
       recommendation: 'Expand DR test scope to include all systems classified as critical in the BIA. Validate recovery of market data feeds, client portal, and settlement systems against defined RTOs. Document results and remediate gaps.'
     },
@@ -1005,7 +1005,7 @@ function renderWPFindings() {
       control: 'technology-risk-policy-suite',
       severity: 'low',
       description: 'Three of the seven technology risk policies (Cloud Security Policy, Data Classification Policy, and Third-Party Risk Policy) have not been reviewed within the 12-month cycle. Last review dates are between 14-18 months ago.',
-      criteria: 'SC-GL/6-2023 requires technology risk policies to be reviewed at least annually and approved by the board to ensure alignment with the evolving threat landscape and regulatory expectations.',
+      criteria: 'SC-GL/2-2023 (R1-2024) requires technology risk policies to be reviewed at least annually and approved by the board to ensure alignment with the evolving threat landscape and regulatory expectations.',
       riskImpact: 'Stale policies may not reflect current risks, SC guidance updates, or changes in the entity\'s technology environment. Limited impact as core policies (cybersecurity, BCP, incident management) are current.',
       recommendation: 'Prioritise review and board approval of the three overdue policies. Implement a policy review calendar with automated reminders to prevent future lapses. Consider aligning all policy review dates to a single annual cycle.'
     }

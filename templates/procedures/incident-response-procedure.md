@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Chief Information Security Officer (CISO) |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -35,7 +35,7 @@
 
 ## 1. Purpose
 
-This procedure provides step-by-step operational guidance for responding to technology and cybersecurity incidents at [Organisation Name], implementing the requirements of POL-IRP-001 and meeting the incident response expectations of SC-GL/6-2023.
+This procedure provides step-by-step operational guidance for responding to technology and cybersecurity incidents at [Organisation Name], implementing the requirements of POL-IRP-001 and meeting the incident response expectations of SC-GL/2-2023 (R1-2024).
 
 ## 2. Scope
 

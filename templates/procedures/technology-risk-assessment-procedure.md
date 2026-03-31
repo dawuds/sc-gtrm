@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Chief Risk Officer (CRO) |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## 1. Purpose
 
-This procedure defines the step-by-step process for conducting technology risk assessments at [Organisation Name], ensuring consistent identification, analysis, evaluation, and treatment of technology risks in compliance with SC-GL/6-2023 and the enterprise risk management framework (POL-TRM-001).
+This procedure defines the step-by-step process for conducting technology risk assessments at [Organisation Name], ensuring consistent identification, analysis, evaluation, and treatment of technology risks in compliance with SC-GL/2-2023 (R1-2024) and the enterprise risk management framework (POL-TRM-001).
 
 ## 2. Scope
 
@@ -68,7 +68,7 @@ Include but not limited to:
 - **Algorithmic trading risks**: Erroneous algorithms, flash crash triggers, runaway orders, latency spikes affecting execution quality
 - **Third-party risks**: Vendor failure, supply chain compromise, cloud outage
 - **Change management risks**: Failed deployments, regression defects
-- **Regulatory risks**: Non-compliance with SC-GL/6-2023, CMSA 2007
+- **Regulatory risks**: Non-compliance with SC-GL/2-2023 (R1-2024), CMSA 2007
 
 ## 4. Risk Analysis
 
@@ -166,6 +166,6 @@ Treatment plans shall be recorded in the [risk register / GRC tool] and tracked 
 | Risk assessment summary | CRO, CISO | Upon completion | Full findings and treatment plans |
 | Technology risk dashboard | CRO, CTO, CISO | Monthly | KRIs, risk heat map, treatment status |
 | Board risk report | Board / Risk Committee | Quarterly | Critical/high risks, trends, appetite breaches |
-| SC regulatory report | Securities Commission Malaysia | As required | Per SC-GL/6-2023 reporting obligations |
+| SC regulatory report | Securities Commission Malaysia | As required | Per SC-GL/2-2023 (R1-2024) reporting obligations |
 
 All risk assessment records shall be retained for [7] years per POL-DMP-001.

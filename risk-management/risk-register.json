@@ -1,8 +1,8 @@
 {
   "sourceType": "constructed-indicative",
-  "verificationStatus": "not-verified — this risk register contains constructed-indicative risks illustrative of typical capital market technology risk concerns under SC-GL/6-2023; specific risk ratings and treatment plans are examples and must be tailored",
+  "verificationStatus": "not-verified — this risk register contains constructed-indicative risks illustrative of typical capital market technology risk concerns under SC-GL/2-2023 (R1-2024); specific risk ratings and treatment plans are examples and must be tailored",
   "title": "Capital Market Technology Risk Register",
-  "description": "Indicative risk register for SC-regulated capital market intermediaries and operators under SC-GL/6-2023 Guidelines on Technology Risk Management.",
+  "description": "Indicative risk register for SC-regulated capital market intermediaries and operators under SC-GL/2-2023 (R1-2024) Guidelines on Technology Risk Management.",
   "lastUpdated": "2026-03-16",
   "nextReview": "2026-09-16",
   "approvedBy": "CRO / Technology Risk Committee",
@@ -120,8 +120,8 @@
     },
     {
       "id": "CM-007",
-      "title": "Non-Compliance with SC-GL/6-2023",
-      "description": "The entity fails to meet SC-GL/6-2023 requirements during regulatory examination, resulting in enforcement action, remediation orders, or reputational damage.",
+      "title": "Non-Compliance with SC-GL/2-2023 (R1-2024)",
+      "description": "The entity fails to meet SC-GL/2-2023 (R1-2024) requirements during regulatory examination, resulting in enforcement action, remediation orders, or reputational damage.",
       "category": "Regulatory Compliance",
       "likelihood": 3,
       "impact": 4,
@@ -131,7 +131,7 @@
       "residualImpact": 3,
       "residualRisk": 6,
       "treatment": "mitigate",
-      "treatmentPlan": "Conduct biannual self-assessment against SC-GL/6-2023; maintain standing evidence library; ensure technology risk in scope of annual internal audit; track and close prior examination findings promptly.",
+      "treatmentPlan": "Conduct biannual self-assessment against SC-GL/2-2023 (R1-2024); maintain standing evidence library; ensure technology risk in scope of annual internal audit; track and close prior examination findings promptly.",
       "owner": "Chief Compliance Officer",
       "reviewDate": "2026-09-16"
     },

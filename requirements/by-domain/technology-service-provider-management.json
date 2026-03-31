@@ -1,0 +1,281 @@
+{
+  "sourceType": "verbatim-extracted",
+  "source": "SC-GL/2-2023 (R1-2024)",
+  "domain": "technology-service-provider-management",
+  "domainName": "Technology Service Provider Management",
+  "chapter": 8,
+  "requirements": [
+    {
+      "id": "8.01",
+      "section": "Due Diligence and Performance Monitoring",
+      "requirement": "A capital market entity must implement and uphold robust and sound risk management in relation to its outsourced arrangements including any sub-arrangements.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "due-diligence-and-performance-monitoring"
+    },
+    {
+      "id": "8.02",
+      "section": "Due Diligence and Performance Monitoring",
+      "requirement": "A capital market entity must ensure that\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "due-diligence-and-performance-monitoring",
+      "subRequirements": [
+        {
+          "id": "8.02(a)",
+          "requirement": "the third-party service providers it engages are reliable by conducting due diligence prior to selecting a third-party service provider; and"
+        },
+        {
+          "id": "8.02(b)",
+          "requirement": "it carries out contract management and performance monitoring so as to minimise any risks related to the technology it expects to adopt from the third-party service provider."
+        }
+      ]
+    },
+    {
+      "id": "8.03",
+      "section": "Due Diligence and Performance Monitoring",
+      "requirement": "The scope of the due diligence to be conducted by a capital market entity pursuant to paragraph 8.02 above must include the following:",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "due-diligence-and-performance-monitoring",
+      "subRequirements": [
+        {
+          "id": "8.03(a)",
+          "requirement": "financial stability and reputation of the third-party service provider;"
+        },
+        {
+          "id": "8.03(b)",
+          "requirement": "where applicable, the managerial skills, technical competency and operational capability of the third-party service provider; and"
+        },
+        {
+          "id": "8.03(c)",
+          "requirement": "the third-party service provider\u2019s capacity to undertake the provision of the outsourced task effectively at all times."
+        }
+      ]
+    },
+    {
+      "id": "8.04",
+      "section": "Due Diligence and Performance Monitoring",
+      "requirement": "A capital market entity must conduct periodic assessment on the capabilities of the third-party service providers during the contract period, including the third-party service provider\u2019s capability in managing risk. In assessing the capabilities of the third-party service provider in managing risk, a capital market entity must also consider the following factors:",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "due-diligence-and-performance-monitoring",
+      "subRequirements": [
+        {
+          "id": "8.04(a)",
+          "requirement": "Data loss;"
+        },
+        {
+          "id": "8.04(b)",
+          "requirement": "Technology risk;"
+        },
+        {
+          "id": "8.04(c)",
+          "requirement": "Reputational risk;"
+        },
+        {
+          "id": "8.04(d)",
+          "requirement": "Exit risk;"
+        },
+        {
+          "id": "8.04(e)",
+          "requirement": "Concentration risk;"
+        },
+        {
+          "id": "8.04(f)",
+          "requirement": "Operational risk including resiliency to operational and system disruption, disaster preparedness plan and business continuity plan (BCP);"
+        },
+        {
+          "id": "8.04(g)",
+          "requirement": "Data security of the capital market entity and its clients\u2019 data integrity including unauthorised access and mishandling of data and information during data-at-rest, data-in-motion and data-in-use; and"
+        },
+        {
+          "id": "8.04(h)",
+          "requirement": "Resiliency to cyber risk."
+        }
+      ]
+    },
+    {
+      "id": "8.05",
+      "section": "Due Diligence and Performance Monitoring",
+      "requirement": "A capital market entity must ensure that the selected third-party service provider practices cyber hygiene and remains cognisant in protecting its data confidentiality, and the integrity and resilience of its systems.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "due-diligence-and-performance-monitoring"
+    },
+    {
+      "id": "8.06",
+      "section": "Due Diligence and Performance Monitoring",
+      "requirement": "Notwithstanding that the operation or maintenance of IT systems are outsourced to a third-party service provider, a capital market entity remains responsible for ensuring compliance with the requirements set out in these Guidelines.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "due-diligence-and-performance-monitoring"
+    },
+    {
+      "id": "8.07",
+      "section": "Cloud Services",
+      "requirement": "A capital market entity must ensure the level of governance and controls implemented over cloud service providers including cloud strategy and cloud operational management commensurate with the risks posed by the cloud services it adopts. The board of the capital market entity should be responsible and accountable for maintaining effective oversight and governance in this regard.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "cloud-services"
+    },
+    {
+      "id": "8.08",
+      "section": "Cloud Services",
+      "requirement": "A capital market entity must be cognisant of and ensure risks associated with the use of cloud services are adequately addressed. It must perform a comprehensive risk assessment when planning for cloud adoption and manage the risks identified appropriately.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "cloud-services"
+    },
+    {
+      "id": "8.09",
+      "section": "Cloud Services",
+      "requirement": "A capital market entity must, prior to cloud adoption, conduct a comprehensive risk assessment which addresses key risks associated with among others, the following:",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "cloud-services",
+      "subRequirements": [
+        {
+          "id": "8.09(a)",
+          "requirement": "Cloud risk management strategy, considering different cloud service models tailored to their needs;"
+        },
+        {
+          "id": "8.09(b)",
+          "requirement": "Location of the cloud infrastructure;"
+        },
+        {
+          "id": "8.09(c)",
+          "requirement": "Multi-tenancy or data commingling;"
+        },
+        {
+          "id": "8.09(d)",
+          "requirement": "Identity and access management (IAM) controls, data protection and cryptographic key management;"
+        },
+        {
+          "id": "8.09(e)",
+          "requirement": "Expansion of cyber security operations of the capital market entity including the security of public cloud infrastructure;"
+        },
+        {
+          "id": "8.09(f)",
+          "requirement": "Cloud resilience risk management such as cloud redundancy or fault tolerant capability, high availability, scalability, multiple geographically separated data centres;"
+        },
+        {
+          "id": "8.09(g)",
+          "requirement": "Vendor lock-in and portability or interoperability solutions;"
+        },
+        {
+          "id": "8.09(h)",
+          "requirement": "Exposure to cyber-attacks via cloud service providers;"
+        },
+        {
+          "id": "8.09(i)",
+          "requirement": "Migration of existing systems to cloud infrastructures; and"
+        },
+        {
+          "id": "8.09(j)",
+          "requirement": "Constant ability to meet regulatory requirements and timely measures of security standards on cloud computing."
+        }
+      ]
+    },
+    {
+      "id": "8.10",
+      "section": "Cloud Services",
+      "requirement": "A capital market entity must assess and manage its exposure to technology risk that may affect the confidentiality, integrity and availability of the IT systems and data at the cloud during the contractual period of the cloud services agreement.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "cloud-services"
+    },
+    {
+      "id": "8.11",
+      "section": "Cloud Services",
+      "requirement": "A capital market entity must ensure adequate measures are undertaken by the cloud service provider to safeguard the data of the capital market entity and the data of its clients against unauthorised disclosure and access. For encrypted data, a capital market entity must ensure that appropriate cryptographic key management is established, including assessing the ability of the cloud service provider to restore the services effectively.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "cloud-services"
+    },
+    {
+      "id": "8.12",
+      "section": "Contract Management",
+      "requirement": "A capital market entity must establish a service level agreement when engaging third-party service providers.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "contract-management"
+    },
+    {
+      "id": "8.13",
+      "section": "Contract Management",
+      "requirement": "The service level agreement entered by a capital market entity with its third-party service provider must at a minimum include provisions on\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "contract-management",
+      "subRequirements": [
+        {
+          "id": "8.13(a)",
+          "requirement": "scope of arrangement, duration of the service and performance metrics;"
+        },
+        {
+          "id": "8.13(b)",
+          "requirement": "confidentiality and security requirements of the capital market entity and the data of its clients during and after the end of the contract period;"
+        },
+        {
+          "id": "8.13(c)",
+          "requirement": "access rights to information or documents of the third-party service provider related to any outsourced function as may be required by the SC or the capital market entity for the purpose of performing review or audit on the relevant systems;"
+        },
+        {
+          "id": "8.13(d)",
+          "requirement": "the right for the SC to appoint an independent party to perform a review or audit of the relevant information or document of the capital market entities stored with or held by the third-party service provider and the costs for such review or audit shall be borne by the capital market entity;"
+        },
+        {
+          "id": "8.13(e)",
+          "requirement": "contingency plans and exit strategies with minimal impact on the continuity of the operations of the capital market entity;"
+        },
+        {
+          "id": "8.13(f)",
+          "requirement": "system development and maintenance arrangements with the third-party service provider including requirements for such third-party service provider to comply with the data and information security policies of the capital market entity;"
+        },
+        {
+          "id": "8.13(g)",
+          "requirement": "a clearly defined arrangement for immediate notification by the third-party service provider to the capital market entity in the event of a technology incident or cyber incident;"
+        },
+        {
+          "id": "8.13(h)",
+          "requirement": "clearly defined cyber security responsibilities of all parties;"
+        },
+        {
+          "id": "8.13(i)",
+          "requirement": "modification or termination of the arrangement between the capital market entity and the third-party service provider in the event the SC issues a direction to the entity to that effect under securities laws, these Guidelines or any other relevant guidelines, guidance or practice notes; and"
+        },
+        {
+          "id": "8.13(j)",
+          "requirement": "compliance with applicable laws, regulations, guidelines and requirements by the third-party service provider."
+        }
+      ]
+    },
+    {
+      "id": "8.14",
+      "section": "Contract Management",
+      "requirement": "A capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "contract-management",
+      "subRequirements": [
+        {
+          "id": "8.14(a)",
+          "requirement": "periodically review the performance of its third-party service providers to ensure satisfactory performance is achieved and review the service level agreement it enters into to ensure it remains relevant and effective; and"
+        },
+        {
+          "id": "8.14(b)",
+          "requirement": "ensure its third-party service providers comply with all applicable laws, regulations, guidelines and requirements."
+        }
+      ]
+    },
+    {
+      "id": "8.15",
+      "section": "Contract Management",
+      "requirement": "A capital market entity must ensure that all of its data residing with third-party service providers are recoverable in a timely manner.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "contract-management"
+    }
+  ]
+}

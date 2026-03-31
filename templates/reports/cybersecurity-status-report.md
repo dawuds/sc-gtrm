@@ -10,7 +10,7 @@
 | **Owner** | CISO |
 | **Reporting Period** | [Start Date] to [End Date] |
 | **Presented To** | Technology Risk Committee |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 

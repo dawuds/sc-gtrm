@@ -1,0 +1,603 @@
+{
+  "_meta": {
+    "source": "SC-GL/2-2023 (R1-2024)",
+    "extractedDate": "2026-04-01",
+    "sourceType": "verbatim-extracted",
+    "chapters": [8, 9]
+  },
+  "chapters": [
+    {
+      "number": 8,
+      "title": "Technology Service Provider Management",
+      "sections": [
+        {
+          "title": "Due Diligence and Performance Monitoring",
+          "paragraphs": [
+            {
+              "id": "8.01",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must implement and uphold robust and sound risk management in relation to its outsourced arrangements including any sub-arrangements."
+            },
+            {
+              "id": "8.02",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must ensure that\u2014",
+              "subParagraphs": [
+                {
+                  "id": "8.02(a)",
+                  "label": "(a)",
+                  "verbatimText": "the third-party service providers it engages are reliable by conducting due diligence prior to selecting a third-party service provider; and"
+                },
+                {
+                  "id": "8.02(b)",
+                  "label": "(b)",
+                  "verbatimText": "it carries out contract management and performance monitoring so as to minimise any risks related to the technology it expects to adopt from the third-party service provider."
+                }
+              ]
+            },
+            {
+              "id": "8.03",
+              "obligation": "must",
+              "verbatimText": "The scope of the due diligence to be conducted by a capital market entity pursuant to paragraph 8.02 above must include the following:",
+              "subParagraphs": [
+                {
+                  "id": "8.03(a)",
+                  "label": "(a)",
+                  "verbatimText": "financial stability and reputation of the third-party service provider;"
+                },
+                {
+                  "id": "8.03(b)",
+                  "label": "(b)",
+                  "verbatimText": "where applicable, the managerial skills, technical competency and operational capability of the third-party service provider; and"
+                },
+                {
+                  "id": "8.03(c)",
+                  "label": "(c)",
+                  "verbatimText": "the third-party service provider\u2019s capacity to undertake the provision of the outsourced task effectively at all times."
+                }
+              ]
+            },
+            {
+              "id": "8.04",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must conduct periodic assessment on the capabilities of the third-party service providers during the contract period, including the third-party service provider\u2019s capability in managing risk. In assessing the capabilities of the third-party service provider in managing risk, a capital market entity must also consider the following factors:",
+              "subParagraphs": [
+                {
+                  "id": "8.04(a)",
+                  "label": "(a)",
+                  "verbatimText": "Data loss;"
+                },
+                {
+                  "id": "8.04(b)",
+                  "label": "(b)",
+                  "verbatimText": "Technology risk;"
+                },
+                {
+                  "id": "8.04(c)",
+                  "label": "(c)",
+                  "verbatimText": "Reputational risk;"
+                },
+                {
+                  "id": "8.04(d)",
+                  "label": "(d)",
+                  "verbatimText": "Exit risk;"
+                },
+                {
+                  "id": "8.04(e)",
+                  "label": "(e)",
+                  "verbatimText": "Concentration risk;"
+                },
+                {
+                  "id": "8.04(f)",
+                  "label": "(f)",
+                  "verbatimText": "Operational risk including resiliency to operational and system disruption, disaster preparedness plan and business continuity plan (BCP);"
+                },
+                {
+                  "id": "8.04(g)",
+                  "label": "(g)",
+                  "verbatimText": "Data security of the capital market entity and its clients\u2019 data integrity including unauthorised access and mishandling of data and information during data-at-rest, data-in-motion and data-in-use; and"
+                },
+                {
+                  "id": "8.04(h)",
+                  "label": "(h)",
+                  "verbatimText": "Resiliency to cyber risk."
+                }
+              ]
+            },
+            {
+              "id": "8.05",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must ensure that the selected third-party service provider practices cyber hygiene and remains cognisant in protecting its data confidentiality, and the integrity and resilience of its systems."
+            },
+            {
+              "id": "8.06",
+              "obligation": "must",
+              "verbatimText": "Notwithstanding that the operation or maintenance of IT systems are outsourced to a third-party service provider, a capital market entity remains responsible for ensuring compliance with the requirements set out in these Guidelines."
+            }
+          ]
+        },
+        {
+          "title": "Cloud Services",
+          "paragraphs": [
+            {
+              "id": "8.07",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must ensure the level of governance and controls implemented over cloud service providers including cloud strategy and cloud operational management commensurate with the risks posed by the cloud services it adopts. The board of the capital market entity should be responsible and accountable for maintaining effective oversight and governance in this regard."
+            },
+            {
+              "id": "8.08",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must be cognisant of and ensure risks associated with the use of cloud services are adequately addressed. It must perform a comprehensive risk assessment when planning for cloud adoption and manage the risks identified appropriately."
+            },
+            {
+              "id": "8.09",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must, prior to cloud adoption, conduct a comprehensive risk assessment which addresses key risks associated with among others, the following:",
+              "subParagraphs": [
+                {
+                  "id": "8.09(a)",
+                  "label": "(a)",
+                  "verbatimText": "Cloud risk management strategy, considering different cloud service models tailored to their needs;"
+                },
+                {
+                  "id": "8.09(b)",
+                  "label": "(b)",
+                  "verbatimText": "Location of the cloud infrastructure;"
+                },
+                {
+                  "id": "8.09(c)",
+                  "label": "(c)",
+                  "verbatimText": "Multi-tenancy or data commingling;"
+                },
+                {
+                  "id": "8.09(d)",
+                  "label": "(d)",
+                  "verbatimText": "Identity and access management (IAM) controls, data protection and cryptographic key management;"
+                },
+                {
+                  "id": "8.09(e)",
+                  "label": "(e)",
+                  "verbatimText": "Expansion of cyber security operations of the capital market entity including the security of public cloud infrastructure;"
+                },
+                {
+                  "id": "8.09(f)",
+                  "label": "(f)",
+                  "verbatimText": "Cloud resilience risk management such as cloud redundancy or fault tolerant capability, high availability, scalability, multiple geographically separated data centres;"
+                },
+                {
+                  "id": "8.09(g)",
+                  "label": "(g)",
+                  "verbatimText": "Vendor lock-in and portability or interoperability solutions;"
+                },
+                {
+                  "id": "8.09(h)",
+                  "label": "(h)",
+                  "verbatimText": "Exposure to cyber-attacks via cloud service providers;"
+                },
+                {
+                  "id": "8.09(i)",
+                  "label": "(i)",
+                  "verbatimText": "Migration of existing systems to cloud infrastructures; and"
+                },
+                {
+                  "id": "8.09(j)",
+                  "label": "(j)",
+                  "verbatimText": "Constant ability to meet regulatory requirements and timely measures of security standards on cloud computing."
+                }
+              ]
+            },
+            {
+              "id": "8.10",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must assess and manage its exposure to technology risk that may affect the confidentiality, integrity and availability of the IT systems and data at the cloud during the contractual period of the cloud services agreement."
+            },
+            {
+              "id": "8.11",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must ensure adequate measures are undertaken by the cloud service provider to safeguard the data of the capital market entity and the data of its clients against unauthorised disclosure and access. For encrypted data, a capital market entity must ensure that appropriate cryptographic key management is established, including assessing the ability of the cloud service provider to restore the services effectively."
+            }
+          ]
+        },
+        {
+          "title": "Contract Management",
+          "paragraphs": [
+            {
+              "id": "8.12",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must establish a service level agreement when engaging third-party service providers."
+            },
+            {
+              "id": "8.13",
+              "obligation": "must",
+              "verbatimText": "The service level agreement entered by a capital market entity with its third-party service provider must at a minimum include provisions on\u2014",
+              "subParagraphs": [
+                {
+                  "id": "8.13(a)",
+                  "label": "(a)",
+                  "verbatimText": "scope of arrangement, duration of the service and performance metrics;"
+                },
+                {
+                  "id": "8.13(b)",
+                  "label": "(b)",
+                  "verbatimText": "confidentiality and security requirements of the capital market entity and the data of its clients during and after the end of the contract period;"
+                },
+                {
+                  "id": "8.13(c)",
+                  "label": "(c)",
+                  "verbatimText": "access rights to information or documents of the third-party service provider related to any outsourced function as may be required by the SC or the capital market entity for the purpose of performing review or audit on the relevant systems;"
+                },
+                {
+                  "id": "8.13(d)",
+                  "label": "(d)",
+                  "verbatimText": "the right for the SC to appoint an independent party to perform a review or audit of the relevant information or document of the capital market entities stored with or held by the third-party service provider and the costs for such review or audit shall be borne by the capital market entity;"
+                },
+                {
+                  "id": "8.13(e)",
+                  "label": "(e)",
+                  "verbatimText": "contingency plans and exit strategies with minimal impact on the continuity of the operations of the capital market entity;"
+                },
+                {
+                  "id": "8.13(f)",
+                  "label": "(f)",
+                  "verbatimText": "system development and maintenance arrangements with the third-party service provider including requirements for such third-party service provider to comply with the data and information security policies of the capital market entity;"
+                },
+                {
+                  "id": "8.13(g)",
+                  "label": "(g)",
+                  "verbatimText": "a clearly defined arrangement for immediate notification by the third-party service provider to the capital market entity in the event of a technology incident or cyber incident;"
+                },
+                {
+                  "id": "8.13(h)",
+                  "label": "(h)",
+                  "verbatimText": "clearly defined cyber security responsibilities of all parties;"
+                },
+                {
+                  "id": "8.13(i)",
+                  "label": "(i)",
+                  "verbatimText": "modification or termination of the arrangement between the capital market entity and the third-party service provider in the event the SC issues a direction to the entity to that effect under securities laws, these Guidelines or any other relevant guidelines, guidance or practice notes; and"
+                },
+                {
+                  "id": "8.13(j)",
+                  "label": "(j)",
+                  "verbatimText": "compliance with applicable laws, regulations, guidelines and requirements by the third-party service provider."
+                }
+              ]
+            },
+            {
+              "id": "8.14",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must\u2014",
+              "subParagraphs": [
+                {
+                  "id": "8.14(a)",
+                  "label": "(a)",
+                  "verbatimText": "periodically review the performance of its third-party service providers to ensure satisfactory performance is achieved and review the service level agreement it enters into to ensure it remains relevant and effective; and"
+                },
+                {
+                  "id": "8.14(b)",
+                  "label": "(b)",
+                  "verbatimText": "ensure its third-party service providers comply with all applicable laws, regulations, guidelines and requirements."
+                }
+              ]
+            },
+            {
+              "id": "8.15",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must ensure that all of its data residing with third-party service providers are recoverable in a timely manner."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Cyber Security Management",
+      "sections": [
+        {
+          "title": "Cyber Security Framework",
+          "paragraphs": [
+            {
+              "id": "9.01",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must\u2014",
+              "subParagraphs": [
+                {
+                  "id": "9.01(a)",
+                  "label": "(a)",
+                  "verbatimText": "develop a cyber security framework comprising the governance and implementation of adequate cyber security controls which commensurate with the risk appetite and business profile of the capital market entity; and"
+                },
+                {
+                  "id": "9.01(b)",
+                  "label": "(b)",
+                  "verbatimText": "ensure that the cyber security framework is supported by policies and procedures to address interoperability, usability, and privacy of the data of the capital market entity and its clients within its custody, and to safeguard the confidentiality, integrity and availability of the data."
+                }
+              ]
+            },
+            {
+              "id": "9.02",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must ensure that roles and responsibilities are defined to ensure accountability for cyber security activities within the capital market entity."
+            },
+            {
+              "id": "9.03",
+              "obligation": "must",
+              "verbatimText": "As part of a wider risk management programme, a capital market entity must implement cyber risk management strategies and measures in a structured and methodical manner which includes identification, protection and prevention, detection, response and recovery measures. The capital market entity may refer to Appendix 2 for guidance on the methodology in implementing its cyber risk management strategies and measures."
+            }
+          ]
+        },
+        {
+          "title": "Cyber Security Measures and Monitoring",
+          "paragraphs": [
+            {
+              "id": "9.04",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must deploy defence-in-depth and preventive cyber security measures which commensurate with its business model, risk appetite and level of technology dependency. A capital market entity must put in place the appropriate measures which may include the following:",
+              "subParagraphs": [
+                {
+                  "id": "9.04(a)",
+                  "label": "(a)",
+                  "verbatimText": "Deployment of anti-virus software and malware programme to detect and isolate malicious code;"
+                },
+                {
+                  "id": "9.04(b)",
+                  "label": "(b)",
+                  "verbatimText": "Layering systems and systems components;"
+                },
+                {
+                  "id": "9.04(c)",
+                  "label": "(c)",
+                  "verbatimText": "Deployment of firewalls to reduce weak points through which attacker can gain access to an entity\u2019s network;"
+                },
+                {
+                  "id": "9.04(d)",
+                  "label": "(d)",
+                  "verbatimText": "Web and email filtering systems; and"
+                },
+                {
+                  "id": "9.04(e)",
+                  "label": "(e)",
+                  "verbatimText": "Solution to counter advance persistent threats such as zero day and signatureless-malware."
+                }
+              ]
+            },
+            {
+              "id": "9.05",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must\u2014",
+              "subParagraphs": [
+                {
+                  "id": "9.05(a)",
+                  "label": "(a)",
+                  "verbatimText": "establish, implement and continuously review the security hardening standards on its operating systems, databases, applications, network and security devices; and"
+                },
+                {
+                  "id": "9.05(b)",
+                  "label": "(b)",
+                  "verbatimText": "ensure that the security hardening standards checklist is kept updated."
+                }
+              ]
+            },
+            {
+              "id": "9.06",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must conduct continuous review and update of rules and configurations for its operating systems, databases, applications, network and security devices."
+            },
+            {
+              "id": "9.07",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must establish\u2014",
+              "subParagraphs": [
+                {
+                  "id": "9.07(a)",
+                  "label": "(a)",
+                  "verbatimText": "on a best effort basis, a security operation centre (SOC) or engage a managed security services (MSS) provider that has sufficient capabilities for pre-emptive surveillance and monitoring of its cyber events. The SOC implemented must be secured with proper access controls, skilled resources, and accommodated with disaster recovery capabilities and dashboard to oversee the overall network perimeter of the capital market entity;"
+                },
+                {
+                  "id": "9.07(b)",
+                  "label": "(b)",
+                  "verbatimText": "a process to collect, review and retain system logs to facilitate the cyber events monitoring operations of the capital market entity while ensuring the system log remains protected; and"
+                },
+                {
+                  "id": "9.07(c)",
+                  "label": "(c)",
+                  "verbatimText": "a baseline indicator for each of the IT systems being monitored. Any anomalies or suspicious user behaviour detected against the baseline indicator must be analysed and escalated in a timely manner in accordance with the escalation and decision-making processes of the capital market entity."
+                }
+              ]
+            },
+            {
+              "id": "9.08",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must establish a monitoring and detection process to support continuous surveillance of any cyber event, which should include, among others, clearly defined escalation and decision-making processes to ensure any adverse effect of a cyber incident is properly managed;"
+            },
+            {
+              "id": "9.09",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must proactively monitor any cyber event, detect any anomalous activity and conduct analysis on any detected event that may have material impact on the business or systems of the capital market entity."
+            },
+            {
+              "id": "9.10",
+              "obligation": "should",
+              "verbatimText": "Where feasible, a capital market entity should use its best endeavours to conduct regular monitoring of fake websites to minimise adverse effect on its customers, employees and agents from phishing or other types of social engineering attacks."
+            },
+            {
+              "id": "9.11",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must perform correlation of multiple events registered on system logs to identify anomalous system activity or suspicious user behaviour patterns according to the baseline indicator."
+            },
+            {
+              "id": "9.12",
+              "obligation": "must",
+              "verbatimText": "If reasonably practicable, a capital market entity must apply advanced user behavioural analysis to detect sophisticated cyber events such as signature-less and file-less malware, as well as to identify anomalies at endpoints and network layers."
+            },
+            {
+              "id": "9.13",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must regularly review its cyber threat analysis report that commensurate with its business model, risk appetite and technology dependency. The cyber threat analysis report must be communicated to its senior management. At the minimum, the report must encompass the cyber threat trends and statistics, incidents grouping by type of attack, target and source of IP addresses."
+            },
+            {
+              "id": "9.14",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must equip itself with the knowledge and understanding of the current and evolving cyber threats, new cyber attack techniques, analyse and determine the appropriate countermeasures."
+            }
+          ]
+        },
+        {
+          "title": "Cyber Security Incident Response and Recovery",
+          "paragraphs": [
+            {
+              "id": "9.15",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must establish a cyber incident response capability to manage and minimise damage from cyber incidents, and to recover and learn from such incidents. The cyber incident response capability must encompass the following phases:",
+              "subParagraphs": [
+                {
+                  "id": "9.15(a)",
+                  "label": "(a)",
+                  "title": "Preparation",
+                  "verbatimText": "A capital market entity must establish an effective governance process, reporting structure and a team to manage cyber incident and response plan in the event of a cyber incident that cause service disruption. A capital market entity must also clearly define the roles and responsibilities of the team."
+                },
+                {
+                  "id": "9.15(b)",
+                  "label": "(b)",
+                  "title": "Detection and Analysis",
+                  "verbatimText": "A capital market entity must establish a detection process to handle detected cyber events, including disaster declaration and classification of the cyber incident based on the attack vectors. Different types of cyber incidents merit different response strategies."
+                },
+                {
+                  "id": "9.15(c)",
+                  "label": "(c)",
+                  "title": "Containment, Eradication and Recovery",
+                  "verbatimText": "A capital market entity must establish a recovery process to mitigate any service disruption due to cyber-attack by prioritising the recovery based on the criticality of the systems and services within a capital market entity operating environment and to restore IT systems to its normal operation."
+                },
+                {
+                  "id": "9.15(d)",
+                  "label": "(d)",
+                  "title": "Post Incident Review",
+                  "verbatimText": "A capital market entity must ensure that the recovery process carried out by the capital market entity event is well documented to support an effective post incident review. A report must be produced from the post incident review and presented to all relevant stakeholders."
+                }
+              ]
+            },
+            {
+              "id": "9.16",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must establish clearly defined communication plan including escalation and decision-making processes to ensure that any adverse effect of a cyber incident is properly managed and recovery action may be initiated quickly."
+            },
+            {
+              "id": "9.17",
+              "obligation": "must",
+              "verbatimText": "For the purposes stated in paragraph 9.15(c), a capital market entity must identify the critical systems and services within its operating environment that shall be recovered on a priority basis in order to provide an acceptable level of services during the downtime."
+            },
+            {
+              "id": "9.18",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must determine the recovery time objective to return to its full service and operations."
+            },
+            {
+              "id": "9.19",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must regularly review and update the cyber incident management plan taking into account the information gathered from reputable cyber threat intelligence and lesson learned from cyber incidents."
+            }
+          ]
+        },
+        {
+          "title": "Cyber Security Assessment",
+          "paragraphs": [
+            {
+              "id": "9.20",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must establish a process to conduct regular assessment, and to identify potential vulnerabilities and cyber threats in its operating environment which could undermine the security, confidentiality, availability and integrity of the information assets, systems and networks. The process must, among others, outline the relevant control measures to mitigate any vulnerabilities and cyber threats in its operating environment."
+            },
+            {
+              "id": "9.21",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must ensure its assessment is comprehensive, which comprise among others making an assessment of potential vulnerabilities relating to systems and technologies adopted including any third-party systems utilised by the capital market entity and business processes."
+            },
+            {
+              "id": "9.22",
+              "obligation": "should",
+              "verbatimText": "Where feasible, a capital market entity should regularly undertake a compromise assessment (CA) on its critical systems to prevent and detect any potential compromise of its security posture."
+            },
+            {
+              "id": "9.23",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must conduct regular penetration testing exercise to imitate an experienced hacker attacking the production environment of the capital market entity, with the aim to obtain in-depth evaluation of its cyber defences. The scope and frequency of the exercise must commensurate with the capital market entity\u2019s risk exposure and should at a minimum be conducted annually."
+            },
+            {
+              "id": "9.23A",
+              "obligation": "must",
+              "addedInRevision": "R1-2024",
+              "verbatimText": "Penetration testing must also be conducted prior to the deployment of any new critical system or any major changes to the critical systems of a capital market entity."
+            },
+            {
+              "id": "9.24",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must ensure the penetration testing exercise process is documented and performed by experienced and qualified professionals who are aware of the risk of undertaking such exercise and are able to limit the damage resulting from a successful break-in to a production environment. A capital market entity must obtain the approval of its senior management before finalisation of the test scope."
+            },
+            {
+              "id": "9.25",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must establish a comprehensive remedial process to track, monitor and resolve vulnerabilities identified from the cyber security assessments. The remedial process must include at a minimum:",
+              "subParagraphs": [
+                {
+                  "id": "9.25(a)",
+                  "label": "(a)",
+                  "verbatimText": "severity level and classification of identified vulnerabilities;"
+                },
+                {
+                  "id": "9.25(b)",
+                  "label": "(b)",
+                  "verbatimText": "turnaround time to remediate vulnerabilities according to its severity level; and"
+                },
+                {
+                  "id": "9.25(c)",
+                  "label": "(c)",
+                  "verbatimText": "risk assessment and mitigation plans to manage exceptions (i.e. for vulnerabilities which the capital market entity is unable to remediate timely) with approval from senior management."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Cyber Simulation Exercise",
+          "paragraphs": [
+            {
+              "id": "9.26",
+              "obligation": "must",
+              "verbatimText": "A capital market entity must carry out a cyber simulation exercise which commensurate with the level of risk appetite of the capital market entity and its reliance on technology to test the effectiveness of its cyber incident response and recovery, including its communication plan based on current and emerging cyber threat scenarios. A capital market entity must determine the objectives, scope and conditions of engagement for the cyber simulation exercise before the initiation of the exercise. It must ensure the simulation exercise is conducted with involvement from key stakeholders."
+            },
+            {
+              "id": "9.27",
+              "obligation": "must",
+              "verbatimText": "To ensure the capital market entity is prepared to respond to cyber incidents detected, at a minimum, the capital market entity must\u2014",
+              "subParagraphs": [
+                {
+                  "id": "9.27(a)",
+                  "label": "(a)",
+                  "verbatimText": "identify scenarios of cyber risk that it is most likely to be exposed to;"
+                },
+                {
+                  "id": "9.27(b)",
+                  "label": "(b)",
+                  "verbatimText": "consider incidents in the capital market and the broader financial services industry;"
+                },
+                {
+                  "id": "9.27(c)",
+                  "label": "(c)",
+                  "verbatimText": "assess the likely impact of these incidents to the capital market entity; and"
+                },
+                {
+                  "id": "9.27(d)",
+                  "label": "(d)",
+                  "verbatimText": "identify appropriate response plan and communication strategies that should be undertaken."
+                }
+              ]
+            },
+            {
+              "id": "9.28",
+              "obligation": "should",
+              "verbatimText": "Where feasible, a capital market entity should perform an adversarial attack simulation exercise on the infrastructure hosted with third-party service providers to identify potential vulnerabilities of its cyber defence and response plan against rampant cyber threats."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

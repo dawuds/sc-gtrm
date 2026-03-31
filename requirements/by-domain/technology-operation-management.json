@@ -1,0 +1,731 @@
+{
+  "sourceType": "verbatim-extracted",
+  "source": "SC-GL/2-2023 (R1-2024)",
+  "domain": "technology-operation-management",
+  "domainName": "Technology Operations Management",
+  "chapter": 7,
+  "requirements": [
+    {
+      "id": "7.01",
+      "section": "Technology Project Management",
+      "requirement": "A capital market entity must establish and implement clear and comprehensive internal guidelines on technology project management so that any technology and technology-related project can be completed with clarity, alignment, traceability, and effective resource utilisation.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-project-management"
+    },
+    {
+      "id": "7.02",
+      "section": "Technology Project Management",
+      "requirement": "A capital market entity must conduct a post implementation review (PIR) on all critical technology and technology-related projects, and the findings of the PIR should be taken into account to improve project management.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-project-management"
+    },
+    {
+      "id": "7.03",
+      "section": "Technology Project Management",
+      "requirement": "A capital market entity must conduct risk assessment to identify, manage and monitor risks arising from the implementation of critical technology-related projects and throughout the project life cycle as project risk may adversely impact the project delivery timeline, budget, and quality of the project deliverables.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-project-management"
+    },
+    {
+      "id": "7.04",
+      "section": "Technology Project Management",
+      "requirement": "Where a capital market entity carries out a technology-related project, the capital market entity must ensure there are adequate personnel, including key stakeholders to oversee and manage such projects, including serving as project coordinator and advisor and being responsible for all deliverables, project costs and schedules.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-project-management"
+    },
+    {
+      "id": "7.05",
+      "section": "System Acquisition and Development, System Testing and Acceptance and Access Control Management",
+      "requirement": "A capital market entity must establish and implement internal processes encompassing\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-acquisition-and-development",
+      "subRequirements": [
+        {
+          "id": "7.05(a)",
+          "requirement": "system acquisition and development;"
+        },
+        {
+          "id": "7.05(b)",
+          "requirement": "system testing and acceptance; and"
+        },
+        {
+          "id": "7.05(c)",
+          "requirement": "access control management."
+        }
+      ]
+    },
+    {
+      "id": "7.06",
+      "section": "System Acquisition and Development",
+      "requirement": "A capital market entity must establish and implement clear requirements and processes to manage its system development life cycle (SDLC) encompassing planning, requirement analysis, design, implementation, testing and acceptance. It must include, among others, requirements and processes for\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-acquisition-and-development",
+      "subRequirements": [
+        {
+          "id": "7.06(a)",
+          "requirement": "vendor selection and evaluation of the systems to be procured from all vendors or solution providers; and"
+        },
+        {
+          "id": "7.06(b)",
+          "requirement": "assessment of software development by vendors and in-house developer, to ensure that security of the capital market entity is not compromised, and its quality assurance is met."
+        }
+      ]
+    },
+    {
+      "id": "7.07",
+      "section": "System Acquisition and Development",
+      "requirement": "Where feasible, a capital market entity should enter into a source code escrow agreement to ensure the source codes for critical systems are accessible. If an escrow agreement cannot be implemented, a capital market entity must identify an appropriate alternative.",
+      "obligation": "should",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-acquisition-and-development"
+    },
+    {
+      "id": "7.08",
+      "section": "System Acquisition and Development",
+      "requirement": "A capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-acquisition-and-development",
+      "subRequirements": [
+        {
+          "id": "7.08(a)",
+          "requirement": "incorporate security requirements into the system design which would enable it to carry out constant security evaluation; and"
+        },
+        {
+          "id": "7.08(b)",
+          "requirement": "comply with security practices throughout the SDLC in order to minimise system vulnerabilities and reduce risk exposure."
+        }
+      ]
+    },
+    {
+      "id": "7.09",
+      "section": "System Acquisition and Development",
+      "requirement": "At the minimum, the security requirements must cover main control areas including access control, authorisation, data integrity and confidentiality, logging system activity, tracking security event and exception handling.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-acquisition-and-development"
+    },
+    {
+      "id": "7.10",
+      "section": "System Testing and Acceptance",
+      "requirement": "A capital market entity must establish a methodology for rigorous system testing and ensure that adequate testing is performed prior to deployment of a system so that the system meets its user requirements and performs as intended. At the minimum, the testing conducted must cover the business logic, function, controls and performance of the system under various load and stress conditions.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-testing-and-acceptance"
+    },
+    {
+      "id": "7.11",
+      "section": "System Testing and Acceptance",
+      "requirement": "Where feasible, a capital market entity should use automated testing methodology to ensure comprehensiveness of the testing scopes, as part of the testing strategy.",
+      "obligation": "should",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-testing-and-acceptance"
+    },
+    {
+      "id": "7.12",
+      "section": "System Testing and Acceptance",
+      "requirement": "A capital market entity must properly document, track and address the issues identified during testing, including vulnerabilities, deficiencies, system defects or software bugs.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-testing-and-acceptance"
+    },
+    {
+      "id": "7.13",
+      "section": "System Testing and Acceptance",
+      "requirement": "A capital market entity must ensure that all issues which could have an adverse impact on the operations of the capital market entity or delivery of its services to its clients are reported to the senior management and rectified prior to deployment of the system to the production environment of the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-testing-and-acceptance"
+    },
+    {
+      "id": "7.13A",
+      "section": "System Testing and Acceptance",
+      "requirement": "Prior to deployment of a system, a capital market entity must carry out a cyber security assessment that commensurate with the risk exposure of the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-testing-and-acceptance"
+    },
+    {
+      "id": "7.14",
+      "section": "System Testing and Acceptance",
+      "requirement": "To ensure that the system is production ready and satisfies all documented requirements, a capital market entity must perform\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-testing-and-acceptance",
+      "subRequirements": [
+        {
+          "id": "7.14(a)",
+          "requirement": "final acceptance testing including quality assurance testing focusing on technical aspect of the system; and"
+        },
+        {
+          "id": "7.14(b)",
+          "requirement": "user acceptance testing focusing on functional aspect of the system."
+        }
+      ]
+    },
+    {
+      "id": "7.15",
+      "section": "System Testing and Acceptance",
+      "requirement": "The results of the final acceptance testing and user acceptance testing must be reported to senior management.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-testing-and-acceptance"
+    },
+    {
+      "id": "7.16",
+      "section": "System Testing and Acceptance",
+      "requirement": "In the case of an acquired system, after attending to the changes during testing by a vendor, a capital market entity must ensure that the final approved version of the acquired system is used for implementation.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "system-testing-and-acceptance"
+    },
+    {
+      "id": "7.17",
+      "section": "Access Control Management",
+      "requirement": "To minimise risk of unauthorised access to information assets, a capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "access-control-management",
+      "subRequirements": [
+        {
+          "id": "7.17(a)",
+          "requirement": "establish user access management policies and procedures for providing, modifying and revoking access rights to IT systems. Access rights and privileges shall be granted in accordance with the roles and responsibilities of the users, and the access matrix should be periodically reviewed;"
+        },
+        {
+          "id": "7.17(b)",
+          "requirement": "enforce and review its password controls periodically to enhance the resilience of its system against any attack; and"
+        },
+        {
+          "id": "7.17(c)",
+          "requirement": "ensure that the logging facility is enabled to capture system user login, system activities, privilege accounts and service accounts for the purpose of audit and investigation. A capital market entity is also expected to review logs on a regular basis for any irregularity."
+        }
+      ]
+    },
+    {
+      "id": "7.18",
+      "section": "Access Control Management",
+      "requirement": "A capital market entity must use strong fraud deterrents for sensitive system functions to safeguard the systems and data from unauthorised access on a best effort basis. For example, the use of multi-factor authentication (MFA) and privilege access management to secure employee and customer authentication process.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "access-control-management"
+    },
+    {
+      "id": "7.19",
+      "section": "Cryptography",
+      "requirement": "A capital market entity must implement suitable and effective cryptographic controls to safeguard the confidentiality, authenticity and integrity of its sensitive data from unauthorised access and unintentional disclosure.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "cryptography"
+    },
+    {
+      "id": "7.20",
+      "section": "Cryptography",
+      "requirement": "A capital market entity must establish robust and sound policies and procedures to manage the use of cryptography including:",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "cryptography",
+      "subRequirements": [
+        {
+          "id": "7.20(a)",
+          "requirement": "cryptographic key life cycle management from generation to disposal;"
+        },
+        {
+          "id": "7.20(b)",
+          "requirement": "measures to protect the cryptographic key from use by unauthorised parties;"
+        },
+        {
+          "id": "7.20(c)",
+          "requirement": "measures to protect the cryptographic key from being modified, compromised or destroyed during its lifetime; and"
+        },
+        {
+          "id": "7.20(d)",
+          "requirement": "procedures to ensure the cryptographic key is available to authorised parties only when needed with appropriate authentication and control mechanisms."
+        }
+      ]
+    },
+    {
+      "id": "7.21",
+      "section": "Data Security and Privacy",
+      "requirement": "As part of its technology risk management, a capital market entity must implement effective measures to prevent losses arising from data breach or other acts of internal or external threats, negligence and cyber attack.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-security-and-privacy"
+    },
+    {
+      "id": "7.22",
+      "section": "Data Security and Privacy",
+      "requirement": "The measures must cover the process of identification, handling, transmission, movement, destruction and availability of data based on the following\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-security-and-privacy",
+      "subRequirements": [
+        {
+          "id": "7.22(a)",
+          "requirement": "maintain a comprehensive and updated inventory of all information assets including data classification and risk across the capital market entity;"
+        },
+        {
+          "id": "7.22(b)",
+          "requirement": "deploy adequate security measures to safeguard IT systems residing in the production environment, non-production environment and all other media;"
+        },
+        {
+          "id": "7.22(c)",
+          "requirement": "implement appropriate controls to ensure no unauthorised person is able to access data and IT systems. Access to data and IT systems should be on a need-to-have basis;"
+        },
+        {
+          "id": "7.22(d)",
+          "requirement": "implement clear desk policy to ensure information assets are not left unprotected which could potentially lead to security breaches;"
+        },
+        {
+          "id": "7.22(e)",
+          "requirement": "review audit logs or trails particularly on access to critical data to identify anomalies or abnormal activities;"
+        },
+        {
+          "id": "7.22(f)",
+          "requirement": "enhance monitoring and assurance activity over third parties to ensure data and information assets of the capital market entity are adequately protected;"
+        },
+        {
+          "id": "7.22(g)",
+          "requirement": "conduct a periodic gap analysis at least once a year on data and information assets processes and controls to improve data security;"
+        },
+        {
+          "id": "7.22(h)",
+          "requirement": "establish a remediation plan to prioritise rectification according to the capital market entity\u2019s risk assessment; and"
+        },
+        {
+          "id": "7.22(i)",
+          "requirement": "develop, operate, manage and test the data breach management processes which should include the process for preparation, identification, containment, eradication, recovery and lesson learned from data breaches."
+        }
+      ]
+    },
+    {
+      "id": "7.23",
+      "section": "Data Security and Privacy",
+      "requirement": "A capital market entity must establish appropriate data security measures to protect the confidentiality, integrity and availability of its critical data and this should include data stored in cloud or where blockchain-based application is used.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-security-and-privacy"
+    },
+    {
+      "id": "7.24",
+      "section": "Data Security and Privacy",
+      "requirement": "A capital market entity must establish and implement data loss prevention (DLP) policy and procedures to safeguard:",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-security-and-privacy",
+      "subRequirements": [
+        {
+          "id": "7.24(a)",
+          "requirement": "Data in-use \u2013 data being accessed and processed by a system."
+        },
+        {
+          "id": "7.24(b)",
+          "requirement": "Data in-motion \u2013 data being transferred over the network."
+        },
+        {
+          "id": "7.24(c)",
+          "requirement": "Data at-rest \u2013 data stored in mediums such as servers, backup media, storage platform and databases."
+        }
+      ]
+    },
+    {
+      "id": "7.25",
+      "section": "Data Storage",
+      "requirement": "A capital market entity must ensure its data and IT systems are stored or hosted in an environment that is secure, robust and resilient. It must also observe a similar approach for cloud storage.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-storage"
+    },
+    {
+      "id": "7.26",
+      "section": "Data Storage",
+      "requirement": "A capital market entity must undertake a storage capacity assessment periodically to determine its current and future storage capacity and utilisation. If the results of the assessment warrants for a migration, a capital market entity must develop and execute a plan to migrate its data and IT systems into a new environment.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-storage"
+    },
+    {
+      "id": "7.27",
+      "section": "Data Storage",
+      "requirement": "A capital market entity must determine the appropriate retention period to archive its data based on the usage requirement or its criticality for its data.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-storage"
+    },
+    {
+      "id": "7.28",
+      "section": "Data Storage",
+      "requirement": "A capital market entity must ensure data is protected by an adequate backup schedule and perform regular testing according to the needs of the capital market entity and ensure data can be restored from backups.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-storage"
+    },
+    {
+      "id": "7.29",
+      "section": "Data Disposal",
+      "requirement": "A capital market entity must establish and implement appropriate policies for the disposal of data on its IT systems, mobile devices and storage media to safeguard the data from unauthorised disclosure.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-disposal"
+    },
+    {
+      "id": "7.30",
+      "section": "Data Disposal",
+      "requirement": "A capital market entity must dispose the data kept in its IT systems when it is no longer required for business usage, legal or contractual purposes for which it was originally created or held.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-disposal"
+    },
+    {
+      "id": "7.31",
+      "section": "Data Disposal",
+      "requirement": "Where a capital market entity has decided that data kept in its IT devices, such as Bring-Your-Own-Device (BYOD) or corporate mobile devices, is to be disposed, the capital market entity must ensure its data will be deleted from those devices after such data is no longer in use.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-disposal"
+    },
+    {
+      "id": "7.32",
+      "section": "Data Disposal",
+      "requirement": "A capital market entity must implement a clear data sanitisation procedure to ensure data is irretrievably destroyed from its IT systems and IT devices. The data sanitisation procedure of a capital market entity must include\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-disposal",
+      "subRequirements": [
+        {
+          "id": "7.32(a)",
+          "requirement": "record data sanitisation activities performed such as location of the IT systems and IT devices, sanitisation date and name of responsible individual(s); and"
+        },
+        {
+          "id": "7.32(b)",
+          "requirement": "clear identification of data accessible by a third party and access controls to address the risk of third-party having access to data that is not appropriately disposed."
+        }
+      ]
+    },
+    {
+      "id": "7.33",
+      "section": "Data Disposal",
+      "requirement": "A capital market entity must require all third parties who have the data of the capital market entity in its custody to perform data sanitisation appropriately and securely to avoid the risk that the data that is no longer in use to be accessible by a third party. A capital market entity should include such requirements in any contract entered into with a third-party service provider.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "data-disposal"
+    },
+    {
+      "id": "7.34",
+      "section": "Change Management",
+      "requirement": "A capital market entity must establish a change management process to oversee any changes made to its IT systems covering among others, impact assessment, approval, scheduling, implementation and communication to key stakeholders.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "change-management"
+    },
+    {
+      "id": "7.35",
+      "section": "Change Management",
+      "requirement": "A capital market entity must ensure, prior to deploying any changes to its IT systems in the production environment\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "change-management",
+      "subRequirements": [
+        {
+          "id": "7.35(a)",
+          "requirement": "a risk and impact analysis is conducted on all proposed changes to the IT systems. This risk and impact analysis should be included in the test plans of the capital market entity;"
+        },
+        {
+          "id": "7.35(b)",
+          "requirement": "the analysis takes into account security factor and implication of the change in relation to the capital market entity\u2019s other IT systems;"
+        },
+        {
+          "id": "7.35(c)",
+          "requirement": "the results of the analysis are accepted and approved by senior management;"
+        },
+        {
+          "id": "7.35(d)",
+          "requirement": "all key stakeholders (comprising the relevant business groups in the capital market entity that will be affected by the proposed change) are informed and provided with recommendations on the proposed change; and"
+        },
+        {
+          "id": "7.35(e)",
+          "requirement": "the IT systems configuration is backed up and a fall-back plan is prepared in case a problem arises during or after the implementation of a change."
+        }
+      ]
+    },
+    {
+      "id": "7.36",
+      "section": "Change Management",
+      "requirement": "A capital market entity must establish and implement clear process and procedures to handle any emergency change to the production environment.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "change-management"
+    },
+    {
+      "id": "7.37",
+      "section": "Change Management",
+      "requirement": "A capital market entity must record activities performed during the change process in an activity log to facilitate investigation and troubleshooting.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "change-management"
+    },
+    {
+      "id": "7.38",
+      "section": "Patch and Technology Obsolescence",
+      "requirement": "A capital market entity must establish a patch management process to administer the remediation effort, risk assessment, monitoring and implementation of security patch that is applicable to its IT systems. A capital market entity must perform patch management diligently and continuously monitor and implement the latest patch releases in a timely manner.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "patch-and-technology-obsolescence"
+    },
+    {
+      "id": "7.39",
+      "section": "Patch and Technology Obsolescence",
+      "requirement": "A capital market entity must closely monitor the EOS dates of its hardware and software including those relating to security vulnerabilities that surface after the EOS date.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "patch-and-technology-obsolescence"
+    },
+    {
+      "id": "7.40",
+      "section": "Patch and Technology Obsolescence",
+      "requirement": "A capital market entity must develop a technology refresh plan for the replacement of its hardware and software before they reach EOS. A capital market entity must assess the impact and include risk mitigation process should the EOS system be utilised within a certain period.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "patch-and-technology-obsolescence"
+    },
+    {
+      "id": "7.41",
+      "section": "Patch and Technology Obsolescence",
+      "requirement": "A capital market entity must ensure that its critical IT systems are not running on obsolescence systems or EOL systems. If there is a need for a capital market entity to continue using critical technology which are running on obsolescence systems, it must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "patch-and-technology-obsolescence",
+      "subRequirements": [
+        {
+          "id": "7.41(a)",
+          "requirement": "ensure that approval is obtained from senior management and a validity period is assigned to the continued use of such critical IT systems that commensurate with the identified risks and risk mitigation process of the capital market entity; and"
+        },
+        {
+          "id": "7.41(b)",
+          "requirement": "closely monitor, assess the impact and establish a risk mitigation process that corresponds to its risk acceptance level for such critical IT systems."
+        }
+      ]
+    },
+    {
+      "id": "7.42",
+      "section": "Patch and Technology Obsolescence",
+      "requirement": "The capital market entity must ensure that the latest inventory list of all IT systems is mapped to its criticality and is available for patch administration for the purpose of determining its patches severity and for further remedial action.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "patch-and-technology-obsolescence"
+    },
+    {
+      "id": "7.43",
+      "section": "Patch and Technology Obsolescence",
+      "requirement": "A capital market entity must conduct patch compatibility testing on its IT systems that use standardised configurations before deploying to its IT systems in production environment to ensure it does not introduce any adverse effect. The patch deployment must be carried out within a specified timeframe depending on the severity level of the patch.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "patch-and-technology-obsolescence"
+    },
+    {
+      "id": "7.44",
+      "section": "Patch and Technology Obsolescence",
+      "requirement": "The capital market entity must ensure the remediation action is approved, monitored and tracked according to the change management process.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "patch-and-technology-obsolescence"
+    },
+    {
+      "id": "7.45",
+      "section": "Network Resilience",
+      "requirement": "A capital market entity must design a sound network architecture to support its business activities and future growth and to enable it to achieve high network availability, redundancy, accessibility and resiliency.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "network-resilience"
+    },
+    {
+      "id": "7.46",
+      "section": "Network Resilience",
+      "requirement": "A capital market entity must continuously assess its network architecture design to identify any flaws and to sustain an acceptable level of availability which may support the business activities of the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "network-resilience"
+    },
+    {
+      "id": "7.47",
+      "section": "Network Resilience",
+      "requirement": "A capital market entity must ensure its network infrastructure with systems that demand high availability and reliability to have no single point of failure by implementing redundancy, fault tolerance, congestion control and diversity in network routing, where applicable.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "network-resilience"
+    },
+    {
+      "id": "7.48",
+      "section": "Network Resilience",
+      "requirement": "A capital market entity must ensure that the change management process provided in paragraph 7.34 is applicable to any changes made to the network infrastructure.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "network-resilience"
+    },
+    {
+      "id": "7.49",
+      "section": "Operational Resilience",
+      "requirement": "A capital market entity must ensure that its data centre operation, including the use of cloud services, is supported by a sound IT infrastructure taking into consideration IT operational resiliency and availability target that is aligned to the business needs of the capital market entity. The availability target set by the capital market entity should result in reducing the impact of any failure or disruption to the data centre operations of the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "operational-resilience"
+    },
+    {
+      "id": "7.50",
+      "section": "Operational Resilience",
+      "requirement": "Where applicable, to reduce the impact of any failure or disruption to the data centre operations, a capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "operational-resilience",
+      "subRequirements": [
+        {
+          "id": "7.50(a)",
+          "requirement": "conduct a data centre risk assessment to ensure the resiliency of the data centre, taking into consideration the business model and risk appetite of the capital market entity, and industry best practices;"
+        },
+        {
+          "id": "7.50(b)",
+          "requirement": "ensure no single point of failure (SPOF) to its critical IT infrastructure including power equipment, network connectivity, cooling equipment, electrical utility and diversification of data communication and network paths attending the IT system;"
+        },
+        {
+          "id": "7.50(c)",
+          "requirement": "maintain a secondary data centre for recovery purposes based on the business needs of the capital market entity;"
+        },
+        {
+          "id": "7.50(d)",
+          "requirement": "undertake a data storage capacity assessment to determine its current and future storage capacity and utilisation;"
+        },
+        {
+          "id": "7.50(e)",
+          "requirement": "ensure adequate maintenance of the data centres;"
+        },
+        {
+          "id": "7.50(f)",
+          "requirement": "continuously monitor the data centre resources according to internal thresholds determined by the capital market entity to ensure the performance of the data centre resources are not disrupted;"
+        },
+        {
+          "id": "7.50(g)",
+          "requirement": "implement an escalation process and response plan to analyse and remediate any potential or actual threats related to the data centres; and"
+        },
+        {
+          "id": "7.50(h)",
+          "requirement": "implement adequate physical access controls for its data centres including process on authorised employees, visitor access and access to selected areas."
+        }
+      ]
+    },
+    {
+      "id": "7.51",
+      "section": "Operational Resilience",
+      "requirement": "Where a third-party service provider manages the data centre, the capital market entity must ensure that the third-party service provider furnishes a data centre risk assessment report upon request by the capital market entity or the SC. The report must cover the review of the system of the data centre, suitability of its design of controls and effectiveness of the controls. The capital market entity must perform its own risk assessment of such report to ensure it is consistent with the risk appetite and risk tolerance of the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "operational-resilience"
+    },
+    {
+      "id": "7.52",
+      "section": "Operational Resilience",
+      "requirement": "A capital market entity must ensure that its IT system has adequate storage, central processing unit power, memory and network bandwidth to support its business operations and future growth.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "operational-resilience"
+    },
+    {
+      "id": "7.53",
+      "section": "Operational Resilience",
+      "requirement": "A capital market entity must monitor its technology operation status including its network performance, application and system utilisation to ensure its IT resources meet its current needs and future growth, and for capacity management planning.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "operational-resilience"
+    },
+    {
+      "id": "7.54",
+      "section": "Operational Resilience",
+      "requirement": "A capital market entity must establish a monitoring and reporting mechanism of its network, application and system to flag abnormal behaviour and aid in analysis. Upon the detection of any abnormal behaviour, the capital market entity must undertake a follow-up action in accordance with its internal procedures.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "operational-resilience"
+    },
+    {
+      "id": "7.55",
+      "section": "Operational Resilience",
+      "requirement": "A capital market entity must retain adequate network, application and system device logs for investigation and diagnosis for an appropriate period as it determines.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "operational-resilience"
+    },
+    {
+      "id": "7.56",
+      "section": "IT Disaster Recovery Plan (IT DRP)",
+      "requirement": "A capital market entity must establish and test its IT DRP on a regular basis to manage availability and restore IT system within the recovery time objectives being set in the event of disruption according to its defined BIA.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "it-disaster-recovery-plan"
+    },
+    {
+      "id": "7.57",
+      "section": "IT Disaster Recovery Plan (IT DRP)",
+      "requirement": "A capital market entity must ensure that all relevant key stakeholders from business and IT functions participate in the IT DRP to ensure the IT DRP is implemented effectively.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "it-disaster-recovery-plan"
+    },
+    {
+      "id": "7.58",
+      "section": "IT Disaster Recovery Plan (IT DRP)",
+      "requirement": "A capital market entity must ensure that the IT DRP consists of\u2013",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "it-disaster-recovery-plan",
+      "subRequirements": [
+        {
+          "id": "7.58(a)",
+          "requirement": "procedures for declaring a disaster with escalation procedures;"
+        },
+        {
+          "id": "7.58(b)",
+          "requirement": "criteria for plan activation (including circumstances in which a disaster is declared, type of scenarios of disasters and when the recovery plan should be put into action);"
+        },
+        {
+          "id": "7.58(c)",
+          "requirement": "its linkage with overarching plans such as emergency response plan or crisis management plan for business continuity plan (BCP) for different lines of business;"
+        },
+        {
+          "id": "7.58(d)",
+          "requirement": "the responsible employee for each function in plan execution;"
+        },
+        {
+          "id": "7.58(e)",
+          "requirement": "recovery teams and their responsibilities;"
+        },
+        {
+          "id": "7.58(f)",
+          "requirement": "emergency contact and notification (recovery teams, recovery manager, stakeholders, important third-party service providers);"
+        },
+        {
+          "id": "7.58(g)",
+          "requirement": "a detail procedure of the recovery process (initiation of recovery place, type of recovery to be conducted, the flow of recovery);"
+        },
+        {
+          "id": "7.58(h)",
+          "requirement": "identification of the various resources required for recovery and business operation continuation; and"
+        },
+        {
+          "id": "7.58(i)",
+          "requirement": "post incident review incorporating lessons learned and developing long-term risk mitigations."
+        }
+      ]
+    },
+    {
+      "id": "7.59",
+      "section": "IT Disaster Recovery Plan (IT DRP)",
+      "requirement": "Where IT systems are managed by a third-party service provider, the capital market entity must ensure that the third-party service provider is capable in ensuring availability and recovery of the IT systems. The capital market entity must coordinate the DRP with involvement from the third-party service provider for such IT systems to meet the business recovery objectives.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "it-disaster-recovery-plan"
+    }
+  ]
+}

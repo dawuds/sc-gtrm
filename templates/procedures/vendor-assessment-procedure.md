@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Chief Risk Officer (CRO) |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## 1. Purpose
 
-This procedure provides step-by-step guidance for conducting due diligence assessments of third-party technology vendors, implementing POL-VMP-001 and ensuring compliance with SC-GL/6-2023 outsourcing and third-party risk management requirements.
+This procedure provides step-by-step guidance for conducting due diligence assessments of third-party technology vendors, implementing POL-VMP-001 and ensuring compliance with SC-GL/2-2023 (R1-2024) outsourcing and third-party risk management requirements.
 
 ## 2. Scope
 

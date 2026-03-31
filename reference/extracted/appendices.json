@@ -1,0 +1,417 @@
+{
+  "_meta": {
+    "source": "SC-GL/2-2023 (R1-2024)",
+    "extractedDate": "2026-04-01",
+    "sourceType": "verbatim-extracted",
+    "type": "appendices"
+  },
+  "appendices": [
+    {
+      "number": 1,
+      "title": "Guidance to Risk Identification, Assessment, Mitigation, Monitoring, Review and Reporting",
+      "referencedBy": "6.04",
+      "type": "guidance",
+      "content": [
+        {
+          "section": "(1) Risk identification",
+          "verbatimText": "A capital market entity should identify the extent of the potential threat and vulnerabilities to its IT environment by scoping information risk assessments across different business functions, including any of its information assets that are managed by third-party service providers."
+        },
+        {
+          "section": "(2) Risk assessment",
+          "verbatimText": "A capital market entity should assess, identify and profile key technology risk and cyber threats across different business functions by determining associated threat events. In doing so, it should\u2014",
+          "subItems": [
+            {
+              "label": "(a)",
+              "verbatimText": "perform an analysis of the potential consequences that would result if the technology risk identified were to materialise;"
+            },
+            {
+              "label": "(b)",
+              "verbatimText": "assess the likelihood of the occurrence of the risks identified; and"
+            },
+            {
+              "label": "(c)",
+              "verbatimText": "determine the level of risk impact should the information assets have their confidentiality, integrity or availability compromised."
+            }
+          ]
+        },
+        {
+          "section": "(3) Risk mitigation",
+          "verbatimText": "A capital market entity should\u2014",
+          "subItems": [
+            {
+              "label": "(a)",
+              "verbatimText": "develop appropriate risk treatment by taking into account the risk assessment result based on the criticality of its information assets and the level of risk tolerance;"
+            },
+            {
+              "label": "(b)",
+              "verbatimText": "implement appropriate control measures and carry out regular review and update by taking into account the rapid change of threat landscape and variations in the capital market entity\u2019s risk profile."
+            }
+          ]
+        },
+        {
+          "section": "(4) Risk monitoring, review and reporting",
+          "verbatimText": "A capital market entity should\u2014",
+          "subItems": [
+            {
+              "label": "(a)",
+              "verbatimText": "establish a process for assessing and monitoring the effectiveness of process design, its IT controls implementation and outcomes against identified technology risk. This include incorporating the monitoring results and review of identified technology risk into the performance management, key performance indicator of the capital market entity, and reporting it to the senior management at a frequency based on the level of risks identified."
+            },
+            {
+              "label": "(b)",
+              "verbatimText": "regularly monitor controls implemented for its IT systems and its environment of operation for changes, signs of attack and other vector that may affect controls and reassess control effectiveness."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Guidance to Methodology in the Implementation of Cyber Risk Management Strategies and Measures",
+      "referencedBy": "9.03",
+      "type": "guidance",
+      "content": [
+        {
+          "section": "(1) Identification",
+          "verbatimText": "In identifying cybersecurity threats, a capital market entity should fully understand its business environment to ensure it can successfully manage arising cyber security threats, vulnerabilities and risks at various levels surroundings its data, systems, and assets."
+        },
+        {
+          "section": "(2) Protection and Prevention",
+          "verbatimText": "A capital market entity should develop and implement the appropriate strategy against cyber threats identified to ensure continuous delivery of its services and to minimise or contain the impact of a cyber security incident."
+        },
+        {
+          "section": "(3) Detection",
+          "verbatimText": "A capital market entity should develop and implement the appropriate strategy to identify the occurrence of a cyber security event in a timely manner."
+        },
+        {
+          "section": "(4) Response",
+          "verbatimText": "A capital market entity should develop and implement appropriate response strategy in case of any detected cyber security event."
+        },
+        {
+          "section": "(5) Recover",
+          "verbatimText": "A capital market entity should develop and implement the appropriate strategy to recover from a cyber breach, and to reinstate any capabilities, capacities or services that were impaired due to a cyber security event within the defined recovery time objective of the capital market entity. A capital market entity should prioritise important services or have some level of minimum services available for a temporary period of time."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Guiding Principles Relating to the Adoption of Artificial Intelligence (AI) and Machine Learning (ML)",
+      "referencedBy": "11.06",
+      "type": "guidance",
+      "content": [
+        {
+          "section": "Preamble",
+          "verbatimText": "A capital market entity that is adopting artificial intelligence (AI) and machine learning (ML) should be guided by the following principles:",
+          "subItems": [
+            {
+              "label": "(i)",
+              "verbatimText": "Accountability;"
+            },
+            {
+              "label": "(ii)",
+              "verbatimText": "Transparency and Explainability;"
+            },
+            {
+              "label": "(iii)",
+              "verbatimText": "Fairness and Non-Discrimination; and"
+            },
+            {
+              "label": "(iv)",
+              "verbatimText": "Practical Accuracy and Reliability."
+            }
+          ]
+        },
+        {
+          "section": "Applicability",
+          "verbatimText": "A capital market entity is expected to exercise its judgement in considering and adopting the guiding principles, taking into consideration the circumstances of the capital market entity including its size, scale and complexity."
+        },
+        {
+          "section": "1. Accountability",
+          "subItems": [
+            {
+              "label": "(a)",
+              "verbatimText": "A capital market entity should establish and implement a robust and sound governance framework and process to oversee the development and use of its AI and ML, which should include\u2014",
+              "subSubItems": [
+                {
+                  "label": "(i)",
+                  "verbatimText": "clear goals and objectives for the AI and ML system;"
+                },
+                {
+                  "label": "(ii)",
+                  "verbatimText": "well-defined roles, responsibilities, and lines of authority, within the capital market entity or by third-party service provider; and"
+                },
+                {
+                  "label": "(iii)",
+                  "verbatimText": "risk-management processes, that includes the management and oversight of third-party service providers and contingency plan that can promptly suspend AI applications whenever required."
+                }
+              ]
+            },
+            {
+              "label": "(b)",
+              "verbatimText": "A capital market entity should also have a workforce capable of managing AI and ML systems and a broad set of stakeholders."
+            },
+            {
+              "label": "(c)",
+              "verbatimText": "A capital market entity should ensure that the workforce uses AI and ML systems in a way that respects the rule of law, ethics, code of conduct, human rights, democratic values and diversity, and should include appropriate policies and procedures to ensure the same."
+            }
+          ]
+        },
+        {
+          "section": "2. Transparency and Explainability",
+          "subItems": [
+            {
+              "label": "(a)",
+              "verbatimText": "A capital market entity should be able to explain what went into making a specific decision by the AI and ML. In adopting AI-assisted decision, the capital market entity should be able to provide an explanation on\u2014",
+              "subSubItems": [
+                {
+                  "label": "(i)",
+                  "verbatimText": "the process (i.e. governance of AI); and"
+                },
+                {
+                  "label": "(ii)",
+                  "verbatimText": "the outcome of the AI application (i.e. reasoning of the algorithmic decision)."
+                }
+              ]
+            },
+            {
+              "label": "(b)",
+              "verbatimText": "A capital market entity should keep appropriate records with the intention to ensure traceability and auditability."
+            }
+          ]
+        },
+        {
+          "section": "3. Fairness and Non-Discrimination",
+          "subItems": [
+            {
+              "label": "(a)",
+              "verbatimText": "A capital market entity should design its AI and ML systems in a way that respects the rule of law, human rights, democratic values and diversity, and should include appropriate safeguards to ensure that users or groups of users are not systematically disadvantaged or discriminated."
+            },
+            {
+              "label": "(b)",
+              "verbatimText": "A capital market entity should ensure that data and models used for AI and ML-driven decisions are regularly reviewed and validated to guard against the use of biased data or algorithms."
+            }
+          ]
+        },
+        {
+          "section": "4. Practical Accuracy and Reliability",
+          "verbatimText": "A capital market entity should\u2014",
+          "subItems": [
+            {
+              "label": "(a)",
+              "verbatimText": "rigorously conduct validation and testing on its AI and ML systems;"
+            },
+            {
+              "label": "(b)",
+              "verbatimText": "ensure privacy, data protection and security in AI systems by employing data governance and management, throughout the data lifecycle; and"
+            },
+            {
+              "label": "(c)",
+              "verbatimText": "ensure robust security and resilience of its AI systems through, among others, the implementation of appropriate controls and security measures."
+            }
+          ]
+        }
+      ],
+      "footnotes": [
+        {
+          "number": 1,
+          "verbatimText": "Examples of adoption of AI and ML include for the purpose of supporting advisory services, risk management, client identification and monitoring, selection of trading algorithms and portfolio management of a capital market entity."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Notification for Technology-Related Implementation",
+      "referencedBy": "10.01",
+      "type": "form",
+      "formTitle": "Notification Form",
+      "sections": [
+        {
+          "number": 1,
+          "title": "Contact information",
+          "fieldGroups": [
+            {
+              "groupTitle": "Contact details of the responsible person",
+              "fields": [
+                "Full name",
+                "Position",
+                "Office phone no.",
+                "Mobile no.",
+                "Email address"
+              ]
+            },
+            {
+              "groupTitle": "Alternate contact person",
+              "fields": [
+                "Full name",
+                "Position",
+                "Office phone no.",
+                "Mobile no.",
+                "Email address"
+              ]
+            },
+            {
+              "groupTitle": "Entity details",
+              "fields": [
+                "Entity name",
+                "Entity address",
+                "Type of entity (for example, financial institutions, participating organisation, exchange)",
+                "Contact no.",
+                "Email address"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Technology notification details",
+          "fields": [
+            {
+              "name": "Type of notification",
+              "options": ["New", "Enhancement", "Other"]
+            },
+            {
+              "name": "Notification titled",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            },
+            {
+              "name": "Planned date and time",
+              "type": "text"
+            },
+            {
+              "name": "Relevant document or attachment (if any)",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Notification of Technology Incident, Cyber Incident and Near Miss Event",
+      "referencedBy": "10.03",
+      "type": "form",
+      "formNotes": [
+        "*Please fill in the fields wherever relevant for technology incident or cyber incidents, fields not labelled must be filled in.",
+        "**(T) \u2013 Technology incident, (C) \u2013 Cyber incident"
+      ],
+      "sections": [
+        {
+          "number": 1,
+          "title": "Contact information",
+          "fieldGroups": [
+            {
+              "groupTitle": "Contact details of the responsible person",
+              "fields": [
+                "Full name",
+                "Position",
+                "Office phone no.",
+                "Mobile no.",
+                "Email address"
+              ]
+            },
+            {
+              "groupTitle": "Alternate contact person",
+              "fields": [
+                "Full name",
+                "Position",
+                "Office phone no.",
+                "Mobile no.",
+                "Email address"
+              ]
+            },
+            {
+              "groupTitle": "Entity details",
+              "fields": [
+                "Entity name",
+                "Entity address",
+                "Type of entity (for example, financial institutions, participating organisation, exchange)",
+                "Contact no.",
+                "Email address"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Incident/near miss event details",
+          "fields": [
+            {
+              "name": "Type of incident/event",
+              "options": ["Technology", "Cyber", "Near Miss Event"]
+            },
+            {
+              "name": "Date and time of the incident/event",
+              "type": "text"
+            },
+            {
+              "name": "Date and time when the incident/event was first observed",
+              "type": "text"
+            },
+            {
+              "name": "Details of incident/event",
+              "subFields": [
+                "Description/Incident summary",
+                "Duration of downtime"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Impact to systems, assets or information",
+          "fields": [
+            {
+              "name": "Affected hardware",
+              "type": "text"
+            },
+            {
+              "name": "Affected software",
+              "type": "text"
+            },
+            {
+              "name": "Affected operating system",
+              "type": "text"
+            },
+            {
+              "name": "Impact to stakeholders",
+              "type": "text"
+            },
+            {
+              "name": "Potential number of affected customers/clients (T)",
+              "type": "text"
+            },
+            {
+              "name": "Actual number of affected customers/clients (T)",
+              "type": "text"
+            },
+            {
+              "name": "Number of enquiries by customers/clients and by which channel (T)",
+              "type": "text"
+            },
+            {
+              "name": "Geographical location and IP address of attacker (C)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Resolution of incident",
+          "fields": [
+            {
+              "name": "What are the actions taken / initial resolution to minimise and mitigate risks from the incident?",
+              "type": "text"
+            },
+            {
+              "name": "What is the current status or resolution of this incident?",
+              "options": ["Resolved", "Unresolved"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

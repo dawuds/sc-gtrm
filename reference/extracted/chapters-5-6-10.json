@@ -1,0 +1,384 @@
+{
+  "_meta": {
+    "source": "SC-GL/2-2023 (R1-2024)",
+    "extractedDate": "2026-04-01",
+    "sourceType": "verbatim-extracted",
+    "chapters": [5, 6, 10]
+  },
+  "chapters": [
+    {
+      "chapter": 5,
+      "title": "Governance",
+      "sections": [
+        {
+          "sectionTitle": "Board of Directors",
+          "paragraphs": [
+            {
+              "ref": "5.01",
+              "verbatimText": "The board must provide oversight and accord sufficient priority and resources to manage technology risk, as part of the overall risk management framework of a capital market entity.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "5.02",
+              "verbatimText": "In discharging its oversight functions, the board must\u2014",
+              "obligation": "must",
+              "hasSubParagraphs": true,
+              "subParagraphs": [
+                {
+                  "ref": "5.02(a)",
+                  "verbatimText": "approve the TRM Framework of a capital market entity and its policies;"
+                },
+                {
+                  "ref": "5.02(b)",
+                  "verbatimText": "approve the risk appetite and risk tolerance statement which provides clarity as to the nature and degree of technology risk within the risk acceptance of the capital market entity;"
+                },
+                {
+                  "ref": "5.02(c)",
+                  "verbatimText": "ensure that the TRM Framework and policies are robust and sound, and commensurate with the risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+                },
+                {
+                  "ref": "5.02(d)",
+                  "verbatimText": "in discharging its obligation in paragraph (c) above, the board must\u2014",
+                  "hasSubParagraphs": true,
+                  "subParagraphs": [
+                    {
+                      "ref": "5.02(d)(i)",
+                      "verbatimText": "oversee the effective implementation of the TRM Framework and policies and procedures. This may include setting performance metrics or indicators as appropriate;"
+                    },
+                    {
+                      "ref": "5.02(d)(ii)",
+                      "verbatimText": "ensure that the TRM Framework is regularly reviewed and updated by the senior management for the approval of the board at least once in every three years;"
+                    },
+                    {
+                      "ref": "5.02(d)(iii)",
+                      "verbatimText": "ensure that the policies are regularly reviewed and updated by the senior management for the approval of the board at least annually; and"
+                    }
+                  ]
+                },
+                {
+                  "ref": "5.02(e)",
+                  "verbatimText": "ensure that the strategies formulated within the TRM Framework are adequately designed to address the technology risk that the capital market entity may be exposed to;"
+                },
+                {
+                  "ref": "5.02(f)",
+                  "verbatimText": "ensure appropriate internal controls are in place for the effective implementation of the TRM Framework;"
+                },
+                {
+                  "ref": "5.02(g)",
+                  "verbatimText": "ensure the impact of technology risk is adequately assessed prior to the capital market entity undertaking new activities, which may include any proposed investments, merger and acquisition, adoption of new technology and outsourcing arrangements;"
+                },
+                {
+                  "ref": "5.02(h)",
+                  "verbatimText": "ensure adequate resources are allocated for technology risk management, including identifying at least one responsible person from among the senior management:",
+                  "hasSubParagraphs": true,
+                  "subParagraphs": [
+                    {
+                      "ref": "5.02(h)(i)",
+                      "verbatimText": "who would be responsible for the day-to-day oversight and management of technology risk; and"
+                    },
+                    {
+                      "ref": "5.02(h)(ii)",
+                      "verbatimText": "who would be responsible for the implementation of the technology and cyber security strategy as determined by the board;"
+                    }
+                  ]
+                },
+                {
+                  "ref": "5.02(i)",
+                  "verbatimText": "ensure clear segregated line of responsibilities and accountability across all levels and functions in the capital market entity to manage technology risk; and"
+                },
+                {
+                  "ref": "5.02(j)",
+                  "verbatimText": "ensure that the board keeps itself up to date with new or emerging trends of technology risk including cyber threats and understand the potential impact of such threats to the capital market entity."
+                }
+              ]
+            },
+            {
+              "ref": "5.03",
+              "verbatimText": "The board must perform its oversight role over the IT outsourcing arrangements and is accountable for ensuring the effectiveness of the outsourcing policies and procedures of the capital market entity.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Senior Management",
+          "paragraphs": [
+            {
+              "ref": "5.04",
+              "verbatimText": "The senior management is responsible for\u2013",
+              "obligation": "must",
+              "hasSubParagraphs": true,
+              "subParagraphs": [
+                {
+                  "ref": "5.04(a)",
+                  "verbatimText": "developing and implementing the TRM Framework and policies which are robust and sound, and commensurate with the level of risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+                },
+                {
+                  "ref": "5.04(b)",
+                  "verbatimText": "approving and implementing technology risk management procedures which are robust and sound, and commensurate with the risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+                },
+                {
+                  "ref": "5.04(c)",
+                  "verbatimText": "ensuring that technology risk management procedures are regularly reviewed and updated for its approval at least annually;"
+                },
+                {
+                  "ref": "5.04(d)",
+                  "verbatimText": "formulating, for the approval of the board, segregated line of responsibilities and accountability across all levels and functions in the capital market entity and implementing the same as approved by the board;"
+                },
+                {
+                  "ref": "5.04(e)",
+                  "verbatimText": "ensuring that employees, agents and third-party service providers are aware and understand the TRM Framework and policies and procedures, the possible impact of various cyber threats and their respective roles in managing such threats;"
+                },
+                {
+                  "ref": "5.04(f)",
+                  "verbatimText": "recommending to the board appropriate strategies and measures to manage technology risk, including making necessary changes to existing policies and procedures, as appropriate;"
+                },
+                {
+                  "ref": "5.04(g)",
+                  "verbatimText": "reporting to the board on a regular basis on matters relating to key technology risk, cyber breaches, business impact analysis (BIA) and critical technology operations;"
+                },
+                {
+                  "ref": "5.04(h)",
+                  "verbatimText": "providing the board with regular updates on cyber security issues, cyber security risk and compliance with cyber security framework;"
+                },
+                {
+                  "ref": "5.04(i)",
+                  "verbatimText": "reviewing, tracking and reporting material deviations from the TRM Framework, and policies and procedures to the board;"
+                },
+                {
+                  "ref": "5.04(j)",
+                  "verbatimText": "keeping the board informed of new and potentially emerging technology risk that may be critical to the capital market entity risk appetite; and"
+                },
+                {
+                  "ref": "5.04(k)",
+                  "verbatimText": "implementing the remedial actions approved by the board in an effective and timely manner."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Cybersecurity Awareness and Training",
+          "paragraphs": [
+            {
+              "ref": "5.05",
+              "verbatimText": "A capital market entity must ensure that its board, senior management, employees and agents, if any, attend cybersecurity awareness training programme at least annually to enhance their awareness and preparedness to deal with a wide range of cyber risk and to carry out their respective roles effectively.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Technology Audit",
+          "paragraphs": [
+            {
+              "ref": "5.06",
+              "verbatimText": "A capital market entity must\u2014",
+              "obligation": "must",
+              "hasSubParagraphs": true,
+              "subParagraphs": [
+                {
+                  "ref": "5.06(a)",
+                  "verbatimText": "establish a technology audit plan that provides appropriate coverage of critical technology; and"
+                },
+                {
+                  "ref": "5.06(b)",
+                  "verbatimText": "carry out its technology audit regularly. The frequency of the technology audit should commensurate with the business model, risk appetite and level of technology dependency of the capital market entity."
+                }
+              ]
+            },
+            {
+              "ref": "5.07",
+              "verbatimText": "At the minimum, the technology audit carried out by a capital market entity must determine whether its\u2014",
+              "obligation": "must",
+              "hasSubParagraphs": true,
+              "subParagraphs": [
+                {
+                  "ref": "5.07(a)",
+                  "verbatimText": "information systems are in compliance with applicable laws, regulatory requirements and industry guidelines;"
+                },
+                {
+                  "ref": "5.07(b)",
+                  "verbatimText": "data and information have appropriate level of confidentiality, integrity and availability; and"
+                },
+                {
+                  "ref": "5.07(c)",
+                  "verbatimText": "IT service operations are being managed efficiently, and its effectiveness targets are being met."
+                }
+              ]
+            },
+            {
+              "ref": "5.08",
+              "verbatimText": "A capital market entity must ensure that the auditors performing its audit possess the necessary competency, knowledge and experience to carry out the technology audit.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "5.09",
+              "verbatimText": "A capital market entity must\u2014",
+              "obligation": "must",
+              "hasSubParagraphs": true,
+              "subParagraphs": [
+                {
+                  "ref": "5.09(a)",
+                  "verbatimText": "ensure that the technology audit report comprises, at a minimum, independent and objective opinion on the effectiveness of risk management, governance and internal controls of the capital market entity relative to its existing and emerging technology risk; and"
+                },
+                {
+                  "ref": "5.09(b)",
+                  "verbatimText": "report the outcome of its technology audit to the board."
+                }
+              ]
+            },
+            {
+              "ref": "5.10",
+              "verbatimText": "Where necessary, the SC may appoint any independent party to perform a review on the capital market entity\u2019s compliance with these Guidelines including a technology audit and any costs of carrying out such review shall be borne by the capital market entity.",
+              "obligation": "may",
+              "hasSubParagraphs": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "Technology Risk Management",
+      "sections": [
+        {
+          "sectionTitle": "Technology Risk Management",
+          "paragraphs": [
+            {
+              "ref": "6.01",
+              "verbatimText": "A capital market entity must establish and implement robust and effective TRM Framework to manage its technology risk effectively. The TRM Framework must be reviewed and updated periodically, and in any event, at least once in every three years by the capital market entity.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "6.02",
+              "verbatimText": "A capital market entity must establish and implement comprehensive and effective policies and procedures to support the TRM Framework. The policies and procedures must be reviewed and updated at least annually by the capital market entity.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "6.03",
+              "verbatimText": "A capital market entity must establish an internal compliance process to ensure compliance with its TRM Framework, policies and procedures. The internal compliance process must include an appropriate approval process where\u2014",
+              "obligation": "must",
+              "hasSubParagraphs": true,
+              "subParagraphs": [
+                {
+                  "ref": "6.03(a)",
+                  "verbatimText": "the approval of senior management must be obtained prior to any deviation from its TRM Framework, policies and procedures of the capital market entity; and"
+                },
+                {
+                  "ref": "6.03(b)",
+                  "verbatimText": "the approval for deviation must only be given by the senior management if the deviation is supported by\u2014",
+                  "hasSubParagraphs": true,
+                  "subParagraphs": [
+                    {
+                      "ref": "6.03(b)(i)",
+                      "verbatimText": "an appropriate justification; and"
+                    },
+                    {
+                      "ref": "6.03(b)(ii)",
+                      "verbatimText": "alternative solution or a reasonable timeframe to comply with its TRM Framework, policies and procedures."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "ref": "6.04",
+              "verbatimText": "A capital market entity must establish and implement its technology risk management framework comprising risk identification, risk assessment, risk mitigation, and risk monitoring, review and reporting on any existing and emerging technology adopted by the capital market entity. A capital market entity may refer to Appendix 1 for guidance with regards to these components of the technology risk management framework.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "6.05",
+              "verbatimText": "A capital market entity must ensure that\u2014",
+              "obligation": "must",
+              "hasSubParagraphs": true,
+              "subParagraphs": [
+                {
+                  "ref": "6.05(a)",
+                  "verbatimText": "all risks are assigned to the appropriate risk owners who shall be accountable for ensuring that proper risk treatment plans are implemented and enforced for a specific technology risk;"
+                },
+                {
+                  "ref": "6.05(b)",
+                  "verbatimText": "the risk owners establish appropriate, effective and efficient technical and organisational measures in all steps of the process; and"
+                },
+                {
+                  "ref": "6.05(c)",
+                  "verbatimText": "any residual risk arising from threats and vulnerabilities after risk treatment, shall be documented and managed by risk owners according to the defined risk acceptance criteria that commensurate with the capital market entity\u2019s risk tolerance level."
+                }
+              ]
+            },
+            {
+              "ref": "6.06",
+              "verbatimText": "A capital market entity must maintain a board-approved key technology risk register to facilitate the monitoring and reporting of technology risk.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "6.07",
+              "verbatimText": "A capital market entity must continuously review its risk exposures and associated controls to ensure that they remain in line with the risk appetite of the capital market entity.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "Notification Process",
+      "sections": [
+        {
+          "sectionTitle": "Notification for Technology-Related Implementation",
+          "paragraphs": [
+            {
+              "ref": "10.01",
+              "verbatimText": "A capital market entity must notify the SC through the Vault system prior to implementing any major technology-related services or major enhancement on its critical systems, that may potentially affect its business operations or clients. The notification must include the details set out in Appendix 4.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "10.02",
+              "verbatimText": "In the event the Vault system is inaccessible, the capital market entity must notify and submit a detailed report to the SC via email at vault@seccom.com.my in accordance with the notification form provided in Appendix 4.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Notification of Technology Incident, Cyber Incident and Near Miss Event",
+          "paragraphs": [
+            {
+              "ref": "10.03",
+              "verbatimText": "A capital market entity must immediately notify and submit a report to the SC through the Vault system upon detection of any technology incident that affects its business operations or clients, or any cyber incident or near miss event, on the day of the occurrence of the incident. The notification must include the details set out in Appendix 5.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "10.04",
+              "verbatimText": "In the event the Vault system is inaccessible, the capital market entity must notify and submit a report to the SC via email at vault@seccom.com.my in accordance with the notification forms provided in Appendix 5.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "10.05",
+              "verbatimText": "The capital market entity must ensure that its board is made aware of the technology incidents and cyber incidents.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            },
+            {
+              "ref": "10.06",
+              "verbatimText": "Where a capital market entity has submitted a report in compliance with the requirements under paragraphs 10.03 and 10.04, such capital market entity shall be deemed to have complied with the reporting requirements relating to technology incident or cyber incident under other relevant guidelines issued by the SC.",
+              "obligation": "must",
+              "hasSubParagraphs": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

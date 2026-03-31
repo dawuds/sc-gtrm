@@ -2,7 +2,7 @@
   "sourceType": "constructed-indicative",
   "disclaimer": "This methodology is constructed for educational purposes. It illustrates a typical technology risk assessment approach for SC-regulated capital market entities. Entities should develop their own methodology based on their specific risk profile.",
   "title": "Capital Market Technology Risk Assessment Methodology",
-  "description": "Risk assessment methodology for evaluating technology risks in capital market operations under SC-GL/6-2023 Guidelines on Technology Risk Management.",
+  "description": "Risk assessment methodology for evaluating technology risks in capital market operations under SC-GL/2-2023 (R1-2024) Guidelines on Technology Risk Management.",
   "applicableTo": "SC-regulated capital market intermediaries, market operators, clearing houses, and central depositories",
   "approvalAuthority": "CRO / Technology Risk Committee",
   "reviewCycle": {

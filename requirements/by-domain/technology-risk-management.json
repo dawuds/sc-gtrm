@@ -1,0 +1,99 @@
+{
+  "sourceType": "verbatim-extracted",
+  "source": "SC-GL/2-2023 (R1-2024)",
+  "domain": "technology-risk-management",
+  "domainName": "Technology Risk Management",
+  "chapter": 6,
+  "requirements": [
+    {
+      "id": "6.01",
+      "section": "Technology Risk Management",
+      "requirement": "A capital market entity must establish and implement robust and effective TRM Framework to manage its technology risk effectively. The TRM Framework must be reviewed and updated periodically, and in any event, at least once in every three years by the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-risk-management-framework"
+    },
+    {
+      "id": "6.02",
+      "section": "Technology Risk Management",
+      "requirement": "A capital market entity must establish and implement comprehensive and effective policies and procedures to support the TRM Framework. The policies and procedures must be reviewed and updated at least annually by the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-risk-management-framework"
+    },
+    {
+      "id": "6.03",
+      "section": "Technology Risk Management",
+      "requirement": "A capital market entity must establish an internal compliance process to ensure compliance with its TRM Framework, policies and procedures. The internal compliance process must include an appropriate approval process where\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-risk-management-framework",
+      "subRequirements": [
+        {
+          "id": "6.03(a)",
+          "requirement": "the approval of senior management must be obtained prior to any deviation from its TRM Framework, policies and procedures of the capital market entity; and"
+        },
+        {
+          "id": "6.03(b)",
+          "requirement": "the approval for deviation must only be given by the senior management if the deviation is supported by\u2014",
+          "subRequirements": [
+            {
+              "id": "6.03(b)(i)",
+              "requirement": "an appropriate justification; and"
+            },
+            {
+              "id": "6.03(b)(ii)",
+              "requirement": "alternative solution or a reasonable timeframe to comply with its TRM Framework, policies and procedures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.04",
+      "section": "Technology Risk Management",
+      "requirement": "A capital market entity must establish and implement its technology risk management framework comprising risk identification, risk assessment, risk mitigation, and risk monitoring, review and reporting on any existing and emerging technology adopted by the capital market entity. A capital market entity may refer to Appendix 1 for guidance with regards to these components of the technology risk management framework.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-risk-management-framework"
+    },
+    {
+      "id": "6.05",
+      "section": "Technology Risk Management",
+      "requirement": "A capital market entity must ensure that\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-risk-management-framework",
+      "subRequirements": [
+        {
+          "id": "6.05(a)",
+          "requirement": "all risks are assigned to the appropriate risk owners who shall be accountable for ensuring that proper risk treatment plans are implemented and enforced for a specific technology risk;"
+        },
+        {
+          "id": "6.05(b)",
+          "requirement": "the risk owners establish appropriate, effective and efficient technical and organisational measures in all steps of the process; and"
+        },
+        {
+          "id": "6.05(c)",
+          "requirement": "any residual risk arising from threats and vulnerabilities after risk treatment, shall be documented and managed by risk owners according to the defined risk acceptance criteria that commensurate with the capital market entity\u2019s risk tolerance level."
+        }
+      ]
+    },
+    {
+      "id": "6.06",
+      "section": "Technology Risk Management",
+      "requirement": "A capital market entity must maintain a board-approved key technology risk register to facilitate the monitoring and reporting of technology risk.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-risk-management-framework"
+    },
+    {
+      "id": "6.07",
+      "section": "Technology Risk Management",
+      "requirement": "A capital market entity must continuously review its risk exposures and associated controls to ensure that they remain in line with the risk appetite of the capital market entity.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-risk-management-framework"
+    }
+  ]
+}

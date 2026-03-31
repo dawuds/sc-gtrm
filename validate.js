@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * SC-GTRM Data Integrity Validator
- * Validates JSON data files for the SC Malaysia Technology Risk Management Guidelines (SC-GL/6-2023) repo.
+ * Validates JSON data files for the SC Malaysia Technology Risk Management Guidelines (SC-GL/2-2023 (R1-2024)) repo.
  *
  * Usage: node validate.js [--verbose]
  */

@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Chief Risk Officer (CRO) |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## 1. Purpose
 
-This procedure defines the testing methodology for Business Continuity Management (BCM) and Disaster Recovery (DR) arrangements at [Organisation Name], with particular emphasis on the resilience of trading systems and settlement operations as required by SC-GL/6-2023.
+This procedure defines the testing methodology for Business Continuity Management (BCM) and Disaster Recovery (DR) arrangements at [Organisation Name], with particular emphasis on the resilience of trading systems and settlement operations as required by SC-GL/2-2023 (R1-2024).
 
 ## 2. Scope
 
@@ -179,7 +179,7 @@ Test activities:
 | Alternate site activation test | | | [Test] | |
 
 - Test schedule shall be approved by [CRO / Risk Committee] at the start of each year
-- The Securities Commission Malaysia shall be notified of test results as required by SC-GL/6-2023
+- The Securities Commission Malaysia shall be notified of test results as required by SC-GL/2-2023 (R1-2024)
 
 ## 7. Test Report Template
 

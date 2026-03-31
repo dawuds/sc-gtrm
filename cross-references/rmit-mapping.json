@@ -2,7 +2,7 @@
   "sourceType": "constructed-indicative",
   "frameworkName": "BNM Risk Management in Technology (RMiT)",
   "frameworkReference": "BNM/RH/PD 028-10, November 2025",
-  "description": "Comparison mapping between SC-GL/6-2023 controls and BNM RMiT requirements. Both frameworks address similar technology risk domains but for different regulated sectors (capital markets vs banking/insurance).",
+  "description": "Comparison mapping between SC-GL/2-2023 (R1-2024) controls and BNM RMiT requirements. Both frameworks address similar technology risk domains but for different regulated sectors (capital markets vs banking/insurance).",
   "lastUpdated": "2026-03-16",
   "mappings": [
     { "controlSlug": "technology-risk-governance-framework", "controlName": "Technology Risk Governance Framework", "rmitClause": "8.1-8.4", "rmitTitle": "Technology Risk Governance", "similarity": "high", "notes": "Both frameworks require board-level technology risk governance with similar structures" },

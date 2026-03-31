@@ -2,7 +2,7 @@
   "sourceType": "constructed-indicative",
   "frameworkName": "NIST Cybersecurity Framework 2.0",
   "frameworkReference": "NIST CSF 2.0 (February 2024)",
-  "description": "Mapping of SC-GL/6-2023 controls to NIST CSF 2.0 functions and categories, showing alignment between Malaysian capital market technology risk guidelines and the international cybersecurity baseline.",
+  "description": "Mapping of SC-GL/2-2023 (R1-2024) controls to NIST CSF 2.0 functions and categories, showing alignment between Malaysian capital market technology risk guidelines and the international cybersecurity baseline.",
   "lastUpdated": "2026-03-16",
   "mappings": [
     { "controlSlug": "technology-risk-governance-framework", "controlName": "Technology Risk Governance Framework", "nistFunction": "GOVERN", "nistCategory": "GV.OC, GV.RM", "nistName": "Organizational Context & Risk Management Strategy", "similarity": "high", "notes": "SC governance requirements align with NIST GOVERN function for organizational risk management" },

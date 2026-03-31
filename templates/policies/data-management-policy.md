@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Board of Directors |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -35,7 +35,7 @@
 
 ## 1. Purpose
 
-This policy establishes the data governance framework for [Organisation Name], ensuring the integrity, confidentiality, and availability of market data and client data in compliance with SC-GL/6-2023, the Personal Data Protection Act 2010 (PDPA), and Securities Commission Malaysia regulatory expectations.
+This policy establishes the data governance framework for [Organisation Name], ensuring the integrity, confidentiality, and availability of market data and client data in compliance with SC-GL/2-2023 (R1-2024), the Personal Data Protection Act 2010 (PDPA), and Securities Commission Malaysia regulatory expectations.
 
 ## 2. Scope
 
@@ -80,7 +80,7 @@ Market data is critical to fair and orderly capital markets. [Organisation Name]
 
 ## 5. Client Data Protection
 
-- Client personal data shall be handled in accordance with the PDPA 2010 and SC-GL/6-2023
+- Client personal data shall be handled in accordance with the PDPA 2010 and SC-GL/2-2023 (R1-2024)
 - Collection of client data shall be limited to what is necessary for legitimate business purposes
 - Client consent shall be obtained and recorded per PDPA requirements
 - Cross-border transfer of client data shall comply with Section 129 of the PDPA and POL-CLD-001 data residency requirements
@@ -92,8 +92,8 @@ Market data is critical to fair and orderly capital markets. [Organisation Name]
 |---|---|---|---|
 | Trade records | [7] years | CMSA 2007 | Secure deletion with certification |
 | Client account data | [7] years after account closure | CMSA 2007, PDPA | Secure deletion with certification |
-| Market data (raw feeds) | [N] years | SC-GL/6-2023 | Secure deletion |
-| Audit logs | [7] years | SC-GL/6-2023 | Secure deletion |
+| Market data (raw feeds) | [N] years | SC-GL/2-2023 (R1-2024) | Secure deletion |
+| Audit logs | [7] years | SC-GL/2-2023 (R1-2024) | Secure deletion |
 | Email and communications | [N] years | Internal policy | Secure deletion |
 | [Additional category] | [Period] | [Basis] | [Method] |
 
@@ -137,7 +137,7 @@ Market data is critical to fair and orderly capital markets. [Organisation Name]
 
 This policy shall be reviewed [annually] or upon:
 
-- Material changes to SC-GL/6-2023, PDPA, or related data regulations
+- Material changes to SC-GL/2-2023 (R1-2024), PDPA, or related data regulations
 - Significant data breaches or data quality incidents
 - Material changes to data handling practices or technology systems
 

@@ -1,0 +1,235 @@
+{
+  "sourceType": "verbatim-extracted",
+  "source": "SC-GL/2-2023 (R1-2024)",
+  "domain": "governance",
+  "domainName": "Governance",
+  "chapter": 5,
+  "requirements": [
+    {
+      "id": "5.01",
+      "section": "Board of Directors",
+      "requirement": "The board must provide oversight and accord sufficient priority and resources to manage technology risk, as part of the overall risk management framework of a capital market entity.",
+      "obligation": "must",
+      "owner": "Board",
+      "controlSlug": "board-of-directors"
+    },
+    {
+      "id": "5.02",
+      "section": "Board of Directors",
+      "requirement": "In discharging its oversight functions, the board must\u2014",
+      "obligation": "must",
+      "owner": "Board",
+      "controlSlug": "board-of-directors",
+      "subRequirements": [
+        {
+          "id": "5.02(a)",
+          "requirement": "approve the TRM Framework of a capital market entity and its policies;"
+        },
+        {
+          "id": "5.02(b)",
+          "requirement": "approve the risk appetite and risk tolerance statement which provides clarity as to the nature and degree of technology risk within the risk acceptance of the capital market entity;"
+        },
+        {
+          "id": "5.02(c)",
+          "requirement": "ensure that the TRM Framework and policies are robust and sound, and commensurate with the risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+        },
+        {
+          "id": "5.02(d)",
+          "requirement": "in discharging its obligation in paragraph (c) above, the board must\u2014",
+          "subRequirements": [
+            {
+              "id": "5.02(d)(i)",
+              "requirement": "oversee the effective implementation of the TRM Framework and policies and procedures. This may include setting performance metrics or indicators as appropriate;"
+            },
+            {
+              "id": "5.02(d)(ii)",
+              "requirement": "ensure that the TRM Framework is regularly reviewed and updated by the senior management for the approval of the board at least once in every three years;"
+            },
+            {
+              "id": "5.02(d)(iii)",
+              "requirement": "ensure that the policies are regularly reviewed and updated by the senior management for the approval of the board at least annually; and"
+            }
+          ]
+        },
+        {
+          "id": "5.02(e)",
+          "requirement": "ensure that the strategies formulated within the TRM Framework are adequately designed to address the technology risk that the capital market entity may be exposed to;"
+        },
+        {
+          "id": "5.02(f)",
+          "requirement": "ensure appropriate internal controls are in place for the effective implementation of the TRM Framework;"
+        },
+        {
+          "id": "5.02(g)",
+          "requirement": "ensure the impact of technology risk is adequately assessed prior to the capital market entity undertaking new activities, which may include any proposed investments, merger and acquisition, adoption of new technology and outsourcing arrangements;"
+        },
+        {
+          "id": "5.02(h)",
+          "requirement": "ensure adequate resources are allocated for technology risk management, including identifying at least one responsible person from among the senior management:",
+          "subRequirements": [
+            {
+              "id": "5.02(h)(i)",
+              "requirement": "who would be responsible for the day-to-day oversight and management of technology risk; and"
+            },
+            {
+              "id": "5.02(h)(ii)",
+              "requirement": "who would be responsible for the implementation of the technology and cyber security strategy as determined by the board;"
+            }
+          ]
+        },
+        {
+          "id": "5.02(i)",
+          "requirement": "ensure clear segregated line of responsibilities and accountability across all levels and functions in the capital market entity to manage technology risk; and"
+        },
+        {
+          "id": "5.02(j)",
+          "requirement": "ensure that the board keeps itself up to date with new or emerging trends of technology risk including cyber threats and understand the potential impact of such threats to the capital market entity."
+        }
+      ]
+    },
+    {
+      "id": "5.03",
+      "section": "Board of Directors",
+      "requirement": "The board must perform its oversight role over the IT outsourcing arrangements and is accountable for ensuring the effectiveness of the outsourcing policies and procedures of the capital market entity.",
+      "obligation": "must",
+      "owner": "Board",
+      "controlSlug": "board-of-directors"
+    },
+    {
+      "id": "5.04",
+      "section": "Senior Management",
+      "requirement": "The senior management is responsible for\u2013",
+      "obligation": "must",
+      "owner": "Senior Management",
+      "controlSlug": "senior-management",
+      "subRequirements": [
+        {
+          "id": "5.04(a)",
+          "requirement": "developing and implementing the TRM Framework and policies which are robust and sound, and commensurate with the level of risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+        },
+        {
+          "id": "5.04(b)",
+          "requirement": "approving and implementing technology risk management procedures which are robust and sound, and commensurate with the risk exposure of the capital market entity so that it may assist the capital market entity in achieving security, reliability and resilience of its IT operating environment;"
+        },
+        {
+          "id": "5.04(c)",
+          "requirement": "ensuring that technology risk management procedures are regularly reviewed and updated for its approval at least annually;"
+        },
+        {
+          "id": "5.04(d)",
+          "requirement": "formulating, for the approval of the board, segregated line of responsibilities and accountability across all levels and functions in the capital market entity and implementing the same as approved by the board;"
+        },
+        {
+          "id": "5.04(e)",
+          "requirement": "ensuring that employees, agents and third-party service providers are aware and understand the TRM Framework and policies and procedures, the possible impact of various cyber threats and their respective roles in managing such threats;"
+        },
+        {
+          "id": "5.04(f)",
+          "requirement": "recommending to the board appropriate strategies and measures to manage technology risk, including making necessary changes to existing policies and procedures, as appropriate;"
+        },
+        {
+          "id": "5.04(g)",
+          "requirement": "reporting to the board on a regular basis on matters relating to key technology risk, cyber breaches, business impact analysis (BIA) and critical technology operations;"
+        },
+        {
+          "id": "5.04(h)",
+          "requirement": "providing the board with regular updates on cyber security issues, cyber security risk and compliance with cyber security framework;"
+        },
+        {
+          "id": "5.04(i)",
+          "requirement": "reviewing, tracking and reporting material deviations from the TRM Framework, and policies and procedures to the board;"
+        },
+        {
+          "id": "5.04(j)",
+          "requirement": "keeping the board informed of new and potentially emerging technology risk that may be critical to the capital market entity risk appetite; and"
+        },
+        {
+          "id": "5.04(k)",
+          "requirement": "implementing the remedial actions approved by the board in an effective and timely manner."
+        }
+      ]
+    },
+    {
+      "id": "5.05",
+      "section": "Cybersecurity Awareness and Training",
+      "requirement": "A capital market entity must ensure that its board, senior management, employees and agents, if any, attend cybersecurity awareness training programme at least annually to enhance their awareness and preparedness to deal with a wide range of cyber risk and to carry out their respective roles effectively.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "cybersecurity-awareness-and-training"
+    },
+    {
+      "id": "5.06",
+      "section": "Technology Audit",
+      "requirement": "A capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-audit",
+      "subRequirements": [
+        {
+          "id": "5.06(a)",
+          "requirement": "establish a technology audit plan that provides appropriate coverage of critical technology; and"
+        },
+        {
+          "id": "5.06(b)",
+          "requirement": "carry out its technology audit regularly. The frequency of the technology audit should commensurate with the business model, risk appetite and level of technology dependency of the capital market entity."
+        }
+      ]
+    },
+    {
+      "id": "5.07",
+      "section": "Technology Audit",
+      "requirement": "At the minimum, the technology audit carried out by a capital market entity must determine whether its\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-audit",
+      "subRequirements": [
+        {
+          "id": "5.07(a)",
+          "requirement": "information systems are in compliance with applicable laws, regulatory requirements and industry guidelines;"
+        },
+        {
+          "id": "5.07(b)",
+          "requirement": "data and information have appropriate level of confidentiality, integrity and availability; and"
+        },
+        {
+          "id": "5.07(c)",
+          "requirement": "IT service operations are being managed efficiently, and its effectiveness targets are being met."
+        }
+      ]
+    },
+    {
+      "id": "5.08",
+      "section": "Technology Audit",
+      "requirement": "A capital market entity must ensure that the auditors performing its audit possess the necessary competency, knowledge and experience to carry out the technology audit.",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-audit"
+    },
+    {
+      "id": "5.09",
+      "section": "Technology Audit",
+      "requirement": "A capital market entity must\u2014",
+      "obligation": "must",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-audit",
+      "subRequirements": [
+        {
+          "id": "5.09(a)",
+          "requirement": "ensure that the technology audit report comprises, at a minimum, independent and objective opinion on the effectiveness of risk management, governance and internal controls of the capital market entity relative to its existing and emerging technology risk; and"
+        },
+        {
+          "id": "5.09(b)",
+          "requirement": "report the outcome of its technology audit to the board."
+        }
+      ]
+    },
+    {
+      "id": "5.10",
+      "section": "Technology Audit",
+      "requirement": "Where necessary, the SC may appoint any independent party to perform a review on the capital market entity\u2019s compliance with these Guidelines including a technology audit and any costs of carrying out such review shall be borne by the capital market entity.",
+      "obligation": "may",
+      "owner": "Capital Market Entity",
+      "controlSlug": "technology-audit"
+    }
+  ]
+}

@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Chief Risk Officer (CRO) |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -35,7 +35,7 @@
 
 ## 1. Purpose
 
-This procedure establishes the operational controls for algorithmic and automated trading systems at [Organisation Name], ensuring that trading algorithms operate within defined risk parameters and comply with SC-GL/6-2023 technology risk management requirements and Securities Commission Malaysia market conduct expectations.
+This procedure establishes the operational controls for algorithmic and automated trading systems at [Organisation Name], ensuring that trading algorithms operate within defined risk parameters and comply with SC-GL/2-2023 (R1-2024) technology risk management requirements and Securities Commission Malaysia market conduct expectations.
 
 ## 2. Scope
 
@@ -209,7 +209,7 @@ All pre-trade risk controls shall be implemented in [hardware / software] and op
 | Kill switch activation report | CRO, Compliance | On each activation | Trigger, impact, resolution |
 | Algorithm risk summary | Risk Committee | [Monthly] | Active algos, risk metrics, incidents, limit breaches |
 | Surveillance findings | Compliance, CRO | [Monthly] | Manipulation indicators, investigations, regulatory reports |
-| SC regulatory report | Securities Commission Malaysia | As required per SC-GL/6-2023 | Algorithm inventory, incidents, control effectiveness |
+| SC regulatory report | Securities Commission Malaysia | As required per SC-GL/2-2023 (R1-2024) | Algorithm inventory, incidents, control effectiveness |
 | Algorithm governance report | Board / Risk Committee | [Quarterly] | New approvals, changes, decommissions, risk posture |
 
 All algorithm trading records, orders, and audit logs shall be retained for [7] years per POL-DMP-001.

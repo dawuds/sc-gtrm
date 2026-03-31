@@ -10,7 +10,7 @@
 | **Owner** | Chief Technology Officer |
 | **Effective Date** | [Date] |
 | **Next Review Date** | [Date + 3 months] |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 

@@ -11,7 +11,7 @@
 | **Effective Date** | [DD/MM/YYYY] |
 | **Next Review Date** | [DD/MM/YYYY + 1 year] |
 | **Approved By** | Board of Directors |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## 1. Purpose
 
-This policy governs the adoption, use, and management of cloud services by [Organisation Name], ensuring that cloud deployments meet the regulatory expectations of SC-GL/6-2023 and maintain the confidentiality, integrity, and availability of capital market operations.
+This policy governs the adoption, use, and management of cloud services by [Organisation Name], ensuring that cloud deployments meet the regulatory expectations of SC-GL/2-2023 (R1-2024) and maintain the confidentiality, integrity, and availability of capital market operations.
 
 ## 2. Scope
 
@@ -76,7 +76,7 @@ All cloud services shall be procured from pre-approved CSPs only. Shadow IT and 
 - Assessments shall evaluate:
   - Data classification of workloads to be migrated
   - CSP security posture (certifications: ISO 27001, SOC 2, CSA STAR)
-  - Regulatory compliance implications under SC-GL/6-2023
+  - Regulatory compliance implications under SC-GL/2-2023 (R1-2024)
   - Concentration risk — dependency on a single CSP
   - Jurisdictional and legal risks
 - Risk assessments shall be documented and approved by [CRO / Risk Committee]
@@ -88,7 +88,7 @@ All cloud services shall be procured from pre-approved CSPs only. Shadow IT and 
 - Where data is processed outside Malaysia, [Organisation Name] shall:
   - Obtain legal opinion on cross-border data transfer compliance
   - Ensure contractual protections equivalent to Malaysian data protection standards
-  - Notify the Securities Commission Malaysia if required under SC-GL/6-2023
+  - Notify the Securities Commission Malaysia if required under SC-GL/2-2023 (R1-2024)
 
 | Data Classification | Permitted Residency | Encryption Required |
 |---|---|---|
@@ -135,7 +135,7 @@ All cloud services shall be procured from pre-approved CSPs only. Shadow IT and 
 
 This policy shall be reviewed [annually] or upon:
 
-- Material changes to SC-GL/6-2023 or related cloud computing guidelines
+- Material changes to SC-GL/2-2023 (R1-2024) or related cloud computing guidelines
 - Significant cloud security incidents
 - Changes to CSP service terms, certifications, or risk posture
 - Material changes to [Organisation Name]'s cloud strategy

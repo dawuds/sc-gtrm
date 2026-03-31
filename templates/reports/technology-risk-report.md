@@ -10,7 +10,7 @@
 | **Owner** | Chief Risk Officer |
 | **Reporting Period** | [Start Date] to [End Date] |
 | **Presented To** | Board Risk Committee |
-| **Regulatory Reference** | SC-GL/6-2023 |
+| **Regulatory Reference** | SC-GL/2-2023 (R1-2024) |
 
 ---
 

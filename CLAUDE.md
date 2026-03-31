@@ -3,7 +3,7 @@
 **Last updated:** 2026-03-31
 
 ## What This Is
-Complete assessment toolkit for Securities Commission Malaysia's Guidelines on Technology Risk Management (SC-GL/6-2023) for capital market intermediaries. Includes SPA explorer and structured JSON data. **Tier 1 Focus Area** in the GRC portfolio.
+Complete assessment toolkit for Securities Commission Malaysia's Guidelines on Technology Risk Management (SC-GL/2-2023 (R1-2024)) for capital market intermediaries. Includes SPA explorer and structured JSON data. **Tier 1 Focus Area** in the GRC portfolio.
 
 ## Portfolio Role
 One of 5 Tier 1 focus areas. End-to-end assessment capability: 35 controls across 10 domains with 181 sub-procedures. AWP artifacts (workbook, report template, generators, evidence tools) are in Tech-Audit/SC-GTRM/ (private repo). Remaining work: deeper cross-references with NACSA and PDPA repos.
